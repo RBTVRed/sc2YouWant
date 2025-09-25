@@ -125,10 +125,9 @@
         <EditorCategories value=""/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Structure" value="87.5"/>
-        <ShieldBonus value="50"/>
+        <AttributeBonus index="Structure" value="105"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="87.5"/>
+        <Amount value="105"/>
         <Death value="Electrocute"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="RevelationPersistent">
@@ -725,6 +724,7 @@
     <CEffectDamage id="PurificationNovaDamage">
         <AttributeBonus index="Structure" value="175"/>
         <Amount value="175"/>
+        <ShieldBonus value="70"/>
     </CEffectDamage>
     <CEffectSwitch id="RavenScramblerMissileABswitch">
         <ValidatorArray value="IsMechanicalOrIsPsionic"/>
@@ -1233,9 +1233,7 @@
         <EffectArray value="PickupVespeneGas"/>
         <EffectArray value="PickupKillDelay23"/>
     </CEffectSet>
-    <CEffectEnumArea id="PurificationNovaTargettedSearch">
-        <AreaArray index="0" Radius="1.4"/>
-    </CEffectEnumArea>
+    <CEffectEnumArea id="PurificationNovaTargettedSearch"/>
     <CEffectApplyBehavior id="RapidConstructionAB">
         <EditorCategories value=""/>
         <Behavior value="RapidConstruction"/>

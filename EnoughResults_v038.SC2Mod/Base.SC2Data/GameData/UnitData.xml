@@ -1607,8 +1607,8 @@
         <ShieldRegenRate value="4"/>
     </CUnit>
     <CUnit id="Queen">
-        <LifeStart value="220"/>
-        <LifeMax value="220"/>
+        <LifeStart value="260"/>
+        <LifeMax value="260"/>
         <EnergyStart value="50"/>
         <EnergyRegenRate value="0.371"/>
         <Speed value="1.25"/>
@@ -1653,8 +1653,8 @@
         <CostResource index="Minerals" value="150"/>
     </CUnit>
     <CUnit id="QueenBurrowed">
-        <LifeStart value="220"/>
-        <LifeMax value="220"/>
+        <LifeStart value="260"/>
+        <LifeMax value="260"/>
         <EnergyStart value="50"/>
         <EnergyRegenRate value="0.371"/>
         <Food value="-3"/>
