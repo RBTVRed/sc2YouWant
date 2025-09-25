@@ -1627,8 +1627,8 @@
             <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="13" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
-            <LayoutButtons index="14" Face="Detector" Type="Passive" AbilCmd="" Row="1" Column="0"/>
-            <LayoutButtons index="15" Face="SpawnLarvaSolo" AbilCmd="SpawnLarvaSolo,Execute" Column="2"/>
+            <LayoutButtons index="14" Face="SpawnLarvaSolo" AbilCmd="SpawnLarvaSolo,Execute" Column="2"/>
+            <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
             <LayoutButtons index="17" removed="1"/>
             <LayoutButtons index="18" removed="1"/>
