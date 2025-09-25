@@ -15,8 +15,8 @@
     </CModel>
     <CModel id="AmorphousArmorcloud">
         <RadiusLoose value="0.540000"/>
-        <ScaleMax value="0.750000,0.750000,0.750000"/>
-        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <ScaleMax value="0.650000,0.650000,0.750000"/>
+        <ScaleMin value="0.650000,0.650000,0.750000"/>
         <AnimSpeed value="0.500000"/>
     </CModel>
     <!--Swarm-->

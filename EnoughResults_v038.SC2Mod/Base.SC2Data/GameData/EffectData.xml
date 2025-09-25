@@ -237,7 +237,6 @@
     <CEffectEnumArea id="AmorphousArmorcloudSearch">
         <AreaArray index="0" Radius="4"/>
         <SearchFilters value="Air;Neutral,Ground,Structure,Missile,Dead"/>
-        <DebugTrace value="1"/>
         <ImpactLocation Value="SourceUnit"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="ArbiterMPCloakingFieldApply">
