@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectLaunchMissile id="NapalmGrenade@LM">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="NapalmGrenade@SetImpact"/>
+        <AmmoUnit value="NapalmGrenade@Weapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="NapalmGrenade@Damage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Terran"/>
+        <Amount value="8"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="NapalmGrenade@AB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="NapalmGrenade@DoT"/>
+        <ValidatorArray index="0" value="NotFirebat"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="NapalmGrenade@DamageDoTPeriodic">
+        <ValidatorArray value="NapalmGrenade@TargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <Visibility value="Hidden"/>
+        <Amount value="4"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectDamage id="NapalmGrenade@DamageDoTInitial">
+        <ValidatorArray value="NapalmGrenade@TargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="8"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectSet id="NapalmGrenade@SetImpact">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="NapalmGrenade@Damage"/>
+        <EffectArray value="NapalmGrenade@CPDoT"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="NapalmGrenade@CPDoT">
+        <EditorCategories value="Race:Protoss"/>
+        <OffsetVectorStartLocation Value="SourcePoint"/>
+        <InitialEffect value="NapalmGrenade@SADoT"/>
+        <PeriodCount value="20"/>
+        <PeriodicEffectArray value="NapalmGrenade@SADoT"/>
+        <PeriodicPeriodArray value="0.5712"/>
+        <AINotifyEffect value="PsiStormSearch"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="NapalmGrenade@SADoT">
+        <EditorCategories value="Race:Protoss"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <SearchFilters value="-;Air,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
+        <AreaArray Radius="1.125" Effect="NapalmGrenade@AB"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CValidatorUnitFilters id="NapalmGrenade@TargetFilters">
+        <Filters value="-;Air,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
+    </CValidatorUnitFilters>
+    <CButton id="NapalmHellion">
+        <Icon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Hellion"/>
+    </CButton>
+    <CButton id="NapalmGrenade">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-firebat-wildflamefuel.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-tychus-firebat-wildflamefuel.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CActorSound id="NapalmHellion@SoundLand" parent="SoundOneShot">
+        <Sound value="Hellion_Land"/>
+    </CActorSound>
+    <CActorModel id="NapalmGrenade@ImpactModel" parent="GenericAttackImpactModel">
+        <On index="0" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce 2.000000 AsTimeScale"/>
+    </CActorModel>
+    <CActorSound id="NapalmGrenade@SoundDoTImpact" parent="SoundOneShot">
+        <On Terms="Behavior.NapalmGrenade@DoT.On" Send="Create"/>
+        <Sound value="NapalmGrenade@DoTImpact"/>
+    </CActorSound>
+    <CActorModel id="NapalmGrenade@ModelDoTImpact" parent="ModelAnimationStyleContinuous">
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <On Terms="Behavior.NapalmGrenade@DoT.On" Send="Create"/>
+        <On Terms="Behavior.NapalmGrenade@DoT.Off" Send="AnimBracketStop BSD"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachRandomDamage"/>
+        <Model value="ImpactModelFlames"/>
+        <AutoScaleFactor value="0.750000"/>
+    </CActorModel>
+    <CActorModel id="NapalmGrenade@Model" parent="ModelAnimationStyleContinuous">
+        <On Terms="Effect.NapalmGrenade@CPDoT.Start" Send="Create"/>
+        <On Terms="Effect.NapalmGrenade@CPDoT.Stop" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Model value="NapalmGrenade@GroundFire"/>
+        <Scale value="1.300000"/>
+    </CActorModel>
+    <CActorSound id="NapalmGrenade@SoundLoop" parent="SoundContinuous">
+        <On Terms="Effect.NapalmGrenade@CPDoT.Start" Send="Create"/>
+        <On Terms="Effect.NapalmGrenade@CPDoT.Stop" Send="Destroy"/>
+        <HostSiteOps Ops="SOpShadow"/>
+    </CActorSound>
+    <CActorUnit id="NapalmHellion" parent="GenericUnitBase" unitName="NapalmHellion">
+        <Aliases value="_UnitMedium"/>
+        <Macros value="UnloadDropAnim"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <Macros value="PhysicsDeathsSwarmGround"/>
+        <Macros value="PhysicsDeathsVoidGround"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="TimerSet 0.250000 KillBeam"/>
+        <On Terms="UnitPortrait.*.Configure" Target="::PortraitGameSelf" Send="AnimClear Visor 0.000000"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create NapalmHellion@SoundLand"/>
+        <Model value="Hellion"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <BuildModel value="Hellion"/>
+        <DeathArray index="Normal" ModelLink="HellionDeath" SoundLink="Hellion_Explode"/>
+        <DeathCustoms ModelLink="HellionDeathRagdoll" Name="RagdollBasic">
+            <BodySquibs Name="Basic" Model="TerranSquibDeathRagdoll"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollSiegeTank" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollBaneling" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollUltraUnburrow" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionGround"/>
+        <PlacementModel value="Hellion"/>
+        <PortraitActor value="HellionPortrait"/>
+        <PortraitModel value="HellionPortrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="1.000000"/>
+            <RangeDown value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleLargeVehicle"/>
+        </TerrainSquibs>
+        <BarOffset value="50"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-hellionex1.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel0.dds"/>
+        <SoundArray index="Ready" value="Hellion_Ready"/>
+        <SoundArray index="Help" value="Hellion_Help"/>
+        <SoundArray index="What" value="Hellion_What"/>
+        <SoundArray index="Yes" value="Hellion_Yes"/>
+        <SoundArray index="Attack" value="Hellion_Attack"/>
+        <SoundArray index="Pissed" value="Hellion_Pissed"/>
+        <SoundArray index="Movement" value="Hellion_Movement"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-hellionex1.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorAction id="NapalmGrenade@Attack" parent="GenericAttack" effectImpact="NapalmGrenade@SetImpact" effectLaunch="NapalmGrenade@LM">
+        <LaunchAssets Model="NapalmGrenade@Launch" Sound="NapalmGrenade@Launch"/>
+        <Missile value="NapalmGrenade@Missile"/>
+        <ImpactSiteOps Ops="SOpAttachOrigin"/>
+        <ImpactMap index="None" Model="NapalmGrenade@Impact" Sound="NapalmGrenade@Impact"/>
+        <ImpactModel value="NapalmGrenade@ImpactModel"/>
+        <ShieldFlashType value="Full"/>
+    </CActorAction>
+    <CActorMissile id="NapalmGrenade@Missile" parent="GenericAttackMissile" unitName="NapalmGrenade@Weapon">
+        <HostSiteOps Ops="SOpMoveUpByDot25 NapalmGrenade@SOpRotator SOpMoveDownByDot25"/>
+    </CActorMissile>
+    <CActorSiteOpRotator id="NapalmGrenade@SOpRotator">
+        <LocalAxis value="1.000000,0.000000,0.000000"/>
+        <Rate value="1000.000000"/>
+    </CActorSiteOpRotator>
+    <CModel id="NapalmGrenade@GroundFire" parent="PersistentSpellFX">
+        <Model value="Assets\Doodads\GenericProtossFire_Large\GenericProtossFire_Large.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <RadiusLoose value="0.600000"/>
+        <ScaleMax value="0.840000,0.840000,0.840000"/>
+        <ScaleMin value="0.840000,0.840000,0.840000"/>
+    </CModel>
+    <CModel id="NapalmGrenade@Impact" parent="ImpactFX">
+        <Model value="Assets\Doodads\TerranDoodadExplosion\TerranDoodadExplosion.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="NapalmGrenade@Launch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\GhostFireSprite\GhostFireSprite.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="NapalmGrenade@Weapon" parent="MissileFX">
+        <Model value="Assets\Doodads\ExplodingBarrelLarge\ExplodingBarrelLarge.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+    </CModel>
+    <CWeaponLegacy id="NapalmGrenade">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="NapalmGrenade@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="2.6"/>
+        <Backswing value="0"/>
+        <Effect value="NapalmGrenade@LM"/>
+    </CWeaponLegacy>
+    <CSound id="NapalmGrenade@DoTImpact" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Terran\Hellion\Hellion_AttackImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Hellion\Hellion_AttackImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Hellion\Hellion_AttackImpact2.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Hellion\Hellion_AttackImpact3.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Hellion\Hellion_AttackImpact4.wav"/>
+        <DupeDestroyCount value="3"/>
+        <Volume value="-9.000000,-9.000000"/>
+    </CSound>
+    <CSound id="NapalmGrenade@SoundLoop" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium2.wav"/>
+    </CSound>
+    <CSound id="NapalmGrenade@Impact" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_00.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_01.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_02.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_03.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_04.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_05.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_06.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_07.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_08.wav" Pitch="-3.000000,3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni_ImpactExplosions_09.wav" Pitch="-3.000000,3.000000"/>
+        <DupeDestroyCount value="5"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="5"/>
+        <Volume value="-5.000000,-3.000000"/>
+    </CSound>
+    <CSound id="NapalmGrenade@Launch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Vulture\Vulture_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Vulture\Vulture_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Vulture\Vulture_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Vulture\Vulture_AttackLaunch3.wav"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-4.000000,-3.000000"/>
+    </CSound>
+    <CDataCollectionAbil id="NapalmGrenade">
+        <EditorCategories value="DataGroup:Weapon,Race:Terran,ObjectType:Projectile"/>
+        <DataRecord Entry="Actor,NapalmGrenade@ImpactModel"/>
+        <DataRecord Entry="Actor,NapalmGrenade@SoundDoTImpact"/>
+        <DataRecord Entry="Actor,NapalmGrenade@ModelDoTImpact"/>
+        <DataRecord Entry="Actor,NapalmGrenade@Model"/>
+        <DataRecord Entry="Actor,NapalmGrenade@SoundLoop"/>
+        <DataRecord Entry="Actor,NapalmGrenade@Attack"/>
+        <DataRecord Entry="Actor,NapalmGrenade@Missile"/>
+        <DataRecord Entry="Actor,NapalmGrenade@SOpRotator"/>
+        <DataRecord Entry="Behavior,NapalmGrenade@DoT"/>
+        <DataRecord Entry="Button,NapalmGrenade"/>
+        <DataRecord Entry="Effect,NapalmGrenade@DamageDoTInitial"/>
+        <DataRecord Entry="Effect,NapalmGrenade@DamageDoTPeriodic"/>
+        <DataRecord Entry="Effect,NapalmGrenade@LM"/>
+        <DataRecord Entry="Effect,NapalmGrenade@SetImpact"/>
+        <DataRecord Entry="Effect,NapalmGrenade@Damage"/>
+        <DataRecord Entry="Effect,NapalmGrenade@AB"/>
+        <DataRecord Entry="Effect,NapalmGrenade@CPDoT"/>
+        <DataRecord Entry="Effect,NapalmGrenade@SADoT"/>
+        <DataRecord Entry="Model,NapalmGrenade@GroundFire"/>
+        <DataRecord Entry="Model,NapalmGrenade@Launch"/>
+        <DataRecord Entry="Model,NapalmGrenade@Impact"/>
+        <DataRecord Entry="Model,NapalmGrenade@Weapon"/>
+        <DataRecord Entry="Sound,NapalmGrenade@DoTImpact"/>
+        <DataRecord Entry="Sound,NapalmGrenade@SoundLoop"/>
+        <DataRecord Entry="Sound,NapalmGrenade@Launch"/>
+        <DataRecord Entry="Sound,NapalmGrenade@Impact"/>
+        <DataRecord Entry="Unit,NapalmGrenade@Weapon"/>
+        <DataRecord Entry="Validator,NapalmGrenade@TargetFilters"/>
+        <DataRecord Entry="Weapon,NapalmGrenade"/>
+    </CDataCollectionAbil>
+    <CDataCollectionUnit id="NapalmHellion">
+        <EditorCategories value="DataGroup:Unit,Race:Terran,DataFamily:Melee,ObjectType:Unit"/>
+        <DataRecord Entry="Actor,NapalmHellion@SoundLand"/>
+        <DataRecord Entry="Actor,NapalmHellion"/>
+        <DataRecord Entry="Button,NapalmHellion"/>
+        <DataRecord Entry="Unit,NapalmHellion"/>
+    </CDataCollectionUnit>
+    <CUnit id="NapalmHellion">
+        <DeathRevealRadius value="3"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="AISplash" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranVehiclePlating"/>
+        <Speed value="3.8593"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="30"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="SpreadOut"/>
+        <WeaponArray Link="NapalmGrenade" Turret="Hellion"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="NapalmGrenade" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.75"/>
+        <InnerRadius value="0.5"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="0.625"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkHellion"/>
+        <TechAliasArray value="Alias_Hellion"/>
+        <TechAliasArray value="Alias_Hellion"/>
+        <GlossaryCategory value="Unit/Category/TerranUnits"/>
+        <GlossaryPriority value="80"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Zealot"/>
+        <GlossaryWeakArray value="Marauder"/>
+        <GlossaryWeakArray value="Roach"/>
+        <GlossaryWeakArray value="Stalker"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+    </CUnit>
+    <CUnit id="NapalmGrenade@Weapon" parent="MISSILE">
+        <Race value="Terr"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>
+    </CUnit>
+    <CBehaviorBuff id="NapalmGrenade@DoT">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-fireroach-increasefiredamage.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.6665"/>
+        <Period value="0.571"/>
+        <InitialEffect value="NapalmGrenade@DamageDoTInitial"/>
+        <PeriodicEffect value="NapalmGrenade@DamageDoTPeriodic"/>
+    </CBehaviorBuff>
+</Catalog>

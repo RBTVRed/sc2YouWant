@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CDataCollectionAbil id="CargoTracker">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Behavior,CargoTracker"/>
+        <DataRecord Entry="Effect,CargoTracker@IT"/>
+        <DataRecord Entry="Effect,CargoTracker@ATU"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="CompactedShield">
+        <EditorCategories value="DataGroup:Ability,Race:Protoss,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,CompactedShield"/>
+        <DataRecord Entry="Actor,CompactedShield@Model"/>
+        <DataRecord Entry="Actor,CompactedShield@ModelLaunch"/>
+        <DataRecord Entry="Actor,CompactedShield@ModelWarpPrismPhasing"/>
+        <DataRecord Entry="Actor,CompactedShield@SOpRotator"/>
+        <DataRecord Entry="Actor,CompactedShield@SOpExplicitRotation"/>
+        <DataRecord Entry="Actor,CompactedShield@Range"/>
+        <DataRecord Entry="Actor,CompactedShield@SoundImpact"/>
+        <DataRecord Entry="Actor,CompactedShield@SoundLaunch"/>
+        <DataRecord Entry="Actor,CompactedShield@SoundEnd"/>
+        <DataRecord Entry="Actor,CompactedShield@CursorSplat2"/>
+        <DataRecord Entry="Behavior,CompactedShield@Buff"/>
+        <DataRecord Entry="Button,CompactedShield"/>
+        <DataRecord Entry="Effect,CompactedShield@AB"/>
+        <DataRecord Entry="Effect,CompactedShield@SA"/>
+        <DataRecord Entry="Model,CompactedShield@BuffModel"/>
+        <DataRecord Entry="Model,CompactedShield@LaunchModel"/>
+        <DataRecord Entry="Sound,CompactedShield@EndSound"/>
+        <DataRecord Entry="Sound,CompactedShield@ImpactSound"/>
+        <DataRecord Entry="Sound,CompactedShield@LaunchSound"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="CorruptorDamagingCorruption">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,CorruptorDamagingCorruption"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@Attack"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@SoundImpact"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@SoundLaunch"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@SoundLoop"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@Missile"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@Model"/>
+        <DataRecord Entry="Actor,CorruptorDamagingCorruption@Range"/>
+        <DataRecord Entry="Behavior,CorruptorDamagingCorruption"/>
+        <DataRecord Entry="Button,CorruptorDamagingCorruption"/>
+        <DataRecord Entry="Effect,CorruptorDamagingCorruption@AB"/>
+        <DataRecord Entry="Effect,CorruptorDamagingCorruption@CP"/>
+        <DataRecord Entry="Effect,CorruptorDamagingCorruption@LM"/>
+        <DataRecord Entry="Effect,CorruptorDamagingCorruption@Damage"/>
+        <DataRecord Entry="Unit,CorruptorDamagingCorruption@Weapon"/>
+        <DataRecord Entry="Accumulator,CorruptorDamagingCorruption@Min"/>
+        <DataRecord Entry="Accumulator,CorruptorDamagingCorruption@Damage"/>
+        <DataRecord Entry="Accumulator,CorruptorDamagingCorruption@DamageAccumulator"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="DecayOffCreep">
+        <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
+        <DataRecord Entry="Behavior,DecayOffCreep"/>
+        <DataRecord Entry="Effect,DecayOffCreep@Damage"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="LarvaPlaceholder">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,LarvaPlaceholder"/>
+        <DataRecord Entry="Unit,LarvaPlaceholder"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="MedicDefensiveMatrix">
+        <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,MedicDefensiveMatrix"/>
+        <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundDeath"/>
+        <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundStart"/>
+        <DataRecord Entry="Actor,MedicDefensiveMatrix@Model"/>
+        <DataRecord Entry="Behavior,MedicDefensiveMatrix"/>
+        <DataRecord Entry="Button,MedicDefensiveMatrix"/>
+        <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
+        <DataRecord Entry="Effect,MedicDefensiveMatrix@Set"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="SpawnLarvaSolo">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,SpawnLarvaSolo"/>
+        <DataRecord Entry="Actor,SpawnLarvaSolo@Missile"/>
+        <DataRecord Entry="Actor,SpawnLarvaSolo@Attack"/>
+        <DataRecord Entry="Actor,SpawnLarvaSolo@SoundImpact"/>
+        <DataRecord Entry="Actor,SpawnLarvaSolo@SoundLaunch"/>
+        <DataRecord Entry="Button,SpawnLarvaSolo"/>
+        <DataRecord Entry="Effect,SpawnLarvaSolo@ABConjoined"/>
+        <DataRecord Entry="Effect,SpawnLarvaSolo@CU"/>
+        <DataRecord Entry="Effect,SpawnLarvaSolo@SetCreatePlaceholder"/>
+        <DataRecord Entry="Effect,SpawnLarvaSolo@LM"/>
+        <DataRecord Entry="Effect,SpawnLarvaSolo@SetImpact"/>
+        <DataRecord Entry="Effect,SpawnLarvaSolo@CUPlaceholder"/>
+        <DataRecord Entry="Unit,SpawnLarvaSolo@Missile"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="TownHallLoad">
+        <EditorCategories value="DataGroup:Ability,Race:Neutral"/>
+        <DataRecord Entry="Abil,TownHallLoad"/>
+        <DataRecord Entry="Behavior,TownHallLoad@BaseAttackSpeed"/>
+        <DataRecord Entry="Behavior,TownHallLoad@AttackSpeed"/>
+        <DataRecord Entry="Button,TownHallLoad@Load"/>
+        <DataRecord Entry="Button,TownHallLoad@UnloadAll"/>
+        <DataRecord Entry="Effect,TownHallLoad@ABAttackSpeed"/>
+        <DataRecord Entry="Effect,TownHallLoad@RBAttackSpeed"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="WeaponKD8Charge">
+        <EditorCategories value="DataGroup:Weapon,Race:Terran,ObjectType:Projectile"/>
+        <DataRecord Entry="Effect,WeaponKD8Charge@DamageDummy"/>
+        <DataRecord Entry="Effect,WeaponKD8Charge@MUCooldown"/>
+        <DataRecord Entry="Effect,WeaponKD8Charge@SetAttackCast"/>
+        <DataRecord Entry="Effect,WeaponKD8Charge@Switch"/>
+        <DataRecord Entry="Validator,WeaponKD8Charge@NotOnCooldown"/>
+        <DataRecord Entry="Weapon,WeaponKD8Charge"/>
+        <Button value="KD8Charge"/>
+        <TechInfoAbil value="KD8Charge"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="MorphToNeosteelBunker">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,MorphToNeosteelBunker"/>
+        <DataRecord Entry="Behavior,MorphToNeosteelBunker@Morphing"/>
+        <DataRecord Entry="Button,MorphToNeosteelBunker"/>
+        <DataRecord Entry="Effect,MorphToNeosteelBunker@ABMorphing"/>
+        <DataRecord Entry="Effect,MorphToNeosteelBunker@Set"/>
+        <DataRecord Entry="Effect,MorphToNeosteelBunker@RBMorphing"/>
+        <DataRecord Entry="Validator,MorphToNeosteelBunker@NotMorphing"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="NeosteelBunkerTransport">
+        <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,NeosteelBunkerTransport"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="TransientFighterMode">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,TransientFighterMode"/>
+        <DataRecord Entry="Actor,TransientFighterMode@ModelMorph"/>
+        <DataRecord Entry="Behavior,TransientFighterMode@DisableAttack"/>
+        <DataRecord Entry="Effect,TransientFighterMode@SetInitial"/>
+        <DataRecord Entry="Effect,TransientFighterMode@ABDisableWeapons"/>
+        <DataRecord Entry="Effect,TransientFighterMode@ABHeight"/>
+        <DataRecord Entry="Effect,TransientFighterMode@RBHeight"/>
+        <DataRecord Entry="Effect,TransientFighterMode@CP"/>
+        <DataRecord Entry="Effect,TransientFighterMode@SetFinal"/>
+        <DataRecord Entry="Effect,TransientFighterMode@SetExpire"/>
+        <DataRecord Entry="Effect,TransientFighterMode@IO"/>
+        <DataRecord Entry="Effect,TransientFighterMode@RBDisableWeapons"/>
+        <DataRecord Entry="Behavior,TransientFighterMode@Height"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="TransientAssaultMode">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,TransientAssaultMode"/>
+        <DataRecord Entry="Actor,TransientAssaultMode@ModelMorph"/>
+        <DataRecord Entry="Behavior,TransientAssaultMode@DisableAttack"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@SetInitial"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@ABDisableWeapons"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@ABHeight"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@RBHeight"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@CP"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@SetFinal"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@SetExpire"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@IO"/>
+        <DataRecord Entry="Effect,TransientAssaultMode@RBDisableWeapons"/>
+        <DataRecord Entry="Behavior,TransientAssaultMode@Height"/>
+        <DataRecord Entry="Validator,TransientAssaultMode@PlacementCheck"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="TransientRepairDrone">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,TransientRepairDrone"/>
+        <DataRecord Entry="Actor,TransientRepairDrone@ModelMorph"/>
+        <DataRecord Entry="Behavior,TransientRepairDrone@DisableAttack"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@SetInitial"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@ABDisableWeapons"/>
+        <DataRecord Entry="Effect,OrbitalCommandCalldownRepairDrone@ABHeight"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@RBHeight"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@CP"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@SetFinal"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@SetExpire"/>
+        <DataRecord Entry="Effect,OrbitalCommandCalldownRepairDrone@IO"/>
+        <DataRecord Entry="Effect,TransientRepairDrone@RBDisableWeapons"/>
+        <DataRecord Entry="Behavior,TransientRepairDrone@Height"/>
+    </CDataCollectionAbil>
+</Catalog>

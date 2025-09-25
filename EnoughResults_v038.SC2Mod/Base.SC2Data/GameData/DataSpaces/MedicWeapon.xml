@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="MedicP45GaussPistol@Damage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CActorAction id="MedicP45GaussPistol@Attack" parent="GenericAttack" effectAttack="MedicP45GaussPistol@Damage">
+        <LaunchAttachQuery Methods="AMPatternReaper"/>
+        <LaunchAssets Model="ReaperAttackLaunch" Sound="Reaper_AttackLaunch"/>
+        <ContainerAssets Model="ReaperBunkerAttackLaunch" Sound="Reaper_BunkerAttackLaunch"/>
+        <ImpactMap index="None" Model="ReaperAttackImpact" Sound="Reaper_AttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactPhysics Name="BulletImpact" MatchKeys="Basic" Physics="ReaperAttackDeathForce"/>
+    </CActorAction>
+    <CWeaponLegacy id="MedicP45GaussPistol">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="MedicP45GaussPistol@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.6"/>
+        <DamagePoint value="0.125"/>
+        <Backswing value="0.75"/>
+        <Effect value="MedicP45GaussPistol@Damage"/>
+        <Range value="6"/>
+    </CWeaponLegacy>
+    <CDataCollectionAbil id="MedicP45GaussPistol">
+        <EditorCategories value="DataGroup:Weapon,Race:Terran"/>
+        <DataRecord Entry="Actor,MedicP45GaussPistol@Attack"/>
+        <DataRecord Entry="Effect,MedicP45GaussPistol@Damage"/>
+        <DataRecord Entry="Weapon,MedicP45GaussPistol"/>
+    </CDataCollectionAbil>
+</Catalog>

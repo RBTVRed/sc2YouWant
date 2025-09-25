@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBTimer">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="AdeptPhaseShiftManual@Timer"/>
+    </CEffectRemoveBehavior>
+    <CEffectSwitch id="AdeptPhaseShiftManual@SwitchFinal">
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="AdeptPhaseShiftManual@TargetPhaseShifting" Effect="AdeptPhaseShiftManual@SetTeleport"/>
+        <CaseDefault value="AdeptPhaseShiftManual@SetFinal"/>
+    </CEffectSwitch>
+    <CEffectSet id="AdeptPhaseShiftManual@SetCasterFinal">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBCaster"/>
+    </CEffectSet>
+    <CEffectEnumTrackedUnits id="AdeptPhaseShiftManual@ETUCancelCaster">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="AdeptPhaseShiftManual@UT"/>
+        <Effect value="AdeptPhaseShiftManual@SetCancel"/>
+    </CEffectEnumTrackedUnits>
+    <CEffectAddTrackedUnit id="AdeptPhaseShiftManual@ATUCaster">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="AdeptPhaseShiftManual@UT"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBPhaseShift">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="AdeptPhaseShiftManual"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="AdeptPhaseShiftManual@SetCancel">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBPhaseShift"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="AdeptPhaseShiftManual@IOMove">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="move"/>
+        <Target Effect="AdeptPhaseShiftManual@CU" Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="AdeptPhaseShiftManual@Kill">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Effect="AdeptPhaseShiftManual@ABTimer" Value="TargetUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="AdeptPhaseShiftManual@CU">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="PlacementIgnoreBlockers" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="AdeptPhaseShiftManual@SetCreate"/>
+        <SpawnUnit value="AdeptPhaseShift"/>
+        <SpawnRange value="1"/>
+    </CEffectCreateUnit>
+    <CEffectModifyUnit id="AdeptPhaseShiftManual@MUCopySelection">
+        <ImpactUnit Value="Caster"/>
+        <SelectTransferUnit Effect="AdeptPhaseShiftManual@ABTimer" Value="Target"/>
+        <SelectTransferFlags index="DeselectSource" value="1"/>
+        <SelectTransferFlags index="IncludeControlGroups" value="1"/>
+        <FacingLocation Effect="AdeptPhaseShiftManual@SetTeleport" Value="SourceUnit"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="AdeptPhaseShiftManual@ABCaster">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AdeptPhaseShiftManual@Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBCaster">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="AdeptPhaseShiftManual@Caster"/>
+    </CEffectRemoveBehavior>
+    <CEffectModifyUnit id="AdeptPhaseShiftManual@MUCopyOrderQueue">
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchUnit Effect="AdeptPhaseShiftManual@SetTeleport"/>
+        <ImpactUnit Value="Caster"/>
+        <CopyOrderCount value="50"/>
+        <CopyRallyCount value="50"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="AdeptPhaseShiftManual@SetInitial">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@ABCaster"/>
+        <EffectArray value="AdeptPhaseShiftManual@CU"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="AdeptPhaseShiftManual@ABTimer">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="AdeptPhaseShiftManual@Timer"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AdeptPhaseShiftManual@SetRemoveDisables">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBNeuralParasite"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBMothershipRecalled"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBMothershipRecalling"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBFungalGrowth"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBFungalGrowthMovement"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBGravitonBeam"/>
+        <EffectArray value="PhaseStasisTrapRemove"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="AdeptPhaseShiftManual@ABTarget">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="AdeptPhaseShiftManual"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AdeptPhaseShiftManual@SetCreate">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@ABTarget"/>
+        <EffectArray value="AdeptPhaseShiftManual@ABTimer"/>
+        <EffectArray value="AdeptPhaseShiftManual@IOMove"/>
+        <EffectArray value="AdeptPhaseShiftManual@ATUCaster"/>
+        <EffectArray value="KillsToCaster"/>
+    </CEffectSet>
+    <CEffectTeleport id="AdeptPhaseShiftManual@Teleport">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <MinDistance value="0"/>
+        <TargetLocation Value="TargetPoint"/>
+    </CEffectTeleport>
+    <CEffectDestroyPersistent id="AdeptPhaseShiftManual@RBGravitonBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Effect="AdeptPhaseShiftManual@ABTimer"/>
+        <Effect value="GravitonBeam"/>
+        <Count value="1"/>
+        <Radius value="1"/>
+    </CEffectDestroyPersistent>
+    <CEffectSet id="AdeptPhaseShiftManual@SetTeleport">
+        <ValidatorArray value="AdeptPhaseShiftManual@TargetPhaseShifting"/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@SetRemoveDisables"/>
+        <EffectArray value="AdeptPhaseShiftManual@MUCopySelection"/>
+        <EffectArray value="AdeptPhaseShiftManual@Teleport"/>
+        <EffectArray value="AdeptPhaseShiftManual@MUCopyOrderQueue"/>
+        <EffectArray value="AdeptPhaseShiftManual@Kill"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBCaster"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBFungalGrowth">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="AdeptPhaseShiftManual@ABTimer" Value="Caster"/>
+        <BehaviorLink value="FungalGrowth"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBMothershipRecalled">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="AdeptPhaseShiftManual@ABTimer" Value="Caster"/>
+        <BehaviorLink value="MothershipRecalled"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBMothershipRecalling">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="AdeptPhaseShiftManual@ABTimer" Value="Caster"/>
+        <BehaviorLink value="MothershipRecalling"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBNeuralParasite">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="AdeptPhaseShiftManual@ABTimer" Value="Caster"/>
+        <BehaviorLink value="NeuralParasite"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBFungalGrowthMovement">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="AdeptPhaseShiftManual@ABTimer" Value="Caster"/>
+        <BehaviorLink value="FungalGrowthMovement"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="AdeptPhaseShiftManual@SetFinal">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AdeptPhaseShiftManual@RBCaster"/>
+        <EffectArray value="AdeptPhaseShiftManual@Kill"/>
+    </CEffectSet>
+    <CAbilSpecialize id="AdeptPhaseShiftManual@EndTarget">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DataCollection value="AdeptPhaseShiftManual@End"/>
+        <InfoArray index="Specialize1" Effect="AdeptPhaseShiftManual@RBTimer">
+            <Button DefaultButtonFace="AdeptPhaseShiftManual@Teleport"/>
+        </InfoArray>
+        <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@RBPhaseShift">
+            <Button DefaultButtonFace="AdeptPhaseShiftManual@Cancel"/>
+        </InfoArray>
+        <Flags index="Transient" value="1"/>
+    </CAbilSpecialize>
+    <CAbilSpecialize id="AdeptPhaseShiftManual@End">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <InfoArray index="Specialize1" Effect="AdeptPhaseShiftManual@SetCasterFinal">
+            <Button DefaultButtonFace="AdeptPhaseShiftManual@Teleport" Requirements="AdeptPhaseShiftManual@Casting"/>
+        </InfoArray>
+        <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@ETUCancelCaster">
+            <Button DefaultButtonFace="AdeptPhaseShiftManual@Cancel" Requirements="AdeptPhaseShiftManual@Casting"/>
+        </InfoArray>
+        <Flags index="Transient" value="1"/>
+    </CAbilSpecialize>
+    <CAbilEffectTarget id="AdeptPhaseShiftManual">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="AdeptPhaseShiftManual@SetInitial"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost>
+            <Charge Link="Abil/AdeptPhaseShift"/>
+            <Cooldown Link="Abil/AdeptPhaseShift" TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AdeptPhaseShiftManual">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CValidatorUnitCompareBehaviorCount id="AdeptPhaseShiftManual@TargetPhaseShifting">
+        <Compare value="GT"/>
+        <Behavior value="AdeptPhaseShiftManual"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="AdeptPhaseShiftManual@CasterPhaseShifting">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="AdeptPhaseShiftManual@Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CRequirement id="AdeptPhaseShiftManual@Casting">
+        <EditorCategories value="Race:Protoss"/>
+        <NodeArray index="Show" Link="CountBehaviorAdeptPhaseShiftManual@CasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CButton id="AdeptPhaseShiftManual" upgradeValidator="CRPGAbilityUpgradeSecondary@Upgraded">
+        <Name value="Button/Name/AdeptPhaseShift"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-psionictransfer.dds"/>
+        <AlertName value="Button/Name/AdeptPhaseShift"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psionictransfer.dds"/>
+        <Hotkey value="Button/Hotkey/AdeptPhaseShift"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="AdeptPhaseShift"/>
+        <HotkeySet value="PhaseShift"/>
+    </CButton>
+    <CButton id="AdeptPhaseShiftManual@Teleport" upgradeValidator="CRPGAbilityUpgradeSecondary@Upgraded">
+        <Icon value="Assets\Textures\btn-ability-protoss-resurgence.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-resurgence.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeySet value="PhaseShift"/>
+    </CButton>
+    <CButton id="AdeptPhaseShiftManual@Cancel" parent="Cancel" upgradeValidator="CRPGAbilityUpgradePrimary@Upgraded">
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
+    <CRequirementCountBehavior id="CountBehaviorAdeptPhaseShiftManual@CasterCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AdeptPhaseShiftManual@Caster" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CActorSound id="AdeptPhaseShiftManual@SoundTeleport" parent="SoundOneShot">
+        <On Terms="Effect.AdeptPhaseShiftManual@Teleport.Start; At Effect" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOriginStationary"/>
+        <Sound value="Adept_PsionicTransferEnd"/>
+    </CActorSound>
+    <CActorModel id="AdeptPhaseShiftManual@ModelTeleport" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.AdeptPhaseShiftManual@Teleport.Start; At Effect" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOriginStationary"/>
+        <Model value="AdeptSpiritOut"/>
+    </CActorModel>
+    <CActorSound id="AdeptPhaseShiftManual@SoundLaunch" parent="SoundOneShot">
+        <On Terms="Abil.AdeptPhaseShiftManual.SourceCastStart" Send="Create"/>
+        <Sound value="Adept_PsionicTransferLaunch"/>
+    </CActorSound>
+    <CDataCollectionAbil id="AdeptPhaseShiftManual">
+        <EditorCategories value="DataGroup:Ability,Race:Protoss,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,AdeptPhaseShiftManual"/>
+        <DataRecord Entry="Abil,AdeptPhaseShiftManual@End"/>
+        <DataRecord Entry="Abil,AdeptPhaseShiftManual@EndTarget"/>
+        <DataRecord Entry="Actor,AdeptPhaseShiftManual@SoundTeleport"/>
+        <DataRecord Entry="Actor,AdeptPhaseShiftManual@ModelTeleport"/>
+        <DataRecord Entry="Actor,AdeptPhaseShiftManual@SoundLaunch"/>
+        <DataRecord Entry="Behavior,AdeptPhaseShiftManual@UT"/>
+        <DataRecord Entry="Behavior,AdeptPhaseShiftManual@Timer"/>
+        <DataRecord Entry="Behavior,AdeptPhaseShiftManual"/>
+        <DataRecord Entry="Behavior,AdeptPhaseShiftManual@Caster"/>
+        <DataRecord Entry="Button,AdeptPhaseShiftManual"/>
+        <DataRecord Entry="Button,AdeptPhaseShiftManual@Teleport"/>
+        <DataRecord Entry="Button,AdeptPhaseShiftManual@Cancel"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBTimer"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SwitchFinal"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetTeleport"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetFinal"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RTU"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@IOCancel"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetCasterFinal"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBCaster"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@ETUCancelCaster"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetCancel"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@ATUCaster"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBPhaseShift"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@IOMove"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@CU"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@Kill"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@ABTimer"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetCreate"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@MUCopySelection"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@ABCaster"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@MUCopyOrderQueue"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetInitial"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetRemoveDisables"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBNeuralParasite"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBMothershipRecalled"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBMothershipRecalling"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBFungalGrowth"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBFungalGrowthMovement"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBGravitonBeam"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@ABTarget"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@Teleport"/>
+        <DataRecord Entry="Requirement,AdeptPhaseShiftManual@Casting"/>
+        <DataRecord Entry="Validator,AdeptPhaseShiftManual@TargetPhaseShifting"/>
+        <DataRecord Entry="Validator,AdeptPhaseShiftManual@CasterPhaseShifting"/>
+    </CDataCollectionAbil>
+    <CBehaviorUnitTracker id="AdeptPhaseShiftManual@UT">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="AdeptPhaseShiftManual">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Modification>
+            <StateFlags index="Benign" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressPassenger" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AdeptPhaseShiftManual@Caster">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <DisableValidatorArray value="NotBeingAbducted"/>
+        <DisableValidatorArray value="KD8CasterKnockingBack"/>
+        <Duration value="10.0625"/>
+        <FinalEffect value="AdeptPhaseShiftManual@SetCasterFinal"/>
+        <ExpireEffect value="AdeptPhaseShiftManual@RBPhaseShift"/>
+        <Modification>
+            <StateFlags index="SuppressPassenger" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AdeptPhaseShiftManual@Timer">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <DisableValidatorArray value="CasterNotAbducted"/>
+        <DisableValidatorArray value="KD8CasterKnockingBack"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <RemoveValidatorArray value="AdeptPhaseShiftManual@CasterPhaseShifting"/>
+        <RemoveValidatorArray value="AdeptPhaseShiftManual@TargetPhaseShifting"/>
+        <RemoveValidatorArray value="CasterIsNotRecallingNexus"/>
+        <RemoveValidatorArray value="CasterIsNotHidden"/>
+        <RemoveValidatorArray value="CasterIsNotMothershipMassRecalling"/>
+        <Duration value="10.0625"/>
+        <FinalEffect value="AdeptPhaseShiftManual@SwitchFinal"/>
+        <Period value="10"/>
+        <PeriodicEffect value="AdeptPhaseShiftManual@RBPhaseShift"/>
+    </CBehaviorBuff>
+</Catalog>

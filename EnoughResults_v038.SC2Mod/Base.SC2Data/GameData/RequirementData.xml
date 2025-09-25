@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="LearnBarrierDurationResearch">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeBarrierDurationResearchQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LiftOffResearch">
+        <NodeArray index="Use" Link="CountUpgradeLiftOffResearchCompleteOnly46636824"/>
+    </CRequirement>
+    <CRequirement id="CreepTumorNotExhausted">
+        <NodeArray index="Use" Link="CountBehaviorCreepTumorNotExhaustedCompleteOnlyAtUnit1036107909"/>
+    </CRequirement>
+    <CRequirement id="CurrentlyUnleashNydus">
+        <NodeArray index="Use" Link="CountBehaviorUnleashCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="DragonflyWings">
+        <EditorCategories value="Race:Zerg"/>
+        <NodeArray index="Use" Link="CountUnitHiveCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonflyWingsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HasAbsortionShield">
+        <NodeArray index="Show" Link="CountBehaviorAbsorptionShieldCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="DoesNothaveAbsortionShield">
+        <NodeArray index="Use" Link="NotCountBehaviorAbsorptionShieldCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HatcherySpawnMutantLarva">
+        <NodeArray index="Use" Link="CountUnitHatcheryCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HaveFusionCore">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitFusionCoreCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveLairOrHive">
+        <EditorCategories value="Race:Zerg,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="Or2508361961TechTreeCheatCountUnitLairCompleteOnlyCountUnitHiveCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LairSpawnMutantLarva">
+        <EditorCategories value="Race:Zerg,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitLairCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="GTCountBehaviorQueenSpawnLarvaCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="HaveEnhancedShieldWeave">
+        <NodeArray index="Use" Link="CountUpgradeEnergyBinderCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="IsHive">
+        <EditorCategories value="Race:Zerg,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitHiveCompleteOnlyAtUnit3846943109TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="Ishatchery">
+        <EditorCategories value="Race:Zerg,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitAlias_HatcheryCompleteOnlyAtUnit3846943109TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="IsLair">
+        <EditorCategories value="Race:Zerg,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitAlias_LairCompleteOnlyAtUnit3846943109TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HiveSpawnMutantLarva">
+        <EditorCategories value="Race:Zerg,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitHiveCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="GTCountBehaviorQueenSpawnLarvaCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="LearnCloakingFieldCyclone">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Show" Link="NotCountUpgradeCycloneCloakQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnDrillingClaws">
+        <NodeArray index="Use" Link=""/>
+    </CRequirement>
+    <CRequirement id="LearnEnhancedShieldWeave">
+        <EditorCategories value="Race:Protoss"/>
+        <NodeArray index="Show" Link="NotCountUpgradeEnergyBinderQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnEvolveFrenzy">
+        <NodeArray index="Use" Link="Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228"/>
+    </CRequirement>
+    <CRequirement id="LearnEvolveGroovedSpines">
+        <NodeArray index="Use" Link="Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228"/>
+    </CRequirement>
+    <CRequirement id="LearnEvolveMuscularAugments">
+        <NodeArray index="Use" Link="Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228"/>
+    </CRequirement>
+    <CRequirement id="LearnGenerateCreep">
+        <NodeArray index="Use" Link="OrTechTreeCheatCountUnitLairCompleteOnlyCountUnitHiveCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeGenerateCreepQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnGlialReconstitution">
+        <NodeArray index="Use" Link="Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228"/>
+    </CRequirement>
+    <CRequirement id="LearnInfestorEnergyUpgrade2">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeKhaydarinCoreQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnLiberatorRange">
+        <NodeArray index="Use" Link=""/>
+    </CRequirement>
+    <CRequirement id="LearnMuscularAugments">
+        <NodeArray index="Use" Link="Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnReaperJump">
+        <NodeArray index="Use" Link="CountUnitEngineeringBayCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeReaperJumpQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnTunnelingClaws">
+        <NodeArray index="Use" Link="Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228"/>
+    </CRequirement>
+    <CRequirement id="LearnVikingFighterMode">
+        <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeVikingFighterModeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LiftOffResearchQueue">
+        <NodeArray index="Show" Link="NotCountUpgradeLiftOffResearchQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LockedOn2">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorChannelSnipeCombatCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NeosteelBunker">
+        <NodeArray index="Show" Link="NotCountBehaviorTransformtoNeosteelBunkerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="LearnTransformationServos">
+        <NodeArray index="Use" Link=""/>
+    </CRequirement>
+    <CRequirement id="ObeliskHardenedShield">
+        <NodeArray index="Use" Link="CountBehaviorObeliskHardenedShieldCompleteOnlyAtUnit3482060043"/>
+    </CRequirement>
+    <CRequirement id="ObeliskSlowSearcher">
+        <NodeArray index="Use" Link="CountBehaviorObeliskSlowSearcherCompleteOnlyAtUnit4152956742"/>
+    </CRequirement>
+    <CRequirement id="QueenOnCreep">
+        <NodeArray index="Use" Link=""/>
+    </CRequirement>
+    <CRequirement id="ShowCancelPrismaticAlignment">
+        <NodeArray index="Show" Link="CountBehaviorVoidRaySwarmDamageBoostCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ShowDisableAfterburners">
+        <NodeArray index="Show" Link="CountBehaviorMedivacSpeedBoostCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ShowAfterburners">
+        <NodeArray index="Show" Link="NotCountBehaviorMedivacSpeedBoostCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="SwarmHostisBurrowed">
+        <NodeArray index="Use" Link="CountBehaviorSwarmHostisBurrowedCompleteOnlyAtUnit80327250"/>
+    </CRequirement>
+    <CRequirement id="InfestorisBurrowed">
+        <NodeArray index="Use" Link="CountBehaviorInfestorIsBurrowedCompleteOnlyAtUnit455390697"/>
+    </CRequirement>
+    <CRequirement id="UseBurrow">
+        <NodeArray index="Use" Link="CountUpgradeBurrowCompleteOnly3320731885TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseCloakingFieldCyclone">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeCycloneCloakCompleteOnly3581356546TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseFighterMode">
+        <NodeArray index="Use" Link="CountUpgradeVikingFighterModeCompleteOnly720470553"/>
+    </CRequirement>
+    <CRequirement id="UseGenerateCreep">
+        <NodeArray index="Use" Link="CountUpgradeGenerateCreepCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UseGlialReconstitution">
+        <EditorCategories value="Race:Zerg,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeGlialReconstitutionCompleteOnly4196384071TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseHunterSeekerMissiles">
+        <NodeArray index="Use" Link="CountUpgradeHunterSeekerCompleteOnly1762983323TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseOverseerMorph">
+        <NodeArray index="Use" Link="Or556944322TechTreeCheatCountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseTransformationServos" parent="LearnTransformationServos">
+        <NodeArray index="Use" Link="CountUpgradeTransformationServosCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link=""/>
+    </CRequirement>
+</Catalog>

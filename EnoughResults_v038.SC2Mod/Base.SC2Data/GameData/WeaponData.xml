@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="90mmCannons">
+        <Period value="1.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="90mmCannonsFake">
+        <Period value="1.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ATALaserBattery">
+        <Period value="0.45"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ATSLaserBattery">
+        <Period value="0.45"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSpew">
+        <Range value="8"/>
+        <Period value="0.6"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSpines"/>
+    <CWeaponLegacy id="Adept">
+        <Period value="2.4"/>
+    </CWeaponLegacy>
+    <!--                                                                                         -->
+    <!-- Arbiter ............................................................................... -->
+    <!--                                                                                         -->
+    <CWeaponLegacy id="ArbiterMPWeapon">
+        <Period value="2.5"/>
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BacklashRockets">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.7"/>
+        <MinScanRange value="4"/>
+        <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingEscort">
+        <Range value="10"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingStrike">
+        <Range value="11.5"/>
+        <MinScanRange value="11.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="C10CanisterRifle">
+        <Range value="9"/>
+        <Period value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CrucioShockCannon">
+        <Range value="14"/>
+        <Period value="6"/>
+        <MinimumRange value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HighTemplarWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="2.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HighTemplarWeaponInstant">
+        <Name value="Weapon/Name/PsiBlast"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="HighTemplarWeaponInstant@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="7"/>
+        <Period value="2.5"/>
+        <Effect value="HighTemplarWeaponInstant@Set"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MothershipCoreWeapon2">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MothershipCoreWeaponDamage2"/>
+        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <Period value="2.2"/>
+        <Effect value="MothershipCoreWeaponLM2"/>
+        <AllowedMovement value="Slowing"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingShot">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="BroodlingShotD"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Arc value="360"/>
+        <Period value="2.2"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.5607"/>
+        <Effect value="BroodlingShotLM"/>
+    </CWeaponLegacy>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- SC 1 Unit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Corsair ............................................................................... -->
+    <!--                                                                                         -->
+    <CWeaponLegacy id="NeutronFlare">
+        <AllowedMovement value="Slowing"/>
+        <Period value="0.7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ParasiteSpore">
+        <Range value="5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CommandTurret">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
+        <DisplayEffect value="CommandBeam"/>
+        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Period value="2.2"/>
+        <Effect value="CommandBeam"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+        <RandomDelayMin value="0.1"/>
+        <RandomDelayMax value="0.4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NexusDefenseBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ParticleBeam2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.5"/>
+        <Effect value="ParticleBeam2"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TwinGatlingCannon">
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WeaponKD8Charge">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
+        <DisplayEffect value="KD8ChargeExplodeDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="0.5"/>
+        <Effect value="WeaponKD8Charge@Switch"/>
+        <MinimumRange value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Firebat">
+        <Period value="2.4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HydraliskMelee">
+        <Period value="1.4"/>
+        <DamagePoint value="0.05"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ImpalerTentacle">
+        <Range value="8"/>
+        <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfestedGuassRifle">
+        <Period value="0.923"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="IonCannons">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.95"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LanzerTorpedoesGround">
+        <Name value="Weapon/Name/LanzerTorpedoes"/>
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="LanzerTorpedoesDamage"/>
+        <DisplayAttackCount value="2"/>
+        <DisplayName value="Weapon/Name/LanzerTorpedoes"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="2"/>
+        <DamagePoint value="0.05"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LiberatorMissileLaunchers">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="RequireEnabledAttackAbil" value="0"/>
+        <Arc value="360"/>
+        <Period value="0.8"/>
+        <AllowedMovement value="Moving"/>
+        <DisplayAttackCount value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LocustMP">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LongboltMissile">
+        <Range value="8"/>
+        <Period value="0.9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LurkerMP">
+        <Range value="9"/>
+        <Period value="2.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleClaws"/>
+    <CWeaponLegacy id="NeedleSpines">
+        <Period value="1.4"/>
+        <DamagePoint value="0.05"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="P38ScytheGuassPistol">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseDisruptors">
+        <Period value="2.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RavagerWeapon">
+        <Period value="2.4"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SingleP45GuassPistol">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="SingleP45GaussPistolDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0.75"/>
+        <Effect value="SingleP45GaussPistolCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TempestGround">
+        <Period value="4.2"/>
+        <MinScanRange value="11.5"/>
+        <Range value="11"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThermalLance">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ThermalLanceDamageAir"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Range value="6"/>
+        <RangeSlop value="10"/>
+        <TeleportResetRange value="0"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="ThermalLanceCPInUse"/>
+        <AllowedMovement value="Moving"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GuassRifle">
+        <Period value="0.923"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InterceptorLaunch">
+        <Range value="10"/>
+        <Period value="0.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LanceMissileLaunchers">
+        <Range value="14"/>
+        <!--Effect value="LanceMissileLaunchersLaunchMissile"/-->
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LanzerTorpedoes">
+        <Range value="8"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LiberatorAGWeapon">
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="16"/>
+        <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Oracle">
+        <Options index="Disabled" value="0"/>
+        <Period value="0.63"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon">
+        <Range value="8"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tempest">
+        <Range value="11"/>
+        <Period value="4.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThermalLanceExtended">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ThermalLanceDamageAir"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Range value="8"/>
+        <RangeSlop value="12"/>
+        <TeleportResetRange value="0"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="ThermalLanceCPInUse"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThorsHammer">
+        <Period value="4"/>
+        <Range value="6"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TwinIbiksCannon">
+        <Range value="7"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Period value="3.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VoidRaySwarm">
+        <Range value="5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VolatileBurst"/>
+</Catalog>

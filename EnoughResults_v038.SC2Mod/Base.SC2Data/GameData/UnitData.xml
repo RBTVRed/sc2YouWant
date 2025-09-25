@@ -1,0 +1,2978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit default="1" id="BroodlingDefault">
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
+        <LifeRegenRate value="2"/>
+    </CUnit>
+    <CUnit id="Adept">
+        <LifeArmor value="0"/>
+        <ShieldsStart value="125"/>
+        <ShieldsMax value="125"/>
+        <ShieldArmor value="1"/>
+        <ShieldRegenDelay value="5"/>
+        <ShieldRegenRate value="5"/>
+        <Speed value="2.25"/>
+        <CostResource index="Minerals" value="150"/>
+        <AbilArray index="5" Link="AdeptPhaseShiftManual"/>
+        <AbilArray index="6" Link="AdeptPhaseShiftManual@End"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray Link="WarpingInDoubleDamageTaken"/>
+        <BehaviorArray Link="AdeptPhaseShiftManual@UT"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="AdeptPhaseShiftManual@Teleport" AbilCmd="AdeptPhaseShiftManual@End,Specialize1" Column="1"/>
+            <LayoutButtons index="6" Face="AdeptPhaseShiftManual@Cancel" AbilCmd="AdeptPhaseShiftManual@End,Specialize2"/>
+            <LayoutButtons index="8" Column="2"/>
+            <LayoutButtons Face="AdeptPhaseShift" Type="AbilCmd" AbilCmd="AdeptPhaseShiftManual,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.5625"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="AdeptPhaseShift">
+        <Sight value="7"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" AbilCmd="AdeptPhaseShiftManual@EndTarget,Specialize2"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="3"/>
+            <LayoutButtons Face="AdeptPhaseShiftManual@Teleport" Type="AbilCmd" AbilCmd="AdeptPhaseShiftManual@EndTarget,Specialize1" Row="2" Column="1"/>
+        </CardLayouts>
+        <AbilArray index="5" Link="AdeptPhaseShiftManual@EndTarget"/>
+        <AbilArray Link="SpreadOut"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
+        <LifeArmor value="0"/>
+        <ShieldsStart value="125"/>
+        <ShieldsMax value="125"/>
+        <ShieldArmor value="1"/>
+        <ShieldRegenDelay value="5"/>
+        <ShieldRegenRate value="10"/>
+        <BehaviorArray Link="Detector7"/>
+        <BehaviorArray Link="AdeptPhaseShiftManual@UT"/>
+    </CUnit>
+    <!--                                                                                         -->
+    <!-- Arbiter ........................................................................... -->
+    <!--                                                                                         -->
+    <CUnit id="ArbiterMP">
+        <ShieldsStart value="500"/>
+        <ShieldsMax value="500"/>
+        <ShieldRegenRate value="1.5"/>
+        <Sight value="10"/>
+        <Food value="-6"/>
+        <AbilArray index="4" Link="MothershipCoreMassRecall"/>
+        <AbilArray Link="MassCloakingField"/>
+        <AbilArray Link="TemporalField"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray index="0" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="MothershipCoreMassRecall" AbilCmd="MothershipCoreMassRecall,Execute" Column="2"/>
+            <LayoutButtons index="6" Face="MassCloakingField" AbilCmd="MassCloakingField,Execute"/>
+            <LayoutButtons Face="TemporalField" Type="AbilCmd" AbilCmd="TemporalField,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <EnergyStart value="75"/>
+        <Speed value="1.668"/>
+    </CUnit>
+    <CUnit id="Archon">
+        <ShieldsStart value="900"/>
+        <ShieldsMax value="900"/>
+        <ShieldArmor value="2"/>
+        <ShieldRegenRate value="5"/>
+        <Speed value="2.5"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray Link="ArchonMerging"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+    <!-- Balance change for balance patch of Nov 11th 2013 (combined Air/Ground vehicle upgrades)-->
+    <!-- Balance test 3/12 (separate Air/Ground vehicle upgrades)-->
+    <!-- Balance test 6/30 (combine Air/Ground mech armor upgrades)-->
+    <CUnit id="Armory">
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="200"/>
+    </CUnit>
+    <CUnit id="Assimilator">
+        <ShieldsStart value="900"/>
+        <ShieldsMax value="900"/>
+        <ShieldRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="AutoTurret">
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <Sight value="8"/>
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Baneling">
+        <Speed value="2.25"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="18" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="19" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="20" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+            <LayoutButtons index="31" removed="1"/>
+        </CardLayouts>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+        <Attributes index="Light" value="1"/>
+    </CUnit>
+    <CUnit id="BanelingBurrowed">
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Explode" AbilCmd="Explode,Execute" Column="0"/>
+            <LayoutButtons index="2" Face="BurrowUp" AbilCmd="BurrowBanelingUp,Execute" Column="4"/>
+            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="4" removed="1"/>
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+        </CardLayouts>
+        <LifeRegenRateCreep value="2"/>
+        <Sight value="4"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+    </CUnit>
+    <CUnit id="BanelingNest">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+    </CUnit>
+    <CUnit id="Banshee">
+        <Speed value="2.25"/>
+        <Acceleration value="2.625"/>
+        <Sight value="9"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <LifeStart value="280"/>
+        <LifeMax value="280"/>
+    </CUnit>
+    <CUnit id="Barracks">
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Face="Ghost" AbilCmd="BarracksTrain,Train3" Column="4"/>
+            <LayoutButtons index="3" Face="Rally" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons index="4" Face="Lift" AbilCmd="BarracksLiftOff,Execute" Row="2" Column="3"/>
+            <LayoutButtons index="5" Face="Halt" AbilCmd="BuildInProgress,Halt"/>
+            <LayoutButtons index="6" Face="Reactor" AbilCmd="BarracksAddOns,Build2" Column="1"/>
+            <LayoutButtons index="7" Face="TechLabBarracks" AbilCmd="BarracksAddOns,Build1" Column="0"/>
+            <LayoutButtons index="8" Face="Cancel" AbilCmd="que5,CancelLast" Column="4"/>
+            <LayoutButtons index="9" AbilCmd="BarracksAddOns,Halt"/>
+            <LayoutButtons index="10" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel"/>
+            <LayoutButtons index="11" Face="Reaper" AbilCmd="BarracksTrain,Train2" Row="0" Column="3"/>
+            <LayoutButtons index="12" Face="Firebat" AbilCmd="BarracksTrain,Train4"/>
+            <LayoutButtons Face="Medic" Type="AbilCmd" AbilCmd="BarracksTrain,Train5" Row="0" Column="2"/>
+        </CardLayouts>
+        <TechTreeProducedUnitArray index="1" value="Reaper"/>
+        <TechTreeProducedUnitArray index="2" value="Firebat"/>
+        <TechTreeProducedUnitArray index="3" value="Medic"/>
+        <TechTreeProducedUnitArray value="Ghost"/>
+    </CUnit>
+    <CUnit id="BarracksFlying">
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <Speed value="1.5"/>
+    </CUnit>
+    <CUnit id="BarracksReactor">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+    </CUnit>
+    <CUnit id="BarracksTechLab">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" Face="ResearchNitroPacks" AbilCmd="BarracksTechLabResearch,Research4"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
+    </CUnit>
+    <CUnit id="Battlecruiser">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Hyperjump" Type="AbilCmd" AbilCmd="Hyperjump,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Sight value="11"/>
+        <Speed value="1.668"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <EnergyStart value="75"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+    </CUnit>
+    <CUnit id="BroodLord">
+        <Speed value="2"/>
+        <Acceleration value="1.875"/>
+        <Sight value="11"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
+    </CUnit>
+    <CUnit id="Broodling">
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
+        <Speed value="2.125"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <LifeRegenRateCreep value="2"/>
+    </CUnit>
+    <CUnit id="BroodlingEscort">
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
+        <LifeRegenRate value="2"/>
+        <Speed value="2.125"/>
+    </CUnit>
+    <CUnit id="Bunker">
+        <LifeStart value="900"/>
+        <LifeMax value="900"/>
+        <AbilArray Link="MorphToNeosteelBunker"/>
+        <AbilArray Link="NeosteelBunkerTransport"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="10" Face="SelectBuilder" Type="SelectBuilder" AbilCmd="" Row="1" Column="3"/>
+            <LayoutButtons index="11" Face="CancelMutateMorph" Type="AbilCmd" AbilCmd="MorphToNeosteelBunker,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="MorphToNeosteelBunker" Type="AbilCmd" AbilCmd="MorphToNeosteelBunker,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="0"/>
+        <BehaviorArray Link="CargoTracker"/>
+        <LifeArmor value="2"/>
+    </CUnit>
+    <CUnit id="Carrier">
+        <ShieldsStart value="600"/>
+        <ShieldsMax value="600"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="1.668"/>
+        <Sight value="11"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Changeling">
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
+        </CardLayouts>
+        <Speed value="2"/>
+    </CUnit>
+    <CUnit id="ChangelingMarine">
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <MinimapRadius value="0.4375"/>
+        <Sight value="7"/>
+        <Speed value="2"/>
+        <LifeStart value="90"/>
+        <LifeMax value="90"/>
+    </CUnit>
+    <CUnit id="ChangelingMarineShield">
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <Speed value="2"/>
+        <LifeStart value="115"/>
+        <LifeMax value="115"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="ChangelingZealot">
+        <ShieldsStart value="200"/>
+        <ShieldsMax value="200"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2"/>
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
+        </CardLayouts>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="ChangelingZergling">
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <MinimapRadius value="0.4375"/>
+        <Speed value="2.6015"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="ChangelingZerglingWings">
+        <BehaviorArray Link="Detector7"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <MinimapRadius value="0.4375"/>
+        <Speed value="4.1601"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="Colossus">
+        <Collide index="ForceField" value="1"/>
+        <ShieldsStart value="500"/>
+        <ShieldsMax value="500"/>
+        <ShieldRegenRate value="2.5"/>
+        <Speed value="2"/>
+        <Sight value="12"/>
+        <AbilArray Link="SpreadOut"/>
+        <WeaponArray index="0" Link="ThermalLance"/>
+        <WeaponArray Link="ThermalLanceExtended" Turret="Colossus"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="1.125"/>
+        <CargoSize value="4"/>
+        <MinimapRadius value="1.125"/>
+    </CUnit>
+    <CUnit id="CommandCenter">
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <Food value="12"/>
+        <AbilArray index="4" Link="CommandCenterLiftOff"/>
+        <AbilArray index="5" Link="UpgradeToPlanetaryFortress"/>
+        <AbilArray index="6" Link="UpgradeToOrbital"/>
+        <AbilArray index="7" Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="TownHallLoad"/>
+        <WeaponArray Link="CommandTurret"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Row="2" Column="0"/>
+            <LayoutButtons index="2" Row="2" Column="1"/>
+            <LayoutButtons index="4" Face="Lift" AbilCmd="CommandCenterLiftOff,Execute" Row="0" Column="2"/>
+            <LayoutButtons index="5" Face="Halt" AbilCmd="BuildInProgress,Halt" Row="0" Column="2"/>
+            <LayoutButtons index="6" Face="Cancel" AbilCmd="que5CancelToSelection,CancelLast" Column="4"/>
+            <LayoutButtons index="7" Face="CancelUpgradeMorph" AbilCmd="UpgradeToPlanetaryFortress,Cancel" Column="4"/>
+            <LayoutButtons index="8" Face="CancelUpgradeMorph" AbilCmd="UpgradeToOrbital,Cancel"/>
+            <LayoutButtons index="9" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel"/>
+            <LayoutButtons index="10" Face="SelectBuilder" Type="SelectBuilder" AbilCmd="CommandCenterTrain,Train1" Row="1" Column="3"/>
+            <LayoutButtons index="11" Face="Attack" AbilCmd="attack,Execute" Row="0"/>
+            <LayoutButtons index="12" Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0"/>
+            <LayoutButtons Face="TownHallLoad@Load" Type="AbilCmd" AbilCmd="TownHallLoad,Load" Row="2" Column="2"/>
+            <LayoutButtons Face="TownHallLoad@UnloadAll" Type="AbilCmd" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
+        </CardLayouts>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="CorruptorDamagingCorruption@Weapon" parent="MISSILE_INVULNERABLE">
+        <Race value="Zerg"/>
+        <Mover value="Corruption"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="Corruptor">
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <Speed value="3"/>
+        <Sight value="9"/>
+        <AbilArray index="0" Link="MorphToBroodLord"/>
+        <AbilArray index="1" Link="stop"/>
+        <AbilArray index="2" Link="attack"/>
+        <AbilArray index="3" Link="move"/>
+        <AbilArray index="4" Link="CorruptorDamagingCorruption"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="Cancel" AbilCmd="CorruptorDamagingCorruption,Cancel" Column="4"/>
+            <LayoutButtons index="7" Face="CorruptorDamagingCorruption" AbilCmd="CorruptorDamagingCorruption,Execute" Column="0"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="50"/>
+    </CUnit>
+    <CUnit id="CreepTumor">
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+    </CUnit>
+    <CUnit id="CyberneticsCore">
+        <ShieldsStart value="1650"/>
+        <ShieldsMax value="1650"/>
+        <ShieldRegenRate value="4"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ResearchGraviticDrive" Type="AbilCmd" AbilCmd="CyberneticsCoreResearch,Research8" Row="2" Column="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Cyclone">
+        <LifeStart value="220"/>
+        <LifeMax value="220"/>
+        <Speed value="2.5"/>
+        <Sight value="9"/>
+        <AbilArray index="3" Link="SpreadOut"/>
+        <AbilArray index="4" Link="CycloneCloak"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="6" Face="CloakOnCyclone" AbilCmd="CycloneCloak,On" Column="0"/>
+            <LayoutButtons index="7">
+                <Face value="CloakCycloneOff"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="CycloneCloak,Off"/>
+                <Requirements value=""/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <MinimapRadius value="0.875"/>
+        <WeaponArray index="0" Link="CycloneBurstLockOn"/>
+        <CostResource index="Vespene" value="75"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <Attributes index="Armored" value="0"/>
+    </CUnit>
+    <CUnit id="DarkShrine">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="250"/>
+    </CUnit>
+    <CUnit id="DarkTemplar">
+        <ShieldsStart value="200"/>
+        <ShieldsMax value="200"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2.5"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray Link="WarpingInDoubleDamageTaken"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Column="2"/>
+            <LayoutButtons index="8" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="DarkTemplarBlink" Type="AbilCmd" AbilCmd="DarkTemplarBlink,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.5"/>
+        <MinimapRadius value="0.5"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="DisruptorPhased">
+        <ShieldsStart value="300"/>
+        <ShieldsMax value="300"/>
+        <ShieldRegenRate value="1.5"/>
+        <Sight value="4"/>
+    </CUnit>
+    <CUnit id="Drone">
+        <LifeStart value="80"/>
+        <LifeMax value="80"/>
+        <Speed value="2.5"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="18" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="19" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="20" Face="Spray" AbilCmd="SprayZerg,Execute" Column="2"/>
+            <LayoutButtons index="21" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+            <LayoutButtons index="31" removed="1"/>
+            <LayoutButtons index="32" removed="1"/>
+        </CardLayouts>
+        <CardLayouts index="1">
+            <LayoutButtons index="4" AbilCmd="ZergBuild,Build7"/>
+            <LayoutButtons index="6" Face="HydraliskDen" AbilCmd="ZergBuild,Build6"/>
+            <LayoutButtons index="7" AbilCmd="ZergBuild,Build8"/>
+            <LayoutButtons index="8" AbilCmd="ZergBuild,Build9"/>
+        </CardLayouts>
+        <CardLayouts index="2">
+            <LayoutButtons index="0" AbilCmd="ZergBuild,Build13"/>
+            <LayoutButtons index="1" AbilCmd="ZergBuild,Build15"/>
+            <LayoutButtons index="3" AbilCmd="ZergBuild,Build14"/>
+            <LayoutButtons index="4" AbilCmd="ZergBuild,Build12"/>
+            <LayoutButtons index="5" Face="RoachWarren" AbilCmd="ZergBuild,Build11"/>
+            <LayoutButtons index="6" removed="1"/>
+        </CardLayouts>
+        <LifeRegenRateCreep value="2"/>
+    </CUnit>
+    <CUnit id="DroneBurrowed">
+        <CardLayouts index="0">
+            <LayoutButtons index="2" removed="1"/>
+            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="4" removed="1"/>
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+        </CardLayouts>
+        <LifeRegenRateCreep value="2"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <AddedOnArray/>
+    </CUnit>
+    <CUnit id="EvolutionChamber">
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+    </CUnit>
+    <CUnit id="Extractor">
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+    </CUnit>
+    <CUnit id="FactoryFlying">
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <Speed value="1.5"/>
+    </CUnit>
+    <CUnit id="FactoryReactor">
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+    </CUnit>
+    <CUnit id="FactoryTechReactor">
+        <AbilArray Link="ArmoryResearch"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Face="ResearchCharonBoosters" AbilCmd="FactoryTechLabResearch,Research4" Column="2"/>
+            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="4" removed="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Firebat">
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="StimpackFirebat"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons index="6" Face="StimFirebat" Type="AbilCmd" AbilCmd="StimpackFirebat,Execute" Requirements="" Column="0"/>
+        </CardLayouts>
+        <Sight value="7"/>
+        <SubgroupPriority value="76"/>
+    </CUnit>
+    <CUnit id="FleetBeacon">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Face="ResearchVoidRaySpeedUpgrade" AbilCmd="FleetBeaconResearch,Research5" Column="1"/>
+            <LayoutButtons index="3" Face="ResearchKhaydarinCore" AbilCmd="FleetBeaconResearch,Research7" Column="2"/>
+            <LayoutButtons index="4" Face="PhoenixRangeUpgrade" AbilCmd="FleetBeaconResearch,Research3" Column="0"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="450"/>
+    </CUnit>
+    <CUnit id="Forge">
+        <ShieldsStart value="1200"/>
+        <ShieldsMax value="1200"/>
+        <ShieldRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="Gateway">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="Ghost">
+        <Speed value="2.5"/>
+        <Sight value="15"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="200"/>
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="SteadyTargettingCancel"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="AttackGhost" AbilCmd="attack,Execute" Row="0"/>
+            <LayoutButtons index="6" Face="NukeCalldown" AbilCmd="TacNukeStrike,Execute" Row="2" Column="3"/>
+            <LayoutButtons index="7" Face="CloakOnGhost" AbilCmd="GhostCloak,On" Row="2"/>
+            <LayoutButtons index="8" Face="CloakOff" AbilCmd="GhostCloak,Off" Column="1"/>
+            <LayoutButtons index="9" Face="EMP" AbilCmd="EMP,Execute" Column="2"/>
+            <LayoutButtons index="10" Face="WeaponsFree" AbilCmd="GhostWeaponsFree,Execute" Row="1" Column="3"/>
+            <LayoutButtons index="11" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Column="4"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.5"/>
+        <MinimapRadius value="0.5"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <SubgroupPriority value="84"/>
+    </CUnit>
+    <CUnit id="GhostAcademy">
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+    </CUnit>
+    <CUnit id="GreaterSpire">
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <CostResource index="Minerals" value="450"/>
+        <CostResource index="Vespene" value="450"/>
+    </CUnit>
+    <CUnit id="Hellion">
+        <Sight value="9"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Column="0"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <MinimapRadius value="0.75"/>
+        <Speed value="3.75"/>
+    </CUnit>
+    <CUnit id="HellionTank">
+        <Attributes index="Biological" value="0"/>
+        <Speed value="2"/>
+        <Sight value="9"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Column="1"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <MinimapRadius value="0.6875"/>
+    </CUnit>
+    <CUnit id="HighTemplar">
+        <ShieldsStart value="120"/>
+        <ShieldsMax value="120"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="1.668"/>
+        <Sight value="13"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray Link="WarpingInDoubleDamageTaken"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.5625"/>
+        <MinimapRadius value="0.5625"/>
+        <WeaponArray index="0" Link="HighTemplarWeaponInstant"/>
+    </CUnit>
+    <CUnit id="Hive">
+        <LifeStart value="5000"/>
+        <LifeMax value="5000"/>
+        <AbilArray Link="BroodlingSwarm"/>
+        <AbilArray Link="BroodlingTrain"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="TownHallLoad"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Column="1"/>
+            <LayoutButtons index="7" Face="TownHallLoad@Load" AbilCmd="TownHallLoad,Load" Row="2" Column="2"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="EvolveCreepGeneration" Type="AbilCmd" AbilCmd="LairResearch,Research5" Row="1" Column="2"/>
+            <LayoutButtons Face="ResearchBurrow" Type="AbilCmd" AbilCmd="LairResearch,Research4" Row="1" Column="0"/>
+            <LayoutButtons Face="TownHallLoad@UnloadAll" Type="AbilCmd" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
+        </CardLayouts>
+        <WeaponArray Link="BroodlingShot"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="HydraliskBurrowed">
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="25"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="3" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="6" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="7" Face="BurrowUp" AbilCmd="BurrowHydraliskUp,Execute" Column="4"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+        </CardLayouts>
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <LifeRegenRateCreep value="2"/>
+        <Sight value="4"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <AddedOnArray/>
+    </CUnit>
+    <CUnit id="HydraliskDen">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="0"/>
+        <AbilArray index="3" Link="LurkerDenResearch"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="EvolveDiggingClaws" AbilCmd="LurkerDenResearch,Research1" Row="1" Column="1"/>
+            <LayoutButtons index="6" Face="ResearchLurkerRange" AbilCmd="LurkerDenResearch,Research2" Row="1"/>
+            <LayoutButtons Face="HydraliskFrenzy" Type="AbilCmd" AbilCmd="HydraliskDenResearch,Research3" Row="0" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Immortal">
+        <ShieldsStart value="400"/>
+        <ShieldsMax value="400"/>
+        <ShieldRegenRate value="2.5"/>
+        <Speed value="2"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <MinimapRadius value="0.875"/>
+        <ShieldArmor value="3"/>
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="IncubateTumormissile" parent="MISSILE_INVULNERABLE">
+        <Race value="Zerg"/>
+        <Mover value="Contaminate2"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="CreepTumorBurrowed">
+        <AbilArray Link="RuptureTumor"/>
+        <BehaviorArray Link="ZergBuildingDies2"/>
+        <BehaviorArray Link="CreepTumorNotExhausted"/>
+        <BehaviorArray Link="SuppressCloakDuringConstruction"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="RuptureTumor" Type="AbilCmd" AbilCmd="RuptureTumor,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <FlagArray index="Cloaked" value="1"/>
+        <FlagArray index="Buried" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+    </CUnit>
+    <CUnit id="IncubatedTumor">
+        <DeathRevealRadius value="3"/>
+        <Race value="Zerg"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Cloaked" value="1"/>
+        <FlagArray index="Buried" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="CreepTumor" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <LifeRegenRate value="0.2734"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZergBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="11"/>
+        <AttackTargetPriority value="19"/>
+        <AbilArray Link="CreepTumorBuild"/>
+        <AbilArray Link="BuildInProgress2"/>
+        <BehaviorArray Link="makeCreep4x4"/>
+        <BehaviorArray Link="ZergBuildingDies2"/>
+        <CardLayouts>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CreepTumorBuild,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="BuildCreepTumorPropagate" Type="AbilCmd" AbilCmd="CreepTumorBuild,Build1" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.5"/>
+        <Footprint value="CreepTumorBurrowed"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkCreepTumor"/>
+        <AIEvalFactor value="0"/>
+        <LeaderAlias value="CreepTumor"/>
+        <TechAliasArray value="Alias_CreepTumor"/>
+        <GlossaryPriority value="257"/>
+        <HotkeyCategory value="Unit/Category/ZergUnits"/>
+    </CUnit>
+    <CUnit id="Disruptor">
+        <Radius value="0.8125"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <ShieldsStart value="300"/>
+        <ShieldsMax value="300"/>
+        <ShieldRegenRate value="1.5"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="FactoryTechLab">
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons index="2" Face="ResearchDrillClaws" AbilCmd="FactoryTechLabResearch,Research5" Row="0" Column="0"/>
+            <LayoutButtons index="3" Face="ResearchFighterMode" AbilCmd="FactoryTechLabResearch,Research12" Column="1"/>
+            <LayoutButtons index="4" Face="ResearchCycloneCloak" AbilCmd="FactoryTechLabResearch,Research1" Column="2"/>
+            <LayoutButtons index="5" removed="1"/>
+        </CardLayouts>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <AbilArray Link="AssaultMode"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
+    </CUnit>
+    <CUnit id="ForceField">
+        <FlagArray index="Uncommandable" value="0"/>
+        <FlagArray index="Unselectable" value="0"/>
+        <FlagArray index="Untargetable" value="0"/>
+        <FlagArray index="Invulnerable" value="0"/>
+        <FlagArray index="Destructible" value="0"/>
+        <LifeStart value="5"/>
+        <LifeMax value="5"/>
+        <ShieldsStart value="700"/>
+        <ShieldsMax value="700"/>
+        <ShieldArmor value="1"/>
+        <AbilArray index="0" removed="1"/>
+        <CardLayouts index="0" removed="1"/>
+        <ShieldRegenRate value="30"/>
+    </CUnit>
+    <CUnit id="FusionCore">
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <AbilArray/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" removed="1"/>
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="400"/>
+    </CUnit>
+    <CUnit id="Hatchery">
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Column="1"/>
+            <LayoutButtons index="9" Face="TownHallLoad@Load" AbilCmd="TownHallLoad,Load" Row="2" Column="2"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="ResearchBurrow" Type="AbilCmd" AbilCmd="LairResearch,Research4" Row="1" Column="0"/>
+            <LayoutButtons Face="EvolveCreepGeneration" Type="AbilCmd" AbilCmd="LairResearch,Research5" Row="1" Column="2"/>
+            <LayoutButtons Face="TownHallLoad@UnloadAll" Type="AbilCmd" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
+        </CardLayouts>
+        <AbilArray Link="BroodlingSwarm"/>
+        <AbilArray Link="BroodlingTrain"/>
+        <AbilArray Link="LeechResources"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="TownHallLoad"/>
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <CargoSize value="8"/>
+        <WeaponArray Link="BroodlingShot"/>
+        <Sight value="13"/>
+        <CostResource index="Minerals" value="350"/>
+    </CUnit>
+    <CUnit id="Hydralisk">
+        <Attributes index="Light" value="0"/>
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <Food value="-1"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="25"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="17" Column="2"/>
+            <LayoutButtons index="18" Face="HydraliskFrenzy" AbilCmd="HydraliskFrenzy,Execute" Column="0"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+        </CardLayouts>
+        <Speed value="2"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="InfestationPit">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Face="EvolveInfestorEnergyUpgrade" AbilCmd="InfestationPitResearch,Research1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Infestor">
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <AbilArray index="3" Link="BlindingCloud"/>
+        <AbilArray index="5" Link="AmorphousArmorcloudInstant"/>
+        <AbilArray index="6" Link="SpreadOut"/>
+        <AbilArray Link="OozeSnare"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons index="5" Face="AcquireMove" AbilCmd="move,AcquireMove"/>
+            <LayoutButtons index="6" Face="BurrowMove" AbilCmd="BurrowInfestorDown,Execute" Row="2" Column="3"/>
+            <LayoutButtons index="7" Face="BlindingCloud" AbilCmd="BlindingCloud,Execute" Column="1"/>
+            <LayoutButtons index="8" Face="BurrowedMove" Type="Passive" AbilCmd="" Column="3"/>
+            <LayoutButtons index="9">
+                <Face value="DormantMetabolism"/>
+                <Type value="Passive"/>
+                <AbilCmd value="BurrowDroneDown,Execute"/>
+                <Requirements value="InfestorisBurrowed"/>
+                <Row value="1"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons index="10" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="18" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="19" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="20" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="21" Face="AmorphousArmorcloud" AbilCmd="AmorphousArmorcloudInstant,Execute" Column="2"/>
+            <LayoutButtons index="22">
+                <Face value="FungalGrowth"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="FungalGrowth,Execute"/>
+                <Requirements value=""/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+            <LayoutButtons index="31" removed="1"/>
+            <LayoutButtons index="32" removed="1"/>
+            <LayoutButtons index="33" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.9375"/>
+        <MinimapRadius value="0.9375"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <EnergyRegenRate value="0.8398"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="200"/>
+    </CUnit>
+    <CUnit id="InfestorBurrowed">
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <EnergyRegenRate value="0.1875"/>
+        <Speed value="1"/>
+        <AbilArray index="4" Link="BlindingCloud"/>
+        <AbilArray index="5" Link="FungalGrowth"/>
+        <AbilArray Link="AmorphousArmorcloudInstant"/>
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="OozeSnare"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" Face="Attack" AbilCmd="attack,Execute" Row="0"/>
+            <LayoutButtons index="5" Face="AcquireMove" AbilCmd="move,AcquireMove"/>
+            <LayoutButtons index="6" Face="DormantMetabolism" Type="Passive" AbilCmd="" Row="1" Column="0"/>
+            <LayoutButtons index="7" AbilCmd="BurrowInfestorUp,Execute"/>
+            <LayoutButtons index="8" Face="BurrowedMove" Type="Passive" AbilCmd="" Row="1" Column="3"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1"/>
+            <LayoutButtons index="18">
+                <Face value="BlindingCloud"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="BlindingCloud,Execute"/>
+                <Requirements value=""/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons index="19" Face="AmorphousArmorcloud" AbilCmd="AmorphousArmorcloudInstant,Execute"/>
+            <LayoutButtons index="20" Face="FungalGrowth" AbilCmd="FungalGrowth,Execute" Column="0"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+            <LayoutButtons index="31" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.9375"/>
+        <MinimapRadius value="0.9375"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="10"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="200"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <AddedOnArray/>
+    </CUnit>
+    <CUnit id="InfestorTerran">
+        <Sight value="8"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <Speed value="0.836"/>
+        <LifeRegenRate value="4"/>
+        <WeaponArray index="0" Link="InfestedGuassRifle"/>
+        <WeaponArray index="1" Link=""/>
+    </CUnit>
+    <CUnit id="InfestorTerranBurrowed">
+        <Radius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Column="3"/>
+        </CardLayouts>
+        <LifeRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="Interceptor">
+        <Speed value="5"/>
+        <ShieldsStart value="180"/>
+        <ShieldsMax value="180"/>
+        <CostResource index="Minerals" value="25"/>
+    </CUnit>
+    <CUnit id="Lair">
+        <LifeStart value="4000"/>
+        <LifeMax value="4000"/>
+        <AbilArray Link="BroodlingSwarm"/>
+        <AbilArray Link="BroodlingTrain"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="TownHallLoad"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Column="1"/>
+            <LayoutButtons index="9" Face="TownHallLoad@Load" AbilCmd="TownHallLoad,Load" Row="2" Column="2"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="EvolveCreepGeneration" Type="AbilCmd" AbilCmd="LairResearch,Research5" Row="1" Column="2"/>
+            <LayoutButtons Face="ResearchBurrow" Type="AbilCmd" AbilCmd="LairResearch,Research4" Row="1" Column="0"/>
+            <LayoutButtons Face="TownHallLoad@UnloadAll" Type="AbilCmd" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
+        </CardLayouts>
+        <WeaponArray Link="BroodlingShot"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="Larva">
+        <CardLayouts index="0">
+            <LayoutButtons index="3" Row="1" Column="1"/>
+            <LayoutButtons index="4" Column="3"/>
+            <LayoutButtons index="5" Column="2"/>
+            <LayoutButtons index="9" Row="0" Column="3"/>
+            <LayoutButtons index="11" Column="4"/>
+            <LayoutButtons index="12" Column="0"/>
+        </CardLayouts>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <Radius value="0.5"/>
+        <InnerRadius value="0.625"/>
+        <Fidget DistanceMax="16" TurnAngle="45" TurningRate="45"/>
+        <BehaviorArray index="1" Link="DecayOffCreep"/>
+    </CUnit>
+    <CUnit id="LarvaPlaceholder" parent="Larva">
+        <Mover value="Ground"/>
+    </CUnit>
+    <CUnit id="Medic">
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
+        <EnergyStart value="75"/>
+        <Speed value="2"/>
+        <Sight value="7"/>
+        <CostResource index="Minerals" value="50"/>
+        <CostResource index="Vespene" value="75"/>
+        <AbilArray Link="StimpackMedic"/>
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="MedicDefensiveMatrix"/>
+        <AbilArray Link="MedicalSweep"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Column="1"/>
+            <LayoutButtons index="7" Face="MedicDefensiveMatrix" AbilCmd="MedicDefensiveMatrix,Execute" Column="3"/>
+            <LayoutButtons index="8">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="StimMedic" Type="AbilCmd" AbilCmd="StimpackMedic,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="EmergencySweep" Type="AbilCmd" AbilCmd="MedicalSweep,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <SubgroupPriority value="82"/>
+    </CUnit>
+    <CUnit id="SpawnLarvaSolo@Missile" parent="MISSILE_INVULNERABLE">
+        <Race value="Zerg"/>
+        <Mover value="LarvaReleaseMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="Liberator">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Speed value="3"/>
+        <LifeStart value="360"/>
+        <LifeMax value="360"/>
+    </CUnit>
+    <CUnit id="LiberatorAG">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <LifeStart value="360"/>
+        <LifeMax value="360"/>
+    </CUnit>
+    <CUnit id="LocustMP">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="LocustMPFlying">
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
+        <Speed value="0.5"/>
+        <WeaponArray index="0" Link="LocustMP"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.5"/>
+        <SeparationRadius value="0.5"/>
+        <MinimapRadius value="0.5"/>
+        <AbilArray Link="SpreadOut"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="LurkerDenMP">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+    </CUnit>
+    <CUnit id="LurkerMP">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="BurrowDown"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <MinimapRadius value="0.8125"/>
+        <Speed value="2.3984"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="12"/>
+    </CUnit>
+    <CUnit id="LurkerMPBurrowed">
+        <Radius value="1"/>
+        <MinimapRadius value="0.8125"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeRegenRateCreep value="2"/>
+        <Sight value="12"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <AddedOnArray/>
+    </CUnit>
+    <CUnit id="MULE">
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="RapidConstruction"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="RapidConstruction" Type="AbilCmd" AbilCmd="RapidConstruction,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Marine">
+        <LifeStart value="90"/>
+        <LifeMax value="90"/>
+        <Speed value="2"/>
+        <Sight value="7"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+    </CUnit>
+    <CUnit id="Medivac">
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <Speed value="2.25"/>
+        <Sight value="10"/>
+        <AbilArray index="0" Link="stop"/>
+        <AbilArray index="1" Link="move"/>
+        <AbilArray index="2" Link="MedivacTransport"/>
+        <AbilArray index="3" Link="MedivacSpeedBoost"/>
+        <AbilArray index="4" Link="SpreadOut"/>
+        <AbilArray Link="BuildAutoTurret"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" Column="3"/>
+            <LayoutButtons index="7" Face="MedivacUnloadAll" AbilCmd="MedivacTransport,UnloadAt" Column="4"/>
+            <LayoutButtons index="8" Face="MedivacSpeedBoost" AbilCmd="MedivacSpeedBoost,Execute" Column="1"/>
+            <LayoutButtons index="9" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="10" Face="BuildAutoTurret" Type="AbilCmd" AbilCmd="BuildAutoTurret,Execute" Requirements="" Row="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="MineralsMule" parent="ITEM">
+        <Facing value="19.995"/>
+        <FlagArray index="Turnable" value="1"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FogVisibility value="Snapshot"/>
+        <Collide index="Structure" value="1"/>
+        <Height value="0.5"/>
+        <AbilArray Link="PickupPalletMinerals24"/>
+        <CardLayouts>
+            <LayoutButtons Face="PickupPalletMinerals" Type="AbilCmd" AbilCmd="PickupPalletMinerals24,0" Row="0" Column="0"/>
+        </CardLayouts>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Item,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="MissileTurret">
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <BehaviorArray index="1" Link="UnderConstruction"/>
+        <BehaviorArray index="2" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="Salvage" AbilCmd="SalvageShared,On"/>
+        </CardLayouts>
+        <AbilArray Link="SalvageShared"/>
+    </CUnit>
+    <CUnit id="MothershipCoreWeaponWeapon2" parent="MISSILE">
+        <Race value="Prot"/>
+        <Mover value="MothershipCoreWeaponWeapon"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="Mutalisk">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Speed value="3.5"/>
+        <LifeStart value="240"/>
+        <LifeMax value="240"/>
+    </CUnit>
+    <CUnit id="BroodlingShot" parent="MISSILE">
+        <Name value="Unit/Name/HydraliskGroundWeapon"/>
+        <Mover value="NeedleSpinesWeapon"/>
+    </CUnit>
+    <CUnit id="Nexus">
+        <EnergyRegenRate value="0.371"/>
+        <ShieldsStart value="3000"/>
+        <ShieldsMax value="3000"/>
+        <ShieldRegenRate value="4"/>
+        <AbilArray index="7" Link="NexusMassRecall"/>
+        <AbilArray index="8" Link="CompactedShield"/>
+        <AbilArray index="9" Link="attack"/>
+        <AbilArray index="10" Link="stop"/>
+        <AbilArray Link="TownHallLoad"/>
+        <AbilArray Link="EnergyRecharge"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="AttackBuildingPFort" AbilCmd="attack,Execute" Column="4"/>
+            <LayoutButtons index="6" Face="StopPlanetaryFortress" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons index="7" Face="TownHallLoad@Load" AbilCmd="TownHallLoad,Load"/>
+            <LayoutButtons Face="TownHallLoad@UnloadAll" Type="AbilCmd" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
+            <LayoutButtons Face="WarpPrism" Type="AbilCmd" AbilCmd="NexusTrain,Train2" Row="0" Column="1"/>
+            <LayoutButtons Face="EnergyRecharge" Type="AbilCmd" AbilCmd="EnergyRecharge,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Food value="12"/>
+        <WeaponArray index="0" Link="MothershipCoreWeapon2"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="NydusNetwork">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <Sight value="8"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="200"/>
+    </CUnit>
+    <CUnit id="Obelisk">
+        <BehaviorArray Link="ObeliskSlowSearcher"/>
+        <BehaviorArray Link="ObeliskHardenedShield"/>
+        <FlagArray index="Invulnerable" value="0"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <Collide index="Phased" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <CostCategory value="Technology"/>
+        <CardLayouts index="0">
+            <LayoutButtons>
+                <Face value="ObeliskHardenedShield"/>
+                <Type value="Passive"/>
+                <Behavior value="ObeliskHardenedShield"/>
+                <Requirements value="ObeliskHardenedShield"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ObeliskSlowSearcher"/>
+                <Type value="Passive"/>
+                <Behavior value="ObeliskSlowSearcher"/>
+                <Requirements value="ObeliskSlowSearcher"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <ShieldsStart value="250"/>
+        <ShieldsMax value="250"/>
+        <CostResource index="Minerals" value="100"/>
+    </CUnit>
+    <CUnit id="Observer">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Speed value="1.668"/>
+        <ShieldsStart value="120"/>
+        <ShieldsMax value="120"/>
+        <ShieldRegenRate value="1.5"/>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
+    </CUnit>
+    <CUnit id="ObserverSiegeMode">
+        <ShieldsStart value="120"/>
+        <ShieldsMax value="120"/>
+        <ShieldRegenRate value="1.5"/>
+        <Sight value="14"/>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
+    </CUnit>
+    <CUnit id="Oracle">
+        <EnergyStart value="75"/>
+        <ShieldsStart value="220"/>
+        <ShieldsMax value="220"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="3.5"/>
+        <Sight value="9"/>
+        <CostResource index="Vespene" value="200"/>
+        <AbilArray index="5" Link="OracleStasisTrapBuild"/>
+        <AbilArray index="6" Link="SpreadOut"/>
+        <AbilArray Link="AbsorptionShield"/>
+        <AbilArray Link="DeactivateAbsortionShield"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Face="Cancel" AbilCmd="OracleStasisTrapBuild,Halt" Column="4"/>
+            <LayoutButtons index="9" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="10" Face="AbsorptionShield" AbilCmd="AbsorptionShield,Execute" Column="2"/>
+            <LayoutButtons Face="DeactivateAbsorptionShield" Type="AbilCmd" AbilCmd="DeactivateAbsortionShield,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Acceleration value="3.5"/>
+        <WeaponArray index="0" Link="NeutronFlare"/>
+    </CUnit>
+    <CUnit id="OracleStasisTrap">
+        <ShieldsStart value="90"/>
+        <ShieldsMax value="90"/>
+        <ShieldRegenRate value="1.5"/>
+    </CUnit>
+    <CUnit id="OrbitalCommand">
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <EnergyRegenRate value="0.371"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Row="0" Column="2"/>
+            <LayoutButtons index="4" Column="1"/>
+            <LayoutButtons index="6" Face="OrbitalCommandCalldownRepairDrone" AbilCmd="OrbitalCommandCalldownRepairDrone,Execute"/>
+            <LayoutButtons index="7" removed="1"/>
+        </CardLayouts>
+        <AbilArray Link="OrbitalCommandCalldownRepairDrone"/>
+        <Food value="12"/>
+        <EnergyStart value="75"/>
+        <CostResource index="Vespene" value="150"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="OrbitalCommandFlying">
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <EnergyRegenRate value="0.371"/>
+        <Speed value="1.5"/>
+        <Food value="12"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Row="1" Column="2"/>
+        </CardLayouts>
+        <Sight value="13"/>
+        <CostResource index="Vespene" value="150"/>
+    </CUnit>
+    <CUnit id="Overlord">
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="1"/>
+        <Speed value="0.461"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Column="1"/>
+            <LayoutButtons index="8" Column="0"/>
+            <LayoutButtons index="9" Column="0"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+    </CUnit>
+    <CUnit id="OverlordTransport">
+        <Speed value="0.6406"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Column="1"/>
+            <LayoutButtons index="8" Column="0"/>
+            <LayoutButtons index="11" Column="0"/>
+        </CardLayouts>
+        <StationaryTurningRate value="180"/>
+        <TurningRate value="180"/>
+    </CUnit>
+    <CUnit id="Overseer">
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <Speed value="1.668"/>
+        <AbilArray Link="IncubateTumor"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Column="1"/>
+            <LayoutButtons index="8" Face="IncubateTumor" AbilCmd="IncubateTumor,Execute" Column="0"/>
+            <LayoutButtons index="9" Row="1"/>
+            <LayoutButtons Face="Contaminate" Type="AbilCmd" AbilCmd="Contaminate,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <StationaryTurningRate value="360"/>
+        <TurningRate value="360"/>
+    </CUnit>
+    <CUnit id="OverseerSiegeMode">
+        <AbilArray Link="IncubateTumor"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Row="1"/>
+            <LayoutButtons index="8" Column="1"/>
+            <LayoutButtons index="9" Column="2"/>
+            <LayoutButtons Face="IncubateTumor" Type="AbilCmd" AbilCmd="IncubateTumor,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <Sight value="14"/>
+    </CUnit>
+    <CUnit id="Phoenix">
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <ShieldsStart value="240"/>
+        <ShieldsMax value="240"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="4"/>
+        <Acceleration value="1"/>
+        <Sight value="9"/>
+        <AbilArray index="3" Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
+        <CostResource index="Minerals" value="225"/>
+    </CUnit>
+    <CUnit id="PhotonCannon">
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <ShieldsStart value="800"/>
+        <ShieldsMax value="800"/>
+        <ShieldRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="PointDefenseDrone">
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <BehaviorArray Link="PointDefenseDroneArmorReductionSearcher"/>
+        <BehaviorArray Link="PermanentlyCloaked"/>
+        <Sight value="6"/>
+    </CUnit>
+    <CUnit id="Probe">
+        <ShieldsStart value="60"/>
+        <ShieldsMax value="60"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2.5"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <CardLayouts index="1">
+            <LayoutButtons index="8" Face="WarpInObelisk" AbilCmd="ProtossBuild,Build17" Row="0" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Pylon">
+        <ShieldsStart value="500"/>
+        <ShieldsMax value="500"/>
+        <ShieldArmor value="1"/>
+        <ShieldRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="Queen">
+        <LifeStart value="220"/>
+        <LifeMax value="220"/>
+        <EnergyStart value="50"/>
+        <EnergyRegenRate value="0.371"/>
+        <Speed value="1.25"/>
+        <Sight value="8"/>
+        <Food value="-3"/>
+        <AbilArray index="5" Link="Transfusion"/>
+        <AbilArray index="6" Link="SpreadOut"/>
+        <AbilArray Link="SpawnLarvaSolo"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="BuildCreepTumor" AbilCmd="QueenBuild,Build1" Column="0"/>
+            <LayoutButtons index="6" Face="Transfusion" AbilCmd="Transfusion,Execute" Column="1"/>
+            <LayoutButtons index="7" Face="BurrowDown" AbilCmd="BurrowQueenDown,Execute" Column="3"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="14" Face="Detector" Type="Passive" AbilCmd="" Row="1" Column="0"/>
+            <LayoutButtons index="15" Face="SpawnLarvaSolo" AbilCmd="SpawnLarvaSolo,Execute" Column="2"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.9375"/>
+        <MinimapRadius value="0.9375"/>
+        <BehaviorArray index="0" removed="1"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="2"/>
+        <CostResource index="Minerals" value="150"/>
+    </CUnit>
+    <CUnit id="QueenBurrowed">
+        <LifeStart value="220"/>
+        <LifeMax value="220"/>
+        <EnergyStart value="50"/>
+        <EnergyRegenRate value="0.371"/>
+        <Food value="-3"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="3" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="6" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="BurrowUp" AbilCmd="BurrowQueenUp,Execute" Column="4"/>
+            <LayoutButtons index="11" Face="Detector" Type="Passive" AbilCmd="" Row="1" Column="0"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.9375"/>
+        <MinimapRadius value="0.9375"/>
+        <LifeRegenRateCreep value="2"/>
+        <BehaviorArray Link="Detector7"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <AbilArray Link="Transfusion"/>
+    </CUnit>
+    <CUnit id="RavagerBurrowed">
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Attack" AbilCmd="attack,Execute" Row="0"/>
+            <LayoutButtons index="2" Face="" Type="Undefined" AbilCmd="" Column="0"/>
+            <LayoutButtons index="3" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="6" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="BurrowUp" AbilCmd="BurrowRavagerUp,Execute" Column="4"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <MinimapRadius value="1"/>
+        <LifeRegenRateCreep value="2"/>
+        <LifeArmor value="3"/>
+        <Sight value="4"/>
+        <CostResource index="Minerals" value="225"/>
+        <CostResource index="Vespene" value="75"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+    </CUnit>
+    <CUnit id="Reactor">
+        <AbilArray Link="SalvageShared"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Reaper">
+        <LifeStart value="140"/>
+        <LifeMax value="140"/>
+        <LifeRegenDelay value="0"/>
+        <LifeRegenRate value="0"/>
+        <Mover value="Ground"/>
+        <Speed value="3.375"/>
+        <Sight value="8"/>
+        <AbilArray Link="NitroPacks"/>
+        <AbilArray Link="KD8Charge"/>
+        <AbilArray Link="SpreadOut"/>
+        <WeaponArray index="0" Link="WeaponKD8Charge"/>
+        <WeaponArray index="1" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Type="AbilCmd" AbilCmd="NitroPacks,Execute" Column="0"/>
+            <LayoutButtons index="6" Face="KD8Charge" Type="AbilCmd" AbilCmd="KD8Charge,Execute" Column="1"/>
+            <LayoutButtons index="7" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="75"/>
+    </CUnit>
+    <CUnit id="Refinery">
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+    </CUnit>
+    <CUnit id="RoachBurrowed">
+        <LifeStart value="270"/>
+        <LifeMax value="270"/>
+        <LifeRegenRate value="2"/>
+        <Speed value="2"/>
+        <Acceleration value="1000"/>
+        <CostResource index="Minerals" value="125"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="RapidRegeneration" Type="Passive" AbilCmd="" Column="1"/>
+            <LayoutButtons index="2" Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0"/>
+            <LayoutButtons index="3" Face="StopRoachBurrowed" AbilCmd="stop,Stop" Requirements="PlayerHasTunnelingClaws" Column="1"/>
+            <LayoutButtons index="4" Face="MoveHoldPosition" AbilCmd="move,HoldPos" Requirements="" Column="2"/>
+            <LayoutButtons index="5" Face="MovePatrol" AbilCmd="move,Patrol" Column="3"/>
+            <LayoutButtons index="6" Face="AcquireMove" AbilCmd="move,AcquireMove" Column="4"/>
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowRoachUp,Execute" Column="4"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <MinimapRadius value="0.6875"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="4"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+    </CUnit>
+    <CUnit id="RoboticsBay">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="250"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" Face="ResearchBarrier" AbilCmd="RoboticsBayResearch,Research11"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="RoboticsFacility">
+        <ShieldsStart value="1350"/>
+        <ShieldsMax value="1350"/>
+        <ShieldRegenRate value="4"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="Immortal" AbilCmd="RoboticsFacilityTrain,Train4"/>
+            <LayoutButtons index="6" Face="WarpinDisruptor" AbilCmd="RoboticsFacilityTrain,Train19"/>
+            <LayoutButtons index="7" removed="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="SCV">
+        <LifeStart value="90"/>
+        <LifeMax value="90"/>
+        <Speed value="2.5"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <CardLayouts index="1">
+            <LayoutButtons Face="Wall" Type="AbilCmd" AbilCmd="TerranBuild,Build18" Row="0" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <!--CUnit id="OracleRevelation">-->
+    <!--        <DeathRevealRadius value="3"/>-->
+    <!--        <ReviveType value="Oracle"/>-->
+    <!--        <Race value="Prot"/>-->
+    <!--        <Mob value="Multiplayer"/>-->
+    <!--        <FlagArray index="PreventDestroy" value="1"/>-->
+    <!--        <FlagArray index="UseLineOfSight" value="1"/>-->
+    <!--        <FlagArray index="AIFleeDamageDisabled" value="1"/>-->
+    <!--        <PlaneArray index="Air" value="1"/>-->
+    <!--        <Collide index="Flying" value="1"/>-->
+    <!--        <Attributes index="Light" value="1"/>-->
+    <!--        <Attributes index="Mechanical" value="1"/>-->
+    <!--        <LifeStart value="80"/>-->
+    <!--        <LifeMax value="80"/>-->
+    <!--        <LifeArmorName value="Unit/LifeArmorName/ProtossPlating"/>-->
+    <!--        <EnergyStart value="50"/>-->
+    <!--        <EnergyMax value="200"/>-->
+    <!--        <ShieldsStart value="200"/>-->
+    <!--        <ShieldsMax value="200"/>-->
+    <!--        <ShieldRegenDelay value="10"/>-->
+    <!--        <ShieldRegenRate value="2"/>-->
+    <!--        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>-->
+    <!--        <Mover value="Fly"/>-->
+    <!--        <Acceleration value="2"/>-->
+    <!--        <StationaryTurningRate value="999.8437"/>-->
+    <!--        <TurningRate value="999.8437"/>-->
+    <!--        <Sight value="10"/>-->
+    <!--        <Height value="3.75"/>-->
+    <!--        <VisionHeight value="4"/>-->
+    <!--        <Food value="-3"/>-->
+    <!--        <CostCategory value="Army"/>-->
+    <!--        <FlagArray index="ArmySelect" value="1"/>-->
+    <!--        <CostResource index="Minerals" value="150"/>-->
+    <!--        <CostResource index="Vespene" value="200"/>-->
+    <!--        <RepairTime value="60"/>-->
+    <!--        <AttackTargetPriority value="20"/>-->
+    <!--        <AbilArray Link="stop"/>-->
+    <!--        <AbilArray Link="move"/>-->
+    <!--        <AbilArray Link="Warpable"/>-->
+    <!--        <AbilArray Link="OracleNormalMode"/>-->
+    <!--        <CardLayouts>-->
+    <!--            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>-->
+    <!--            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>-->
+    <!--            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>-->
+    <!--            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>-->
+    <!--            <LayoutButtons Face="OracleNormalMode" Type="AbilCmd" AbilCmd="OracleNormalMode,Execute" Row="2" Column="1"/>-->
+    <!--            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>-->
+    <!--            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>-->
+    <!--        </CardLayouts>-->
+    <!--        <Radius value="1"/>-->
+    <!--        <SeparationRadius value="0.75"/>-->
+    <!--        <ScoreMake value="350"/>-->
+    <!--        <ScoreKill value="700"/>-->
+    <!--        <ScoreResult value="BuildOrder"/>-->
+    <!--        <SubgroupPriority value="17"/>-->
+    <!--        <MinimapRadius value="1"/>-->
+    <!--        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>-->
+    <!--        <TacticalAI value="Oracle"/>-->
+    <!--        <TacticalAIThink value="AIThinkOracle"/>-->
+    <!--        <LeaderAlias value="Oracle"/>-->
+    <!--        <HotkeyAlias value="Oracle"/>-->
+    <!--        <SelectAlias value="Oracle"/>-->
+    <!--        <SubgroupAlias value="Oracle"/>-->
+    <!--        <GlossaryCategory value="Unit/Category/ProtossUnits"/>-->
+    <!--        <GlossaryPriority value="168"/>-->
+    <!--        <HotkeyCategory value="Unit/Category/ProtossUnits"/>-->
+    <!--        <AIEvaluateAlias value="Oracle"/>-->
+    <!--        <TauntDuration index="Dance" value="5"/>-->
+    <!--        <ReviveInfoBase>-->
+    <!--            <Charge Link="Oracle/Revive"/>-->
+    <!--            <Cooldown Link="Oracle/Revive"/>-->
+    <!--        </ReviveInfoBase>-->
+    <!--        <BehaviorArray Link="Revelation"/>-->
+    <!--    </CUnit-->
+    <CUnit id="SeekerMissile">
+        <Speed value="0.0625"/>
+    </CUnit>
+    <CUnit id="SensorTower">
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <BehaviorArray Link="Detector16"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="3"/>
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="2"/>
+        </CardLayouts>
+        <Sight value="8"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="25"/>
+    </CUnit>
+    <CUnit id="Sentry">
+        <EnergyStart value="75"/>
+        <ShieldsStart value="120"/>
+        <ShieldsMax value="120"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2"/>
+        <Sight value="7"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray Link="WarpingInDoubleDamageTaken"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <CardLayouts index="1">
+            <LayoutButtons index="3" Row="1" Column="2"/>
+            <LayoutButtons index="4" Row="0" Column="4"/>
+            <LayoutButtons index="5" Column="0"/>
+            <LayoutButtons index="6" Row="2"/>
+            <LayoutButtons index="7" Row="2" Column="0"/>
+            <LayoutButtons index="8" Row="1" Column="1"/>
+            <LayoutButtons index="9" Row="1" Column="4"/>
+            <LayoutButtons index="13" Row="1"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <MinimapRadius value="0.5625"/>
+    </CUnit>
+    <CUnit id="SpawningPool">
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+    </CUnit>
+    <CUnit id="SpineCrawlerUprooted">
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+    </CUnit>
+    <CUnit id="Spire">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+    </CUnit>
+    <CUnit id="SporeCrawler">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <CostResource index="Minerals" value="175"/>
+    </CUnit>
+    <CUnit id="SporeCrawlerUprooted">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+    </CUnit>
+    <CUnit id="Stalker">
+        <ShieldsStart value="220"/>
+        <ShieldsMax value="220"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2.25"/>
+        <Sight value="7"/>
+        <AbilArray Link="SpreadOut"/>
+        <BehaviorArray Link="WarpingInDoubleDamageTaken"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <MinimapRadius value="0.75"/>
+    </CUnit>
+    <CUnit id="Stargate">
+        <ShieldsStart value="1800"/>
+        <ShieldsMax value="1800"/>
+        <ShieldRegenRate value="4"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="3" Row="1" Column="0"/>
+            <LayoutButtons Face="Arbiter" Type="AbilCmd" AbilCmd="StargateTrain,Train2" Row="0" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Starport">
+        <LifeStart value="2600"/>
+        <LifeMax value="2600"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Medivac" AbilCmd="StarportTrain,Train1"/>
+            <LayoutButtons index="1" Face="Raven" AbilCmd="StarportTrain,Train3" Column="2"/>
+            <LayoutButtons index="2" Face="Banshee" AbilCmd="StarportTrain,Train2" Column="1"/>
+            <LayoutButtons index="3" Face="Battlecruiser" AbilCmd="StarportTrain,Train4"/>
+            <LayoutButtons index="4" Face="Rally" AbilCmd="Rally,Rally1" Column="4"/>
+            <LayoutButtons index="5" Face="TechLabStarport" AbilCmd="StarportAddOns,Build1" Row="2" Column="0"/>
+            <LayoutButtons index="6" Face="Reactor" AbilCmd="StarportAddOns,Build2" Column="1"/>
+            <LayoutButtons index="7" Face="Lift" AbilCmd="StarportLiftOff,Execute" Column="3"/>
+            <LayoutButtons index="8" Face="Halt" AbilCmd="BuildInProgress,Halt"/>
+            <LayoutButtons index="9" Face="Cancel" AbilCmd="que5,CancelLast" Column="4"/>
+            <LayoutButtons index="10" AbilCmd="StarportAddOns,Halt"/>
+            <LayoutButtons index="11" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel"/>
+            <LayoutButtons index="12" Face="SelectBuilder" Type="SelectBuilder" AbilCmd="StarportTrain,Train5" Row="1" Column="3"/>
+            <LayoutButtons index="13" Face="Liberator" Type="AbilCmd" AbilCmd="StarportTrain,Train7" Row="0"/>
+            <LayoutButtons index="14" removed="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="StarportFlying">
+        <LifeStart value="2600"/>
+        <LifeMax value="2600"/>
+        <Speed value="1.5"/>
+    </CUnit>
+    <CUnit id="StarportReactor">
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+    </CUnit>
+    <CUnit id="StarportTechLab">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <AbilArray Link="StarportTechLabResearch"/>
+        <AbilArray Link="MedicalSuppliesCalldown"/>
+        <AbilArray Link="FusionCoreResearch"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Column="1"/>
+            <LayoutButtons index="3" Face="ResearchRapidReignitionSystem" AbilCmd="StarportTechLabResearch,Research18" Column="0"/>
+            <LayoutButtons index="4" Face="ResearchBallisticRange" AbilCmd="FusionCoreResearch,Research2" Column="3"/>
+            <LayoutButtons Face="ResearchRavenEnergyUpgrade" Type="AbilCmd" AbilCmd="FusionCoreResearch,Research4" Row="0" Column="2"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
+    </CUnit>
+    <CUnit id="SupplyDepot">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+    </CUnit>
+    <CUnit id="TechReactor">
+        <AbilArray Link="SalvageShared"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Wall">
+        <DeathRevealRadius value="3"/>
+        <Facing value="315"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <Collide index="Phased" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="1"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="10"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="SalvageShared"/>
+        <CardLayouts>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="26"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TacticalAI value="SupplyDepot"/>
+        <TechAliasArray value="Alias_SupplyDepot"/>
+        <GlossaryPriority value="248"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+    </CUnit>
+    <CUnit id="SupplyDepotLowered">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <LifeArmor value="3"/>
+    </CUnit>
+    <CUnit id="TechLab">
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
+        <AbilArray Link="SalvageShared"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Tempest">
+        <ShieldsStart value="400"/>
+        <ShieldsMax value="400"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="1.668"/>
+        <Sight value="11"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Attributes index="Massive" value="0"/>
+        <Food value="-5"/>
+    </CUnit>
+    <CUnit id="TempestWeapon">
+        <Mover value="TempestMissile"/>
+    </CUnit>
+    <CUnit id="TemplarArchive">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="300"/>
+    </CUnit>
+    <CUnit id="ThorAP">
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <Speed value="1"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="1.1875"/>
+        <MinimapRadius value="1.1875"/>
+    </CUnit>
+    <CUnit id="TwilightCouncil">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Column="2"/>
+            <LayoutButtons index="4" Column="3"/>
+            <LayoutButtons Face="ResearchHallucination" Type="AbilCmd" AbilCmd="TwilightCouncilResearch,Research7" Row="0" Column="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Ultralisk">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <MinimapRadius value="1.25"/>
+        <Speed value="2.3984"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="UltraliskCavern">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="300"/>
+    </CUnit>
+    <CUnit id="VespeneGas" parent="ITEM">
+        <Facing value="19.995"/>
+        <FlagArray index="Turnable" value="1"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FogVisibility value="Snapshot"/>
+        <Collide index="Structure" value="1"/>
+        <Height value="0.5"/>
+        <AbilArray Link="PickupPalletMinerals23"/>
+        <CardLayouts>
+            <LayoutButtons Face="PickupPalletMinerals" Type="AbilCmd" AbilCmd="PickupPalletMinerals23,0" Row="0" Column="0"/>
+        </CardLayouts>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Item,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="RichMinerals" parent="ITEM">
+        <Facing value="19.995"/>
+        <FlagArray index="Turnable" value="1"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FogVisibility value="Snapshot"/>
+        <Collide index="Structure" value="1"/>
+        <Height value="0.5"/>
+        <AbilArray Link="PickupPalletMinerals22"/>
+        <CardLayouts>
+            <LayoutButtons Face="PickupPalletMinerals" Type="AbilCmd" AbilCmd="PickupPalletMinerals22,0" Row="0" Column="0"/>
+        </CardLayouts>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Item,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="NeosteelBunker">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Bunker"/>
+        <Facing value="315"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <Collide index="Phased" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <LifeArmor value="2"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Sight value="10"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="40"/>
+        <AttackTargetPriority value="19"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="SalvageShared"/>
+        <AbilArray Link="SalvageBunkerRefund"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="StimpackRedirect"/>
+        <AbilArray Link="StimpackMarauderRedirect"/>
+        <AbilArray Link="StopRedirect"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="MorphToNeosteelBunker"/>
+        <AbilArray Link="que1"/>
+        <AbilArray Link="NeosteelBunkerTransport"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="CargoTracker"/>
+        <CardLayouts>
+            <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackMarauderRedirect,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que1,CancelSlot" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="NeosteelBunkerTransport,Load" Row="2" Column="1"/>
+            <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="NeosteelBunkerTransport,UnloadAll" Row="2" Column="2"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="1.25"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TacticalAI value="Bunker"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <LeaderAlias value="Bunker"/>
+        <HotkeyAlias value="Bunker"/>
+        <SelectAlias value="Bunker"/>
+        <SubgroupAlias value="Bunker"/>
+        <GlossaryCategory value="Unit/Category/TerranUnits"/>
+        <GlossaryPriority value="300"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Zealot"/>
+        <GlossaryWeakArray value="SiegeTankSieged"/>
+        <GlossaryWeakArray value="Baneling"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <AIEvaluateAlias value="Bunker"/>
+        <ReviveInfoBase>
+            <Charge Link="Bunker/Revive"/>
+            <Cooldown Link="Bunker/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="CommandCenterFlying">
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <Speed value="1.5"/>
+        <Food value="12"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Row="1" Column="2"/>
+            <LayoutButtons index="3" Face="MoveHoldPosition" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons index="4" Face="MovePatrol" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons index="5" Face="TownHallLoad@Load" AbilCmd="TownHallLoad,Load" Row="2"/>
+            <LayoutButtons index="6" Face="TownHallLoad@UnloadAll" AbilCmd="TownHallLoad,UnloadAll" Row="2"/>
+        </CardLayouts>
+        <AbilArray index="0" Link="move"/>
+        <AbilArray index="1" Link="stop"/>
+        <AbilArray index="2" Link="TownHallLoad"/>
+        <AbilArray index="3" removed="1"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="EngineeringBay">
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="LiftOffResearch" Type="AbilCmd" AbilCmd="EngineeringBayResearch,Research10" Row="1" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Factory">
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="SiegeTank" AbilCmd="FactoryTrain,Train2" Column="3"/>
+            <LayoutButtons index="1" Face="Rally" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons index="2" Face="Lift" Type="AbilCmd" AbilCmd="FactoryLiftOff,Execute" Row="2" Column="3"/>
+            <LayoutButtons index="3" Face="Halt" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons index="4" Face="Reactor" AbilCmd="FactoryAddOns,Build2" Column="1"/>
+            <LayoutButtons index="5" Face="TechLabFactory" AbilCmd="FactoryAddOns,Build1" Column="0"/>
+            <LayoutButtons index="6" Face="Cancel" AbilCmd="que5,CancelLast" Column="4"/>
+            <LayoutButtons index="7" Face="Cancel" AbilCmd="FactoryAddOns,Halt" Column="4"/>
+            <LayoutButtons index="8" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel"/>
+            <LayoutButtons index="9" Face="SelectBuilder" Type="SelectBuilder" AbilCmd="" Row="1" Column="3"/>
+            <LayoutButtons index="10" Face="Thor" AbilCmd="FactoryTrain,Train5" Row="1" Column="0"/>
+            <LayoutButtons index="11" Face="BuildCyclone" Type="AbilCmd" AbilCmd="FactoryTrain,Train8" Row="0" Column="4"/>
+            <LayoutButtons index="12" Column="0"/>
+            <LayoutButtons index="13" Face="VikingAssault2" AbilCmd="FactoryTrain,Train1"/>
+            <LayoutButtons index="14" Face="NapalmHellion" AbilCmd="FactoryTrain,Train26" Row="0"/>
+            <LayoutButtons index="15" removed="1"/>
+        </CardLayouts>
+        <LifeStart value="2500"/>
+        <LifeMax value="2500"/>
+        <AbilArray Link="AssaultMode"/>
+    </CUnit>
+    <CUnit id="Marauder">
+        <LifeStart value="115"/>
+        <LifeMax value="115"/>
+        <Sight value="9"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" AbilCmd="255,255"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <MinimapRadius value="0.625"/>
+        <Speed value="2"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="NydusCanal">
+        <LifeArmor value="2"/>
+        <CostResource index="Vespene" value="50"/>
+        <BehaviorArray index="0" Link="CreepGrowthCreepWorm"/>
+        <BehaviorArray index="2" removed="1"/>
+        <AbilArray Link="UnleashNydusWorm"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="3" Face="UnleashNydusWorm" AbilCmd="UnleashNydusWorm,Execute"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="NydusCanalUnloadAll" Type="AbilCmd" AbilCmd="NydusWormTransport,UnloadAll" Row="2" Column="1"/>
+        </CardLayouts>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+    </CUnit>
+    <CUnit id="Minerals" parent="ITEM">
+        <Facing value="19.995"/>
+        <FlagArray index="Turnable" value="1"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FogVisibility value="Snapshot"/>
+        <Collide index="Structure" value="1"/>
+        <Height value="0.5"/>
+        <AbilArray Link="PickupPalletMinerals2"/>
+        <CardLayouts>
+            <LayoutButtons Face="PickupPalletMinerals" Type="AbilCmd" AbilCmd="PickupPalletMinerals2,Execute" Row="0" Column="0"/>
+        </CardLayouts>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Item,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="PlanetaryFortress">
+        <LifeStart value="3000"/>
+        <LifeMax value="3000"/>
+        <Food value="12"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="StopPlanetaryFortress" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons index="1" Face="AttackBuildingPFort" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons index="2" Face="Cancel" AbilCmd="que5PassiveCancelToSelection,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons index="3" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel" Row="2"/>
+            <LayoutButtons index="4" Face="SCV" AbilCmd="CommandCenterTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="Rally" AbilCmd="RallyCommand,Rally1" Row="1"/>
+            <LayoutButtons index="6" Face="TownHallLoad@Load" AbilCmd="TownHallLoad,Load" Row="2" Column="2"/>
+            <LayoutButtons index="7" Face="TownHallLoad@UnloadAll" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
+        </CardLayouts>
+        <WeaponArray Link="CommandTurret"/>
+        <AbilArray index="1" Link="RallyCommand"/>
+        <AbilArray index="2" Link="CommandCenterTrain"/>
+        <AbilArray index="3" Link="que8"/>
+        <AbilArray index="4" Link="attack"/>
+        <AbilArray index="5" Link="stop"/>
+        <AbilArray index="6" Link="TownHallLoad"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="Ravager">
+        <CostResource index="Minerals" value="225"/>
+        <CostResource index="Vespene" value="75"/>
+        <Sight value="12"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <MinimapRadius value="1"/>
+        <Speed value="2.4453"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <LifeArmor value="3"/>
+    </CUnit>
+    <CUnit id="Raven">
+        <EnergyStart value="75"/>
+        <Food value="-5"/>
+        <Speed value="2.25"/>
+        <LifeStart value="320"/>
+        <LifeMax value="320"/>
+        <AbilArray Link="RavenBuild"/>
+        <AbilArray Link="SeekerMissile"/>
+        <AbilArray Link="PlacePointDefenseDrone"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Face="RavenScramblerMissile" AbilCmd="RavenScramblerMissile,Execute" Column="2"/>
+            <LayoutButtons index="9" Face="HunterSeekerMissile" AbilCmd="SeekerMissile,Execute" Column="1"/>
+            <LayoutButtons index="10" Face="PointDefenseDrone" AbilCmd="PlacePointDefenseDrone,Execute"/>
+        </CardLayouts>
+        <Sight value="14"/>
+        <BehaviorArray index="0" Link="Detector13p75"/>
+        <SubgroupPriority value="81"/>
+        <CostResource index="Vespene" value="200"/>
+    </CUnit>
+    <CUnit id="MedicalSupplies" parent="SupplyDepot">
+        <Name value="Unit/Name/MedicalSupplies"/>
+        <Description value="Button/Tooltip/MedicalSupplies"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeArmor value="0"/>
+        <Sight value="5"/>
+        <Food value="0"/>
+        <CostResource index="Minerals" value="0"/>
+        <AbilArray index="1" Link="FirstAid"/>
+        <BehaviorArray Link="TimedLife10"/>
+        <BehaviorArray Link="DisableMedicalSupplies"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="2" Face="SelectBuilder" Type="SelectBuilder" AbilCmd="" Row="1" Column="3"/>
+            <LayoutButtons index="3" Face="FirstAid" Type="AbilCmd" AbilCmd="FirstAid,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="0.5"/>
+        <MinimapRadius value="0.5"/>
+        <Facing value="0"/>
+        <PlacementFootprint value="Footprint2x2NoFog"/>
+    </CUnit>
+    <CUnit id="Roach">
+        <LifeStart value="270"/>
+        <LifeRegenRate value="1"/>
+        <CostResource index="Minerals" value="150"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="18" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.6875"/>
+        <MinimapRadius value="0.6875"/>
+        <Speed value="2"/>
+        <LifeMax value="270"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="RoachWarren">
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="100"/>
+        <LifeStart value="1700"/>
+        <LifeMax value="1700"/>
+    </CUnit>
+    <CUnit id="SiegeTank">
+        <Sight value="9"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <InnerRadius value="1"/>
+        <Speed value="2"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+    </CUnit>
+    <CUnit id="SiegeTankSieged">
+        <Sight value="15"/>
+        <Radius value="1"/>
+        <InnerRadius value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+    </CUnit>
+    <CUnit id="SpineCrawler">
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+    </CUnit>
+    <CUnit id="SupplyDepotDrop">
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="DropToSupplyDepot"/>
+        <BehaviorArray Link="SupplyDepotDropMorph"/>
+        <BehaviorArray Link="DisableMedicalSupplies"/>
+        <CardLayouts/>
+        <PlacementFootprint value="Footprint2x2NoFog"/>
+        <TechAliasArray value="Alias_SupplyDepot"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+    </CUnit>
+    <CUnit id="SwarmHostBurrowedMP">
+        <CostResource index="Vespene" value="200"/>
+        <BehaviorArray Link="SwarmHostisBurrowed"/>
+        <BehaviorArray Link="SwarmPheromonesEmitter"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <AbilArray index="1" Link="Rally"/>
+        <AbilArray Link="SwarmHostSpawnLocusts"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Attack" AbilCmd="attack,Execute" Row="0"/>
+            <LayoutButtons index="1" Face="AcquireMove" AbilCmd="move,AcquireMove"/>
+            <LayoutButtons index="2" Face="VoidSwarmHostSpawnLocust" AbilCmd="SwarmHostSpawnLocusts,Execute" Row="2" Column="0"/>
+            <LayoutButtons index="3" Face="SetRallyPointSwarmHost" AbilCmd="Rally,Rally1" Row="1" Column="3"/>
+            <LayoutButtons index="4" Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="Stop" AbilCmd="stop,Stop" Column="1"/>
+            <LayoutButtons index="6" Face="MoveHoldPosition" AbilCmd="move,HoldPos" Column="2"/>
+            <LayoutButtons index="7" Face="MovePatrol" AbilCmd="move,Patrol" Column="3"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="BurrowUp" AbilCmd="MorphToSwarmHostMP,Execute" Column="4"/>
+            <LayoutButtons index="17" Face="SwarmPheromones" Type="Passive" AbilCmd="" Row="1" Column="0"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+        </CardLayouts>
+        <Radius value="1.0625"/>
+        <MinimapRadius value="0.75"/>
+        <LifeStart value="240"/>
+        <LifeMax value="240"/>
+        <LifeRegenRateCreep value="2"/>
+        <Sight value="4"/>
+    </CUnit>
+    <CUnit id="SwarmHostMP">
+        <CostResource index="Vespene" value="200"/>
+        <BehaviorArray Link="SwarmHostisBurrowed"/>
+        <AbilArray index="3" Link="SwarmHostSpawnLocusts"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="SwarmHost" AbilCmd="SwarmHostSpawnLocusts,Execute"/>
+            <LayoutButtons index="8" Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+            <LayoutButtons index="29" removed="1"/>
+            <LayoutButtons index="30" removed="1"/>
+        </CardLayouts>
+        <Radius value="1.0625"/>
+        <MinimapRadius value="0.75"/>
+        <Speed value="2"/>
+        <LifeStart value="240"/>
+        <LifeMax value="240"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="Thor">
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="1.1875"/>
+        <MinimapRadius value="1.1875"/>
+        <Speed value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+    </CUnit>
+    <CUnit id="UltraliskBurrowed">
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Frenzied" Type="Passive" AbilCmd="" Behavior="Frenzy" Column="0"/>
+            <LayoutButtons index="2" Face="" Type="Undefined" Behavior="" Row="0"/>
+            <LayoutButtons index="3" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="6" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowUltraliskUp,Execute" Column="4"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <MinimapRadius value="1.25"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeRegenRateCreep value="2"/>
+        <Sight value="4"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+    </CUnit>
+    <CUnit id="VikingAssault">
+        <LifeStart value="270"/>
+        <LifeMax value="270"/>
+        <LifeArmor value="1"/>
+        <Speed value="2"/>
+        <Sight value="9"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Vespene" value="50"/>
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="TransientFighterMode"/>
+        <WeaponArray Link="LanzerTorpedoesGround"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" AbilCmd="TransientFighterMode,Execute"/>
+            <LayoutButtons index="6">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <MinimapRadius value="0.8125"/>
+    </CUnit>
+    <CUnit id="VikingAssaultWeapon" parent="MISSILE_HALFLIFE">
+        <Race value="Terr"/>
+        <Mover value="VikingAssaultMissile"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="VikingFighter">
+        <LifeStart value="270"/>
+        <LifeMax value="270"/>
+        <LifeArmor value="1"/>
+        <Speed value="3.5"/>
+        <Acceleration value="2"/>
+        <Sight value="11"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Vespene" value="50"/>
+        <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="TransientAssaultMode"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" AbilCmd="TransientAssaultMode,Execute"/>
+            <LayoutButtons index="6">
+                <Face value="SpreadOut"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="SpreadOut,Execute"/>
+                <Requirements value=""/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <MinimapRadius value="0.8125"/>
+    </CUnit>
+    <CUnit id="Viper">
+        <Speed value="3.125"/>
+        <AbilArray index="3" Link="Yoink"/>
+        <AbilArray index="4" Link="ParasiticBomb"/>
+        <AbilArray index="5" Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="FaceEmbrace" AbilCmd="Yoink,Execute" Column="1"/>
+            <LayoutButtons index="8" Face="ParasiticBomb" AbilCmd="ParasiticBomb,Execute" Column="2"/>
+            <LayoutButtons index="9" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+    </CUnit>
+    <CUnit id="VoidRay">
+        <ShieldsStart value="400"/>
+        <ShieldsMax value="400"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2.25"/>
+        <Sight value="9"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="275"/>
+    </CUnit>
+    <CUnit id="WarpGate">
+        <ShieldsStart value="1500"/>
+        <ShieldsMax value="1500"/>
+        <ShieldRegenRate value="4"/>
+    </CUnit>
+    <CUnit id="WarpPrism">
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <ShieldsStart value="280"/>
+        <ShieldsMax value="280"/>
+        <ShieldRegenRate value="1.5"/>
+        <Speed value="2.625"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Sight value="11"/>
+    </CUnit>
+    <CUnit id="WarpPrismPhasing">
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <ShieldsStart value="280"/>
+        <ShieldsMax value="280"/>
+        <ShieldRegenRate value="1.5"/>
+        <AbilArray Link="RechargeShields"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="9" Face="RechargeShields" Type="AbilCmd" AbilCmd="RechargeShields,Execute" Row="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="WidowMine">
+        <Food value="-1"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Row="1"/>
+            <LayoutButtons index="7" Column="0"/>
+            <LayoutButtons index="8" Row="1"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.5625"/>
+        <MinimapRadius value="0.5625"/>
+        <Speed value="2"/>
+        <CostResource index="Vespene" value="0"/>
+    </CUnit>
+    <CUnit id="WidowMineBurrowed">
+        <Food value="-1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Row="1"/>
+            <LayoutButtons index="1" Column="1"/>
+            <LayoutButtons index="2" Row="1"/>
+        </CardLayouts>
+        <Radius value="0.5625"/>
+        <MinimapRadius value="0.4375"/>
+        <CostResource index="Vespene" value="0"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+    </CUnit>
+    <CUnit id="Zealot">
+        <BehaviorArray Link="WarpingInDoubleDamageTaken"/>
+        <AbilArray index="5" Link="Chargemew"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" AbilCmd="Chargemew,Execute"/>
+            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+        </CardLayouts>
+        <Sight value="7"/>
+        <Speed value="2"/>
+        <ShieldsStart value="250"/>
+        <ShieldsMax value="250"/>
+        <ShieldRegenRate value="1.5"/>
+    </CUnit>
+    <CUnit id="Zergling">
+        <Radius value="0.4375"/>
+        <MinimapRadius value="0.4375"/>
+        <AbilArray Link="SpreadOut"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="13" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="14" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="16" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="17" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+            <LayoutButtons index="24" removed="1"/>
+            <LayoutButtons index="25" removed="1"/>
+            <LayoutButtons index="26" removed="1"/>
+            <LayoutButtons index="27" removed="1"/>
+            <LayoutButtons index="28" removed="1"/>
+        </CardLayouts>
+        <Speed value="2.6015"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
+        <Sight value="7"/>
+    </CUnit>
+    <CUnit id="ZerglingBurrowed">
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="2" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="3" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
+            <LayoutButtons index="6" Face="BurrowUp" AbilCmd="BurrowZerglingUp,Execute" Column="4"/>
+            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="16" removed="1"/>
+            <LayoutButtons index="17" removed="1"/>
+            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="19" removed="1"/>
+            <LayoutButtons index="20" removed="1"/>
+            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="22" removed="1"/>
+            <LayoutButtons index="23" removed="1"/>
+        </CardLayouts>
+        <Radius value="0.4375"/>
+        <MinimapRadius value="0.4375"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
+        <LifeRegenRateCreep value="2"/>
+        <AddedOnArray BehaviorLink="BurrowedDamageReduction"/>
+    </CUnit>
+</Catalog>

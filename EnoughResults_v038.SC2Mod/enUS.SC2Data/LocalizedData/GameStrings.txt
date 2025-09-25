@@ -1,0 +1,765 @@
+﻿Abil/Name/AbsorptionShield=Absorption Shield
+Abil/Name/AdeptPhaseShiftManual=Psionic Transfer
+Abil/Name/AdeptPhaseShiftManual@End=End
+Abil/Name/AdeptPhaseShiftManual@EndTarget=End
+Abil/Name/AmorphousArmorcloudInstant=Amorphous Armorcloud
+Abil/Name/BlindingCloud=Plague Cloud
+Abil/Name/BroodlingSwarm=Broodling Swarm
+Abil/Name/BroodlingTrain=Broodling Train
+Abil/Name/BuildInProgress2=Build in Progress Copy
+Abil/Name/Charge=ChargeOld
+Abil/Name/Chargemew=Charge
+Abil/Name/CombatDrugs=Combat Drugs
+Abil/Name/CompactedShield=Compacted Shield
+Abil/Name/CorruptorDamagingCorruption=Corruption
+Abil/Name/CycloneBurstLockOn@Cancel=Cancel
+Abil/Name/CycloneCloak=Cloaking Field
+Abil/Name/DeactivateAbsortionShield=Deactivate Absortion Shield
+Abil/Name/DropToSupplyDepot=Drop To Supply Depot
+Abil/Name/FirstAid=First Aid
+Abil/Name/IncubateTumor=Incubate Tumor
+Abil/Name/LoadUnloadBunkerNeosteel=Load-Unload (Bunker) Neosteel
+Abil/Name/MassCloakingField=Mass Cloaking Field
+Abil/Name/MedicDefensiveMatrix=Defensive Matrix
+Abil/Name/MedicalSuppliesCalldown=Medical Supplies Calldown
+Abil/Name/MedicalSweep=Med Scanner
+Abil/Name/MorphToNeosteelBunker=Morph to Neosteel Bunker
+Abil/Name/MothershipCoreMassRecall=Mass Recall to Pylon
+Abil/Name/NeosteelBunkerTransport=Load-Unload
+Abil/Name/NitroPacks=Nitro Packs
+Abil/Name/OozeSnare=Ooze Snare
+Abil/Name/OrbitalCommandCalldownRepairDrone=Calldown Repair Drone
+Abil/Name/OrbitalCommandCalldownRepairDrone@Morph=Morph
+Abil/Name/PickupPalletMinerals2=Pickup Pallet Minerals Copy
+Abil/Name/PickupPalletMinerals22=Pickup Pallet Minerals Copy Copy
+Abil/Name/PickupPalletMinerals23=Pickup Pallet Minerals Copy Copy 2
+Abil/Name/PickupPalletMinerals24=Pickup Pallet Minerals Copy Copy 3
+Abil/Name/PlacePointDefenseDrone=Place Targeting Drone
+Abil/Name/RapidConstruction=Rapid Construction
+Abil/Name/RavenScramblerMissile=Interference Matrix
+Abil/Name/RavenShredderMissile=Concussive Missile
+Abil/Name/RechargeShields=Recharge Shields
+Abil/Name/RepairDroneRepair=Repair
+Abil/Name/RuptureTumor=Rupture Tumor
+Abil/Name/SpawnLarvaSolo=Spawn Larva
+Abil/Name/SpreadOut=Spread Out
+Abil/Name/SteadyTargettingCancel=Steady Targetting Cancel
+Abil/Name/StimpackFirebat=StimpackFirebat
+Abil/Name/StimpackMedic=StimpackMedic
+Abil/Name/TownHallLoad=Town Hall Load
+Abil/Name/TransientAssaultMode=Transient Assault Mode
+Abil/Name/TransientFighterMode=Transient Fighter Mode
+Abil/Name/TransientRepairDrone=Transient Repair Drone
+Abil/Name/UnleashNydusWorm=Unleash Nydus Worm
+Abil/Name/VoidRaySwarmDamageBoostRemove=Void Ray Swarm Damage Boost Remove
+Behavior/Name/BlindingCloud=Plague Cloud
+Behavior/Name/BlindingCloudStructure=Plague Cloud
+Behavior/Name/BurrowedDamageReduction=Burrowed Damage Reduction
+Behavior/Name/CombatDrugs=Combat Drugs
+Behavior/Name/CompactedShield@Buff=Compacted Shield
+Behavior/Name/CycloneCloak=Cloak
+Behavior/Name/CycloneCloakCrossSpectrumDampeners=Cloak
+Behavior/Name/EMPChannelCombat=EMP Steady Targeting
+Behavior/Name/FungalGrowthArmorReduction=FungalGrowthArmorReduction
+Behavior/Name/IncubateDummy=Incubate Dummy
+Behavior/Name/Incubated=Incubated
+Behavior/Name/InfestorIsBurrowed=Infestor Is Burrowed
+Behavior/Name/MedRadar=Med Scanner
+Behavior/Name/MedicDefensiveMatrix=Defensive Matrix
+Behavior/Name/MicrobialShroudAura=Microbial Shroud Aura
+Behavior/Name/NapalmGrenade@DoT=Burning
+Behavior/Name/ObeliskSlow=Slow
+Behavior/Name/OozeSnare=Ooze Snare
+Behavior/Name/OozeSnareStructure=Ooze Snare
+Behavior/Name/ParasiticBombDamage=Parasitic Bomb Damage
+Behavior/Name/PointDefenseDroneArmorReduction=PointDefenseDroneArmorReduction
+Behavior/Name/PulsarLocked=Pulsar Locked
+Behavior/Name/PulsarLockedPhoton=Pulsar Locked
+Behavior/Name/RapidConstruction=Rapid Construction
+Behavior/Name/RavenShredderMissileTint=Concussive Missile Targeting
+Behavior/Name/SensorTowerRevealed=Sensor Tower Revealed
+Behavior/Name/SensorTowerRevealinProcess=Sensor Tower Reveal in Process
+Behavior/Name/Slow=Slow
+Behavior/Name/StimpackFirebat=Stimpack
+Behavior/Name/StimpackMedic=Stimpack
+Behavior/Name/SwarmHostisBurrowed=Swarm Host is Burrowed
+Behavior/Name/SwarmPheromones=Swarm Pheromones
+Behavior/Name/SwarmPheromonesEmitter=Swarm Pheromones Emitter
+Behavior/Name/Transfusion=Transfusion
+Behavior/Name/Unleash=Unleash
+Behavior/Name/UnloadAllInBunker=Unload All In Bunker
+Behavior/Name/WarpingInDoubleDamageTaken=Warping In Double Damage Taken
+Behavior/Tooltip/AmorphousArmorcloud=Incoming damage from air units reduced by <d ref="Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%.
+Behavior/Tooltip/CombatDrugs=Combat Drugs are healing the Reaper.
+Behavior/Tooltip/CompactedShield@Buff=This unit takes 50% less damage from any single attack.
+Behavior/Tooltip/Contaminated=This structure functions 75% slower.
+Behavior/Tooltip/CorruptorDamagingCorruption=This unit receives <d ref="Behavior,CorruptorDamagingCorruption,DamageResponse.ModifyAmount"/> extra damage from all sources and is taking <d ref="Accumulator,CorruptorDamagingCorruption@Damage,Amount / Behavior,CorruptorDamagingCorruption,Period"/> damage per second down to a minimum of 1 life.
+Behavior/Tooltip/CycloneBurstLockOn@Target=This unit has been targeted by a Cyclone's Lock On ability.
+Behavior/Tooltip/CycloneCloak=This unit is cloaked and will only be revealed by detectors or effects.
+Behavior/Tooltip/CycloneCloakCrossSpectrumDampeners=This unit is cloaked and will only be revealed by detectors or effects.
+Behavior/Tooltip/EMPChannelCombat=This unit is carefully aiming.
+Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodlings if the affected unit dies.
+Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
+Behavior/Tooltip/Incubated=This structure functions 75% slower.
+Behavior/Tooltip/MedRadar=This unit is revealing the area around it and detecting cloaked units.
+Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
+Behavior/Tooltip/MicrobialShroudAura=Incoming ranged damage reduced by 3.
+Behavior/Tooltip/NapalmGrenade@DoT=Target is under the effects of a Napalm Grenade and will take massive damage while in this area of effect.
+Behavior/Tooltip/ObeliskSlow=This unit has reduced movement and attack speed.
+Behavior/Tooltip/ParasiticBomb=This unit is taking damage over time.
+Behavior/Tooltip/ParasiticBombDamage=This unit is taking damage over time.
+Behavior/Tooltip/PulsarLocked=This structure's weapon is disabled.
+Behavior/Tooltip/PulsarLockedPhoton=This structure's weapon is disabled.
+Behavior/Tooltip/RapidConstruction=This structure has 50% increased build speed.
+Behavior/Tooltip/RavenShredderMissileArmorReduction=This unit has reduced movement speed.
+Behavior/Tooltip/RavenShredderMissileTint=This unit is being targeted by a Concussive Missile.
+Behavior/Tooltip/SeekerMissileSlow=This unit has reduced movement speed.
+Behavior/Tooltip/SensorTowerRevealed=This unit is revealed by a Sensor Tower.
+Behavior/Tooltip/SensorTowerRevealinProcess=This unit will be revealed by a Sensor Tower if it stays in range.
+Behavior/Tooltip/StimpackFirebat=This unit moves and attacks more quickly while under the effects of Stimpack.
+Behavior/Tooltip/StimpackMedic=This unit moves, attacks and heal more quickly while under the effects of Stimpack.
+Behavior/Tooltip/SwarmPheromones=Increases the speed of Locust while near a Swarm Host.
+Behavior/Tooltip/SwarmPheromonesEmitter=Increases the speed of nearby Locust
+Behavior/Tooltip/TemporalField=This unit's attack and movement speeds are increased  by 75%.
+Behavior/Tooltip/Transfusion=This unit is rapidly regenerating health.
+Behavior/Tooltip/VoidRaySwarmDamageBoost=Increase this unit's damage.
+Behavior/Tooltip/WarpingInDoubleDamageTaken=While warping in this unit takes double damage from all attacks.
+Button/Name/AbsorptionShield=Absorption Shield
+Button/Name/AdeptPhaseShiftManual@Teleport=Teleport
+Button/Name/BarrierDurationResearch=Research Extended Barrier Duration
+Button/Name/BlindingCloud=Plague Cloud
+Button/Name/CalldownMedicalSupplies=Calldown: Medical Supplies
+Button/Name/CalldownRepairDrone=Calldown: Repair Drone
+Button/Name/CancelPrismaticAlignment=Cancel Prismatic Alignment
+Button/Name/CliffSight=Cliff Sight
+Button/Name/CloakCycloneOff=Decloak
+Button/Name/CloakOnCyclone=Cloak
+Button/Name/CompactedShield=Compacted Shield
+Button/Name/DeactivateAbsorptionShield=Deactivate Absorption Shield
+Button/Name/DefensiveMatrix=Defensive Matrix
+Button/Name/DisableIgniteAfterburners=Disable Ignite Afterburners
+Button/Name/DormantMetabolism=Dormant Metabolism
+Button/Name/EmergencySweep=Emergency Sweep
+Button/Name/EnergyBinder=Energy Binder
+Button/Name/EvolveCreepGeneration=Evolve Creep Generation
+Button/Name/EvolveDragonflyWings=Evolve Dragonfly Wings
+Button/Name/EvolveGlialRegeneration=Evolve Rapid Regrowth
+Button/Name/FirstAid=First Aid
+Button/Name/GhostCancel=Cancel
+Button/Name/HatcheryDefense=Hatchery Defense
+Button/Name/HiveDefense=Hive Defense
+Button/Name/IncubateTumor=Incubate Tumor
+Button/Name/LairDefense=Lair Defense
+Button/Name/LiftOffResearch=Research Lift Off
+Button/Name/MassCloakingField=Mass Cloaking Field
+Button/Name/MasteryTychusMedivacBuff=Dropship Pickup Cooldown
+Button/Name/Medivac=Build Dropship
+Button/Name/MorphToNeosteelBunker=Transform to Neosteel Bunker
+Button/Name/MothershipCoreMassRecall=Mass Recall in a Power Field
+Button/Name/NapalmGrenade=Napalm
+Button/Name/NapalmHellion=Build Napalm Hellion
+Button/Name/ObeliskHardenedShield=Hardened Shield
+Button/Name/ObeliskSlowSearcher=Slow Aura
+Button/Name/OozeSnare=Ooze Snare
+Button/Name/OrbitalCommandCalldownRepairDrone=Calldown: Construction Drone
+Button/Name/PointDefenseDrone=Build Targeting Drone
+Button/Name/RapidConstruction=Rapid Construction
+Button/Name/RavenShredderMissile=Concussive Missile
+Button/Name/RechargeShields=Recharge Shields
+Button/Name/RepairDroneRepair=Repair
+Button/Name/ResearchCycloneCloak=Research Cloaking Field
+Button/Name/ResearchEnergyBinder=Research Energy Binder
+Button/Name/ResearchFighterMode=Research Fighter Mode
+Button/Name/ResearchKhaydarinCore=Research Khaydarin Core
+Button/Name/ResearchNitroPacks=Research Nitro Packs
+Button/Name/RuptureTumor=Rupture Tumor
+Button/Name/SpawnLarvaSolo=Spawn Larvae
+Button/Name/SpreadOut=Spread Out
+Button/Name/StimFirebat=Use Stimpack
+Button/Name/StimMedic=Use Stimpack
+Button/Name/SwarmPheromones=Swarm Pheromones
+Button/Name/TownHallLoad@Load=Load
+Button/Name/TownHallLoad@UnloadAll=Unload All
+Button/Name/UnleashNydusWorm=Unleash Nydus Worm
+Button/Name/VikingAssault2=Build Viking
+Button/Name/Wall=Build Barrier
+Button/Name/WarpInObelisk=Warp In Obelisk 
+Button/Name/XelNagaHealingShrine2=Xel Naga Healing Shrine Copy
+Button/Tooltip/AbsorptionShield=Decreases incoming damage that is less than 15 to 1 damage to the Oracle.<n/> <n/><c val="f078ff">Drains <d ref="-Behavior,AbsorptionShield,Modification.VitalRegenMultiplier[Energy] * Unit,Oracle,EnergyRegenRate" precision="1"/> energy per second.</c>
+Button/Tooltip/AdeptHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable Shade that can move but cannot attack. Can be reactivated to teleport the Adept to the Shade's location. Expires after <d ref="Behavior,AdeptPhaseShiftManual@Timer,Duration"/> seconds.
+Button/Tooltip/AdeptPhaseShiftManual@Teleport=Teleports the Adept to the Shade, destroying the Shade in the process.
+Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 50%.
+Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 50%.
+Button/Tooltip/AmorphousArmorcloud=Creates a shroud that obscures ground units underneath, reducing damage taken from air units and distant ground units by <d ref="1-Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/AnionPulseCrystals=Doubles the damage of the Phoenix.
+Button/Tooltip/Arbiter=Flying caster. Can use Time Warp, Mass Cloaking and Recall in a Power Field.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/ArchonHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/Armory=Contains weapon and armor upgrades for Factory and Starport units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Cyclone at the Factory<n/><n/>- Thor at the Factory
+Button/Tooltip/AutoTurret=Automated defensive turret. Times out after <d ref="Behavior,AutoTurretTimedLife,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>  Can detect cloaked and burrowed units.
+Button/Tooltip/Banshee=Tactical-strike aircraft. Can be upgraded to use cloak.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/Barracks=Infantry-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs<n/>- Orbital Commands from Command Centers
+Button/Tooltip/BlindingCloud=Creates a cloud that deals up to <d ref="(1 + Effect,BlindingCloudCP,PeriodCount) * Effect,BlindingCloudDamage,Amount"/> damage to affected enemy ground units over <d ref="(1 + Effect,BlindingCloudCP,PeriodCount) * Effect,BlindingCloudCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/BuildCreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
+Button/Tooltip/BuildCreepTumorPropagate=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
+Button/Tooltip/BuildTechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
+Button/Tooltip/BuildTechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
+Button/Tooltip/Bunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +2 range to units inside.</c>
+Button/Tooltip/BurrowDown=Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection and take 50% less damage.
+Button/Tooltip/CalldownMedicalSupplies=Drops Medical Supplies. The Medical Supplies heals nearby units.
+Button/Tooltip/CalldownRepairDrone=Drops a Repair Drone onto at the target location. Repair Drones repair mechanical units at no cost and can construct buildings.
+Button/Tooltip/CancelPrismaticAlignment=Returns Void Ray damage and speed to normal values.
+Button/Tooltip/ChannelSnipe=After aiming for 2 seconds, the Ghost fires a sniper round every 2 seconds dealing <d ref="Effect,ChannelSnipeDamage,Amount"/> (+20 to Massive) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo"></c><n/><c val="f078ff">Each additional sniper round costs 10 energy.</c>
+Button/Tooltip/Charge=The Zealot gains increased speed for 2 seconds.
+Button/Tooltip/CliffSight=This unit can see up cliffs.
+Button/Tooltip/CloakCycloneOff=Decloaks the selected unit, making it visible to enemies.
+Button/Tooltip/CloakOnCyclone=Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,BansheeCloak,Modification.VitalRegenArray[2] + Unit,Banshee,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/ColossusHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/CombatDrugs=Regenerates life quickly for 14 seconds.
+Button/Tooltip/CombatShield=Increases Marine life by 25.
+Button/Tooltip/CompactedShield=Friendly ground units and structures in the target area take 50% less damage from any single source for <d ref="Behavior,CompactedShield@Buff,Duration"/> seconds. Does not affect massive units.
+Button/Tooltip/Contaminate=The target non-defencive structure functions 75% slower for <d ref="Behavior,Contaminated,Duration"/> seconds.
+Button/Tooltip/Corruptor=Anti-air flyer. Can use Corruption. Can morph into a Brood Lord.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/CorruptorDamagingCorruption=Covers the target enemy unit in damaging slime, dealing <d ref="Accumulator,CorruptorDamagingCorruption@Damage,Amount / Behavior,CorruptorDamagingCorruption,Period"/> damage per second for <d ref="Behavior,CorruptorDamagingCorruption,Duration"/> seconds or until the target is close to death. While affected, the target takes <d ref="Behavior,CorruptorDamagingCorruption,DamageResponse.ModifyAmount"/> additional damage from all sources.
+Button/Tooltip/CreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
+Button/Tooltip/CyberneticsCore=Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<n/><n/><c val="ffff8a">Enables:</c><n/>- Sentries at the Gateway<n/>- Stalkers at the Gateway
+Button/Tooltip/D8ChargeBomb=Explodes after a short delay, doing 30 initial damage.
+Button/Tooltip/DeactivateAbsorptionShield=Disables the Oracle's Absortion shield.
+Button/Tooltip/DisableIgniteAfterburners=Disables Medivac Afterburners.
+Button/Tooltip/DisruptorHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/DormantMetabolism=The Infestor has a much slower energy generation while burrowed.
+Button/Tooltip/DrillClaws=This unit moves and burrows faster.
+Button/Tooltip/EMP=Creates an electromagnetic pulse that does 300 damage to shields and 100 damage to energy of all units in the targeted area. Cloaked units hit by EMP are revealed for a short time.
+Button/Tooltip/EmergencySweep=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
+Button/Tooltip/EnergyBinder=Increases Guardian Shield damage absorption by 1.
+Button/Tooltip/EngineeringBay=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:<n/>- Reapers at the barrack</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Walls from SCVs<n/>- Planetary Fortresses from Command Centers
+Button/Tooltip/EvolveAnabolicSynthesis2=Increases the movement speed of <c val="ffff8a">Ultralisks</c>.
+Button/Tooltip/EvolveCentrificalHooks=<c val="ffff8a">Banelings</c> gain increased movement speed.
+Button/Tooltip/EvolveCreepGeneration=Allows <c val="ffff8a">Overlords</c> to generate creep.
+Button/Tooltip/EvolveDiggingClaws=Reduces the time <c val="ffff8a">Lurkers</c> take to burrow from 4 to 1 second.
+Button/Tooltip/EvolveDragonflyWings=Increases the movement speed of <c val="ffff8a">Locusts</c>.
+Button/Tooltip/EvolveGlialRegeneration=Roaches gain double life regeneration.
+Button/Tooltip/EvolveInfestorEnergyUpgrade=Doubles the energy regeneration of the Infestor. 
+Button/Tooltip/EvolveTunnelingClaws=Enables <c val="ffff8a">Roaches</c> to move 30% faster while burrowed.
+Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Widow Mines<n/>- Viking
+Button/Tooltip/FirstAid=Heals a target for 30 hp.
+Button/Tooltip/FleetBeacon=Contains upgrades for Phoenixes and Void Rays.<n/><n/><c val="ffff8a">Enables:</c><n/>- Tempests at the Stargate</n>- Carriers at the Stargate<n/>- Arbiter at the Stargate
+Button/Tooltip/Forge=Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<n/><n/><c val="ffff8a">Enables:</c><n/>- Photon Cannons from Probes <n/>- Obelisks from Probes<n/>- Warp Prisms at the Nexus<n/>- Adepts at the Gateway
+Button/Tooltip/FungalGrowth=Slows target units for 10 seconds and causes 25 damage. Reveals cloaked and burrowed units.
+Button/Tooltip/FusionCore=Contains Liberator, Raven and Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Liberator at the Starport<n/><n/>- Battlecruisers at the Starport
+Button/Tooltip/GhostCancel=Cancels the current Lock On, and allows you to select a new target.
+Button/Tooltip/GuardianShield=Creates a range 4 aura that modifies incoming ranged damage to friendly units by <d ref="Behavior,GuardianShield,DamageResponse.ModifyAmount"/>.
+Button/Tooltip/Hallucination=Creates hallucinations that cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d ref="Behavior,HallucinationTimedLife,Duration"/> seconds. Enemy detectors reveal hallucinations.
+Button/Tooltip/HatcheryDefense=Constantly spawn 2 Broodlings for 14 seconds.
+Button/Tooltip/HighCapacityFuelTanks=Increases the Dropship's fuel reserves, allowing Ignite Afterburners to last 50% longer.
+Button/Tooltip/HighTemplar=Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/HighTemplarHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/Hive=Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Vipers from Larvae<n/>- Ravagers from Roaches<n/>
+Button/Tooltip/HiveDefense=Spawn a wave of 4 Broodlings every 2 seconds for 20 seconds.
+Button/Tooltip/HydraliskDen=Contains an upgrade for Hydralisks.<n/><n/><c val="ffff8a">Enables:</c><n/>- Hydralisks from Larvae
+Button/Tooltip/ImmortalHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/IncubateTumor=Incubates an exhausted Creep Tumor, giving it the ability to spawn another creep tumor or spawn broodlings.
+Button/Tooltip/IncubatedTumor=A burrowed creep generator. Creep feeds nearby Zerg structures.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
+Button/Tooltip/InfestationPit=Contains upgrades for Infestors.<n/><n/><c val="ffff8a">Enables:</c><n/>- Infestors from Larvae
+Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 25 (+25 to armored) damage to nearby units.
+Button/Tooltip/Lair=Evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Overseers from Overlords<n/>- Lurkers from Hydralisks<n/>- Swarm Hosts from Larvae
+Button/Tooltip/LairDefense=Spawn a wave of 3 Broodlings every 2 seconds for 20 seconds.
+Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCenter,Name"/>, <d stringref="Unit,OrbitalCommand,Name"/>, <d stringref="Unit,Barracks,Name"/>, <d stringref="Unit,Factory,Name"/> and <d stringref="Unit,Starport,Name"/>.<n/><n/><n/>
+Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structure, dealing 280 damage over 14 seconds. Can move while firing. Cancels if target moves out of range.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or ground structures.</c>
+Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
+Button/Tooltip/MasteryTychusMedivacBuff=Reduces the cooldown of the Dropship Pickup ability.
+Button/Tooltip/MedicDefensiveMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
+Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
+Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
+Button/Tooltip/Medivac=Air transport. Can place Auto-Turrets.
+Button/Tooltip/MedivacLoad=Loads units into the Dropship's hold.
+Button/Tooltip/MedivacSpeedBoost=Increases the Dropship's movement speed by 70% until out of energy.
+Button/Tooltip/MissileTurret=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/MorphToNeosteelBunker=Transforms the Bunker into a Neosteel Bunker. The Neosteel Bunker can carry 4 additional cargo and has an additional 300 life.
+Button/Tooltip/MothershipCoreMassRecall=Teleports the Arbiter and all nearby units owned by the player to the target point within a power field.
+Button/Tooltip/MutateintoLurkerDen=Enables Lurkers from Hydralisks.
+Button/Tooltip/NapalmGrenade=Attacks set the ground ablaze, dealing up to <d ref="Effect,NapalmGrenade@DamageDoTInitial,Amount + (Effect,NapalmGrenade@CPDoT,PeriodCount + 1 * Effect,NapalmGrenade@DamageDoTPeriodic,Amount)"/> damage to ground units at the target location over <d ref="Effect,NapalmGrenade@CPDoT,PeriodicPeriodArray[0] * Effect,NapalmGrenade@CPDoT,PeriodCount"/> seconds.
+Button/Tooltip/NapalmHellion=Fast scout. Attack create a lingering pool of fire that deals damage to ground units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/Nexus=Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<n/><n/><c val="ffff8a">Enables:</c><n/>- Probes<n/>- Warp Prism
+Button/Tooltip/NukeArm=Arms the Silo with a Tactical Nuke.<n/><n/>Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage in a large radius.<n/><n/>Use a Ghost to designate the target.
+Button/Tooltip/NukeCalldown=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/ObeliskHardenedShield=Reduces a maximum of 100 incoming damage to 1 while the Obelisk still has shields.
+Button/Tooltip/ObeliskSlowSearcher=Slows enemies near the Obelisk
+Button/Tooltip/OozeSnare=Creates ooze that slows enemy ground units by 75%.
+Button/Tooltip/Oracle=Flying caster. Can use Revelation, Stasis Ward, and Absorption Shield. <n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/OracleHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/OracleWeaponOn=Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<n/>Attacking enemy defencive structures disables their weapon temporarily.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,OracleWeapon,Modification.VitalRegenArray[2] + Unit,Oracle,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/OrbitalCommand=Upgrades Command Center to an Orbital Command, unlocking Calldown: Construction Drone and Scanner Sweep. Cannot load SCVs.
+Button/Tooltip/OrbitalCommandCalldownRepairDrone=Drops a robotic Construction Drone at the target location that can construct Terran structures and repairs mechanical units and structures for free.<n/><n/>Construction Drones last <d ref="Behavior,OrbitalCommandCalldownRepairDrone@TimedLife,Duration"/> seconds before their systems fail.
+Button/Tooltip/PhasingMode=Transforms the Warp Prism to Phasing Mode and generates a power radius similar to that of a Pylon. In this mode the Warp Prism can also recharge Protoss shields. The Warp Prism cannot move in this mode.
+Button/Tooltip/Phoenix=Air-superiority fighter.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/PhoenixHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/PhoenixRangeUpgrade=Increase the damage of the Phoenix.
+Button/Tooltip/PickupBlueMinerals=<s val="Kicker_Minerals">+<d ref="Effect,PickupPalletMinerals2,Resources[0]"/> </s>
+Button/Tooltip/PlanetaryFortress=Upgrades Command Center to a Planetary Fortress, greatly increasing its armor, arming it with a powerful defensive turret and allows 2 <c val="ffff8a">SCVs</c> to be created simultaneously. Cannot lift off.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/PointDefenseDrone=Reducing armor and shield armor on all opponent units in the range of the Targeting Drone.<n/>Times out after <d ref="Behavior,PointDefenseDroneTimedLife,Duration"/> seconds.<n/><n/>
+Button/Tooltip/ProbeHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/PsiStorm=Creates a storm of psionic energy that lasts <d time="7"/>, causing up to 104 (+78 to shields) damage to all units in the target area.
+Button/Tooltip/RapidConstruction=Increases construction speed of a friendly structure by 50%.
+Button/Tooltip/RapidRegeneration=The Roach regenerates life quickly and very quickly while burrowed.
+Button/Tooltip/RapidReignitionSystem=Reduces the cooldown of Dropship's Ignite Afterburners by <d time="[d ref='$UpgradeEffectArrayValue:MedivacIncreaseSpeedBoost:Abil,MedivacSpeedBoost,Cost[0].Cooldown.TimeUse$'/]"/> and increases the movement speed of Dropship.
+Button/Tooltip/RavagerCorrosiveBile=Launch a missile at the target location, dealing <d ref="Effect,RavagerCorrosiveBileDamage,Amount"/> damage (+100 to massive and +50 to shield) to all units in the area upon impact.
+Button/Tooltip/Raven=Aerial support unit. Can use Auto-Turret, Interference Matrix, and Anti-Armor Missile.<n/><n/><c val="FFE303">Detector</c>
+Button/Tooltip/RavenScramblerMissile=Disable all units in target area, rendering them unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
+Button/Tooltip/RavenShredderMissile=Deploys a missile which pursues the target unit and, upon contact, reduces the movement speed of affected units by <d ref="100 * (1 - Behavior,RavenShredderMissileArmorReduction,Modification.MoveSpeedMultiplier)"/>% for <d ref="Behavior,RavenShredderMissileArmorReduction,Duration"/> seconds.
+Button/Tooltip/Reaper=Raider. Can be upgraded to jump up and down cliffs. Can use KD8 Charge and Combat Drugs.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/RechargeShields=Rapidly recharges a friendly out of combat non-structure units Shields.
+Button/Tooltip/RepairDroneRepair=Restores life to mechanical units and structures.
+Button/Tooltip/ResearchArbiterEnergyUpgrade=Doubles the energy regeneration of the Arbiter. 
+Button/Tooltip/ResearchBallisticRange=Increases the range of <c val="ffff8a">Liberators</c> in Defender Mode by 3.
+Button/Tooltip/ResearchBarrier=Increases <c val="ffff8a">Immortal</c> Barrier duration to 30 seconds.
+Button/Tooltip/ResearchBattlecruiserSpecializations=Enables use of the <c val="ffff8a">Battlecruiser</c> Yamato Cannon.
+Button/Tooltip/ResearchBurrow=Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack and take 50% less damage. A burrowed unit is invisible unless revealed by detectors or effects.
+Button/Tooltip/ResearchCharge=The Zealot gains increased speed for 2 seconds.
+Button/Tooltip/ResearchCycloneCloak=Enables <c val="ffff8a">Cyclone</c> to use the Cloak ability. Cloak renders the <c val="ffff8a">Cyclone</c> invisible to enemies unless the unit is revealed by detectors or effects.
+Button/Tooltip/ResearchDrillClaws=Allows <c val="ffff8a">Widow Mines</c> to move, burrow and unburrow faster.
+Button/Tooltip/ResearchEnergyBinder=Increases Guardian Shield damage absorption by 1.
+Button/Tooltip/ResearchExtendedThermalLance=Increases the range of the <c val="ffff8a">Colossus</c> weapon by 3.
+Button/Tooltip/ResearchFighterMode=Enables the Viking to transform to Fighter Mode. In this mode Vikings fly, but they can only attack air targets.
+Button/Tooltip/ResearchGhostEnergyUpgrade=Doubles the energy regeneration of <c val="ffff8a">Ghosts</c>.
+Button/Tooltip/ResearchHallucination=Allows <c val="ffff8a">Sentries</c> to use Hallucination.<n/><n/>Hallucination creates copies of the selected unit. These copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d ref="Behavior,HallucinationTimedLife,Duration"/> seconds before they disappear. Enemy detectors are able to distinguish between hallucinated Protoss units and real Protoss units.
+Button/Tooltip/ResearchHighCapacityBarrels=Improves the <c val="ffff8a">Hellion's</c> Infernal Flamethrower to deal +2 damage (+3 vs light) and the <c val="ffff8a">Hellbat's</c> Napalm Spray to deal +2 damage (+10 vs light).
+Button/Tooltip/ResearchKhaydarinCore=Increase the energy regeneration of the Arbiter. 
+Button/Tooltip/ResearchNitroPacks=Allows the Reaper to travel up and down cliffs.
+Button/Tooltip/ResearchRapidReignitionSystem=Reduces the cooldown of <c val="ffff8a">Dropship's</c> Ignite Afterburners by <d time="[d ref='$UpgradeEffectArrayValue:MedivacIncreaseSpeedBoost:Abil,MedivacSpeedBoost,Cost[0].Cooldown.TimeUse$'/]"/> and increases the movement speed of <c val="ffff8a">Dropships</c>.
+Button/Tooltip/ResearchRavenEnergyUpgrade=Increase the energy regeneration of the <c val="ffff8a">Ravens</c>.
+Button/Tooltip/ResearchShieldWall=<c val="ffff8a">Marines</c> gain +25 life.
+Button/Tooltip/RoachWarren=Contains upgrades for Roaches.<n/><n/><c val="ffff8a">Enables:</c><n/>- Roaches from Larvae
+Button/Tooltip/RoboticsBay=Contains upgrades for the Observer, Warp Prism, and Colossus.<n/><n/><c val="ffff8a">Enables:</c><n/>- Colossi at the Robotics Facility
+Button/Tooltip/RoboticsFacility=Warps in Protoss robotic units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Observers<n/>- Immortals<n/>- Disruptors
+Button/Tooltip/RuptureTumor=Ruptures the Tumor, spawning two Broodlings.
+Button/Tooltip/SensorTower=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy. <n/><c val="FFE303">Detector</c>
+Button/Tooltip/Snipe=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
+Button/Tooltip/Snipe2=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
+Button/Tooltip/SpawnLarvaSolo=Spawns 4 Larvae that can morph into Zerg units. Larva slowly die off creep.
+Button/Tooltip/SpreadOut=Orders selected units to spread out.
+Button/Tooltip/StalkerHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Drop Ships<n/>- Banshees
+Button/Tooltip/Stim=Injects the unit with powerful stimulants that greatly increase attack and movement speeds for a few seconds. Injures the unit for 20 of the unit's life.
+Button/Tooltip/StimFirebat=Injects the unit with powerful stimulants that greatly increase attack and movement speeds for a few seconds. Injures the unit for 40 of the unit's life.
+Button/Tooltip/StimMedic=Injects the unit with powerful stimulants that greatly increase attack, heal and movement speeds for a few seconds. Injures the unit for 20 of the unit's life.
+Button/Tooltip/StimRedirect=Orders Marines and Firebats inside of the Bunker to use Stimpacks. They will take damage and have increased attack speed as normal.
+Button/Tooltip/Stimpack=Enables <c val="ffff8a">Marines</c> and <c val="ffff8a">Firebats</c> to use the Stimpack ability. Stimpacks cause damage to a unit, but they increase its attack and movement speeds for a short time.
+Button/Tooltip/SwarmPheromones=Increases speed by +3 for Locust within 12 range of this Swarm Host.
+Button/Tooltip/TechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
+Button/Tooltip/TechLabFactory=Vehicle-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Siege Tanks<n/>- Thor with Armory
+Button/Tooltip/TechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
+Button/Tooltip/TemporalField=The Arbiter warps spacetime within the target area for <d ref="Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodCount*Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodicPeriodArray[0]"/> seconds. All enemy units and structures within the field will have attack and movement speeds increased by <d ref="(Behavior,TemporalField,Modification.MoveSpeedMultiplier)*100-100"/>%.
+Button/Tooltip/TownHallLoad@Load=Loads units into the structure.
+Button/Tooltip/TownHallLoad@UnloadAll=Unloads all units.
+Button/Tooltip/Transfusion=Restores 200 life to target biological unit or structure over 8 seconds.
+Button/Tooltip/TwilightCouncil=Contains upgrades for Zealots, Sentrys, Stalkers and Adepts.
+Button/Tooltip/UpgradeBuildingArmorLevel1=Upgrades the armor of <c val="ffff8a">structures</c> by 2.
+Button/Tooltip/UpgradeToPlanetaryFortress=Upgrades Command Center to a Planetary Fortress, greatly increasing its armor, arming it with a powerful defensive turret and allows 2 <c val="ffff8a">SCVs</c> to be created simultaneously. Cannot lift off.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/VikingAssault2=Durable support mech. Loaded with gatling guns and strong anti-capital air missiles. Can switch into Fighter Mode to fly over obstacles.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/VikingGround2=Durable support mech. Loaded with gatling guns and strong anti-capital air missiles. Can switch into Fighter Mode to fly over obstacles.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/ViperConsume=Latches onto the target structure, dealing <d ref="Effect,ViperConsumeDamage,Amount * Effect,ViperConsumeStructureCreatePersistent,PeriodCount)"/> damage and restoring <d ref="(Effect,ViperConsumeStructureModifyCaster,VitalArray[2].Change / Behavior,TimeScaleConversionBehavior,Duration)" precision="1"/> energy to the Viper every second. Lasts for <d time="20"/>.<n/><n/>
+Button/Tooltip/VoidRayHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/VoidRaySwarmDamageBoost=Realigns the Void Ray's Prismatic Beam to triple its damage for <d ref="Behavior,VoidRaySwarmDamageBoost,Duration[0]"/> seconds. Significantly slows down the Void Ray.
+Button/Tooltip/VoidSwarmHostSpawnLocust=Spawns 2 Locusts. Locusts have a <d ref="Behavior,LocustMPTimedLife,Duration"/> second timed life.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/Wall=Makeshift barrier that blocks ground movement.
+Button/Tooltip/WarpInAdept=Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/>
+Button/Tooltip/WarpInObelisk=Can slow enemies
+Button/Tooltip/WarpPrism=Flying transport. Can load units from a distance. Can also deploy to create a power field and to recharge Protoss shields.
+Button/Tooltip/WarpPrismHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/WidowMineBioSplash=Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <d ref="Effect,WidowMineExplodeDirect,Amount"/> damage to their primary target, and <d ref="Effect,WidowMineExplodeSplash,Amount"/> splash damage to units nearby.<n/><n/><c val="#ColorAttackInfo">Cooldown: <d ref="Abil,WidowMineAttack,Cost[0].Cooldown[0].TimeUse[0]"/> seconds.</c>
+Button/Tooltip/ZealotHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
+Button/Tooltip/zerglingattackspeed=Increases the damage against armored units and structures and the attack speed of <c val="ffff8a">Zerglings</c> by 60%.
+CreepTumor Exhausted=Must target an Exhausted Creep Tumor.
+DataCollection/Name/AdeptPhaseShiftManual=Phase Shift
+DataCollection/Name/CargoTracker=CargoTracker
+DataCollection/Name/CompactedShield=Compacted Shield
+DataCollection/Name/CorruptorDamagingCorruption=Damaging Corruption
+DataCollection/Name/CycloneBurstLockOn=Burst Lock-On
+DataCollection/Name/D8ChargeBomb=D8 Charge Bomb
+DataCollection/Name/D8ChargeBombClusterbomb=Clusterbomb
+DataCollection/Name/D8ChargeBombExplode=Explode
+DataCollection/Name/D8ChargeClusterbomb=D8 Charge Clusterbomb
+DataCollection/Name/D8ChargeClusterbombExplode=Explode
+DataCollection/Name/DecayOffCreep=Decay Off Creep
+DataCollection/Name/LarvaPlaceholder=Larva Placeholder
+DataCollection/Name/MedicDefensiveMatrix=Defensive Matrix
+DataCollection/Name/MedicP45GaussPistol=P-45 Gauss Pistol
+DataCollection/Name/MorphToNeosteelBunker=Morph To Neosteel Bunker
+DataCollection/Name/NapalmGrenade=Napalm Grenade
+DataCollection/Name/NapalmHellion=Napalm Hellion
+DataCollection/Name/NeosteelBunkerTransport=Transport
+DataCollection/Name/OrbitalCommandCalldownRepairDrone=Calldown Repair Drone
+DataCollection/Name/ReaperD8Charge=D8 Charge
+DataCollection/Name/ReaperD8ChargeClusterbomb=D8 Charge Clusterbomb
+DataCollection/Name/RepairDrone=Repair Drone
+DataCollection/Name/RepairDroneRepair=Repair
+DataCollection/Name/SpawnLarvaSolo=Spawn Larva
+DataCollection/Name/TownHallLoad=Town Hall Load
+DataCollection/Name/TransientAssaultMode=Transient Assault Mode
+DataCollection/Name/TransientFighterMode=Transient Fighter Mode
+DataCollection/Name/TransientRepairDrone=Transient Repair Drone
+DataCollection/Name/WeaponKD8Charge=KD8 Charge
+DocInfo/DescLong=Changed StarCraft 2 LotV multiplayer with the following goals:<n/>- Stay as close as possible to the original SC2 LotV multiplayer<n/>- Give all players more time to react<n/>- Increasing the identity of each faction<n/>- Give all factions more viable unit compositions<n/><n/>
+DocInfo/DescShort=Any
+DocInfo/Name=sc2YouWant
+Effect/Name/AbsorptionShieldAB=Absorption Shield AB
+Effect/Name/AbsortionShieldRB=Absortion Shield RB
+Effect/Name/AdeptPhaseShiftManual@ABCaster=Apply Behavior
+Effect/Name/AdeptPhaseShiftManual@ABTarget=Apply Behavior
+Effect/Name/AdeptPhaseShiftManual@ABTimer=Apply Behavior
+Effect/Name/AdeptPhaseShiftManual@ATUCaster=Add Tracked Unit
+Effect/Name/AdeptPhaseShiftManual@CU=Create Unit
+Effect/Name/AdeptPhaseShiftManual@ETUCancelCaster=Enum Tracked Unit
+Effect/Name/AdeptPhaseShiftManual@IOMove=Issue Order
+Effect/Name/AdeptPhaseShiftManual@Kill=Kill
+Effect/Name/AdeptPhaseShiftManual@MUCopyOrderQueue=Modify Unit
+Effect/Name/AdeptPhaseShiftManual@MUCopySelection=Modify Unit
+Effect/Name/AdeptPhaseShiftManual@RBCaster=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBFungalGrowth=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBFungalGrowthMovement=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBGravitonBeam=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBMothershipRecalled=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBMothershipRecalling=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBNeuralParasite=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBPhaseShift=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@RBTimer=Remove Behavior
+Effect/Name/AdeptPhaseShiftManual@SetCancel=Set
+Effect/Name/AdeptPhaseShiftManual@SetCasterFinal=Set
+Effect/Name/AdeptPhaseShiftManual@SetCreate=Set
+Effect/Name/AdeptPhaseShiftManual@SetFinal=Set
+Effect/Name/AdeptPhaseShiftManual@SetInitial=Set
+Effect/Name/AdeptPhaseShiftManual@SetRemoveDisables=Set
+Effect/Name/AdeptPhaseShiftManual@SetTeleport=Set
+Effect/Name/AdeptPhaseShiftManual@SwitchFinal=Switch
+Effect/Name/AdeptPhaseShiftManual@Teleport=Teleport
+Effect/Name/AmorphousArmorcloudCP=MicrobialShroudCP
+Effect/Name/ArbiterMassCloakingAP=Arbiter Mass Cloaking AP
+Effect/Name/BlindingCloudDamage=Blinding Cloud Damage
+Effect/Name/BlindingCloudDamageNotify=Blinding Cloud Damage
+Effect/Name/BroodlingShotAB=Broodling Shot
+Effect/Name/BroodlingShotCU=Broodling Shot
+Effect/Name/BroodlingShotD=Broodling Shot
+Effect/Name/BroodlingShotLM=Broodling Shot
+Effect/Name/BroodlingShotSet=Broodling Shot
+Effect/Name/BroodlingSwarm=Broodling Swarm
+Effect/Name/BroodlingSwarmHatchSet=Broodling Swarm Hatch Set
+Effect/Name/BroodlingSwarmHiveSet=Broodling Swarm Hive Set
+Effect/Name/BroodlingSwarmIssueOrder=Broodling Swarm Issue Order
+Effect/Name/BroodlingSwarmLairSet=Broodling Swarm Lair Set
+Effect/Name/BroodlingSwarmSwitch=Broodling Swarm Switch
+Effect/Name/BunkerABRangeBonus=Apply Behavior
+Effect/Name/BunkerRBRangeBonus=Remove Behavior
+Effect/Name/CalldownMULEIssueOrder=Calldown MULE (Issue Order Gather)
+Effect/Name/CalldownMULEIssueOrderConstruction=Calldown MULE (Issue Order Construction)
+Effect/Name/CargoTracker@ATU=Add Tracked Unit
+Effect/Name/CargoTracker@IT=Iterate Transport
+Effect/Name/ChannelSnipeDamageSetNoCost=Channel Snipe Damage Set No Cost
+Effect/Name/ChannelSnipeEnergyCost=Channel Snipe Energy Cost
+Effect/Name/ChannelSnipeEnergyRefund2=Channel Snipe Energy Refund
+Effect/Name/CombatDrugsAP=Combat Drugs AP
+Effect/Name/CombatDrugsHeal=Combat Drugs Heal
+Effect/Name/CommandBeam=Command Beam
+Effect/Name/CompactedShield@AB=Apply Behavior
+Effect/Name/CompactedShield@SA=Search Area
+Effect/Name/Contaminate2=Contaminate Copy
+Effect/Name/ContaminateApplyBehavior2=Contaminate Apply Behavior Copy
+Effect/Name/ContaminateCastSet=Contaminate Cast Set
+Effect/Name/CorruptorDamagingCorruption@AB=Apply Behavior
+Effect/Name/CorruptorDamagingCorruption@CP=Create Persistent
+Effect/Name/CorruptorDamagingCorruption@Damage=Damage
+Effect/Name/CorruptorDamagingCorruption@LM=Launch Missile
+Effect/Name/CycloneBurstLockOn@ABAlternateWeapon=Apply Behavior
+Effect/Name/CycloneBurstLockOn@ABDisableAttack=Apply Behavior
+Effect/Name/CycloneBurstLockOn@ABRangeDummy=Apply Behavior
+Effect/Name/CycloneBurstLockOn@ABTarget=Apply Behavior
+Effect/Name/CycloneBurstLockOn@CPChannel=Create Persistent
+Effect/Name/CycloneBurstLockOn@CPVolley=Create Persistent
+Effect/Name/CycloneBurstLockOn@Damage=Damage
+Effect/Name/CycloneBurstLockOn@DamageDummy=Damage Dummy
+Effect/Name/CycloneBurstLockOn@LMLeft=Launch Missile
+Effect/Name/CycloneBurstLockOn@LMRight=Launch Missile
+Effect/Name/CycloneBurstLockOn@MUTurretClear=Modify Unit
+Effect/Name/CycloneBurstLockOn@MUTurretStart=Modify Unit
+Effect/Name/CycloneBurstLockOn@RBAlternateWeapon=Remove Behavior
+Effect/Name/CycloneBurstLockOn@RBDisableAttack=Remove Behavior
+Effect/Name/CycloneBurstLockOn@RBRangeDummy=Remove Behavior
+Effect/Name/CycloneBurstLockOn@RBTarget=Remove Behavior
+Effect/Name/CycloneBurstLockOn@SetClear=Set
+Effect/Name/CycloneBurstLockOn@SetInitial=Set
+Effect/Name/CycloneBurstLockOn@SetLaunchLeft=Set
+Effect/Name/CycloneBurstLockOn@SetLaunchRight=Set
+Effect/Name/CycloneBurstLockOn@SetStart=Set
+Effect/Name/CycloneBurstLockOn@SwitchInitial=Switch
+Effect/Name/CycloneBurstLockOn@SwitchLaunch=Switch
+Effect/Name/D8ChargeBombClusterbomb@CP=Create Persistent
+Effect/Name/D8ChargeBombClusterbomb@CU=Create Unit
+Effect/Name/D8ChargeBombClusterbomb@LM=Launch Missile
+Effect/Name/D8ChargeBombClusterbomb@SetLaunch=Set
+Effect/Name/D8ChargeBombExplode@Damage=Damage
+Effect/Name/D8ChargeBombExplode@Set=Set
+Effect/Name/D8ChargeClusterbombExplode@Damage=Damage
+Effect/Name/D8ChargeClusterbombExplode@Set=Set
+Effect/Name/DecayOffCreep@Damage=Damage
+Effect/Name/DropBlueMinerals=Drop Blue Minerals
+Effect/Name/DropBlueMineralsMule=Drop Blue Minerals Mule
+Effect/Name/DropBlueMineralsSwitch=Drop Blue Minerals Switch
+Effect/Name/DropRichMinerals=Drop Rich Minerals
+Effect/Name/DropVespene=Drop Vespene
+Effect/Name/EMPChannelCombat=EMPChannelCombat
+Effect/Name/EMPChannelCombatBeamDummy=EMPChannelCombat Beam Dummy
+Effect/Name/EMPChannelCombatEnergyRefund=EMPChannelCombatEnergyRefund
+Effect/Name/EMPChannelCombatRB=EMPChannelCombat RB
+Effect/Name/EMPChannelRefundRB=EMPChannelRefundRB
+Effect/Name/EMPChannelRefundSet=EMPChannelRefundSet
+Effect/Name/EMPKillShade=EMP (Kill Shade)
+Effect/Name/EmergencyThurstersEnergyCost=Emergency Thursters Energy Cost
+Effect/Name/FungalGrowth@SpawnBroodling=Fungal Growth@Spawn Broodling
+Effect/Name/FungalGrowthArmorReductionAB=FungalGrowthArmorReductionAB
+Effect/Name/HighTemplarWeaponInstant@CP=HighTemplarWeaponInstant@CP
+Effect/Name/HighTemplarWeaponInstant@Damage=High Templar Weapon Instant @ Damage
+Effect/Name/HighTemplarWeaponInstant@DamageBurst=High Templar Weapon Instant @ Damage Burst
+Effect/Name/HighTemplarWeaponInstant@Set=HighTemplarWeaponInstant@Set
+Effect/Name/IgniteAfterburnersRB=Ignite Afterburners RB
+Effect/Name/IncubateLM=Incubate LM
+Effect/Name/IncubateTumor=Incubate Tumor
+Effect/Name/IncubateTumorDummyAB=Incubate Tumor Dummy AB
+Effect/Name/IncubateTumorSet=Incubate Tumor Set
+Effect/Name/IonCannonsU=Ion Cannons Damage
+Effect/Name/IterateTransportUnloadAllUnits=Iterate Transport Unload All Units
+Effect/Name/IterateTransportUnloadAllUnits2=Iterate Transport Test
+Effect/Name/LanzerTorpedoesGround=Halo Rockets (Persistent)
+Effect/Name/LanzerTorpedoesLMGround=Halo Rockets (Launch Missile)
+Effect/Name/LocustMPDamage=Locust MP Damage Copy
+Effect/Name/MedScanner=Med Scanner
+Effect/Name/MedicDefensiveMatrix@AB=Apply Behavior
+Effect/Name/MedicDefensiveMatrix@Set=Set
+Effect/Name/MedicP45GaussPistol@Damage=Damage
+Effect/Name/MedicalSuppliesHeal=Medical Supplies Heal
+Effect/Name/ModifyUnitReleaseAllUnits=Modify Unit Release All Units
+Effect/Name/MorphToNeosteelBunker@ABMorphing=Apply Behavior
+Effect/Name/MorphToNeosteelBunker@RBMorphing=Remove Behavior
+Effect/Name/MorphToNeosteelBunker@Set=Set
+Effect/Name/MothershipCoreWeaponDamage2=Mothership Core Weapon Damage
+Effect/Name/MothershipCoreWeaponLM2=Mothership Core Weapon LM
+Effect/Name/MuleBlueMineralDropSet=Mule Blue Mineral Drop Set
+Effect/Name/NapalmGrenade@AB=Apply Behavior
+Effect/Name/NapalmGrenade@CPDoT=Create Persistent
+Effect/Name/NapalmGrenade@Damage=Damage
+Effect/Name/NapalmGrenade@DamageDoTInitial=Damage
+Effect/Name/NapalmGrenade@DamageDoTPeriodic=Damage
+Effect/Name/NapalmGrenade@LM=Launch Missile
+Effect/Name/NapalmGrenade@SADoT=Search Area
+Effect/Name/NapalmGrenade@SetImpact=Set
+Effect/Name/NeosteelBunkerABRangeBonus=Apply Behavior
+Effect/Name/NeosteelBunkerRBRangeBonus=Remove Behavior
+Effect/Name/NeuralParasiteBurstLockOnRemove=Neural Parasite Burst Lock On Remove
+Effect/Name/NexusBeam=Nexus Beam
+Effect/Name/ObeliskSlowApply=ObeliskSlowApply
+Effect/Name/ObeliskSlowSearch=ObeliskSlowSearch
+Effect/Name/OozeSnare=Ooze Snare
+Effect/Name/OozeSnareAB=Ooze Snare AB
+Effect/Name/OozeSnareCP=Ooze Snare CP
+Effect/Name/OozeSnareSearch=Ooze Snare (Search)
+Effect/Name/OozeSnareStructureAB=Ooze Snare Structure AB
+Effect/Name/OozeSnareStructureSet=Ooze Snare Structure (Set)
+Effect/Name/OozeSnareSwitch=Ooze Snare Switch
+Effect/Name/OozeSnareTransportIterateTransport=Ooze Snare Transport (Iterate Transport)
+Effect/Name/OracleStasisTrapExplodeDummy=OracleStasisTrapExplodeDummy
+Effect/Name/OracleWeaponAB=Oracle Weapon AB
+Effect/Name/OracleWeaponABPhotonCannon=Oracle Weapon AB Photon Cannon
+Effect/Name/OracleWeaponSet=Oracle Weapon Set
+Effect/Name/OrbitalCommandCalldownRepairDrone@ABHeight=Apply Behavior
+Effect/Name/OrbitalCommandCalldownRepairDrone@ABLower=Apply Behavior
+Effect/Name/OrbitalCommandCalldownRepairDrone@ABTimedLife=Apply Behavior
+Effect/Name/OrbitalCommandCalldownRepairDrone@CP=Create Persistent
+Effect/Name/OrbitalCommandCalldownRepairDrone@CUPlacement=Create Unit
+Effect/Name/OrbitalCommandCalldownRepairDrone@IO=Issue Order
+Effect/Name/OrbitalCommandCalldownRepairDrone@SetLand=Set
+Effect/Name/OrbitalCommandCalldownRepairDrone@SetPlacement=Set
+Effect/Name/OrbitalCommandCalldownRepairDroneOrbitalCommandCalldownRepairDrone@SetFinal=Set
+Effect/Name/ParasiticBombSearchAP=Parasitic Bomb Search AP
+Effect/Name/ParticleBeam2=Particle Beam
+Effect/Name/PickupKill2=Pickup Kill Copy
+Effect/Name/PickupKill22=Pickup Kill Copy Copy
+Effect/Name/PickupKill23=Pickup Kill Copy Copy 2
+Effect/Name/PickupKill24=Pickup Kill Copy Copy 3
+Effect/Name/PickupKillDelay2=Pickup Kill Delay Copy
+Effect/Name/PickupKillDelay22=Pickup Kill Delay Copy Copy
+Effect/Name/PickupKillDelay23=Pickup Kill Delay Copy Copy 2
+Effect/Name/PickupKillDelay24=Pickup Kill Delay Copy Copy 3
+Effect/Name/PickupPalletMinerals2=Pickup Pallet Minerals Copy
+Effect/Name/PickupPalletMinerals22=Pickup Pallet Minerals Copy Copy
+Effect/Name/PickupPalletMinerals23=Pickup Pallet Minerals Copy Copy 2
+Effect/Name/PickupPalletMineralsSet2=Pickup Pallet Minerals Set Copy
+Effect/Name/PickupPalletMineralsSet22=Pickup Pallet Minerals Set Copy Copy
+Effect/Name/PickupPalletMineralsSet23=Pickup Pallet Minerals Set Copy Copy 2
+Effect/Name/PickupPalletMineralsSet24=Pickup Pallet Minerals Set Copy Copy 3
+Effect/Name/PickupVespeneGas=Pickup Vespene Gas
+Effect/Name/PointDefenseDroneArmorReductionApply=PointDefenseDroneArmorReductionApply
+Effect/Name/PointDefenseDroneArmorReductionSearch=PointDefenseDroneArmorReductionSearch
+Effect/Name/PurificationNovaDamageHalf=Purification Nova
+Effect/Name/RapidConstructionAB=Rapid Construction AB
+Effect/Name/RapidConstructionCP=Rapid Construction CP
+Effect/Name/RavenScramblerMissileSA=RavenScramblerMissileSA
+Effect/Name/ReaperD8Charge@CU=Create Unit
+Effect/Name/ReaperD8Charge@LM=Launch Missile
+Effect/Name/ReaperD8Charge@SetLaunch=Set
+Effect/Name/RechargeShieldsHeal=Recharge Shields Heal
+Effect/Name/RemoveGhostChannel=Remove Ghost Channel
+Effect/Name/RemovePrismaticAlignment=Remove Prismatic Alignment
+Effect/Name/RepairDroneRepair@CH=Create Healer
+Effect/Name/RuptureTumor=Rupture Tumor
+Effect/Name/RuptureTumorSet=Rupture Tumor Set
+Effect/Name/SeekerMissileImpactABSlow=SeekerMissileImpactABSlow
+Effect/Name/SeekerMissileImpactSearchArea=SeekerMissileImpactSearchArea
+Effect/Name/SeekerMissileImpactSet=SeekerMissileImpactSet
+Effect/Name/SensorTowerDuriationAB=Sensor Tower Duriation AB
+Effect/Name/SensorTowerRevealAB=Sensor Tower Reveal AB
+Effect/Name/SensorTowerSearch=Sensor Tower Search
+Effect/Name/SingleP45GaussPistolCreatePersistent=Single P-45 Gauss Pistol (Create Persistent)
+Effect/Name/SingleP45GaussPistolDamage=Single P-45 Gauss Pistol (Damage)
+Effect/Name/SpawnLarvaSolo@ABConjoined=Apply Behavior
+Effect/Name/SpawnLarvaSolo@CU=Create Unit
+Effect/Name/SpawnLarvaSolo@CUPlaceholder=Create Unit
+Effect/Name/SpawnLarvaSolo@LM=Launch Missile
+Effect/Name/SpawnLarvaSolo@SetCreate=Set
+Effect/Name/SpawnLarvaSolo@SetCreatePlaceholder=Set
+Effect/Name/SpawnLarvaSolo@SetImpact=Set
+Effect/Name/StimpackFirebat=Stim Pack (Apply Buff) Firebat
+Effect/Name/StimpackMedic=Stim Pack (Apply Buff) Medic
+Effect/Name/SupplyDepotDropMorph=Supply Depot Drop Morph
+Effect/Name/SwarmPheremones=Swarm Pheremones
+Effect/Name/SwarmPheromones=Swarm Pheromones
+Effect/Name/ThermalLanceCPInUse=Thermal Lance CP (In Use)
+Effect/Name/ThermalLanceDamageAir=Thermal Lance Damage (Air)
+Effect/Name/ThermalLanceDamageGround=Thermal Lance Damage (Ground)
+Effect/Name/ThermalLanceSwitch=Thermal Lance Switch
+Effect/Name/ThermalLancesAddtoCooldown=Thermal Lances Add to Cooldown
+Effect/Name/TownHallLoad@ABAttackSpeed=Apply Behavior
+Effect/Name/TownHallLoad@RBAttackSpeed=Remove Behavior
+Effect/Name/TransfusionAP=Transfusion AP
+Effect/Name/TransientAssaultMode@ABDisableWeapons=Apply Behavior
+Effect/Name/TransientAssaultMode@ABHeight=Apply Behavior
+Effect/Name/TransientAssaultMode@CP=Create Persistent
+Effect/Name/TransientAssaultMode@IO=Issue Order
+Effect/Name/TransientAssaultMode@RBDisableWeapons=Remove Behavior
+Effect/Name/TransientAssaultMode@RBHeight=Remove Behavior
+Effect/Name/TransientAssaultMode@SetFinal=Set
+Effect/Name/TransientAssaultMode@SetInitial=Set
+Effect/Name/TransientFighterMode@ABDisableWeapons=Apply Behavior
+Effect/Name/TransientFighterMode@ABHeight=Apply Behavior
+Effect/Name/TransientFighterMode@CP=Create Persistent
+Effect/Name/TransientFighterMode@IO=Issue Order
+Effect/Name/TransientFighterMode@RBDisableWeapons=Remove Behavior
+Effect/Name/TransientFighterMode@RBHeight=Remove Behavior
+Effect/Name/TransientFighterMode@SetExpire=Set
+Effect/Name/TransientFighterMode@SetFinal=Set
+Effect/Name/TransientFighterMode@SetInitial=Set
+Effect/Name/TyphoonMissilePodsCooldownModifyUnit=Typhoon Missile Pods Cooldown (Modify Unit)
+Effect/Name/UnleashAP=Unleash AP
+Effect/Name/UnleashEndSet=Unleash End Set
+Effect/Name/UnleashNydusCP=Unleash Nydus CP
+Effect/Name/UnleashNydusOrderStop=Unleash Nydus Order Stop
+Effect/Name/UnleashNydusOrderUnload=Unleash Nydus Order Unload
+Effect/Name/UnleashRB=Unleash RB
+Effect/Name/UnloadAll=Unload All
+Effect/Name/VolatileBurstSplashDamage=Volatile Burst Splash Damage
+Effect/Name/VolatileBurstU=Volatile Burst Primary Target
+Effect/Name/WarpinDoubleDamage=Warp in Double Damage
+Effect/Name/WeaponKD8Charge@DamageDummy=Damage Dummy
+Effect/Name/WeaponKD8Charge@MUCooldown=Modify Unit
+Effect/Name/WeaponKD8Charge@SetAttackCast=Set
+Effect/Name/WeaponKD8Charge@Switch=Switch
+Effect/Name/ZergBuildingSpawnBroodling2=Zerg Building Spawn Broodling 2
+Effect/Name/ZergBuildingSpawnBroodling2Delay=Zerg Building Spawn Broodling 2 (Delay)
+Effect/Name/ZergBuildingSpawnBroodling4=Zerg Building Spawn Broodling 4
+Error/IsNexus=Must target Pylon
+Error/IsPylon=Must target Pylon
+Must target Pylon=
+Must target an Exhausted Creep Tumor.=Must target an Exhausted Creep Tumor.
+NotStaticD=Can not target defencive structures.
+RequirementNode/Tooltip/CountBehaviorCreepTumorNotExhaustedCompleteOnlyAtUnit1036107909=Creep Tumor not exhausted.
+RequirementNode/Tooltip/CountBehaviorInfestorIsBurrowedCompleteOnlyAtUnit455390697= 
+RequirementNode/Tooltip/CountBehaviorObeliskHardenedShieldCompleteOnlyAtUnit3482060043=Obelisk operational and with shields
+RequirementNode/Tooltip/CountBehaviorObeliskSlowSearcherCompleteOnlyAtUnit4152956742=Obelisk operational
+RequirementNode/Tooltip/CountBehaviorSwarmHostisBurrowedCompleteOnlyAtUnit80327250=The Swarm Host must be Burrowed to Spawn Locust's.
+RequirementNode/Tooltip/CountUnitAlias_HatcheryCompleteOnlyAtUnit3846943109TechTreeCheat=Hatchery
+RequirementNode/Tooltip/CountUnitAlias_LairCompleteOnlyAtUnit3846943109TechTreeCheat=Hatchery
+RequirementNode/Tooltip/CountUnitHiveCompleteOnlyAtUnit3846943109TechTreeCheat=Hatchery
+RequirementNode/Tooltip/CountUpgradeBansheeCloakCompleteOnly758801471=Research Cloaking Field at the Factory Tech Lab
+RequirementNode/Tooltip/CountUpgradeBansheeCloakCompleteOnly758801471TechTreeCheat=Research Cloaking Field at the Starport Tech Lab
+RequirementNode/Tooltip/CountUpgradeBurrowCompleteOnly3320731885TechTreeCheat=Evolve Burrow at the Hatch, Lair or Hive.
+RequirementNode/Tooltip/CountUpgradeCycloneCloakCompleteOnly3581356546TechTreeCheat=Research Cloaking Field at the Factory Tech Lab
+RequirementNode/Tooltip/CountUpgradeGlialReconstitutionCompleteOnly4196384071TechTreeCheat=Evolve Burrow at the Hatchery, Lair, or Hive
+RequirementNode/Tooltip/CountUpgradeHunterSeekerCompleteOnly1762983323TechTreeCheat=Research Seeker Missile at the Fusion Core
+RequirementNode/Tooltip/CountUpgradeLiftOffResearchCompleteOnly46636824=Research Lift Off at the Engineering Bay
+RequirementNode/Tooltip/CountUpgradeVikingFighterModeCompleteOnly720470553=Research Fighter Mode at the Factory Tech Lab
+RequirementNode/Tooltip/Or1515591279TechTreeCheatCountUnitLairCompleteOnly1515591279CountUnitHiveCompleteOnly1229866228TechTreeCheat=Lair
+RequirementNode/Tooltip/Or2508361961TechTreeCheatCountUnitLairCompleteOnlyCountUnitHiveCompleteOnly=Have Lair or Hive
+RequirementNode/Tooltip/Or556944322TechTreeCheatCountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat=Lair or Hive
+Unit/LifeArmorName/TerranInfantryArmor=Terran Infantry Armor
+Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
+Unit/Name/CorruptorDamagingCorruption@Weapon=Weapon
+Unit/Name/CycloneBurstLockOn@Weapon=Weapon
+Unit/Name/D8ChargeBomb=D8 Charge Bomb
+Unit/Name/D8ChargeBombExplode@WeaponClusterbomb=Weapon
+Unit/Name/D8ChargeClusterbomb=D8 Charge Clusterbomb
+Unit/Name/ForceField2=Force Field
+Unit/Name/HydraliskGroundWeapon=Broodling Shot
+Unit/Name/IncubateTumormissile=Incubate Tumor missile
+Unit/Name/IncubatedTumor=Incubated Tumor
+Unit/Name/MedicalSupplies=Medical Supplies
+Unit/Name/Medivac=Dropship
+Unit/Name/Minerals=Minerals
+Unit/Name/MineralsMule=Minerals Mule
+Unit/Name/MothershipCoreWeaponWeapon2=Mothership Core Weapon Weapon
+Unit/Name/NapalmGrenade@Weapon=Weapon
+Unit/Name/NapalmHellion=Hellion
+Unit/Name/NeosteelBunker=Neosteel Bunker
+Unit/Name/OrbitalCommandCalldownRepairDrone@Weapon=Weapon
+Unit/Name/PickupPalletMinerals2=Minerals
+Unit/Name/PickupPalletMinerals22=Minerals
+Unit/Name/PointDefenseDrone=Targeting Drone
+Unit/Name/ReaperD8Charge@Weapon=Weapon
+Unit/Name/ReaperD8ChargeClusterbomb=D8 Charge Clusterbomb
+Unit/Name/RepairDrone=Construction Drone
+Unit/Name/RichMinerals=Rich Minerals
+Unit/Name/SpawnLarvaSolo@Missile=Missile
+Unit/Name/SupplyDepotDrop=Supply Depot Calldown Beacon
+Unit/Name/VespeneGas=Vespene Gas
+Unit/Name/VikingAssaultWeapon=Viking Assault
+Unit/Name/VikingFighter2=Viking
+Unit/Name/Wall=Barrier
+Upgrade/Name/BarrierDurationResearch=BarrierDurationResearch
+Upgrade/Name/CycloneCloak=Cloaking Field
+Upgrade/Name/DragonflyWings=Dragonfly Wings
+Upgrade/Name/EnergyBinder=Energy Binder
+Upgrade/Name/GenerateCreep=Generate Creep
+Upgrade/Name/KhaydarinCore=Khaydarin Core
+Upgrade/Name/LiftOffResearch=LiftOffResearch
+Upgrade/Name/NeosteelFrame=Upgrade Neosteel Bunker
+Upgrade/Name/TerranBuildingArmor=Upgrade Neosteel Armor
+Upgrade/Name/UseGlialReconstitution=Use Glial Reconstitution
+Upgrade/Name/VikingFighterMode=Viking Fighter Mode
+Weapon/Name/BroodlingShot=Broodling Shot
+Weapon/Name/CommandTurret=Snipe Turret
+Weapon/Name/LanzerTorpedoes=Lanzer Torpedoes
+Weapon/Name/MedicP45GaussPistol=P-45 Gauss Pistol
+Weapon/Name/MothershipCoreWeapon2=Purify
+Weapon/Name/NapalmGrenade=Napalm Grenade
+Weapon/Name/NexusDefenseBeam=Nexus Defense Beam
+Weapon/Name/P38ScytheGuassPistol=Dual P-45 Gauss Pistol
+Weapon/Name/ReaperD8Charge=D8 Charge
+Weapon/Name/SingleP45GuassPistol=Single P-45 Guass Pistol
+Weapon/Name/ThermalLance=Thermal Lance
+Weapon/Name/ThermalLanceExtended=Thermal Lance Extended
+Weapon/Name/WeaponKD8Charge=KD8 Charge
+Weapon/Tip/BroodlingShot=Creates a broodling with timed life at the location.<n/><n/>Requires a Drone to be loaded.
+Weapon/Tip/CommandTurret=Requires a worker to be loaded into the structure.
+Weapon/Tip/CycloneBurstLockOn=Fires for <d ref="Effect,CycloneBurstLockOn@CPVolley,PeriodCount * Effect,CycloneBurstLockOn@CPVolley,PeriodicPeriodArray[0]"/> seconds after a <d ref="Effect,CycloneBurstLockOn@CPChannel,PeriodicPeriodArray[0]"/> second delay. Ignores armor.
+Weapon/Tip/MothershipCoreWeapon2=Requires a worker to be loaded.
+Weapon/Tip/NexusDefenseBeam=Requires a worker to be loaded into the structure.
+Weapon/Tip/WeaponKD8Charge=<s val="@@@StandardTooltip">Min Range: <c val="#ColorWhite"><d ref="Weapon,WeaponKD8Charge,MinimumRange"/></c></s>
+WorkerText=Requires a unit to be loaded into the structure.
+pylon=Must target Pylon

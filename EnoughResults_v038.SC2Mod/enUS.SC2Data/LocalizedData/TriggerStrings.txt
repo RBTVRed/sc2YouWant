@@ -1,0 +1,16 @@
+﻿Library/Name/57DC60C9=Enough
+Trigger/Name/lib_57DC60C9_447C888F=Spread 2
+Trigger/Name/lib_57DC60C9_71D34BF8=Money
+Trigger/Name/lib_57DC60C9_7505AEC2=Test Map
+Trigger/Name/lib_57DC60C9_CADF13AC=Player 2 control
+Trigger/Name/lib_57DC60C9_EF53D8A0=Spread
+Variable/Name/lib_57DC60C9_0A771B98=big group
+Variable/Name/lib_57DC60C9_11B5C3C7=selected units
+Variable/Name/lib_57DC60C9_376D540B=ticker
+Variable/Name/lib_57DC60C9_5862D157=i
+Variable/Name/lib_57DC60C9_760324AD=current unit 2
+Variable/Name/lib_57DC60C9_8D87FA57=i
+Variable/Name/lib_57DC60C9_8E9D8AEA=selected units
+Variable/Name/lib_57DC60C9_9295A734=current unit
+Variable/Name/lib_57DC60C9_CF17BCF0=ticker
+Variable/Name/lib_57DC60C9_F2589697=small group

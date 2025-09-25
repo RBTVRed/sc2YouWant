@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorConstant id="CorruptorDamagingCorruption@Damage">
+        <Amount value="3"/>
+    </CAccumulatorConstant>
+    <CAccumulatorArithmetic id="CorruptorDamagingCorruption@Min">
+        <Parameters value="-1">
+            <AccumulatorArray value="TargetCurrentLife"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="CorruptorDamagingCorruption@Damage"/>
+        </Parameters>
+        <Operation value="Minimum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="CorruptorDamagingCorruption@DamageAccumulator">
+        <Parameters value="0">
+            <AccumulatorArray value="CorruptorDamagingCorruption@Min"/>
+        </Parameters>
+        <Parameters value="0"/>
+        <Operation value="Maximum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorVitals id="TargetCurrentLife">
+        <Ratio value="1"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="TargetCurrentShields">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorArithmetic id="TargetCurrentVitals">
+        <Parameters value="0">
+            <AccumulatorArray value="TargetCurrentLife"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="TargetCurrentShields"/>
+        </Parameters>
+    </CAccumulatorArithmetic>
+</Catalog>
