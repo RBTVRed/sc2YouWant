@@ -2950,7 +2950,7 @@
         <Sight value="7"/>
     </CUnit>
     <CUnit id="ZerglingBurrowed">
-        <AddedOnArray BehaviorLink="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
         <BehaviorArray Link="BurrowedAmbusher"/>
         <CardLayouts index="0">
             <LayoutButtons index="1" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
