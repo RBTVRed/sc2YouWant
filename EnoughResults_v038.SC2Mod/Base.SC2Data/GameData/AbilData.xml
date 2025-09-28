@@ -863,7 +863,7 @@
             <Button DefaultButtonFace=""/>
         </InfoArray>
         <InfoArray index="Train7">
-            <Button Requirements="HaveFusionCore"/>
+            <Button Requirements="HaveArmory"/>
         </InfoArray>
     </CAbilTrain>
     <CAbilEffectInstant id="SteadyTargettingCancel">
