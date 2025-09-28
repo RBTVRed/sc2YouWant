@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CDataCollectionAbil id="BurrowedAmbusher">
+        <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
+        <DataRecord Entry="Actor,BurrowedAmbusher@Model"/>
+        <DataRecord Entry="Behavior,BurrowedAmbusher"/>
+        <DataRecord Entry="Behavior,BurrowedAmbusher@Buff"/>
+        <DataRecord Entry="Behavior,BurrowedAmbusher@Applicator"/>
+        <DataRecord Entry="Button,BurrowedAmbusher"/>
+        <DataRecord Entry="Effect,BurrowedAmbusher@AB"/>
+        <DataRecord Entry="Effect,BurrowedAmbusher@ABApplicator"/>
+        <DataRecord Entry="Model,BurrowedAmbusher@Speed"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="CargoTracker">
         <EditorCategories value=""/>
         <DataRecord Entry="Behavior,CargoTracker"/>

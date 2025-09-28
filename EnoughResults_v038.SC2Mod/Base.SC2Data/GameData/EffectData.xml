@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectApplyBehavior id="BurrowedAmbusher@AB">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="BurrowedAmbusher@Buff"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="BurrowedAmbusher@ABApplicator">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="BurrowedAmbusher@Applicator"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="PurificationNovaDamage">
+        <AttributeBonus index="Structure" value="175"/>
+        <Amount value="175"/>
+    </CEffectDamage>
     <CEffectEnumArea id="PurificationNovaTargettedSearch">
         <AreaArray index="0" Radius="0.5"/>
+        <AreaArray Radius="1.5" Effect="PurificationNovaDamagePartial"/>
     </CEffectEnumArea>
     <CEffectCreateUnit id="HallucinationCreateProbe">
         <SpawnCount value="5"/>
@@ -13,8 +26,8 @@
         <PeriodCount value="40"/>
     </CEffectCreatePersistent>
     <CEffectEnumArea id="PurificationNovaSearch">
-        <AreaArray index="0" Radius="0"/>
-        <AreaArray Radius="1.5" Effect="PurificationNovaDamageHalf"/>
+        <AreaArray index="0" Radius="0.5"/>
+        <AreaArray Radius="1.5" Effect="PurificationNovaDamagePartial"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="FungalGrowthArmorReductionAB">
         <ValidatorArray index="0" value="PointDefenseDroneArmorReductionShouldApply"/>
@@ -122,7 +135,7 @@
         <AttributeBonus index="Armored" value="5"/>
         <Amount value="3"/>
     </CEffectDamage>
-    <CEffectDamage id="PurificationNovaDamageHalf">
+    <CEffectDamage id="PurificationNovaDamagePartial">
         <ValidatorArray value="DisruptorDamageFilter"/>
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value=""/>
@@ -723,10 +736,6 @@
         <AreaArray index="0" Radius="0.3"/>
         <AreaArray index="1" Radius="0.6"/>
         <AreaArray index="2" Radius="1.2"/>
-    </CEffectDamage>
-    <CEffectDamage id="PurificationNovaDamage">
-        <AttributeBonus index="Structure" value="175"/>
-        <Amount value="175"/>
     </CEffectDamage>
     <CEffectSwitch id="RavenScramblerMissileABswitch">
         <ValidatorArray value="IsMechanicalOrIsPsionic"/>

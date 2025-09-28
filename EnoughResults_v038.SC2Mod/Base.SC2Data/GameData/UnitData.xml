@@ -141,10 +141,12 @@
         <Attributes index="Light" value="1"/>
     </CUnit>
     <CUnit id="BanelingBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <CardLayouts index="0">
             <LayoutButtons index="1" Face="Explode" AbilCmd="Explode,Execute" Column="0"/>
             <LayoutButtons index="2" Face="BurrowUp" AbilCmd="BurrowBanelingUp,Execute" Column="4"/>
-            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="3" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="4" removed="1"/>
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -169,7 +171,6 @@
         </CardLayouts>
         <LifeRegenRateCreep value="2"/>
         <Sight value="4"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
     </CUnit>
     <CUnit id="BanelingNest">
         <LifeStart value="1700"/>
@@ -546,8 +547,10 @@
         <LifeRegenRateCreep value="2"/>
     </CUnit>
     <CUnit id="DroneBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <CardLayouts index="0">
-            <LayoutButtons index="2" removed="1"/>
+            <LayoutButtons index="2" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="3" removed="1"/>
             <LayoutButtons index="4" removed="1"/>
             <LayoutButtons index="5" removed="1"/>
@@ -571,7 +574,6 @@
             <LayoutButtons index="23" removed="1"/>
         </CardLayouts>
         <LifeRegenRateCreep value="2"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
         <AddedOnArray/>
     </CUnit>
     <CUnit id="EvolutionChamber">
@@ -733,6 +735,8 @@
         <Sight value="13"/>
     </CUnit>
     <CUnit id="HydraliskBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <Food value="-1"/>
         <CostResource index="Minerals" value="75"/>
         <CostResource index="Vespene" value="25"/>
@@ -744,7 +748,7 @@
             <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="6" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="7" Face="BurrowUp" AbilCmd="BurrowHydraliskUp,Execute" Column="4"/>
-            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="8" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="9" removed="1"/>
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
@@ -765,7 +769,6 @@
         <LifeMax value="160"/>
         <LifeRegenRateCreep value="2"/>
         <Sight value="4"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
         <AddedOnArray/>
     </CUnit>
     <CUnit id="HydraliskDen">
@@ -1653,6 +1656,10 @@
         <CostResource index="Minerals" value="150"/>
     </CUnit>
     <CUnit id="QueenBurrowed">
+        <AbilArray Link="Transfusion"/>
+        <BehaviorArray Link="Detector7"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <LifeStart value="260"/>
         <LifeMax value="260"/>
         <EnergyStart value="50"/>
@@ -1670,7 +1677,7 @@
             <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="10" Face="BurrowUp" AbilCmd="BurrowQueenUp,Execute" Column="4"/>
             <LayoutButtons index="11" Face="Detector" Type="Passive" AbilCmd="" Row="1" Column="0"/>
-            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="12" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="13" removed="1"/>
             <LayoutButtons index="14" removed="1"/>
             <LayoutButtons index="15" removed="1"/>
@@ -1686,11 +1693,10 @@
         <Radius value="0.9375"/>
         <MinimapRadius value="0.9375"/>
         <LifeRegenRateCreep value="2"/>
-        <BehaviorArray Link="Detector7"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
-        <AbilArray Link="Transfusion"/>
     </CUnit>
     <CUnit id="RavagerBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <LifeStart value="300"/>
         <LifeMax value="300"/>
         <CardLayouts index="0">
@@ -1704,7 +1710,7 @@
             <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="10" Face="BurrowUp" AbilCmd="BurrowRavagerUp,Execute" Column="4"/>
-            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="11" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
             <LayoutButtons index="14" removed="1"/>
@@ -1726,7 +1732,6 @@
         <Sight value="4"/>
         <CostResource index="Minerals" value="225"/>
         <CostResource index="Vespene" value="75"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
     </CUnit>
     <CUnit id="Reactor">
         <AbilArray Link="SalvageShared"/>
@@ -1780,7 +1785,7 @@
             <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowRoachUp,Execute" Column="4"/>
-            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
             <LayoutButtons index="17" removed="1"/>
@@ -2621,6 +2626,7 @@
         <BehaviorArray Link="SwarmHostisBurrowed"/>
         <BehaviorArray Link="SwarmPheromonesEmitter"/>
         <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <AbilArray index="1" Link="Rally"/>
         <AbilArray Link="SwarmHostSpawnLocusts"/>
         <CardLayouts index="0">
@@ -2642,7 +2648,7 @@
             <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="16" Face="BurrowUp" AbilCmd="MorphToSwarmHostMP,Execute" Column="4"/>
             <LayoutButtons index="17" Face="SwarmPheromones" Type="Passive" AbilCmd="" Row="1" Column="0"/>
-            <LayoutButtons index="18" removed="1"/>
+            <LayoutButtons index="18" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="19" removed="1"/>
             <LayoutButtons index="20" removed="1"/>
             <LayoutButtons index="21" removed="1"/>
@@ -2722,6 +2728,8 @@
         <LifeMax value="1200"/>
     </CUnit>
     <CUnit id="UltraliskBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <CardLayouts index="0">
             <LayoutButtons index="1" Face="Frenzied" Type="Passive" AbilCmd="" Behavior="Frenzy" Column="0"/>
             <LayoutButtons index="2" Face="" Type="Undefined" Behavior="" Row="0"/>
@@ -2736,7 +2744,7 @@
             <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowUltraliskUp,Execute" Column="4"/>
-            <LayoutButtons index="14" removed="1"/>
+            <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
             <LayoutButtons index="17" removed="1"/>
@@ -2754,7 +2762,6 @@
         <LifeMax value="1000"/>
         <LifeRegenRateCreep value="2"/>
         <Sight value="4"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
     </CUnit>
     <CUnit id="VikingAssault">
         <LifeStart value="270"/>
@@ -2943,6 +2950,8 @@
         <Sight value="7"/>
     </CUnit>
     <CUnit id="ZerglingBurrowed">
+        <AddedOnArray BehaviorLink="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <CardLayouts index="0">
             <LayoutButtons index="1" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="2" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
@@ -2950,7 +2959,7 @@
             <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="6" Face="BurrowUp" AbilCmd="BurrowZerglingUp,Execute" Column="4"/>
-            <LayoutButtons index="7" removed="1"/>
+            <LayoutButtons index="7" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
             <LayoutButtons index="8" removed="1"/>
             <LayoutButtons index="9" removed="1"/>
             <LayoutButtons index="10" removed="1"/>
@@ -2973,6 +2982,5 @@
         <LifeStart value="70"/>
         <LifeMax value="70"/>
         <LifeRegenRateCreep value="2"/>
-        <AddedOnArray BehaviorLink="BurrowedDamageReduction"/>
     </CUnit>
 </Catalog>

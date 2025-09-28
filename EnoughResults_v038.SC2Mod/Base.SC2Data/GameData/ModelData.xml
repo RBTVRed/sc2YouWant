@@ -482,6 +482,11 @@
         <SelectionRadius value="2.500000"/>
         <ShadowRadius value="2.500000"/>
     </CModel>
+    <CModel id="BurrowedAmbusher@Speed" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Neutral\PulloftheVoid_Debuff_Coop\PulloftheVoid_Debuff_Coop.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Radius value="0.250000"/>
+    </CModel>
     <CModel id="WallBuild" parent="TerranBuildingBuild">
         <Radius value="1.000000"/>
         <ScaleMax value="0.500000,0.500000,0.500000"/>

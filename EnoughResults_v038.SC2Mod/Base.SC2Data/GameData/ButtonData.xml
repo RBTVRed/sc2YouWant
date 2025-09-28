@@ -4,6 +4,10 @@
         <Icon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
     </CButton>
+    <CButton id="BurrowedAmbusher">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
+    </CButton>
     <CButton id="CloakOnBanshee">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
     </CButton>

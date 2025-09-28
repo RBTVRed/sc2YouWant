@@ -54,6 +54,7 @@ Abil/Name/UnleashNydusWorm=Unleash Nydus Worm
 Abil/Name/VoidRaySwarmDamageBoostRemove=Void Ray Swarm Damage Boost Remove
 Behavior/Name/BlindingCloud=Plague Cloud
 Behavior/Name/BlindingCloudStructure=Plague Cloud
+Behavior/Name/BurrowedAmbusher@Buff=Ambush!
 Behavior/Name/BurrowedDamageReduction=Burrowed Damage Reduction
 Behavior/Name/CombatDrugs=Combat Drugs
 Behavior/Name/CompactedShield@Buff=Compacted Shield
@@ -90,6 +91,7 @@ Behavior/Name/Unleash=Unleash
 Behavior/Name/UnloadAllInBunker=Unload All In Bunker
 Behavior/Name/WarpingInDoubleDamageTaken=Warping In Double Damage Taken
 Behavior/Tooltip/AmorphousArmorcloud=Incoming damage from air units reduced by <d ref="Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%.
+Behavior/Tooltip/BurrowedAmbusher@Buff=This unit has increased movement speed.
 Behavior/Tooltip/CombatDrugs=Combat Drugs are healing the Reaper.
 Behavior/Tooltip/CompactedShield@Buff=This unit takes 50% less damage from any single attack.
 Behavior/Tooltip/Contaminated=This structure functions 75% slower.
@@ -128,6 +130,7 @@ Button/Name/AbsorptionShield=Absorption Shield
 Button/Name/AdeptPhaseShiftManual@Teleport=Teleport
 Button/Name/BarrierDurationResearch=Research Extended Barrier Duration
 Button/Name/BlindingCloud=Plague Cloud
+Button/Name/BurrowedAmbusher=Ambusher
 Button/Name/CalldownMedicalSupplies=Calldown: Medical Supplies
 Button/Name/CalldownRepairDrone=Calldown: Repair Drone
 Button/Name/CancelPrismaticAlignment=Cancel Prismatic Alignment
@@ -206,6 +209,7 @@ Button/Tooltip/BuildTechLabBarracks=Infantry-research structure. A Tech Lab can 
 Button/Tooltip/BuildTechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
 Button/Tooltip/Bunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +2 range to units inside.</c>
 Button/Tooltip/BurrowDown=Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection and take 50% less damage.
+Button/Tooltip/BurrowedAmbusher=After unburrowing, this unit will gain increased movement speed for <d ref="Behavior,BurrowedAmbusher@Buff,Duration" precision="1"/> seconds.
 Button/Tooltip/CalldownMedicalSupplies=Drops Medical Supplies. The Medical Supplies heals nearby units.
 Button/Tooltip/CalldownRepairDrone=Drops a Repair Drone onto at the target location. Repair Drones repair mechanical units at no cost and can construct buildings.
 Button/Tooltip/CancelPrismaticAlignment=Returns Void Ray damage and speed to normal values.
@@ -372,6 +376,7 @@ Button/Tooltip/ZealotHallucination=These hallucinated copies function like the o
 Button/Tooltip/zerglingattackspeed=Increases the damage against armored units and structures and the attack speed of <c val="ffff8a">Zerglings</c> by 60%.
 CreepTumor Exhausted=Must target an Exhausted Creep Tumor.
 DataCollection/Name/AdeptPhaseShiftManual=Phase Shift
+DataCollection/Name/BurrowedAmbusher=Burrowed Ambusher
 DataCollection/Name/CargoTracker=CargoTracker
 DataCollection/Name/CompactedShield=Compacted Shield
 DataCollection/Name/CorruptorDamagingCorruption=Damaging Corruption
@@ -450,6 +455,8 @@ Effect/Name/BroodlingSwarmLairSet=Broodling Swarm Lair Set
 Effect/Name/BroodlingSwarmSwitch=Broodling Swarm Switch
 Effect/Name/BunkerABRangeBonus=Apply Behavior
 Effect/Name/BunkerRBRangeBonus=Remove Behavior
+Effect/Name/BurrowedAmbusher@AB=Apply Behavior
+Effect/Name/BurrowedAmbusher@ABApplicator=Apply Behavior
 Effect/Name/CalldownMULEIssueOrder=Calldown MULE (Issue Order Gather)
 Effect/Name/CalldownMULEIssueOrderConstruction=Calldown MULE (Issue Order Construction)
 Effect/Name/CargoTracker@ATU=Add Tracked Unit
@@ -598,7 +605,7 @@ Effect/Name/PickupPalletMineralsSet24=Pickup Pallet Minerals Set Copy Copy 3
 Effect/Name/PickupVespeneGas=Pickup Vespene Gas
 Effect/Name/PointDefenseDroneArmorReductionApply=PointDefenseDroneArmorReductionApply
 Effect/Name/PointDefenseDroneArmorReductionSearch=PointDefenseDroneArmorReductionSearch
-Effect/Name/PurificationNovaDamageHalf=Purification Nova
+Effect/Name/PurificationNovaDamagePartial=Purification Nova
 Effect/Name/RapidConstructionAB=Rapid Construction AB
 Effect/Name/RapidConstructionCP=Rapid Construction CP
 Effect/Name/RavenScramblerMissileSA=RavenScramblerMissileSA
