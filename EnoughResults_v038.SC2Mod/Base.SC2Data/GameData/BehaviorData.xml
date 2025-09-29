@@ -466,6 +466,13 @@
         <RemoveValidatorArray value="ObeliskSlowRangeLE3"/>
         <Modification MoveSpeedMultiplier="0.15" AttackSpeedMultiplier="0.15"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SpawnLarvaSolo@ConjoinedRemover">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <DisableValidatorArray value="IsEgg"/>
+        <Duration value="0.0625"/>
+        <ExpireEffect value="SpawnLarvaSolo@RBConjoined"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="SuppressCloakDuringConstruction">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value=""/>

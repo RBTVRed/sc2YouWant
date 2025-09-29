@@ -155,6 +155,14 @@
     <CEffectCreatePersistent id="RevelationPersistent">
         <ExpireDelay value="56"/>
     </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="SpawnLarvaSolo@RBConjoined">
+        <EditorCategories value="Race:Zerg"/>
+        <BehaviorLink value="SpawnLarvaConjoined"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="SpawnLarvaSolo@ABConjoinedRemover">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="SpawnLarvaSolo@ConjoinedRemover"/>
+    </CEffectApplyBehavior>
     <CEffectCreateUnit id="SpawnLarvaSolo@CU">
         <EditorCategories value=""/>
         <CreateFlags index="OffsetByRadius" value="0"/>
@@ -796,6 +804,7 @@
     <CEffectSet id="SpawnLarvaSolo@SetCreate">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="SpawnLarvaSolo@ABConjoined"/>
+        <EffectArray value="SpawnLarvaSolo@ABConjoinedRemover"/>
     </CEffectSet>
     <CEffectSet id="SpawnLarvaSolo@SetImpact">
         <EditorCategories value="Race:Zerg"/>
@@ -830,7 +839,6 @@
         <Amount value="150"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="SpawnLarvaSolo@ABConjoined">
-        <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="SpawnLarvaConjoined"/>
     </CEffectApplyBehavior>
