@@ -92,7 +92,6 @@ Actor/Name/BlindingCloud=PlagueCloud
 Actor/Name/BlindingCloudOffset2=Plague Cloud Offset
 Actor/Name/BuildingStasisTinter=Pulsar Lock Disable Animations
 Actor/Name/BunkerSplat2=Bunker Splat Copy
-Actor/Name/BurrowedAmbusher@Model=Model
 Actor/Name/ColossusAttackBeam=Colossus Attack Beama
 Actor/Name/ColossusAttackRight=Colossus Attack Right
 Actor/Name/ColossusbeamLeft=Colossus beam Left

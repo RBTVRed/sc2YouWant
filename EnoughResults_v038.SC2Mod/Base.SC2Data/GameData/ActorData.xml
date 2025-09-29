@@ -1404,14 +1404,6 @@
     <CActorSound id="TransfusionSound">
         <On index="1" Terms="Effect.TransfusionAP; At Target"/>
     </CActorSound>
-    <CActorModel id="BurrowedAmbusher@Model" parent="ModelAnimationStyleContinuous">
-        <On Terms="Behavior.BurrowedAmbusher@Buff.On" Send="Create"/>
-        <On Terms="Behavior.BurrowedAmbusher@Buff.Off" Send="AnimBracketStop BSD"/>
-        <Host Subject="_Selectable"/>
-        <HostSiteOps Ops="SOpAttachCenter"/>
-        <Model value="BurrowedAmbusher@Speed"/>
-        <AutoScaleFactor value="1.000000"/>
-    </CActorModel>
     <CActorModel id="WallBuild" parent="TerranBuildingBuild"/>
     <CActorUnit id="Wall" parent="TerranBuildingEx" unitName="Wall">
         <Aliases value="_UnitLarge"/>

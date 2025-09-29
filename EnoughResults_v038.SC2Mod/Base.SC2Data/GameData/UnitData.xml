@@ -1767,6 +1767,8 @@
         <LifeMax value="1000"/>
     </CUnit>
     <CUnit id="RoachBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <LifeStart value="270"/>
         <LifeMax value="270"/>
         <LifeRegenRate value="2"/>
@@ -1809,7 +1811,6 @@
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
         <Sight value="4"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
     </CUnit>
     <CUnit id="RoboticsBay">
         <ShieldsStart value="1500"/>
