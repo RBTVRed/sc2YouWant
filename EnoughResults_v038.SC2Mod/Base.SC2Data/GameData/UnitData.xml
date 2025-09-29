@@ -146,7 +146,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="1" Face="Explode" AbilCmd="Explode,Execute" Column="0"/>
             <LayoutButtons index="2" Face="BurrowUp" AbilCmd="BurrowBanelingUp,Execute" Column="4"/>
-            <LayoutButtons index="3" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="3" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="4" removed="1"/>
             <LayoutButtons index="5" removed="1"/>
             <LayoutButtons index="6" removed="1"/>
@@ -550,7 +550,7 @@
         <BehaviorArray Link="BurrowedDamageReduction"/>
         <BehaviorArray Link="BurrowedAmbusher"/>
         <CardLayouts index="0">
-            <LayoutButtons index="2" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="2" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="3" removed="1"/>
             <LayoutButtons index="4" removed="1"/>
             <LayoutButtons index="5" removed="1"/>
@@ -748,7 +748,7 @@
             <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="6" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="7" Face="BurrowUp" AbilCmd="BurrowHydraliskUp,Execute" Column="4"/>
-            <LayoutButtons index="8" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="8" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="9" removed="1"/>
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
@@ -1053,6 +1053,8 @@
         <CostResource index="Vespene" value="200"/>
     </CUnit>
     <CUnit id="InfestorBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <LifeStart value="180"/>
         <LifeMax value="180"/>
         <EnergyRegenRate value="0.1875"/>
@@ -1087,7 +1089,7 @@
             </LayoutButtons>
             <LayoutButtons index="19" Face="AmorphousArmorcloud" AbilCmd="AmorphousArmorcloudInstant,Execute"/>
             <LayoutButtons index="20" Face="FungalGrowth" AbilCmd="FungalGrowth,Execute" Column="0"/>
-            <LayoutButtons index="21" removed="1"/>
+            <LayoutButtons index="21" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="22" removed="1"/>
             <LayoutButtons index="23" removed="1"/>
             <LayoutButtons index="24" removed="1"/>
@@ -1106,7 +1108,6 @@
         <Sight value="10"/>
         <CostResource index="Minerals" value="75"/>
         <CostResource index="Vespene" value="200"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
         <AddedOnArray/>
     </CUnit>
     <CUnit id="InfestorTerran">
@@ -1272,14 +1273,18 @@
         <Sight value="12"/>
     </CUnit>
     <CUnit id="LurkerMPBurrowed">
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <BehaviorArray Link="BurrowedAmbusher"/>
         <Radius value="1"/>
         <MinimapRadius value="0.8125"/>
         <LifeStart value="300"/>
         <LifeMax value="300"/>
         <LifeRegenRateCreep value="2"/>
         <Sight value="12"/>
-        <BehaviorArray Link="BurrowedDamageReduction"/>
         <AddedOnArray/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="BurrowedAmbusher" Type="Passive" Behavior="BurrowedAmbusher" Row="2" Column="3"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="MULE">
         <AbilArray Link="SpreadOut"/>
@@ -1679,7 +1684,7 @@
             <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="10" Face="BurrowUp" AbilCmd="BurrowQueenUp,Execute" Column="4"/>
             <LayoutButtons index="11" Face="Detector" Type="Passive" AbilCmd="" Row="1" Column="0"/>
-            <LayoutButtons index="12" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="12" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="13" removed="1"/>
             <LayoutButtons index="14" removed="1"/>
             <LayoutButtons index="15" removed="1"/>
@@ -1712,7 +1717,7 @@
             <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="10" Face="BurrowUp" AbilCmd="BurrowRavagerUp,Execute" Column="4"/>
-            <LayoutButtons index="11" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="11" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
             <LayoutButtons index="14" removed="1"/>
@@ -1789,7 +1794,7 @@
             <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowRoachUp,Execute" Column="4"/>
-            <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
             <LayoutButtons index="17" removed="1"/>
@@ -2651,7 +2656,7 @@
             <LayoutButtons index="15" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="16" Face="BurrowUp" AbilCmd="MorphToSwarmHostMP,Execute" Column="4"/>
             <LayoutButtons index="17" Face="SwarmPheromones" Type="Passive" AbilCmd="" Row="1" Column="0"/>
-            <LayoutButtons index="18" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="18" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="19" removed="1"/>
             <LayoutButtons index="20" removed="1"/>
             <LayoutButtons index="21" removed="1"/>
@@ -2747,7 +2752,7 @@
             <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowUltraliskUp,Execute" Column="4"/>
-            <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="3"/>
             <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
             <LayoutButtons index="17" removed="1"/>
@@ -2962,7 +2967,7 @@
             <LayoutButtons index="4" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="5" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="6" Face="BurrowUp" AbilCmd="BurrowZerglingUp,Execute" Column="4"/>
-            <LayoutButtons index="7" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher" Column="2"/>
+            <LayoutButtons index="7" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="8" removed="1"/>
             <LayoutButtons index="9" removed="1"/>
             <LayoutButtons index="10" removed="1"/>
