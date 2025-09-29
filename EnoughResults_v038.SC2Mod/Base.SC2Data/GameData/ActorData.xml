@@ -389,12 +389,12 @@
         <On index="66" Terms="WeaponStart.TwinIbiksCannon; AnimPlaying Birth"/>
         <On index="67" Terms="WeaponStop.TwinIbiksCannon"/>
     </CActorUnit>
-    <CActorModel id="MedScanner" parent="ModelAnimationStyleContinuous">
+    <CActorModel id="MedRadar@Model" parent="ModelAnimationStyleContinuous">
         <Terms value="Cap 1"/>
         <Inherits index="CloakEffect" value="1"/>
         <Inherits index="Visibility" value="1"/>
-        <On Terms="Behavior.MedRadar.On" Send="Create"/>
-        <On Terms="Behavior.MedRadar.Off" Send="Destroy"/>
+        <On Terms="Behavior.MedRadar@Detector.On" Send="Create"/>
+        <On Terms="Behavior.MedRadar@Detector.Off" Send="Destroy"/>
         <Host Subject="_Unit"/>
         <HostSiteOps Ops="SOpAttachOverhead SOpForwardSouth" HoldRotation="1"/>
         <Model value="ScannerSweepModel"/>

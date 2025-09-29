@@ -28,6 +28,15 @@
         <Duration value="0.0625"/>
         <ExpireEffect value="BurrowedAmbusher@AB"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="EMPDetectorDisable">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-status-detector-disabled.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <Modification>
+            <StateFlags index="SuppressDetection" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MicrobialShroudAura">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
@@ -226,8 +235,9 @@
     <CBehaviorWander id="InstallationZergWander">
         <Range value="3"/>
     </CBehaviorWander>
-    <CBehaviorBuff id="MedRadar">
+    <CBehaviorBuff id="MedRadar@Detector">
         <InfoIcon value="Assets\Textures\btn-upgrade-tychus-detection.dds"/>
+        <BehaviorCategories index="User14" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="20"/>
         <Modification Detect="8">

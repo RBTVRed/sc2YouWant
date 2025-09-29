@@ -61,11 +61,12 @@ Behavior/Name/CompactedShield@Buff=Compacted Shield
 Behavior/Name/CycloneCloak=Cloak
 Behavior/Name/CycloneCloakCrossSpectrumDampeners=Cloak
 Behavior/Name/EMPChannelCombat=EMP Steady Targeting
+Behavior/Name/EMPDetectorDisable=EMP Detection Disabled
 Behavior/Name/FungalGrowthArmorReduction=FungalGrowthArmorReduction
 Behavior/Name/IncubateDummy=Incubate Dummy
 Behavior/Name/Incubated=Incubated
 Behavior/Name/InfestorIsBurrowed=Infestor Is Burrowed
-Behavior/Name/MedRadar=Med Scanner
+Behavior/Name/MedRadar@Detector=Med Scanner
 Behavior/Name/MedicDefensiveMatrix=Defensive Matrix
 Behavior/Name/MicrobialShroudAura=Microbial Shroud Aura
 Behavior/Name/NapalmGrenade@DoT=Burning
@@ -100,10 +101,11 @@ Behavior/Tooltip/CycloneBurstLockOn@Target=This unit has been targeted by a Cycl
 Behavior/Tooltip/CycloneCloak=This unit is cloaked and will only be revealed by detectors or effects.
 Behavior/Tooltip/CycloneCloakCrossSpectrumDampeners=This unit is cloaked and will only be revealed by detectors or effects.
 Behavior/Tooltip/EMPChannelCombat=This unit is carefully aiming.
+Behavior/Tooltip/EMPDetectorDisable=Target was recently hit by an EMP Round, making it unable to detected cloaked units.
 Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodlings if the affected unit dies.
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/Incubated=This structure functions 75% slower.
-Behavior/Tooltip/MedRadar=This unit is revealing the area around it and detecting cloaked units.
+Behavior/Tooltip/MedRadar@Detector=This unit is revealing the area around it and detecting cloaked units.
 Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
 Behavior/Tooltip/MicrobialShroudAura=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/NapalmGrenade@DoT=Target is under the effects of a Napalm Grenade and will take massive damage while in this area of effect.
@@ -142,7 +144,6 @@ Button/Name/DeactivateAbsorptionShield=Deactivate Absorption Shield
 Button/Name/DefensiveMatrix=Defensive Matrix
 Button/Name/DisableIgniteAfterburners=Disable Ignite Afterburners
 Button/Name/DormantMetabolism=Dormant Metabolism
-Button/Name/EmergencySweep=Emergency Sweep
 Button/Name/EnergyBinder=Energy Binder
 Button/Name/EvolveCreepGeneration=Evolve Creep Generation
 Button/Name/EvolveDragonflyWings=Evolve Dragonfly Wings
@@ -156,6 +157,7 @@ Button/Name/LairDefense=Lair Defense
 Button/Name/LiftOffResearch=Research Lift Off
 Button/Name/MassCloakingField=Mass Cloaking Field
 Button/Name/MasteryTychusMedivacBuff=Dropship Pickup Cooldown
+Button/Name/MedRadar=Emergency Sweep
 Button/Name/Medivac=Build Dropship
 Button/Name/MorphToNeosteelBunker=Transform to Neosteel Bunker
 Button/Name/MothershipCoreMassRecall=Mass Recall in a Power Field
@@ -234,7 +236,6 @@ Button/Tooltip/DisruptorHallucination=This hallucinated copy functions like the 
 Button/Tooltip/DormantMetabolism=The Infestor has a much slower energy generation while burrowed.
 Button/Tooltip/DrillClaws=This unit moves and burrows faster.
 Button/Tooltip/EMP=Creates an electromagnetic pulse that does 300 damage to shields and 100 damage to energy of all units in the targeted area. Cloaked units hit by EMP are revealed for a short time.
-Button/Tooltip/EmergencySweep=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
 Button/Tooltip/EnergyBinder=Increases Guardian Shield damage absorption by 1.
 Button/Tooltip/EngineeringBay=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:<n/>- Reapers at the barrack</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Walls from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EvolveAnabolicSynthesis2=Increases the movement speed of <c val="ffff8a">Ultralisks</c>.
@@ -272,6 +273,7 @@ Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCe
 Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structure, dealing 280 damage over 14 seconds. Can move while firing. Cancels if target moves out of range.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or ground structures.</c>
 Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
 Button/Tooltip/MasteryTychusMedivacBuff=Reduces the cooldown of the Dropship Pickup ability.
+Button/Tooltip/MedRadar=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
 Button/Tooltip/MedicDefensiveMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
 Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
@@ -388,6 +390,7 @@ DataCollection/Name/D8ChargeClusterbomb=D8 Charge Clusterbomb
 DataCollection/Name/D8ChargeClusterbombExplode=Explode
 DataCollection/Name/DecayOffCreep=Decay Off Creep
 DataCollection/Name/LarvaPlaceholder=Larva Placeholder
+DataCollection/Name/MedRadar=Med Radar
 DataCollection/Name/MedicDefensiveMatrix=Defensive Matrix
 DataCollection/Name/MedicP45GaussPistol=P-45 Gauss Pistol
 DataCollection/Name/MorphToNeosteelBunker=Morph To Neosteel Bunker
@@ -513,6 +516,7 @@ Effect/Name/DropBlueMineralsMule=Drop Blue Minerals Mule
 Effect/Name/DropBlueMineralsSwitch=Drop Blue Minerals Switch
 Effect/Name/DropRichMinerals=Drop Rich Minerals
 Effect/Name/DropVespene=Drop Vespene
+Effect/Name/EMPApplyDetectorDisableBehavior=EMP
 Effect/Name/EMPChannelCombat=EMPChannelCombat
 Effect/Name/EMPChannelCombatBeamDummy=EMPChannelCombat Beam Dummy
 Effect/Name/EMPChannelCombatEnergyRefund=EMPChannelCombatEnergyRefund
@@ -538,7 +542,7 @@ Effect/Name/IterateTransportUnloadAllUnits2=Iterate Transport Test
 Effect/Name/LanzerTorpedoesGround=Halo Rockets (Persistent)
 Effect/Name/LanzerTorpedoesLMGround=Halo Rockets (Launch Missile)
 Effect/Name/LocustMPDamage=Locust MP Damage Copy
-Effect/Name/MedScanner=Med Scanner
+Effect/Name/MedRadar@AB=Apply Behavior
 Effect/Name/MedicDefensiveMatrix@AB=Apply Behavior
 Effect/Name/MedicDefensiveMatrix@Set=Set
 Effect/Name/MedicP45GaussPistol@Damage=Damage

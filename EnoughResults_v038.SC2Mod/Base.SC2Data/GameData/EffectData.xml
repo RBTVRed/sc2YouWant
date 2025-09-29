@@ -8,6 +8,12 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BurrowedAmbusher@Applicator"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EMPApplyDetectorDisableBehavior">
+        <ValidatorArray index="0" value="NotInvulnerable"/>
+        <ValidatorArray value="NotStructureTarget"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="EMPDetectorDisable"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="PurificationNovaDamage">
         <AttributeBonus index="Structure" value="175"/>
         <Amount value="175"/>
@@ -764,10 +770,10 @@
     <CEffectCreatePersistent id="RavenShredderMissileTintCP">
         <PeriodCount value="160"/>
     </CEffectCreatePersistent>
-    <CEffectApplyBehavior id="MedScanner">
+    <CEffectApplyBehavior id="MedRadar@AB">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="MedRadar"/>
+        <Behavior value="MedRadar@Detector"/>
         <Duration value="15"/>
     </CEffectApplyBehavior>
     <!-- This handles the timeout -->
@@ -1382,6 +1388,7 @@
     </CEffectEnumArea>
     <CEffectSet id="EMPSet">
         <EffectArray value="EMPKillShade"/>
+        <EffectArray value="EMPApplyDetectorDisableBehavior"/>
     </CEffectSet>
     <CEffectModifyUnit id="EmergencyThurstersEnergyCost">
         <EditorCategories value="Race:Terran"/>

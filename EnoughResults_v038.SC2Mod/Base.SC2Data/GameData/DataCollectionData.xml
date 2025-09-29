@@ -71,6 +71,13 @@
         <DataRecord Entry="Actor,LarvaPlaceholder"/>
         <DataRecord Entry="Unit,LarvaPlaceholder"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="MedRadar">
+        <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
+        <DataRecord Entry="Actor,MedRadar@Model"/>
+        <DataRecord Entry="Behavior,MedRadar@Detector"/>
+        <DataRecord Entry="Button,MedRadar"/>
+        <DataRecord Entry="Effect,MedRadar@AB"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="MedicDefensiveMatrix">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
         <DataRecord Entry="Abil,MedicDefensiveMatrix"/>

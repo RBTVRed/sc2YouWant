@@ -803,7 +803,7 @@
     </CAbilEffectTarget>
     <CAbilEffectInstant id="MedicalSweep">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="MedScanner"/>
+        <Effect index="0" value="MedRadar@AB"/>
         <Flags index="BestUnit" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="Transient" value="1"/>
@@ -812,7 +812,8 @@
             <Cooldown TimeUse="2"/>
         </Cost>
         <Arc value="360"/>
-        <AINotifyEffect value="MedScanner"/>
+        <AINotifyEffect value="MedRadar@AB"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MedRadar"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="SeekerMissile">
         <Cost index="0">

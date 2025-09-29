@@ -238,7 +238,7 @@
         <Icon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
     </CButton>
-    <CButton id="EmergencySweep">
+    <CButton id="MedRadar">
         <Icon value="Assets\Textures\btn-upgrade-tychus-detection.dds"/>
     </CButton>
     <CButton id="Wall">

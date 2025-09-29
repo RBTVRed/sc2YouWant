@@ -1199,7 +1199,7 @@
                 <Column value="4"/>
             </LayoutButtons>
             <LayoutButtons Face="StimMedic" Type="AbilCmd" AbilCmd="StimpackMedic,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="EmergencySweep" Type="AbilCmd" AbilCmd="MedicalSweep,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="MedRadar" Type="AbilCmd" AbilCmd="MedicalSweep,Execute" Row="2" Column="2"/>
         </CardLayouts>
         <SubgroupPriority value="82"/>
     </CUnit>
