@@ -15,6 +15,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="EMPDetectorDisable"/>
     </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="MedicDefensiveMatrix@RB">
+        <EditorCategories value="Race:Terran"/>
+        <BehaviorLink value="MedicDefensiveMatrix"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="PurificationNovaDamage">
         <AttributeBonus index="Structure" value="175"/>
         <Amount value="175"/>
@@ -1398,6 +1402,7 @@
     <CEffectSet id="EMPSet">
         <EffectArray value="EMPKillShade"/>
         <EffectArray value="EMPApplyDetectorDisableBehavior"/>
+        <EffectArray value="MedicDefensiveMatrix@RB"/>
     </CEffectSet>
     <CEffectModifyUnit id="EmergencyThurstersEnergyCost">
         <EditorCategories value="Race:Terran"/>

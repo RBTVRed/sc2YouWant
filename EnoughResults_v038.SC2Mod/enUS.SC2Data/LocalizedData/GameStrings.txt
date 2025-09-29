@@ -235,7 +235,7 @@ Button/Tooltip/DisableIgniteAfterburners=Disables Medivac Afterburners.
 Button/Tooltip/DisruptorHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/DormantMetabolism=The Infestor has a much slower energy generation while burrowed.
 Button/Tooltip/DrillClaws=This unit moves and burrows faster.
-Button/Tooltip/EMP=Creates an electromagnetic pulse that does 300 damage to shields and 100 damage to energy of all units in the targeted area. Cloaked units hit by EMP are revealed for a short time.
+Button/Tooltip/EMP=Creates an electromagnetic pulse that does <d ref="Effect,EMPDamage,ShieldBonus"/> damage to the shields shields and <d ref="-Effect,EMPModifyUnit,VitalArray[Energy].Change"/> damage to the energy of all units in the targeted area. Cloaked units hit by EMP are revealed for a short time.
 Button/Tooltip/EnergyBinder=Increases Guardian Shield damage absorption by 1.
 Button/Tooltip/EngineeringBay=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:<n/>- Reapers at the barrack</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Walls from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EvolveAnabolicSynthesis2=Increases the movement speed of <c val="ffff8a">Ultralisks</c>.
@@ -544,6 +544,7 @@ Effect/Name/LanzerTorpedoesLMGround=Halo Rockets (Launch Missile)
 Effect/Name/LocustMPDamage=Locust MP Damage Copy
 Effect/Name/MedRadar@AB=Apply Behavior
 Effect/Name/MedicDefensiveMatrix@AB=Apply Behavior
+Effect/Name/MedicDefensiveMatrix@RB=Remove Behavior
 Effect/Name/MedicDefensiveMatrix@Set=Set
 Effect/Name/MedicP45GaussPistol@Damage=Damage
 Effect/Name/MedicalSuppliesHeal=Medical Supplies Heal

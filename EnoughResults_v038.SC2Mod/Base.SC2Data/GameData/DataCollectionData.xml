@@ -81,13 +81,14 @@
     <CDataCollectionAbil id="MedicDefensiveMatrix">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
         <DataRecord Entry="Abil,MedicDefensiveMatrix"/>
-        <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundDeath"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundStart"/>
+        <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundDeath"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@Model"/>
         <DataRecord Entry="Behavior,MedicDefensiveMatrix"/>
         <DataRecord Entry="Button,MedicDefensiveMatrix"/>
-        <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
         <DataRecord Entry="Effect,MedicDefensiveMatrix@Set"/>
+        <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
+        <DataRecord Entry="Effect,MedicDefensiveMatrix@RB"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="SpawnLarvaSolo">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
