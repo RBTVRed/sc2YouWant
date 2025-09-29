@@ -470,6 +470,12 @@
     <CActorModel id="TemporalFieldImpactModel">
         <On index="0" Send="AnimBracketStart BSD {} {} {} ContentPlayOnce"/>
     </CActorModel>
+    <CActorModel id="EMPDetectorDisableIcon" parent="ModelAnimationStyleContinuous">
+        <On Terms="Behavior.EMPDetectorDisable.On" Send="Create"/>
+        <On Terms="Behavior.EMPDetectorDisable.Off" Send="AnimBracketStop BSD"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+    </CActorModel>
     <!--
     <CActorModel id="TemporalFieldAfterBubbleModel">
         <Remove Terms="Effect.TemporalFieldAfterBubbleCreatePersistent.Start" Send="Create"/>
