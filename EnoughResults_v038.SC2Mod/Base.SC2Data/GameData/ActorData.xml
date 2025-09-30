@@ -1410,6 +1410,9 @@
     <CActorSound id="TransfusionSound">
         <On index="1" Terms="Effect.TransfusionAP; At Target"/>
     </CActorSound>
+    <CActorUnit id="Viper">
+        <On Terms="Abil.InfestedTerrans.SourceCastStart" Send="$Spell"/>
+    </CActorUnit>
     <CActorModel id="WallBuild" parent="TerranBuildingBuild"/>
     <CActorUnit id="Wall" parent="TerranBuildingEx" unitName="Wall">
         <Aliases value="_UnitLarge"/>
