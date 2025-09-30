@@ -18,6 +18,9 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorSiteOpLocalOffset id="EMPDetectorDisableOffset">
+        <LocalOffset value="0.000000,0.000000,1.000000"/>
+    </CActorSiteOpLocalOffset>
     <!--                                                                                         -->
     <!-- Lurker ................................................................................ -->
     <!--                                                                                         -->
@@ -474,7 +477,7 @@
         <On Terms="Behavior.EMPDetectorDisable.On" Send="Create"/>
         <On Terms="Behavior.EMPDetectorDisable.Off" Send="AnimBracketStop BSD"/>
         <Host Subject="_Selectable"/>
-        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <HostSiteOps Ops="SOpAttachOverhead EMPDetectorDisableOffset"/>
     </CActorModel>
     <!--
     <CActorModel id="TemporalFieldAfterBubbleModel">

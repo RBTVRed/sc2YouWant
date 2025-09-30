@@ -134,6 +134,7 @@ Actor/Name/D8ChargeBombClusterbomb@Missile=Missile
 Actor/Name/D8ChargeClusterbomb=D8 Charge Clusterbomb
 Actor/Name/D8ChargeClusterbombExplode@Attack=Attack
 Actor/Name/EMPDetectorDisableIcon=EMP Detector Disable Icon
+Actor/Name/EMPDetectorDisableOffset=EMP Detector Disable Offset
 Actor/Name/EggMonsterHarpyRange=Swarm Host Range
 Actor/Name/FloatingTextPalletMinerals2=Floating Text Pallet Minerals Copy
 Actor/Name/FloatingTextPalletMinerals22=Floating Text Pallet Minerals Copy Copy
