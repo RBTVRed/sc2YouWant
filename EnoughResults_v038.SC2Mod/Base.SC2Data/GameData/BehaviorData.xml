@@ -5,11 +5,11 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="BurrowedAmbusher">
         <Cost>
-            <Cooldown TimeStart="3"/>
+            <Cooldown TimeStart="7"/>
         </Cost>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
-        <Period value="3"/>
+        <Period value="7"/>
         <PeriodCount value="1"/>
         <PeriodicEffect value="BurrowedAmbusher@ABApplicator"/>
     </CBehaviorBuff>
@@ -19,7 +19,7 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsNotBuried"/>
         <Duration value="3"/>
-        <Modification MoveSpeedBonus="1"/>
+        <Modification MoveSpeedBonus="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="BurrowedAmbusher@Applicator">
         <InfoFlags index="Hidden" value="1"/>
