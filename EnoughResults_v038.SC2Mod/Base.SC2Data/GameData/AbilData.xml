@@ -1486,9 +1486,6 @@
         <PrepTime index="0" value="6"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="Yoink">
-        <Cost index="0">
-            <Vital index="Energy" value="50"/>
-        </Cost>
         <Range index="0" value="10"/>
     </CAbilEffectTarget>
     <CAbilBuild id="ZergBuild">

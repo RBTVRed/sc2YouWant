@@ -1051,6 +1051,7 @@
         <EnergyRegenRate value="0.8398"/>
         <CostResource index="Minerals" value="75"/>
         <CostResource index="Vespene" value="200"/>
+        <Speed value="2"/>
     </CUnit>
     <CUnit id="InfestorBurrowed">
         <BehaviorArray Link="BurrowedDamageReduction"/>
@@ -1119,15 +1120,18 @@
         <Radius value="0.4375"/>
         <InnerRadius value="0.4375"/>
         <Speed value="0.836"/>
-        <LifeRegenRate value="4"/>
         <WeaponArray index="0" Link="InfestedGuassRifle"/>
         <WeaponArray index="1" Link=""/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeRegenRateCreep value="2"/>
+        <SpeedMultiplierCreep value="1"/>
     </CUnit>
     <CUnit id="InfestorTerranBurrowed">
         <Radius value="0.4375"/>
         <InnerRadius value="0.4375"/>
         <CardLayouts index="0">
-            <LayoutButtons index="2" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
+            <LayoutButtons index="2" removed="1"/>
             <LayoutButtons index="3" removed="1"/>
             <LayoutButtons index="4" removed="1"/>
             <LayoutButtons index="5" removed="1"/>
@@ -1150,8 +1154,11 @@
             <LayoutButtons index="22" removed="1"/>
             <LayoutButtons index="23" removed="1"/>
         </CardLayouts>
-        <LifeRegenRate value="4"/>
         <BehaviorArray Link="BurrowedAmbusher"/>
+        <BehaviorArray Link="BurrowedDamageReduction"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeRegenRateCreep value="2"/>
     </CUnit>
     <CUnit id="Interceptor">
         <Speed value="5"/>
@@ -2855,10 +2862,10 @@
         <AbilArray index="5" Link="SpreadOut"/>
         <AbilArray Link="InfestedTerrans"/>
         <CardLayouts index="0">
-            <LayoutButtons index="7" Face="FaceEmbrace" AbilCmd="Yoink,Execute" Column="1"/>
-            <LayoutButtons index="8" Face="ParasiticBomb" AbilCmd="ParasiticBomb,Execute" Column="2"/>
+            <LayoutButtons index="7" Face="FaceEmbrace" AbilCmd="Yoink,Execute"/>
+            <LayoutButtons index="8" Face="ParasiticBomb" AbilCmd="ParasiticBomb,Execute" Column="3"/>
             <LayoutButtons index="9" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
-            <LayoutButtons Face="InfestedTerrans" Type="AbilCmd" AbilCmd="InfestedTerrans,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="InfestedTerrans" Type="AbilCmd" AbilCmd="InfestedTerrans,Execute" Row="2" Column="1"/>
         </CardLayouts>
         <LifeStart value="300"/>
         <LifeMax value="300"/>

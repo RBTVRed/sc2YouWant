@@ -716,7 +716,7 @@
         <Duration value="-1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="InfestedTerranTimedLife">
-        <Duration value="180"/>
+        <Duration value="60"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="InfestorIsBurrowed">
         <EditorCategories value="AbilityorEffectType:Units"/>
