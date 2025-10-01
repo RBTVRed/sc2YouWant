@@ -991,6 +991,10 @@
             <LayoutButtons index="2" Face="EvolveInfestorEnergyUpgrade" AbilCmd="InfestationPitResearch,Research1"/>
         </CardLayouts>
     </CUnit>
+    <CUnit id="InfestedTerransEgg">
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
+    </CUnit>
     <CUnit id="Infestor">
         <LifeStart value="180"/>
         <LifeMax value="180"/>
@@ -1154,7 +1158,6 @@
             <LayoutButtons index="22" removed="1"/>
             <LayoutButtons index="23" removed="1"/>
         </CardLayouts>
-        <BehaviorArray Link="BurrowedAmbusher"/>
         <BehaviorArray Link="BurrowedDamageReduction"/>
         <LifeStart value="120"/>
         <LifeMax value="120"/>
