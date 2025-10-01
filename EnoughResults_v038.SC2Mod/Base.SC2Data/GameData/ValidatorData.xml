@@ -3,7 +3,6 @@
     <CValidatorCombine id="EMPDetectorUnit">
         <CombineArray value="IsMedic"/>
         <CombineArray value="IsRaven"/>
-        <CombineArray value="IsQueenBurrowed"/>
         <CombineArray value="IsOverseer"/>
         <CombineArray value="IsAdeptShade"/>
         <CombineArray value="IsObserver"/>

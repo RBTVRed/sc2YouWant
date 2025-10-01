@@ -1397,7 +1397,7 @@
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
     <CEffectEnumArea id="EMPSearch">
-        <SearchFilters value="-;Hidden"/>
+        <SearchFilters value="-;Buried,Hidden"/>
     </CEffectEnumArea>
     <CEffectSet id="EMPSet">
         <EffectArray value="EMPKillShade"/>

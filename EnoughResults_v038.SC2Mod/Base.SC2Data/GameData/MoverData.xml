@@ -9,6 +9,9 @@
         <MotionPhases index="3" Acceleration="2" MaxSpeed="6"/>
         <MotionPhases index="4" Acceleration="4" MaxSpeed="6"/>
     </CMoverMissile>
+    <CMoverMissile id="InfestedTerransWeapon">
+        <MotionPhases index="0" AdaptableParabolaClearance="0.5,0.1"/>
+    </CMoverMissile>
     <CMoverMissile id="RavenShredderMissileDirect">
         <MotionPhases index="0">
             <Driver value="Throw"/>
