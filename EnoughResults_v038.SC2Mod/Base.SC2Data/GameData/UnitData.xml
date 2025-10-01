@@ -1460,10 +1460,8 @@
                 <Column value="1"/>
             </LayoutButtons>
         </CardLayouts>
-        <LifeStart value="100"/>
-        <LifeMax value="100"/>
-        <ShieldsStart value="250"/>
-        <ShieldsMax value="250"/>
+        <ShieldsStart value="125"/>
+        <ShieldsMax value="125"/>
         <CostResource index="Minerals" value="100"/>
     </CUnit>
     <CUnit id="Observer">
@@ -1485,6 +1483,11 @@
         <Sight value="14"/>
         <LifeStart value="60"/>
         <LifeMax value="60"/>
+        <FlagArray index="Cloaked" value="1"/>
+        <BehaviorArray index="0" Link="Detector13p75"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="PermanentlyCloakedObserver" Type="Passive" Row="2" Column="2"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="Oracle">
         <EnergyStart value="75"/>
@@ -2809,7 +2812,6 @@
         <LifeArmor value="1"/>
         <Speed value="2"/>
         <Sight value="9"/>
-        <CostResource index="Minerals" value="125"/>
         <CostResource index="Vespene" value="50"/>
         <AbilArray Link="SpreadOut"/>
         <AbilArray Link="TransientFighterMode"/>
@@ -2840,7 +2842,6 @@
         <Speed value="3.5"/>
         <Acceleration value="2"/>
         <Sight value="11"/>
-        <CostResource index="Minerals" value="125"/>
         <CostResource index="Vespene" value="50"/>
         <AbilArray Link="SpreadOut"/>
         <AbilArray Link="TransientAssaultMode"/>

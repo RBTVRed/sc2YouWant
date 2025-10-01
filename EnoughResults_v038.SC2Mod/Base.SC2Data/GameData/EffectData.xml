@@ -20,7 +20,6 @@
         <BehaviorLink value="MedicDefensiveMatrix"/>
     </CEffectRemoveBehavior>
     <CEffectDamage id="PurificationNovaDamage">
-        <AttributeBonus index="Structure" value="175"/>
         <Amount value="175"/>
     </CEffectDamage>
     <CEffectEnumArea id="PurificationNovaTargettedSearch">
@@ -152,10 +151,10 @@
         <EditorCategories value=""/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Structure" value="105"/>
         <Flags index="Notification" value="1"/>
         <Amount value="105"/>
         <Death value="Electrocute"/>
+        <ShieldBonus value="60"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="RevelationPersistent">
         <ExpireDelay value="56"/>
@@ -840,6 +839,9 @@
     <CEffectRemoveBehavior id="TownHallLoad@RBAttackSpeed">
         <BehaviorLink value="TownHallLoad@AttackSpeed"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="VolatileBurstFriendlyBuildingDamage">
+        <Amount value="150"/>
+    </CEffectDamage>
     <CEffectDamage id="VolatileBurstU2">
         <Amount value="150"/>
     </CEffectDamage>
@@ -1502,7 +1504,7 @@
     <CEffectCreateHealer id="RechargeShieldsHeal">
         <EditorCategories value="Race:Protoss"/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="0.1"/>
+        <DrainVitalCostFactor value="0.15"/>
         <RechargeVital value="Shields"/>
         <RechargeVitalRate value="30"/>
         <ValidatorArray value="NotWarpingIn"/>

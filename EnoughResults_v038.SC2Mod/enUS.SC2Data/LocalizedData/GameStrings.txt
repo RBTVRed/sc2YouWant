@@ -294,6 +294,7 @@ Button/Tooltip/ObeliskHardenedShield=Reduces a maximum of 100 incoming damage to
 Button/Tooltip/ObeliskSlowSearcher=Slows enemies near the Obelisk
 Button/Tooltip/OozeSnare=Creates ooze that slows enemy ground units by 75%.
 Button/Tooltip/Oracle=Flying caster. Can use Revelation, Stasis Ward, and Absorption Shield. <n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/OracleBuildStasisTrap=Places a cloaked Stasis Ward at the target location that lasts 7 minutes. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <d ref="Behavior,OracleStasisTrapTarget,Duration"/> seconds. Trapped units cannot be attacked or affected by abilities.
 Button/Tooltip/OracleHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/OracleWeaponOn=Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<n/>Attacking enemy defencive structures disables their weapon temporarily.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,OracleWeapon,Modification.VitalRegenArray[2] + Unit,Oracle,EnergyRegenRate)" precision="1"/> energy per second.</c>
 Button/Tooltip/OrbitalCommand=Upgrades Command Center to an Orbital Command, unlocking Calldown: Construction Drone and Scanner Sweep. Cannot load SCVs.
@@ -306,7 +307,7 @@ Button/Tooltip/PickupBlueMinerals=<s val="Kicker_Minerals">+<d ref="Effect,Picku
 Button/Tooltip/PlanetaryFortress=Upgrades Command Center to a Planetary Fortress, greatly increasing its armor, arming it with a powerful defensive turret and allows 2 <c val="ffff8a">SCVs</c> to be created simultaneously. Cannot lift off.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PointDefenseDrone=Reducing armor and shield armor on all opponent units in the range of the Targeting Drone.<n/>Times out after <d ref="Behavior,PointDefenseDroneTimedLife,Duration"/> seconds.<n/><n/>
 Button/Tooltip/ProbeHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <d time="60"/> before they disappear.
-Button/Tooltip/PsiStorm=Creates a storm of psionic energy that lasts <d time="7"/>, causing up to 104 (+78 to shields) damage to all units in the target area.
+Button/Tooltip/PsiStorm=Creates a storm of psionic energy that lasts <d time="8"/>, causing up to 192 (+80 to massive and + 80 to shields) damage to all units in the target area.
 Button/Tooltip/RapidConstruction=Increases construction speed of a friendly structure by 50%.
 Button/Tooltip/RapidRegeneration=The Roach regenerates life quickly and very quickly while burrowed.
 Button/Tooltip/RapidReignitionSystem=Reduces the cooldown of Dropship's Ignite Afterburners by <d time="[d ref='$UpgradeEffectArrayValue:MedivacIncreaseSpeedBoost:Abil,MedivacSpeedBoost,Cost[0].Cooldown.TimeUse$'/]"/> and increases the movement speed of Dropship.
