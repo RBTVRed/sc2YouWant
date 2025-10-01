@@ -2,8 +2,8 @@
 <Catalog>
     <CModel id="EMPDetectorDisableIcon" parent="PersistentSpellFX">
         <Model value="Assets/Effects/Terran/EMP_DetectionDisabled_Impact/EMP_DetectionDisabled_Impact.m3"/>
-        <ScaleMax value="1.400000,1.400000,1.400000"/>
-        <ScaleMin value="1.400000,1.400000,1.400000"/>
+        <ScaleMax value="1.700000,1.700000,1.700000"/>
+        <ScaleMin value="1.700000,1.700000,1.700000"/>
     </CModel>
     <CModel id="D8ChargeAttackLaunch">
         <ScaleMax value="0.660000,0.660000,0.660000"/>

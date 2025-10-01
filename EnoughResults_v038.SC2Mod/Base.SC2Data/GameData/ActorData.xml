@@ -19,7 +19,7 @@
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
     <CActorSiteOpLocalOffset id="EMPDetectorDisableOffset">
-        <LocalOffset value="0.000000,0.000000,1.000000"/>
+        <LocalOffset value="0.000000,0.000000,-0.500000"/>
     </CActorSiteOpLocalOffset>
     <!--                                                                                         -->
     <!-- Lurker ................................................................................ -->

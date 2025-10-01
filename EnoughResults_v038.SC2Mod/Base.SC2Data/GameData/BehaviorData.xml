@@ -32,7 +32,7 @@
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-status-detector-disabled.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Duration value="15"/>
+        <Duration value="21"/>
         <Modification>
             <StateFlags index="SuppressDetection" value="1"/>
         </Modification>

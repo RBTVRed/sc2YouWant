@@ -1122,8 +1122,8 @@
         <Speed value="0.836"/>
         <WeaponArray index="0" Link="InfestedGuassRifle"/>
         <WeaponArray index="1" Link=""/>
-        <LifeStart value="150"/>
-        <LifeMax value="150"/>
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
     </CUnit>
@@ -1156,8 +1156,8 @@
         </CardLayouts>
         <BehaviorArray Link="BurrowedAmbusher"/>
         <BehaviorArray Link="BurrowedDamageReduction"/>
-        <LifeStart value="150"/>
-        <LifeMax value="150"/>
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
         <LifeRegenRateCreep value="2"/>
     </CUnit>
     <CUnit id="Interceptor">
