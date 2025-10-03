@@ -196,7 +196,7 @@ Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable Shade that can mov
 Button/Tooltip/AdeptPhaseShiftManual@Teleport=Teleports the Adept to the Shade, destroying the Shade in the process.
 Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 50%.
 Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 50%.
-Button/Tooltip/AmorphousArmorcloud=Creates a shroud that obscures ground units underneath, reducing damage taken from air units and distant ground units by <d ref="1-Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/AmorphousArmorcloud=Creates a shroud around the Infestor that obscures ground units underneath, reducing damage taken from air units by <d ref="1-Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/AnionPulseCrystals=Doubles the damage of the Phoenix.
 Button/Tooltip/Arbiter=Flying caster. Can use Time Warp, Mass Cloaking and Recall in a Power Field.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/ArchonHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
@@ -250,7 +250,7 @@ Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enab
 Button/Tooltip/FirstAid=Heals a target for 30 hp.
 Button/Tooltip/FleetBeacon=Contains upgrades for Phoenixes and Void Rays.<n/><n/><c val="ffff8a">Enables:</c><n/>- Tempests at the Stargate</n>- Carriers at the Stargate<n/>- Arbiter at the Stargate
 Button/Tooltip/Forge=Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<n/><n/><c val="ffff8a">Enables:</c><n/>- Photon Cannons from Probes <n/>- Obelisks from Probes<n/>- Warp Prisms at the Nexus<n/>- Adepts at the Gateway
-Button/Tooltip/FungalGrowth=Slows target units for 10 seconds and causes 25 damage. Reveals cloaked and burrowed units.
+Button/Tooltip/FungalGrowth=Reduces the armor and shield armor of affected units by 2 for 15 seconds and spawns 2 Broodlings when the infested unit dies. Reveals cloaked and burrowed units.
 Button/Tooltip/FusionCore=Contains Liberator, Raven and Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Liberator at the Starport<n/><n/>- Battlecruisers at the Starport
 Button/Tooltip/GhostCancel=Cancels the current Lock On, and allows you to select a new target.
 Button/Tooltip/GuardianShield=Creates a range 4 aura that modifies incoming ranged damage to friendly units by <d ref="Behavior,GuardianShield,DamageResponse.ModifyAmount"/>.
@@ -290,7 +290,7 @@ Button/Tooltip/NapalmHellion=Fast scout. Attack create a lingering pool of fire 
 Button/Tooltip/Nexus=Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<n/><n/><c val="ffff8a">Enables:</c><n/>- Probes<n/>- Warp Prism
 Button/Tooltip/NukeArm=Arms the Silo with a Tactical Nuke.<n/><n/>Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage in a large radius.<n/><n/>Use a Ghost to designate the target.
 Button/Tooltip/NukeCalldown=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/ObeliskHardenedShield=Reduces a maximum of 100 incoming damage to 1 while the Obelisk still has shields.
+Button/Tooltip/ObeliskHardenedShield=Reduces a maximum of 70 incoming damage to 1 while the Obelisk still has shields.
 Button/Tooltip/ObeliskSlowSearcher=Slows enemies near the Obelisk
 Button/Tooltip/OozeSnare=Creates ooze that slows enemy ground units by 75%.
 Button/Tooltip/Oracle=Flying caster. Can use Revelation, Stasis Ward, and Absorption Shield. <n/><n/><c val="ffff8a">Can attack ground units.</c>

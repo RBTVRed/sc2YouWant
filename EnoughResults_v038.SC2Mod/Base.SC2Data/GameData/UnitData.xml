@@ -1460,8 +1460,8 @@
                 <Column value="1"/>
             </LayoutButtons>
         </CardLayouts>
-        <ShieldsStart value="125"/>
-        <ShieldsMax value="125"/>
+        <ShieldsStart value="150"/>
+        <ShieldsMax value="150"/>
         <CostResource index="Minerals" value="100"/>
     </CUnit>
     <CUnit id="Observer">

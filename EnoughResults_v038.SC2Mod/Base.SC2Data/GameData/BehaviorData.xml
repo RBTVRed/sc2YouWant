@@ -221,7 +221,7 @@
         <DisableValidatorArray value="HasAtLeastNormalPower"/>
         <DisableValidatorArray value="IsNotConstructing"/>
         <DamageResponse ClampMinimum="1" Minimum="1">
-            <ModifyAmount value="-100"/>
+            <ModifyAmount value="-70"/>
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
