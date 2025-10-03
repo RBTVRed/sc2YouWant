@@ -2020,6 +2020,7 @@
     <CUnit id="SporeCrawlerUprooted">
         <LifeStart value="800"/>
         <LifeMax value="800"/>
+        <CostResource index="Minerals" value="175"/>
     </CUnit>
     <CUnit id="Stalker">
         <ShieldsStart value="220"/>
