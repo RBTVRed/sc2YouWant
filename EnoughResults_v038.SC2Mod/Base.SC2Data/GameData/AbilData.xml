@@ -21,9 +21,6 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="AmorphousArmorcloud">
         <Range index="0" value="10"/>
-        <Cost index="0">
-            <Vital index="Energy" value="100"/>
-        </Cost>
     </CAbilEffectTarget>
     <CAbilArmMagazine id="ArmSiloWithNuke">
         <InfoArray index="Ammo1" Time="33">
@@ -859,7 +856,6 @@
         <InfoArray index="Train2">
             <Button Requirements=""/>
         </InfoArray>
-        <InfoArray index="Train4" Time="120"/>
         <InfoArray index="Train5">
             <Button DefaultButtonFace=""/>
         </InfoArray>
