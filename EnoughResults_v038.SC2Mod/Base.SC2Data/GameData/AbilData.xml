@@ -325,6 +325,11 @@
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
+    <CAbilEffectInstant id="SpawnChangeling">
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+        </Cost>
+    </CAbilEffectInstant>
     <CAbilMorph id="StarportLiftOff">
         <CmdButtonArray index="Execute" Requirements="LiftOffResearch"/>
     </CAbilMorph>

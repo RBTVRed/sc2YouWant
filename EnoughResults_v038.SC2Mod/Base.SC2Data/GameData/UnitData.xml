@@ -881,6 +881,7 @@
         <ShieldsMax value="300"/>
         <ShieldRegenRate value="1.5"/>
         <Sight value="7"/>
+        <Speed value="2"/>
     </CUnit>
     <CUnit id="FactoryTechLab">
         <CardLayouts index="0">

@@ -229,7 +229,7 @@
         <Duration value="60"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ImmortalOverload">
-        <DamageResponse ModifyLimit="640"/>
+        <DamageResponse ModifyLimit="400"/>
     </CBehaviorBuff>
     <CBehaviorWander id="InstallationZergWander">
         <Range value="3"/>
