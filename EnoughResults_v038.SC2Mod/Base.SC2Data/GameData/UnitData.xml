@@ -662,8 +662,8 @@
         </CardLayouts>
         <Radius value="0.5"/>
         <MinimapRadius value="0.5"/>
-        <LifeStart value="200"/>
-        <LifeMax value="200"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <SubgroupPriority value="84"/>
     </CUnit>
     <CUnit id="GhostAcademy">

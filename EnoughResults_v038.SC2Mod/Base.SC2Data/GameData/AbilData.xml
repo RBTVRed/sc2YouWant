@@ -315,6 +315,9 @@
         </Cost>
         <Range index="0" value="7"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="PsiStorm">
+        <Range index="0" value="9"/>
+    </CAbilEffectTarget>
     <CAbilMorph id="SiegeMode">
         <InfoArray index="0">
             <SectionArray index="Actor">
@@ -776,9 +779,6 @@
         <LoadValidatorArray value="IsNotHellionTank"/>
         <LoadValidatorArray value="MorphToNeosteelBunker@NotMorphing"/>
     </CAbilTransport>
-    <CAbilEffectTarget id="PsiStorm">
-        <Range index="0" value="10"/>
-    </CAbilEffectTarget>
     <CAbilEffectTarget id="RavagerCorrosiveBile">
         <Cost index="0">
             <Cooldown TimeUse="17"/>
