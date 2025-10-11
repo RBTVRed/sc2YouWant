@@ -724,8 +724,8 @@
         <Amount value="12"/>
     </CEffectDamage>
     <CEffectDamage id="ParasiticBombDotDamage">
-        <AttributeBonus index="Armored" value="10"/>
-        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="8"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectDamage id="CommandBeam" parent="DU_WEAP">
         <ValidatorArray value="CasterHasCargo"/>

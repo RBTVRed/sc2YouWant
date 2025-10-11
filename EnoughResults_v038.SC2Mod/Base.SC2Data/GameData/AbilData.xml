@@ -57,6 +57,22 @@
             <Cooldown TimeUse="105"/>
         </Cost>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="InfestedTerrans">
+        <Range index="0" value="9"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="MorphToInfestedTerran">
+        <InfoArray index="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
     <CAbilTrain id="NexusTrain">
         <InfoArray index="Train1" Time="22"/>
         <InfoArray index="Train2" Time="66" Effect="WarpInEffect15">
@@ -987,7 +1003,7 @@
         <Cost index="0">
             <Vital index="Energy" value="100"/>
         </Cost>
-        <Range index="0" value="10"/>
+        <Range index="0" value="9"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PickupPalletMinerals2">
         <Effect index="0" value="PickupPalletMineralsSet2"/>

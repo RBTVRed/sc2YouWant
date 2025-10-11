@@ -747,7 +747,7 @@
         <Duration value="45"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ParasiticBombDelayTimedLife">
-        <Duration value="20"/>
+        <Duration value="21"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RavenScramblerMissile">
         <Duration value="25"/>
@@ -801,7 +801,7 @@
     <!--        <Duration value="10"/>-->
     <!--    </CBehaviorBuff-->
     <CBehaviorBuff id="ParasiticBomb">
-        <Duration value="25"/>
+        <Duration value="21"/>
         <Period value="0.5"/>
         <DamageResponse ModifyFraction="1.5">
             <Kind index="Spell" value="0"/>
