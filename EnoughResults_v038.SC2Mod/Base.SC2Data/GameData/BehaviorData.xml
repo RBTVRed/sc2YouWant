@@ -182,7 +182,7 @@
         </Cost>
     </CBehaviorBuff>
     <CBehaviorBuff id="BroodlingFate">
-        <Duration value="23.5"/>
+        <Duration value="21"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="BuildingStasis">
         <Duration value="1"/>

@@ -38,7 +38,7 @@
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="DeactivateAbsorptionShield">
-        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <TintRacially value="1"/>
@@ -146,7 +146,7 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="AbsorptionShield">
-        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>

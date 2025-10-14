@@ -39,6 +39,7 @@
     <CWeaponLegacy id="BroodlingStrike">
         <Range value="11.5"/>
         <MinScanRange value="11.5"/>
+        <Period value="3.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="C10CanisterRifle">
         <Range value="9"/>
@@ -202,7 +203,9 @@
         <Range value="9"/>
         <Period value="2.5"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="NeedleClaws"/>
+    <CWeaponLegacy id="NeedleClaws">
+        <Period value="0.8"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <Period value="1.4"/>
         <DamagePoint value="0.05"/>

@@ -472,10 +472,10 @@
         <Amount value="15"/>
     </CEffectDamage>
     <CEffectDamage id="BroodlingEscortDamage">
-        <Amount value="6"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="BroodlingTimedLifeBroodLord">
-        <Duration value="23.5"/>
+        <Duration value="17.5"/>
     </CEffectApplyBehavior>
     <CEffectAddTrackedUnit id="CargoTracker@ATU">
         <BehaviorLink value="CargoTracker"/>

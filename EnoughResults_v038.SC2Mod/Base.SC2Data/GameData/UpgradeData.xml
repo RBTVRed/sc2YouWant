@@ -12,6 +12,7 @@
         <AffectedUnitArray value="Immortal"/>
         <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
     </CUpgrade>
+    <CUpgrade id="ChitinousPlating"/>
     <CUpgrade id="CycloneCloak">
         <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
         <Alert value="ResearchComplete"/>

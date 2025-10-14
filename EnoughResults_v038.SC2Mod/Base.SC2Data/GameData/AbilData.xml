@@ -48,6 +48,23 @@
             <Vital index="Energy" value="50"/>
         </Cost>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="Blink">
+        <Cost index="0">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <HideCount value="1"/>
+                <TimeUse value="20"/>
+                <Flags index="EnableChargeTimeQueuing" value="1"/>
+            </Charge>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <CancelCost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </CancelCost>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="EMP">
         <CastIntroTime value="0.5"/>
         <Effect index="0" value="EMPChannelInitialSet"/>

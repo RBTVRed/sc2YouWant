@@ -43,6 +43,7 @@
         <On index="5" Terms="Effect.AmorphousArmorcloudCP.Start; At Caster"/>
         <On index="7" Terms="Effect.AmorphousArmorcloudCP.Stop; At Caster"/>
         <HostSiteOps Ops="SOpAttachCenter MicrobialShroudOffset"/>
+        <Scale value="1.500000"/>
         <!--On Terms="ActorCreation" Send="SetTintColor {255,0,0 3.000000}"/-->
     </CActorModel>
     <CActorModel id="BlindingCloud">
@@ -167,7 +168,6 @@
     </CActorMissile>
     <CActorSiteOpLocalOffset id="MicrobialShroudOffset">
         <EditorCategories value=""/>
-        <LocalOffset value="0.000000,0.000000,3.200000"/>
     </CActorSiteOpLocalOffset>
     <CActorModel id="OozeSnare" parent="ModelAnimationStyleContinuous">
         <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>
@@ -945,7 +945,6 @@
         <Scale value="0.750000"/>
         <On index="5" Send="AnimPlay ConstructionDeath Stand,Birth,Death FullMatch,RandomStartOffset"/>
         <On index="35" Send="$Birth RandomStartOffset 0.000000"/>
-        <On index="65" Send="$Birth RandomStartOffset"/>
         <ModelFlags index="AutomateGlobalLoops" value="0"/>
         <ModelFlags index="UseSyncSeed" value="0"/>
     </CActorUnit>
