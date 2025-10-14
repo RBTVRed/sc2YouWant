@@ -15,6 +15,7 @@
         <Value value="Firebat"/>
         <Type value="SelectAlias"/>
     </CValidatorUnitType>
+    <CValidatorUnitType id="IsLurkerUnBurrowed"/>
     <CValidatorUnitType id="NotFirebat">
         <Value value="Firebat"/>
         <Find value="0"/>

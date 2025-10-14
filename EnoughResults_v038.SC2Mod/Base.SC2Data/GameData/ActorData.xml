@@ -18,6 +18,14 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="DefilerMPPlagueTargetModel">
+        <On index="8" removed="1"/>
+        <On index="9" removed="1"/>
+    </CActorModel>
+    <CActorModel id="DefilerMPPlagueTargetModelMedium">
+        <On Terms="ActorCreation; ValidateUnit IsLurkerBurrowed" Send="SetScale 0.500000"/>
+        <On Terms="ActorCreation; ValidateUnit IsLurkerUnBurrowed" Send="SetScale 0.500000"/>
+    </CActorModel>
     <CActorSiteOpLocalOffset id="EMPDetectorDisableOffset">
         <LocalOffset value="0.000000,0.000000,-0.500000"/>
     </CActorSiteOpLocalOffset>
@@ -42,6 +50,7 @@
     <CActorModel id="AmorphousArmorcloud">
         <On index="5" Terms="Effect.AmorphousArmorcloudCP.Start; At Caster"/>
         <On index="7" Terms="Effect.AmorphousArmorcloudCP.Stop; At Caster"/>
+        <On Terms="ActorCreation.AmorphousArmorcloud" Send="SetOpacity 1.000000"/>
         <HostSiteOps Ops="SOpAttachCenter MicrobialShroudOffset"/>
         <Scale value="1.500000"/>
         <!--On Terms="ActorCreation" Send="SetTintColor {255,0,0 3.000000}"/-->
@@ -168,6 +177,7 @@
     </CActorMissile>
     <CActorSiteOpLocalOffset id="MicrobialShroudOffset">
         <EditorCategories value=""/>
+        <LocalOffset value="0.000000,0.000000,-0.600000"/>
     </CActorSiteOpLocalOffset>
     <CActorModel id="OozeSnare" parent="ModelAnimationStyleContinuous">
         <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>

@@ -894,34 +894,34 @@
     </CBehaviorBuff>
     <CBehaviorSpawn id="SpawnLarva">
         <InfoArray index="0" Requirements="Ishatchery" Delay="25"/>
-        <InfoArray index="1" MaxCount="6"/>
+        <InfoArray index="1" MaxCount="8"/>
         <InfoArray>
             <Unit value="Larva"/>
-            <MaxCount value="4"/>
+            <MaxCount value="5"/>
             <Requirements value="IsLair"/>
             <Delay value="25"/>
         </InfoArray>
         <InfoArray>
             <Unit value="Larva"/>
-            <MaxCount value="6"/>
+            <MaxCount value="8"/>
             <Requirements value="IsHive"/>
             <Delay value="25"/>
         </InfoArray>
         <InfoArray>
             <Unit value="Larva"/>
-            <MaxCount value="6"/>
+            <MaxCount value="8"/>
             <Requirements value="LairSpawnMutantLarva"/>
             <Delay value="0.25"/>
             <Effect value="LarvaRelease"/>
         </InfoArray>
         <InfoArray>
             <Unit value="Larva"/>
-            <MaxCount value="6"/>
+            <MaxCount value="8"/>
             <Requirements value="HiveSpawnMutantLarva"/>
             <Delay value="0.25"/>
             <Effect value="LarvaRelease"/>
         </InfoArray>
-        <Limit value="6"/>
+        <Limit value="8"/>
     </CBehaviorSpawn>
     <CBehaviorBuff id="StasisWardTimedLife">
         <Duration value="588"/>
