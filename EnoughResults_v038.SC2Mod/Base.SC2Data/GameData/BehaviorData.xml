@@ -73,7 +73,7 @@
     <CBehaviorBuff id="AmorphousArmorcloud">
         <Duration value="1.875"/>
         <DamageResponse ModifyFraction="0.1">
-            <ValidatorArray value="MicrobialShroudValidTarget"/>
+            <ValidatorArray value="TargetIsNotGround"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="ArbiterMPCloakField">

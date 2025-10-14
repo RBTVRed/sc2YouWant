@@ -118,10 +118,9 @@
         <Range value="16"/>
     </CValidatorLocationCompareRange>
     <CValidatorLocationCompareRange id="SourceGE4FromTarget">
-        <WhichLocation Value="SourceUnit"/>
+        <WhichLocation Value="TargetUnit"/>
         <Compare value="GE"/>
         <Range value="4"/>
-        <Value Value="TargetUnit"/>
     </CValidatorLocationCompareRange>
     <CValidatorUnitType id="TargetIsChangeling">
         <Value value="Changeling"/>

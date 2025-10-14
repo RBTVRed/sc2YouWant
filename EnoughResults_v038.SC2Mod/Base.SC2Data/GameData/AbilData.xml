@@ -13,6 +13,7 @@
         </Cost>
         <CursorEffect value="AmorphousArmorcloudSearch"/>
         <AINotifyEffect value="AmorphousArmorcloudCP"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AmorphousArmorcloud"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="AdeptPhaseShift">
         <Cost index="0">
