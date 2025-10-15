@@ -55,7 +55,6 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <HideCount value="1"/>
                 <TimeUse value="20"/>
                 <Flags index="EnableChargeTimeQueuing" value="1"/>
             </Charge>
