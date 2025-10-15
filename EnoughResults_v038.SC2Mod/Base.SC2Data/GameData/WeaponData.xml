@@ -72,7 +72,7 @@
         <DisplayEffect value="MothershipCoreWeaponDamage2"/>
         <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
         <MinScanRange value="7"/>
-        <Range value="7"/>
+        <Range value="9"/>
         <RangeSlop value="0"/>
         <Arc value="360"/>
         <Period value="2.2"/>
@@ -92,6 +92,7 @@
         <DamagePoint value="0.05"/>
         <Backswing value="0.5607"/>
         <Effect value="BroodlingShotLM"/>
+        <Range value="9"/>
     </CWeaponLegacy>
     <!--                                                                                         -->
     <!--                                                                                         -->
@@ -116,7 +117,7 @@
         <Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <DisplayEffect value="CommandBeam"/>
         <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
-        <Range value="7"/>
+        <Range value="9"/>
         <Arc value="360"/>
         <Period value="2.2"/>
         <Effect value="CommandBeam"/>

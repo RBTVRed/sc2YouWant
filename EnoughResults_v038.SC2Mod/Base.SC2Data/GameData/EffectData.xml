@@ -813,7 +813,7 @@
         <EffectArray value="SpawnLarvaSolo@CU"/>
     </CEffectSet>
     <CEffectDamage id="Spines">
-        <AttributeBonus index="Structure" value="20"/>
+        <AttributeBonus index="Structure" value="15"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="SwarmPheremones">
         <ValidatorArray index="0" value="IsLocust"/>
@@ -924,7 +924,7 @@
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectDamage id="FusionCutter">
-        <AttributeBonus index="Structure" value="20"/>
+        <AttributeBonus index="Structure" value="15"/>
     </CEffectDamage>
     <CEffectDamage id="HydraliskMelee">
         <AttributeBonus index="Light" value="4"/>
@@ -1072,7 +1072,7 @@
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="ParticleBeam">
-        <AttributeBonus index="Structure" value="20"/>
+        <AttributeBonus index="Structure" value="15"/>
     </CEffectDamage>
     <CEffectDamage id="RavenShredderMissileDamage">
         <AreaArray index="2" Radius="3"/>

@@ -78,7 +78,7 @@
         <ShieldsMax value="900"/>
         <ShieldArmor value="2"/>
         <ShieldRegenRate value="5"/>
-        <Speed value="2.25"/>
+        <Speed value="2.5"/>
         <AbilArray Link="SpreadOut"/>
         <BehaviorArray Link="ArchonMerging"/>
         <CardLayouts index="0">
