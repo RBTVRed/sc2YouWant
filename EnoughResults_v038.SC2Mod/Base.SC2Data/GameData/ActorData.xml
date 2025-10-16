@@ -1227,7 +1227,8 @@
         <Sound value="UI_ResourcePickup"/>
     </CActorSound>
     <CActorProgress id="ProtossWarpIn">
-        <On index="6" Send="$Birth 0 0.000000 0.000000 12.000000 AsDuration"/>
+        <On index="5" Send="$Birth 0 0.000000 0.000000 12.400000 AsDuration"/>
+        <On index="6" Send="$Birth 0 0.000000 0.000000 6.200000 AsDuration"/>
     </CActorProgress>
     <CActorModel id="QueenCreepBirth">
         <On Terms="Effect.RuptureTumorSet.Start; At Caster" Send="Create"/>
