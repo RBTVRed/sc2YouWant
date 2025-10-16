@@ -26,7 +26,7 @@
         <EffectArray index="0" Value="0.398400"/>
     </CUpgrade>
     <CUpgrade id="Charge">
-        <EffectArray index="0" Value="0.398400"/>
+        <EffectArray index="0" Value="0.441400"/>
     </CUpgrade>
     <CUpgrade id="DiggingClaws">
         <EffectArray index="1" Operation="Set" Value="1.500000"/>
