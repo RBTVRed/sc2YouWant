@@ -18,6 +18,9 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorBeamSimple id="ArchonAttackBeam">
+        <On Terms="ActorCreation.ArchonAttackBeam" Send="SetTintColor 70,170,255"/>
+    </CActorBeamSimple>
     <CActorModel id="DefilerMPPlagueTargetModel">
         <On index="8" removed="1"/>
         <On index="9" removed="1"/>

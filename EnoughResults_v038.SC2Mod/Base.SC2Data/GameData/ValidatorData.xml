@@ -25,6 +25,11 @@
         <CombineArray value="IsDetector"/>
         <CombineArray value="EMPDetectorUnit"/>
     </CValidatorCombine>
+    <CValidatorUnitType id="NotNapalmHellion">
+        <Value value="NapalmHellion"/>
+        <Find value="0"/>
+        <Type value="SelectAlias"/>
+    </CValidatorUnitType>
     <CValidatorUnitCompareVital id="ObeliskHardenedShieldCasterShieldsGE1">
         <WhichUnit Value="Caster"/>
         <Compare value="GE"/>

@@ -20,7 +20,7 @@
         <BehaviorLink value="MedicDefensiveMatrix"/>
     </CEffectRemoveBehavior>
     <CEffectDamage id="PurificationNovaDamage">
-        <Amount value="175"/>
+        <Amount value="185"/>
     </CEffectDamage>
     <CEffectEnumArea id="PurificationNovaTargettedSearch">
         <AreaArray index="0" Radius="0.25"/>
@@ -1791,11 +1791,11 @@
     </CEffectApplyBehavior>
     <CEffectDamage id="WidowMineExplodeDirect">
         <ShieldBonus value="0"/>
-        <Amount value="245"/>
+        <Amount value="310"/>
     </CEffectDamage>
     <CEffectDamage id="WidowMineExplodeSplash">
         <ShieldBonus value="0"/>
-        <Amount value="75"/>
+        <Amount value="65"/>
     </CEffectDamage>
     <CEffectModifyUnit id="MedicalSuppliesHeal">
         <ValidatorArray value="LifeNotFull"/>
@@ -1804,6 +1804,9 @@
             <Change value="20"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectEnumArea id="WidowMineExplodeSplashSearch">
+        <AreaArray index="0" Radius="1"/>
+    </CEffectEnumArea>
     <CEffectDamage id="YamatoU">
         <Amount value="750"/>
     </CEffectDamage>

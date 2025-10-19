@@ -673,7 +673,7 @@
         <Duration value="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Hallucination">
-        <Modification SightBonus="-15" SightMinimum="4">
+        <Modification SightBonus="-15" SightMinimum="5">
             <StateFlags index="SuppressCombat" value="0"/>
             <DamageDealtFraction index="Spell" value="-0.5"/>
             <DamageDealtFraction index="Melee" value="-0.5"/>

@@ -872,6 +872,7 @@ Validator/Name/NotBunker=Not Bunker
 Validator/Name/NotCreepTumor=Not Creep Tumor
 Validator/Name/NotFirebat=Not Firebat
 Validator/Name/NotIncubateDummy=Not Incubate Dummy
+Validator/Name/NotNapalmHellion=Not Napalm Hellion
 Validator/Name/NotRapidConstruction=Not Rapid Construction
 Validator/Name/NotRepairing=Not Repairing
 Validator/Name/NotSpineCrawlerRooted=Not Spine Crawler Rooted

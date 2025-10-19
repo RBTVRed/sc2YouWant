@@ -7,20 +7,22 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="NapalmGrenade@Damage" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
-        <Amount value="8"/>
+        <Amount value="6"/>
         <Death value="Fire"/>
+        <AttributeBonus index="Light" value="2"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="NapalmGrenade@AB">
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="NapalmGrenade@DoT"/>
-        <ValidatorArray index="0" value="NotFirebat"/>
+        <ValidatorArray index="0" removed="1"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="NapalmGrenade@DamageDoTPeriodic">
         <ValidatorArray value="NapalmGrenade@TargetFilters"/>
         <EditorCategories value="Race:Terran"/>
         <Visibility value="Hidden"/>
-        <Amount value="4"/>
+        <Amount value="2"/>
         <Death value="Fire"/>
+        <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectDamage id="NapalmGrenade@DamageDoTInitial">
         <ValidatorArray value="NapalmGrenade@TargetFilters"/>
@@ -28,8 +30,9 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="8"/>
+        <Amount value="2"/>
         <Death value="Fire"/>
+        <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectSet id="NapalmGrenade@SetImpact">
         <EditorCategories value="Race:Terran"/>

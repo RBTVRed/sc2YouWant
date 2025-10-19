@@ -441,6 +441,7 @@
         <EffectArray Reference="Effect,NapalmGrenade@Damage,Amount" Value="1"/>
         <EffectArray Reference="Weapon,NapalmGrenade,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,NapalmGrenade,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
         <AffectedUnitArray value="CycloneBurstLockOn@Weapon"/>
     </CUpgrade>
     <CUpgrade id="TerranVehicleWeaponsLevel2">
@@ -453,6 +454,7 @@
         <EffectArray Reference="Effect,NapalmGrenade@Damage,Amount" Value="1"/>
         <EffectArray Reference="Weapon,NapalmGrenade,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,NapalmGrenade,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
     </CUpgrade>
     <CUpgrade id="TerranVehicleWeaponsLevel3">
         <EffectArray Reference="Effect,CycloneBurstLockOn@Damage,Amount" Value="1"/>
@@ -464,6 +466,7 @@
         <EffectArray Reference="Effect,NapalmGrenade@Damage,Amount" Value="1"/>
         <EffectArray Reference="Weapon,NapalmGrenade,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,NapalmGrenade,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
     </CUpgrade>
     <!-- Balance change for balance patch of Nov 11th 2013 -->
     <CUpgrade id="TunnelingClaws">

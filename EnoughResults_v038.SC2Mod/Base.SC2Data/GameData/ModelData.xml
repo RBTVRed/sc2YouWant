@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <!-- Units                                                                                   -->
+    <CModel id="ArchonAttackBeam">
+        <ScaleMax value="1.200000,1.200000,1.200000"/>
+        <ScaleMin value="1.200000,1.200000,1.200000"/>
+    </CModel>
     <CModel id="EMPDetectorDisableIcon" parent="PersistentSpellFX">
         <Model value="Assets/Effects/Terran/EMP_DetectionDisabled_Impact/EMP_DetectionDisabled_Impact.m3"/>
         <ScaleMax value="1.700000,1.700000,1.700000"/>
@@ -603,6 +608,10 @@
     <CModel id="WarpPrismPowerVisualFast">
         <ScaleMax value="0.900000,0.900000,0.900000"/>
         <ScaleMin value="0.900000,0.900000,0.900000"/>
+    </CModel>
+    <CModel id="WidowMineAttackImpact">
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
     </CModel>
     <CModel id="XelNagaHealingShrineBuffModel2" parent="BuffFX">
         <Model value="Assets\Effects\Terran\MedicHeal\MedicHeal.m3"/>
