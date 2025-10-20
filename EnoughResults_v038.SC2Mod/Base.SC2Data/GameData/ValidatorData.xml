@@ -8,6 +8,10 @@
         <CombineArray value="IsObserver"/>
         <CombineArray value="TargetIsChangeling"/>
     </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="Fireproof@TargetIsFireproof">
+        <Compare value="GT"/>
+        <Behavior value="Fireproof"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitFilters id="IsDetector">
         <Filters value="Detector;-"/>
     </CValidatorUnitFilters>

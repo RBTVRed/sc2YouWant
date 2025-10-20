@@ -495,6 +495,9 @@
         <MinimapRadius value="0.5"/>
         <Sight value="7"/>
     </CUnit>
+    <CUnit id="DevilDog">
+        <BehaviorArray Link="Fireproof"/>
+    </CUnit>
     <CUnit id="DisruptorPhased">
         <ShieldsStart value="300"/>
         <ShieldsMax value="300"/>
@@ -620,6 +623,7 @@
         </CardLayouts>
         <Sight value="7"/>
         <SubgroupPriority value="76"/>
+        <BehaviorArray Link="Fireproof"/>
     </CUnit>
     <CUnit id="FleetBeacon">
         <ShieldsStart value="1500"/>
@@ -687,6 +691,7 @@
         <Radius value="0.75"/>
         <MinimapRadius value="0.75"/>
         <Speed value="3.75"/>
+        <BehaviorArray Link="Fireproof"/>
     </CUnit>
     <CUnit id="HellionTank">
         <Attributes index="Biological" value="0"/>
@@ -699,6 +704,7 @@
         </CardLayouts>
         <Radius value="0.6875"/>
         <MinimapRadius value="0.6875"/>
+        <BehaviorArray Link="Fireproof"/>
     </CUnit>
     <CUnit id="HighTemplar">
         <ShieldsStart value="120"/>

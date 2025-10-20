@@ -15,6 +15,23 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="EMPDetectorDisable"/>
     </CEffectApplyBehavior>
+    <CEffectSet id="FirebatSet">
+        <EffectArray index="1" value="FirebatSwitch"/>
+    </CEffectSet>
+    <CEffectSet id="FlameThrowerDamageSet">
+        <EffectArray index="0" value="FirebatSwitch"/>
+    </CEffectSet>
+    <CEffectDamage id="KD8ChargeExplodeDamage">
+        <ValidatorArray index="0" removed="1"/>
+        <AttributeBonus index="Armored" value="45"/>
+        <Amount value="25"/>
+    </CEffectDamage>
+    <CEffectSwitch id="KD8ChargeExplodeSwitch">
+        <ValidatorArray value="IsNotPhasedUnit"/>
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="IsStructure" Effect="KD8ChargeExplodeDamageStructure"/>
+        <CaseDefault value="KD8ChargeExplodeDamage"/>
+    </CEffectSwitch>
     <CEffectRemoveBehavior id="MedicDefensiveMatrix@RB">
         <EditorCategories value="Race:Terran"/>
         <BehaviorLink value="MedicDefensiveMatrix"/>
@@ -333,10 +350,31 @@
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AttributeBonus index="Light" value="9"/>
     </CEffectDamage>
-    <CEffectDamage id="KD8ChargeExplodeDamage">
+    <CEffectDamage id="KD8ChargeExplodeDamageDisplay">
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/KD8ChargeExplodeDamage"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
         <AttributeBonus index="Armored" value="45"/>
-        <AttributeBonus index="Structure" value="-25"/>
+        <AttributeBonus index="Structure" value="10"/>
+        <Flags index="Notification" value="1"/>
         <Amount value="25"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="KD8ChargeExplodeDamageStructure">
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/KD8ChargeExplodeDamage"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="35"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
     </CEffectDamage>
     <!-- <CEffectDamage id="JavelinMissileLaunchersDamage">-->
     <!--        <AttributeBonus index="Light" value="12"/>-->
@@ -913,7 +951,20 @@
     <CEffectDamage id="FirebatUFull">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="30"/>
+        <ValidatorArray index="0" removed="1"/>
     </CEffectDamage>
+    <CEffectDamage id="FirebatUFullFireproof" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/FirebatUFull"/>
+        <Amount value="10"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectSwitch id="FirebatSwitch">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="Fireproof@TargetIsFireproof" Effect="FirebatUFullFireproof"/>
+        <CaseDefault value="FirebatUFull"/>
+    </CEffectSwitch>
     <CEffectSet id="FungalGrowthSet">
         <EffectArray index="1" removed="1"/>
     </CEffectSet>
@@ -1435,6 +1486,7 @@
         <AreaArray index="0" Radius="1.5"/>
     </CEffectDamage>
     <CEffectSet id="KD8ChargeEndSet">
+        <EffectArray index="0" value="KD8ChargeExplodeSwitch"/>
         <EffectArray index="1" removed="1"/>
     </CEffectSet>
     <CEffectEnumArea id="KD8SearchArea">

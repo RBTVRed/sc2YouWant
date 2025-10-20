@@ -441,7 +441,10 @@
         <EffectArray Reference="Effect,NapalmGrenade@Damage,Amount" Value="1"/>
         <EffectArray Reference="Weapon,NapalmGrenade,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,NapalmGrenade,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray Reference="Effect,NapalmGrenade@DamageDoTInitial,Amount" Value="1"/>
         <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NapalmGrenade@DamageDoTInitialFireproof,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodicFireproof,Amount" Value="1"/>
         <AffectedUnitArray value="CycloneBurstLockOn@Weapon"/>
     </CUpgrade>
     <CUpgrade id="TerranVehicleWeaponsLevel2">

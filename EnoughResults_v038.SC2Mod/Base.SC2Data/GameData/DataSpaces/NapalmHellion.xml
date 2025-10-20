@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectSwitch id="NapalmGrenade@SwitchDoTInitial">
+        <ValidatorArray value="NapalmGrenade@TargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="Fireproof@TargetIsFireproof" Effect="NapalmGrenade@DamageDoTInitialFireproof"/>
+        <CaseDefault value="NapalmGrenade@DamageDoTInitial"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="NapalmGrenade@SwitchDoTPeriodic">
+        <ValidatorArray value="NapalmGrenade@TargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="Fireproof@TargetIsFireproof" Effect="NapalmGrenade@DamageDoTPeriodicFireproof"/>
+        <CaseDefault value="NapalmGrenade@DamageDoTPeriodic"/>
+    </CEffectSwitch>
     <CEffectLaunchMissile id="NapalmGrenade@LM">
         <EditorCategories value="Race:Terran"/>
         <ImpactEffect value="NapalmGrenade@SetImpact"/>
@@ -8,16 +20,14 @@
     <CEffectDamage id="NapalmGrenade@Damage" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
         <Amount value="6"/>
-        <Death value="Fire"/>
+        <Death value="Blast"/>
         <AttributeBonus index="Light" value="2"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="NapalmGrenade@AB">
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="NapalmGrenade@DoT"/>
-        <ValidatorArray index="0" removed="1"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="NapalmGrenade@DamageDoTPeriodic">
-        <ValidatorArray value="NapalmGrenade@TargetFilters"/>
         <EditorCategories value="Race:Terran"/>
         <Visibility value="Hidden"/>
         <Amount value="2"/>
@@ -25,7 +35,6 @@
         <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectDamage id="NapalmGrenade@DamageDoTInitial">
-        <ValidatorArray value="NapalmGrenade@TargetFilters"/>
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
@@ -33,6 +42,14 @@
         <Amount value="2"/>
         <Death value="Fire"/>
         <AttributeBonus index="Light" value="4"/>
+    </CEffectDamage>
+    <CEffectDamage id="NapalmGrenade@DamageDoTInitialFireproof" parent="NapalmGrenade@DamageDoTInitial">
+        <Name value="Effect/Name/NapalmGrenade@DamageDoTInitialFireproof"/>
+        <AttributeBonus index="Light" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="NapalmGrenade@DamageDoTPeriodicFireproof" parent="NapalmGrenade@DamageDoTPeriodic">
+        <Name value="Effect/Name/NapalmGrenade@DamageDoTPeriodicFireproof"/>
+        <AttributeBonus index="Light" value="0"/>
     </CEffectDamage>
     <CEffectSet id="NapalmGrenade@SetImpact">
         <EditorCategories value="Race:Terran"/>
@@ -46,18 +63,18 @@
         <PeriodCount value="20"/>
         <PeriodicEffectArray value="NapalmGrenade@SADoT"/>
         <PeriodicPeriodArray value="0.5712"/>
-        <AINotifyEffect value="PsiStormSearch"/>
+        <AINotifyEffect value="NapalmGrenade@SADoT"/>
     </CEffectCreatePersistent>
     <CEffectEnumArea id="NapalmGrenade@SADoT">
         <EditorCategories value="Race:Protoss"/>
         <AINotifyFlags index="HurtFriend" value="1"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
-        <SearchFilters value="-;Air,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
+        <SearchFilters value="Ground;Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="1.125" Effect="NapalmGrenade@AB"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
     <CValidatorUnitFilters id="NapalmGrenade@TargetFilters">
-        <Filters value="-;Air,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
+        <Filters value="Ground;Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
     <CButton id="NapalmHellion">
         <Icon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
@@ -359,6 +376,7 @@
         <GlossaryWeakArray value="Roach"/>
         <GlossaryWeakArray value="Stalker"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <BehaviorArray Link="Fireproof"/>
     </CUnit>
     <CUnit id="NapalmGrenade@Weapon" parent="MISSILE">
         <Race value="Terr"/>
@@ -372,7 +390,7 @@
         <TimeScaleSource Value="Global"/>
         <Duration value="0.6665"/>
         <Period value="0.571"/>
-        <InitialEffect value="NapalmGrenade@DamageDoTInitial"/>
-        <PeriodicEffect value="NapalmGrenade@DamageDoTPeriodic"/>
+        <InitialEffect value="NapalmGrenade@SwitchDoTInitial"/>
+        <PeriodicEffect value="NapalmGrenade@SwitchDoTPeriodic"/>
     </CBehaviorBuff>
 </Catalog>

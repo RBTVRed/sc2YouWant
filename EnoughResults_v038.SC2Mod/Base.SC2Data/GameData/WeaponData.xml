@@ -145,7 +145,7 @@
     <CWeaponLegacy id="WeaponKD8Charge">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
-        <DisplayEffect value="KD8ChargeExplodeDamage"/>
+        <DisplayEffect value="KD8ChargeExplodeDamageDisplay"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
         <Period value="2.52"/>
