@@ -148,10 +148,13 @@
         <DisplayEffect value="KD8ChargeExplodeDamage"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
-        <Period value="0.5"/>
+        <Period value="2.52"/>
         <Effect value="WeaponKD8Charge@Switch"/>
         <MinimumRange value="1"/>
         <MinScanRange value="6"/>
+        <Cost>
+            <Cooldown Link="KD8Charge" Location="Unit" TimeUse="2.52"/>
+        </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Period value="2.4"/>
