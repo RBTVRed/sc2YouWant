@@ -786,9 +786,9 @@
         <CastOutroTime index="0" value="6"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="KD8Charge">
-        <Range index="0" value="7"/>
+        <Range index="0" value="6"/>
         <Cost index="0">
-            <Cooldown TimeUse="3.15"/>
+            <Cooldown TimeUse="2.52"/>
         </Cost>
         <DataCollection value="WeaponKD8Charge"/>
     </CAbilEffectTarget>

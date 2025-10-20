@@ -71,8 +71,8 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
         <DisplayEffect value="MothershipCoreWeaponDamage2"/>
         <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
-        <MinScanRange value="7"/>
-        <Range value="9"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
         <RangeSlop value="0"/>
         <Arc value="360"/>
         <Period value="2.2"/>
@@ -86,13 +86,13 @@
         <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
         <DisplayEffect value="BroodlingShotD"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="7"/>
+        <MinScanRange value="8"/>
         <Arc value="360"/>
         <Period value="2.2"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.5607"/>
         <Effect value="BroodlingShotLM"/>
-        <Range value="9"/>
+        <Range value="8"/>
     </CWeaponLegacy>
     <!--                                                                                         -->
     <!--                                                                                         -->
@@ -117,7 +117,7 @@
         <Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <DisplayEffect value="CommandBeam"/>
         <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable,AirUnit"/>
-        <Range value="9"/>
+        <Range value="8"/>
         <Arc value="360"/>
         <Period value="2.2"/>
         <Effect value="CommandBeam"/>
@@ -125,6 +125,7 @@
         <AllowedMovement value="Slowing"/>
         <RandomDelayMin value="0.1"/>
         <RandomDelayMax value="0.4"/>
+        <MinScanRange value="8"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NexusDefenseBeam">
         <EditorCategories value="Race:Protoss"/>
@@ -146,10 +147,11 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
         <DisplayEffect value="KD8ChargeExplodeDamage"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="7"/>
+        <Range value="6"/>
         <Period value="0.5"/>
         <Effect value="WeaponKD8Charge@Switch"/>
-        <MinimumRange value="2"/>
+        <MinimumRange value="1"/>
+        <MinScanRange value="6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Period value="2.4"/>

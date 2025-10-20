@@ -2451,8 +2451,8 @@
         <AbilArray Link="AssaultMode"/>
     </CUnit>
     <CUnit id="Marauder">
-        <LifeStart value="115"/>
-        <LifeMax value="115"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <Sight value="9"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
