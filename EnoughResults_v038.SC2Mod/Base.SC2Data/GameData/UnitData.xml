@@ -791,8 +791,8 @@
         </CardLayouts>
     </CUnit>
     <CUnit id="Immortal">
-        <ShieldsStart value="400"/>
-        <ShieldsMax value="400"/>
+        <ShieldsStart value="300"/>
+        <ShieldsMax value="300"/>
         <ShieldRegenRate value="2.5"/>
         <Speed value="2"/>
         <AbilArray Link="SpreadOut"/>
@@ -802,8 +802,6 @@
         <Radius value="0.875"/>
         <MinimapRadius value="0.875"/>
         <ShieldArmor value="3"/>
-        <LifeStart value="160"/>
-        <LifeMax value="160"/>
         <Sight value="7"/>
     </CUnit>
     <CUnit id="IncubateTumormissile" parent="MISSILE_INVULNERABLE">

@@ -1060,7 +1060,7 @@
     </CEffectSwitch>
     <CEffectDamage id="LanceMissileLaunchersDamage">
         <AttributeBonus index="Armored" value="25"/>
-        <AttributeBonus index="Massive" value="20"/>
+        <AttributeBonus index="Massive" value="25"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="LanzerTorpedoesGround">
         <EditorCategories value="Race:Terran"/>
@@ -1409,6 +1409,7 @@
         <Amount value="8"/>
         <AttributeBonus index="Light" value="8"/>
         <AttributeBonus index="Structure" value="12"/>
+        <ShieldBonus value="8"/>
     </CEffectDamage>
     <CEffectSet id="GravitonBeamPeriodicSet">
         <EffectArray value="GravitonBeamHeightBehavior"/>

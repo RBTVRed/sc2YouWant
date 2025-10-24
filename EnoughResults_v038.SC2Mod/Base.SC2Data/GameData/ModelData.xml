@@ -2,8 +2,8 @@
 <Catalog>
     <!-- Units                                                                                   -->
     <CModel id="ArchonAttackBeam">
-        <ScaleMax value="1.200000,1.200000,1.200000"/>
-        <ScaleMin value="1.200000,1.200000,1.200000"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
     </CModel>
     <CModel id="EMPDetectorDisableIcon" parent="PersistentSpellFX">
         <Model value="Assets/Effects/Terran/EMP_DetectionDisabled_Impact/EMP_DetectionDisabled_Impact.m3"/>
