@@ -25,14 +25,14 @@
     </CModel>
     <CModel id="AmorphousArmorcloud">
         <RadiusLoose value="0.540000"/>
-        <ScaleMax value="0.650000,0.650000,0.750000"/>
-        <ScaleMin value="0.650000,0.650000,0.750000"/>
-        <AnimSpeed value="8.000000"/>
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+        <AnimSpeed value="0.700000"/>
     </CModel>
     <!--Swarm-->
     <CModel id="BlindingCloud">
         <RadiusLoose value="0.525000"/>
-        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMax value="1.000000,1.000000,0.200000"/>
         <ScaleMin value="1.000000,1.000000,1.000000"/>
     </CModel>
     <CModel id="DevourerMPAcidSporesImpact">
@@ -496,6 +496,10 @@
         <Model value="Assets\Effects\Neutral\PulloftheVoid_Debuff_Coop\PulloftheVoid_Debuff_Coop.m3"/>
         <EditorCategories value="Race:Protoss"/>
         <Radius value="0.250000"/>
+    </CModel>
+    <CModel id="ThorAAAttackImpactLance">
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
     </CModel>
     <CModel id="WallBuild" parent="TerranBuildingBuild">
         <Radius value="1.000000"/>

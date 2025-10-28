@@ -195,7 +195,6 @@
         <Arc value="360"/>
         <Period value="0.8"/>
         <AllowedMovement value="Moving"/>
-        <DisplayAttackCount value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LocustMP">
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>

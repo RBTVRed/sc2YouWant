@@ -501,7 +501,10 @@
         <AffectedUnitArray value="RoachBurrowed"/>
     </CUpgrade>
     <CUpgrade id="UseGlialReconstitution"/>
-    <CUpgrade id="VoidRaySpeedUpgrade"/>
+    <CUpgrade id="VoidRaySpeedUpgrade">
+        <EffectArray index="2" Value="0.5"/>
+        <EffectArray index="3" Value="1"/>
+    </CUpgrade>
     <CUpgrade id="ZergMeleeWeaponsLevel1">
         <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="2"/>
         <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="2"/>

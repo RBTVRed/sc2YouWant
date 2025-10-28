@@ -273,7 +273,7 @@
         <Behavior value="PointDefenseDroneArmorReduction"/>
     </CEffectApplyBehavior>
     <CEffectEnumArea id="PointDefenseDroneArmorReductionSearch">
-        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="4" Effect="PointDefenseDroneArmorReductionApply"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SeekerMissileImpactSearchArea">
@@ -479,7 +479,7 @@
     <CEffectDamage id="BroodlingShotD" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="40"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="BroodlingShotLM">
         <ValidatorArray index="0" value="CasterHasCargo"/>
@@ -1060,7 +1060,8 @@
     </CEffectSwitch>
     <CEffectDamage id="LanceMissileLaunchersDamage">
         <AttributeBonus index="Armored" value="25"/>
-        <AttributeBonus index="Massive" value="25"/>
+        <AttributeBonus index="Massive" value="0"/>
+        <AreaArray Radius="1.2" Fraction="1"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="LanzerTorpedoesGround">
         <EditorCategories value="Race:Terran"/>
@@ -1077,9 +1078,6 @@
         <ImpactEffect value="LanzerTorpedoesDamage"/>
         <AmmoUnit value="VikingAssaultWeapon"/>
     </CEffectLaunchMissile>
-    <CEffectCreatePersistent id="LiberatorMissileBurstPersistent">
-        <PeriodCount value="1"/>
-    </CEffectCreatePersistent>
     <CEffectDamage id="MULEFate">
         <Flags index="Kill" value="0"/>
         <Amount value="1000"/>
@@ -1501,7 +1499,6 @@
     <CEffectDamage id="LiberatorMissileDamage">
         <Amount value="6"/>
         <AreaArray index="0" Radius="2"/>
-        <AttributeBonus index="Armored" value="6"/>
     </CEffectDamage>
     <CEffectEnumArea id="LiberatorTargetMorphSearchArea">
         <SearchFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -1798,8 +1795,8 @@
     <CEffectDamage id="VoidRaySwarmDamage">
         <Amount value="5"/>
         <AttributeBonus index="Armored" value="0"/>
-        <AttributeBonus index="Massive" value="15"/>
-        <AttributeBonus index="Structure" value="20"/>
+        <AttributeBonus index="Massive" value="10"/>
+        <AttributeBonus index="Structure" value="10"/>
     </CEffectDamage>
     <CEffectSet id="VolatileBurst">
         <EffectArray index="3" value="VolatileBurstSplashDamage"/>

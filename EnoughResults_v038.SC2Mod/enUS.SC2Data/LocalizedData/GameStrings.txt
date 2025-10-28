@@ -343,6 +343,7 @@ Button/Tooltip/RoachWarren=Contains upgrades for Roaches.<n/><n/><c val="ffff8a"
 Button/Tooltip/RoboticsBay=Contains upgrades for the Observer, Warp Prism, and Colossus.<n/><n/><c val="ffff8a">Enables:</c><n/>- Colossi at the Robotics Facility
 Button/Tooltip/RoboticsFacility=Warps in Protoss robotic units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Observers<n/>- Immortals<n/>- Disruptors
 Button/Tooltip/RuptureTumor=Ruptures the Tumor, spawning two Broodlings.
+Button/Tooltip/Scan=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="21"/>.
 Button/Tooltip/SensorTower=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy. <n/><c val="FFE303">Detector</c>
 Button/Tooltip/Snipe=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
 Button/Tooltip/Snipe2=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 

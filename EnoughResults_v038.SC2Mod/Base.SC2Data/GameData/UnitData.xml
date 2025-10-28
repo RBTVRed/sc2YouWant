@@ -1008,6 +1008,7 @@
         <AbilArray index="5" Link="AmorphousArmorcloudInstant"/>
         <AbilArray index="6" Link="SpreadOut"/>
         <AbilArray Link="OozeSnare"/>
+        <AbilArray Link="ParasiticBomb"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons index="5" Face="AcquireMove" AbilCmd="move,AcquireMove"/>
@@ -1033,14 +1034,14 @@
             <LayoutButtons index="18" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="19" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="20" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
-            <LayoutButtons index="21" Face="AmorphousArmorcloud" AbilCmd="AmorphousArmorcloudInstant,Execute" Column="2"/>
+            <LayoutButtons index="21" Face="FungalGrowth" AbilCmd="FungalGrowth,Execute" Column="0"/>
             <LayoutButtons index="22">
-                <Face value="FungalGrowth"/>
+                <Face value="ParasiticBomb"/>
                 <Type value="AbilCmd"/>
-                <AbilCmd value="FungalGrowth,Execute"/>
+                <AbilCmd value="ParasiticBomb,Execute"/>
                 <Requirements value=""/>
                 <Row value="2"/>
-                <Column value="0"/>
+                <Column value="2"/>
             </LayoutButtons>
             <LayoutButtons index="23" removed="1"/>
             <LayoutButtons index="24" removed="1"/>
@@ -1075,6 +1076,7 @@
         <AbilArray Link="AmorphousArmorcloudInstant"/>
         <AbilArray Link="SpreadOut"/>
         <AbilArray Link="OozeSnare"/>
+        <AbilArray Link="ParasiticBomb"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="Attack" AbilCmd="attack,Execute" Row="0"/>
             <LayoutButtons index="5" Face="AcquireMove" AbilCmd="move,AcquireMove"/>
@@ -1098,9 +1100,9 @@
                 <Row value="2"/>
                 <Column value="1"/>
             </LayoutButtons>
-            <LayoutButtons index="19" Face="AmorphousArmorcloud" AbilCmd="AmorphousArmorcloudInstant,Execute"/>
-            <LayoutButtons index="20" Face="FungalGrowth" AbilCmd="FungalGrowth,Execute" Column="0"/>
-            <LayoutButtons index="21" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
+            <LayoutButtons index="19" Face="FungalGrowth" AbilCmd="FungalGrowth,Execute" Column="0"/>
+            <LayoutButtons index="20" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
+            <LayoutButtons index="21" Face="ParasiticBomb" AbilCmd="ParasiticBomb,Execute" Column="2"/>
             <LayoutButtons index="22" removed="1"/>
             <LayoutButtons index="23" removed="1"/>
             <LayoutButtons index="24" removed="1"/>
@@ -2212,7 +2214,7 @@
     <CUnit id="ThorAP">
         <LifeStart value="1200"/>
         <LifeMax value="1200"/>
-        <Speed value="1"/>
+        <Speed value="0.875"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
             <LayoutButtons index="6">
@@ -2227,6 +2229,8 @@
         <Radius value="1.1875"/>
         <MinimapRadius value="1.1875"/>
         <Collide index="ForceField" value="1"/>
+        <WeaponArray index="0" Link="ThorsHammer"/>
+        <WeaponArray index="1" Link="LanceMissileLaunchers"/>
     </CUnit>
     <CUnit id="TwilightCouncil">
         <ShieldsStart value="1500"/>
@@ -2781,10 +2785,12 @@
         </CardLayouts>
         <Radius value="1.1875"/>
         <MinimapRadius value="1.1875"/>
-        <Speed value="1"/>
         <LifeStart value="1200"/>
         <LifeMax value="1200"/>
         <Collide index="ForceField" value="1"/>
+        <WeaponArray index="0" Link="ThorsHammer"/>
+        <WeaponArray index="1" Link=""/>
+        <WeaponArray/>
     </CUnit>
     <CUnit id="UltraliskBurrowed">
         <BehaviorArray index="0" Link="BurrowedDamageReduction"/>
@@ -2878,21 +2884,21 @@
     <CUnit id="Viper">
         <Speed value="3.125"/>
         <AbilArray index="3" Link="Yoink"/>
-        <AbilArray index="4" Link="ParasiticBomb"/>
-        <AbilArray index="5" Link="SpreadOut"/>
-        <AbilArray Link="InfestedTerrans"/>
+        <AbilArray index="4" Link="SpreadOut"/>
+        <AbilArray index="5" Link="InfestedTerrans"/>
+        <AbilArray Link="AmorphousArmorcloudInstant"/>
         <CardLayouts index="0">
             <LayoutButtons index="7" Face="FaceEmbrace" AbilCmd="Yoink,Execute"/>
-            <LayoutButtons index="8" Face="ParasiticBomb" AbilCmd="ParasiticBomb,Execute" Column="3"/>
-            <LayoutButtons index="9" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
-            <LayoutButtons Face="InfestedTerrans" Type="AbilCmd" AbilCmd="InfestedTerrans,Execute" Row="2" Column="1"/>
+            <LayoutButtons index="8" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="9" Face="InfestedTerrans" AbilCmd="InfestedTerrans,Execute" Column="1"/>
+            <LayoutButtons Face="AmorphousArmorcloud" Type="AbilCmd" AbilCmd="AmorphousArmorcloudInstant,Execute" Row="2" Column="3"/>
         </CardLayouts>
         <LifeStart value="300"/>
         <LifeMax value="300"/>
     </CUnit>
     <CUnit id="VoidRay">
-        <ShieldsStart value="400"/>
-        <ShieldsMax value="400"/>
+        <ShieldsStart value="350"/>
+        <ShieldsMax value="350"/>
         <ShieldRegenRate value="1.5"/>
         <Speed value="2.25"/>
         <Sight value="9"/>

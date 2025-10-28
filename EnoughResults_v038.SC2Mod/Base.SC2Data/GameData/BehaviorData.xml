@@ -408,9 +408,6 @@
         <DisableValidatorArray value="HasAtLeastNormalPower"/>
         <DisableValidatorArray value="IsNotConstructing"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="OracleRevelation">
-        <Duration value="56"/>
-    </CBehaviorBuff>
     <CBehaviorBuff id="PointDefenseDroneArmorReduction">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="SourceNotDead"/>
@@ -747,7 +744,7 @@
         <HarvestAmount value="8"/>
     </CBehaviorResource>
     <CBehaviorBuff id="OracleStasisTrapTarget">
-        <Duration value="45"/>
+        <Duration value="28"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ParasiticBombDelayTimedLife">
         <Duration value="21"/>
@@ -927,7 +924,7 @@
         <Limit value="8"/>
     </CBehaviorSpawn>
     <CBehaviorBuff id="StasisWardTimedLife">
-        <Duration value="588"/>
+        <Duration value="336"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="StimpackFirebat">
         <Alignment value="Positive"/>
@@ -1034,7 +1031,7 @@
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoidRaySwarmDamageBoost">
-        <Duration value="30"/>
+        <Duration value="35"/>
         <Modification MoveSpeedMultiplier="0.5">
             <DamageDealtFraction index="Ranged" value="2"/>
             <DamageDealtAttributeScaled index="Armored" value="0"/>
