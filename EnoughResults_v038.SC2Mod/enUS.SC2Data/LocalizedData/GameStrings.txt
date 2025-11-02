@@ -2,6 +2,7 @@
 Abil/Name/AdeptPhaseShiftManual=Psionic Transfer
 Abil/Name/AdeptPhaseShiftManual@End=End
 Abil/Name/AdeptPhaseShiftManual@EndTarget=End
+Abil/Name/AmorphousArmorcloud=Blinding Spores
 Abil/Name/AmorphousArmorcloudInstant=Amorphous Armorcloud
 Abil/Name/BlindingCloud=Plague Cloud
 Abil/Name/BroodlingSwarm=Broodling Swarm
@@ -54,6 +55,7 @@ Abil/Name/UnleashNydusWorm=Unleash Nydus Worm
 Abil/Name/VoidRaySwarmDamageBoostRemove=Void Ray Swarm Damage Boost Remove
 Behavior/Name/BlindingCloud=Plague Cloud
 Behavior/Name/BlindingCloudStructure=Plague Cloud
+Behavior/Name/BlindingSpores=Blinding Spores
 Behavior/Name/BurrowedAmbusher@Buff=Ambush!
 Behavior/Name/BurrowedDamageReduction=Burrowed Damage Reduction
 Behavior/Name/CombatDrugs=Combat Drugs
@@ -92,6 +94,7 @@ Behavior/Name/Unleash=Unleash
 Behavior/Name/UnloadAllInBunker=Unload All In Bunker
 Behavior/Name/WarpingInDoubleDamageTaken=Warping In Double Damage Taken
 Behavior/Tooltip/AmorphousArmorcloud=Incoming damage from air units reduced by <d ref="Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%.
+Behavior/Tooltip/BlindingSpores=This unit had its sight reduced.
 Behavior/Tooltip/BurrowedAmbusher@Buff=This unit has increased movement speed.
 Behavior/Tooltip/CombatDrugs=Combat Drugs are healing the Reaper.
 Behavior/Tooltip/CompactedShield@Buff=This unit takes 50% less damage from any single attack.
@@ -130,6 +133,7 @@ Behavior/Tooltip/VoidRaySwarmDamageBoost=Increase this unit's damage.
 Behavior/Tooltip/WarpingInDoubleDamageTaken=While warping in this unit takes double damage from all attacks.
 Button/Name/AbsorptionShield=Absorption Shield
 Button/Name/AdeptPhaseShiftManual@Teleport=Teleport
+Button/Name/AmorphousArmorcloud=Blinding Spores
 Button/Name/BarrierDurationResearch=Research Extended Barrier Duration
 Button/Name/BlindingCloud=Plague Cloud
 Button/Name/BurrowedAmbusher=Ambusher
@@ -196,7 +200,7 @@ Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable Shade that can mov
 Button/Tooltip/AdeptPhaseShiftManual@Teleport=Teleports the Adept to the Shade, destroying the Shade in the process.
 Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 50%.
 Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 50%.
-Button/Tooltip/AmorphousArmorcloud=Creates a shroud around the Infestor that obscures ground units underneath, reducing damage taken from air units by <d ref="1-Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/AmorphousArmorcloud=Creates a shroud at a target point that blinds enemy air units, reducing its sight to 1. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/AnionPulseCrystals=Doubles the damage of the Phoenix.
 Button/Tooltip/Arbiter=Flying caster. Can use Time Warp, Mass Cloaking and Recall in a Power Field.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/ArchonHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
@@ -450,6 +454,7 @@ Effect/Name/AmorphousArmorcloudCP=MicrobialShroudCP
 Effect/Name/ArbiterMassCloakingAP=Arbiter Mass Cloaking AP
 Effect/Name/BlindingCloudDamage=Blinding Cloud Damage
 Effect/Name/BlindingCloudDamageNotify=Blinding Cloud Damage
+Effect/Name/BlindingSpores@AB=BlindingSpores@AB
 Effect/Name/BroodlingShotAB=Broodling Shot
 Effect/Name/BroodlingShotCU=Broodling Shot
 Effect/Name/BroodlingShotD=Broodling Shot

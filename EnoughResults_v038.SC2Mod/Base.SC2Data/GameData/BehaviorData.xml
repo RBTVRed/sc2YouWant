@@ -79,6 +79,18 @@
             <ValidatorArray value="TargetIsNotGround"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="BlindingSpores">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-darkswarm.dds"/>
+        <BehaviorCategories index="Restorable" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <TechAliasArray value="_Transfer"/>
+        <Duration value="0.5625"/>
+        <!--<Duration value="0.625"/>-->
+        <Modification SightMaximum="1">
+            <StateFlags index="SuppressDetection" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ArbiterMPCloakField">
         <Duration value="35"/>
         <Modification>

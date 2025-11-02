@@ -18,13 +18,20 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="BlindingSpores@ModelAttachment" parent="ModelAddition">
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <On Terms="Behavior.BlindingSpores.On" Send="Create"/>
+        <On Terms="Behavior.BlindingSpores.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachHead"/>
+        <Model value="AmorphousArmorcloudModelAttachment"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
     <CActorBeamSimple id="ArchonAttackBeam">
         <On Terms="ActorCreation.ArchonAttackBeam" Send="SetTintColor 70,170,255"/>
     </CActorBeamSimple>
-    <CActorModel id="DefilerMPPlagueTargetModel">
-        <On index="8" removed="1"/>
-        <On index="9" removed="1"/>
-    </CActorModel>
+    <CActorModel id="DefilerMPPlagueTargetModel"/>
     <CActorModel id="DefilerMPPlagueTargetModelMedium">
         <On Terms="ActorCreation; ValidateUnit IsLurkerBurrowed" Send="SetScale 0.500000"/>
         <On Terms="ActorCreation; ValidateUnit IsLurkerUnBurrowed" Send="SetScale 0.500000"/>
@@ -51,10 +58,10 @@
         <ImpactPhysics Name="HighTemplarPsiBlastImpact" MatchKeys="Basic" Physics="HighTemplarPsiBlastDeathImpactForce"/>
     </CActorAction>
     <CActorModel id="AmorphousArmorcloud">
-        <On index="5" Terms="Effect.AmorphousArmorcloudCP.Start; At Caster"/>
-        <On index="7" Terms="Effect.AmorphousArmorcloudCP.Stop; At Caster"/>
+        <!--<On index="5" Terms="Effect.AmorphousArmorcloudCP.Start; At Caster"/>
+        <On index="7" Terms="Effect.AmorphousArmorcloudCP.Stop; At Caster"/>-->
         <On Terms="ActorCreation.AmorphousArmorcloud" Send="SetOpacity 1.000000"/>
-        <HostSiteOps Ops="SOpAttachCenter MicrobialShroudOffset"/>
+        <HostSiteOps Ops="MicrobialShroudOffset SOpMoveUpBy4"/>
         <Scale value="0.800000"/>
         <!--On Terms="ActorCreation" Send="SetTintColor {255,0,0 3.000000}"/-->
     </CActorModel>

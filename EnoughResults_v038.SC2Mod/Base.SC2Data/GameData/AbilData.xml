@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilEffectTarget id="AmorphousArmorcloud">
+        <Range index="0" value="10"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="AmorphousArmorcloudInstant">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="AmorphousArmorcloudCP"/>
@@ -19,9 +22,6 @@
         <Cost index="0">
             <Cooldown TimeUse="12"/>
         </Cost>
-    </CAbilEffectTarget>
-    <CAbilEffectTarget id="AmorphousArmorcloud">
-        <Range index="0" value="10"/>
     </CAbilEffectTarget>
     <CAbilArmMagazine id="ArmSiloWithNuke">
         <InfoArray index="Ammo1" Time="33">
@@ -348,9 +348,7 @@
         </Cost>
         <Range index="0" value="7"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="PsiStorm">
-        <Range index="0" value="9"/>
-    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PsiStorm"/>
     <CAbilMorph id="SiegeMode">
         <InfoArray index="0">
             <SectionArray index="Actor">

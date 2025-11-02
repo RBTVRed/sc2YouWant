@@ -103,9 +103,13 @@
         <EffectArray value="EMPChannelRefundRB"/>
     </CEffectSet>
     <CEffectCreatePersistent id="AmorphousArmorcloudCP">
-        <WhichLocation Value="SourceUnit"/>
+        <!--<WhichLocation Value="SourceUnit"/>-->
         <PeriodCount value="90"/>
     </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="BlindingSpores@AB">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="BlindingSpores"/>
+    </CEffectApplyBehavior>
     <CEffectSet id="EMPChannelInitialSet">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="EMPChannelCP"/>
@@ -285,9 +289,9 @@
         <Amount value="6"/>
     </CEffectDamage>
     <CEffectEnumArea id="AmorphousArmorcloudSearch">
-        <AreaArray index="0" Radius="5"/>
-        <SearchFilters value="Ground;Structure,Missile,Dead"/>
-        <ImpactLocation Value="SourceUnit"/>
+        <AreaArray index="0" Radius="5" Effect="BlindingSpores@AB"/>
+        <SearchFilters value="Air;Player,Ally,Missile,Dead,Invulnerable"/>
+        <!--<ImpactLocation Value="SourceUnit"/>-->
     </CEffectEnumArea>
     <CEffectApplyBehavior id="ArbiterMPCloakingFieldApply">
         <ValidatorArray index="2" removed="1"/>
@@ -673,7 +677,6 @@
     </CEffectEnumArea>
     <CEffectCreatePersistent id="Contaminate">
         <ValidatorArray index="0" removed="1"/>
-        <ValidatorArray index="1" removed="1"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="Contaminate2">
         <ValidatorArray value="noMarkers"/>
@@ -1778,8 +1781,6 @@
     <CEffectLaunchMissile id="ViperConsumeStructureLaunchMissile">
         <ValidatorArray index="1" value="IsNotCreepTumorBurrowed"/>
         <ValidatorArray index="2" removed="1"/>
-        <ValidatorArray index="3" removed="1"/>
-        <ValidatorArray index="4" removed="1"/>
     </CEffectLaunchMissile>
     <CEffectModifyUnit id="ViperConsumeStructureModifyCaster">
         <VitalArray index="Energy">
