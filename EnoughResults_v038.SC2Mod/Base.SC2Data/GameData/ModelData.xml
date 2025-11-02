@@ -5,6 +5,10 @@
         <ScaleMax value="1.500000,1.500000,1.500000"/>
         <ScaleMin value="1.500000,1.500000,1.500000"/>
     </CModel>
+    <CModel id="DefensiveMatrixModel">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+    </CModel>
     <CModel id="EMPDetectorDisableIcon" parent="PersistentSpellFX">
         <Model value="Assets/Effects/Terran/EMP_DetectionDisabled_Impact/EMP_DetectionDisabled_Impact.m3"/>
         <ScaleMax value="1.700000,1.700000,1.700000"/>

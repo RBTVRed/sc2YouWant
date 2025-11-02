@@ -1070,7 +1070,7 @@
         <LifeStart value="180"/>
         <LifeMax value="180"/>
         <EnergyRegenRate value="0.1875"/>
-        <Speed value="1"/>
+        <Speed value="1.25"/>
         <AbilArray index="4" Link="BlindingCloud"/>
         <AbilArray index="5" Link="FungalGrowth"/>
         <AbilArray Link="AmorphousArmorcloudInstant"/>

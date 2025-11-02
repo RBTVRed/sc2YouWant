@@ -463,7 +463,7 @@
     <CEffectDamage id="MothershipCoreWeaponDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
-        <Amount value="55"/>
+        <Amount value="19"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="MothershipCoreWeaponLM2">
         <ValidatorArray index="0" value="CasterHasCargo"/>
@@ -479,7 +479,7 @@
     <CEffectDamage id="BroodlingShotD" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="30"/>
+        <Amount value="9"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="BroodlingShotLM">
         <ValidatorArray index="0" value="CasterHasCargo"/>
@@ -531,7 +531,6 @@
     <CEffectDamage id="ArbiterMPWeaponDamage">
         <Amount value="40"/>
         <AttributeBonus index="Armored" value="20"/>
-        <AttributeBonus index="Massive" value="20"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="ArbiterMassCloakingAP">
         <EditorCategories value=""/>
@@ -769,7 +768,7 @@
     <CEffectDamage id="CommandBeam" parent="DU_WEAP">
         <ValidatorArray value="CasterHasCargo"/>
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="55"/>
+        <Amount value="19"/>
     </CEffectDamage>
     <CEffectDamage id="NexusBeam" parent="DU_WEAP">
         <ValidatorArray value="CasterHasCargo"/>
@@ -852,7 +851,7 @@
         <EffectArray value="SpawnLarvaSolo@CU"/>
     </CEffectSet>
     <CEffectDamage id="Spines">
-        <AttributeBonus index="Structure" value="15"/>
+        <AttributeBonus index="Structure" value="10"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="SwarmPheremones">
         <ValidatorArray index="0" value="IsLocust"/>
@@ -976,7 +975,7 @@
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectDamage id="FusionCutter">
-        <AttributeBonus index="Structure" value="15"/>
+        <AttributeBonus index="Structure" value="10"/>
     </CEffectDamage>
     <CEffectDamage id="HydraliskMelee">
         <AttributeBonus index="Light" value="4"/>
@@ -1122,7 +1121,7 @@
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="ParticleBeam">
-        <AttributeBonus index="Structure" value="15"/>
+        <AttributeBonus index="Structure" value="10"/>
     </CEffectDamage>
     <CEffectDamage id="RavenShredderMissileDamage">
         <AreaArray index="2" Radius="3"/>
