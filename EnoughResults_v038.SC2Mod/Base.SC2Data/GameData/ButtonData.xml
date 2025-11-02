@@ -177,7 +177,6 @@
         <Icon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="MothershipCoreMassRecall"/>
     <CButton id="RechargeShields">
         <Icon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
         <EditorCategories value="Race:Protoss"/>

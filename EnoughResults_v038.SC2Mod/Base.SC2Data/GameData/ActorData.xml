@@ -461,8 +461,9 @@
         <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
         <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="AnimBracketStop BSD"/>
         <Model value="DefensiveMatrixModel"/>
-        <AutoScaleFactor value="1.400000"/>
+        <AutoScaleFactor value="1.000000"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="1.400000"/>
     </CActorModel>
     <CActorRange id="HeroDetectorRadarRange_Detector16">
         <Terms value="Cap 1"/>

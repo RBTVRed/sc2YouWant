@@ -379,6 +379,32 @@
     <CAbilMorph id="OrbitalLiftOff">
         <CmdButtonArray index="Execute" Requirements="LiftOffResearch"/>
     </CAbilMorph>
+    <CAbilMorph id="ThorAPMode">
+        <InfoArray index="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="4"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="4"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="ThorNormalMode">
+        <InfoArray index="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="4"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="4"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
     <CAbilTransport id="TownHallLoad">
         <AbilSetId value="ULdM"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
