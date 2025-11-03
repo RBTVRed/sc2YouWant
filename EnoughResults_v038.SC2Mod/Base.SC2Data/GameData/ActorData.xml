@@ -417,6 +417,7 @@
         <Inherits index="Visibility" value="1"/>
         <On Terms="Behavior.MedRadar@Detector.On" Send="Create"/>
         <On Terms="Behavior.MedRadar@Detector.Off" Send="Destroy"/>
+        <On Terms="ActorCreation.MedRadar@Model" Send="SetTintColor {255,255,255 3.000000}"/>
         <Host Subject="_Unit"/>
         <HostSiteOps Ops="SOpAttachOverhead SOpForwardSouth" HoldRotation="1"/>
         <Model value="ScannerSweepModel"/>
