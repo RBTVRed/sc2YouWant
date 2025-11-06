@@ -1,5 +1,4 @@
 ﻿Abil/EditorPrefix/AbsorptionShield=Oracle -
-Abil/EditorPrefix/AmorphousArmorcloud=Infestor -
 Abil/EditorPrefix/AmorphousArmorcloudInstant=Infestor -
 Abil/EditorPrefix/BlindingCloud=Infestor -
 Abil/EditorPrefix/Charge=Zealot -
@@ -23,7 +22,6 @@ Abil/EditorPrefix/StimpackMedic=Medic -
 Abil/EditorPrefix/TemporalField=Arbiter -
 Abil/EditorSuffix/AdeptPhaseShiftManual@End=(Caster)
 Abil/EditorSuffix/AdeptPhaseShiftManual@EndTarget=(Target)
-Abil/EditorSuffix/AmorphousArmorcloud=(Microbial Shroud)
 Abil/EditorSuffix/AmorphousArmorcloudInstant=(Microbial Shroud) Instant
 Abil/EditorSuffix/Chargemew=Current
 Abil/EditorSuffix/CycloneCloak=``

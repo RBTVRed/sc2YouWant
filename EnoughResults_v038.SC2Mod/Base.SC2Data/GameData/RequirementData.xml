@@ -150,6 +150,9 @@
     <CRequirement id="InfestorisBurrowed">
         <NodeArray index="Use" Link="CountBehaviorInfestorIsBurrowedCompleteOnlyAtUnit455390697"/>
     </CRequirement>
+    <CRequirement id="UseAmorphousArmorcloud">
+        <NodeArray index="Use" Link=""/>
+    </CRequirement>
     <CRequirement id="UseBurrow">
         <NodeArray index="Use" Link="CountUpgradeBurrowCompleteOnly3320731885TechTreeCheat"/>
     </CRequirement>
