@@ -1549,9 +1549,9 @@
     <CEffectCreateHealer id="RechargeShieldsHeal">
         <EditorCategories value="Race:Protoss"/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="0.15"/>
+        <DrainVitalCostFactor value="0.2"/>
         <RechargeVital value="Shields"/>
-        <RechargeVitalRate value="25"/>
+        <RechargeVitalRate value="100"/>
         <ValidatorArray value="NotWarpingIn"/>
         <ValidatorArray value="IsNotWarpPrismPhasingMode"/>
     </CEffectCreateHealer>
