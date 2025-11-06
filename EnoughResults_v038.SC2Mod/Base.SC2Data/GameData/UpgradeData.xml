@@ -323,46 +323,59 @@
         <EffectArray Reference="Unit,Firebat,LifeArmor" Value="1"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryWeaponsLevel1">
+        <EffectArray index="5" Value="1"/>
         <EffectArray index="10" Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <EffectArray index="11" Reference="Effect,C10CanisterRifle,Amount" Value="3"/>
         <!--<EffectArray Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>-->
         <EffectArray Reference="Weapon,MedicP45GaussPistol,Level" Value="1"/>
         <EffectArray Reference="Effect,MedicP45GaussPistol@Damage,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,Firebat,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>
         <EffectArray Reference="Weapon,Firebat,Level" Value="1"/>
-        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="1"/>
+        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="5"/>
         <EffectArray Reference="Effect,FirebatUFullFireproof,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,D8Charge,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>
         <EffectArray Reference="Weapon,D8Charge,Level" Value="1"/>
         <EffectArray Reference="Effect,D8ChargeBombExplode@Damage,Amount" Value="1"/>
-        <EffectArray Reference="Effect,D8ChargeBombExplode@DamageStructure,Amount" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageDisplay,Amount" Value="3"/>
+        <EffectArray Reference="Weapon,WeaponKD8Charge,Level" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageStructure,Amount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryWeaponsLevel2">
         <EffectArray index="10" Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <EffectArray index="11" Reference="Effect,C10CanisterRifle,Amount" Value="3"/>
         <!--<EffectArray Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>-->
         <EffectArray Reference="Weapon,MedicP45GaussPistol,Level" Value="1"/>
         <EffectArray Reference="Effect,MedicP45GaussPistol@Damage,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,Firebat,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <EffectArray Reference="Weapon,Firebat,Level" Value="1"/>
-        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="1"/>
+        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="5"/>
         <EffectArray Reference="Effect,FirebatUFullFireproof,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,D8Charge,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <EffectArray Reference="Weapon,D8Charge,Level" Value="1"/>
         <EffectArray Reference="Effect,D8ChargeBombExplode@Damage,Amount" Value="1"/>
-        <EffectArray Reference="Effect,D8ChargeBombExplode@DamageStructure,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,WeaponKD8Charge,Level" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageDisplay,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageStructure,Amount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryWeaponsLevel3">
         <EffectArray index="10" Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
+        <EffectArray index="11" Reference="Effect,C10CanisterRifle,Amount" Value="3"/>
         <!--<EffectArray Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>-->
         <EffectArray Reference="Weapon,MedicP45GaussPistol,Level" Value="1"/>
         <EffectArray Reference="Effect,MedicP45GaussPistol@Damage,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,Firebat,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
         <EffectArray Reference="Weapon,Firebat,Level" Value="1"/>
-        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="1"/>
+        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="5"/>
         <EffectArray Reference="Effect,FirebatUFullFireproof,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,D8Charge,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
         <EffectArray Reference="Weapon,D8Charge,Level" Value="1"/>
         <EffectArray Reference="Effect,D8ChargeBombExplode@Damage,Amount" Value="1"/>
-        <EffectArray Reference="Effect,D8ChargeBombExplode@DamageStructure,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,WeaponKD8Charge,Level" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageDisplay,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageStructure,Amount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="TerranShipWeaponsLevel1">
         <EffectArray index="7" Reference="Effect,LanzerTorpedoesDamage,Amount" Value="1.000000"/>

@@ -273,7 +273,7 @@ Button/Tooltip/IncubatedTumor=A burrowed creep generator. Creep feeds nearby Zer
 Button/Tooltip/InfestationPit=Contains upgrades for Infestors.<n/><n/><c val="ffff8a">Enables:</c><n/>- Infestors from Larvae
 Button/Tooltip/InfestedTerrans=Spawn an Infested Terran. Infested Terrans last <d ref="Behavior,InfestedTerranTimedLife,Duration"/> seconds.
 Button/Tooltip/Infestor=Infestation specialist. Can use the Fungal Growth, Plague Cloud, and Parasitic Bomb abilities.
-Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 25 (+25 to armored) damage to nearby units.
+Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 25 (+45 to armored) damage to nearby units.
 Button/Tooltip/Lair=Evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Overseers from Overlords<n/>- Lurkers from Hydralisks<n/>- Swarm Hosts from Larvae
 Button/Tooltip/LairDefense=Spawn a wave of 3 Broodlings every 2 seconds for 20 seconds.
 Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCenter,Name"/>, <d stringref="Unit,OrbitalCommand,Name"/>, <d stringref="Unit,Barracks,Name"/>, <d stringref="Unit,Factory,Name"/> and <d stringref="Unit,Starport,Name"/>.<n/><n/><n/>
