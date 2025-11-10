@@ -676,6 +676,7 @@
     </CEffectEnumArea>
     <CEffectCreatePersistent id="Contaminate">
         <ValidatorArray index="0" removed="1"/>
+        <ValidatorArray index="1" removed="1"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="Contaminate2">
         <ValidatorArray value="noMarkers"/>
@@ -1548,9 +1549,9 @@
     <CEffectCreateHealer id="RechargeShieldsHeal">
         <EditorCategories value="Race:Protoss"/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="0.15"/>
+        <DrainVitalCostFactor value="0.2"/>
         <RechargeVital value="Shields"/>
-        <RechargeVitalRate value="30"/>
+        <RechargeVitalRate value="100"/>
         <ValidatorArray value="NotWarpingIn"/>
         <ValidatorArray value="IsNotWarpPrismPhasingMode"/>
     </CEffectCreateHealer>
@@ -1780,6 +1781,8 @@
     <CEffectLaunchMissile id="ViperConsumeStructureLaunchMissile">
         <ValidatorArray index="1" value="IsNotCreepTumorBurrowed"/>
         <ValidatorArray index="2" removed="1"/>
+        <ValidatorArray index="3" removed="1"/>
+        <ValidatorArray index="4" removed="1"/>
     </CEffectLaunchMissile>
     <CEffectModifyUnit id="ViperConsumeStructureModifyCaster">
         <VitalArray index="Energy">

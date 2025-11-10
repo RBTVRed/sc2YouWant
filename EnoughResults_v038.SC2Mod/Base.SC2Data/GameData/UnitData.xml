@@ -1497,6 +1497,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="PermanentlyCloakedObserver" Type="Passive" Row="2" Column="2"/>
         </CardLayouts>
+        <FlagArray index="Cloaked" value="1"/>
     </CUnit>
     <CUnit id="Oracle">
         <EnergyStart value="75"/>

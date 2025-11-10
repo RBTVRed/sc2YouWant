@@ -256,6 +256,7 @@ Button/Tooltip/FleetBeacon=Contains upgrades for Phoenixes and Void Rays.<n/><n/
 Button/Tooltip/Forge=Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<n/><n/><c val="ffff8a">Enables:</c><n/>- Photon Cannons from Probes <n/>- Obelisks from Probes<n/>- Warp Prisms at the Nexus<n/>- Adepts at the Gateway
 Button/Tooltip/FungalGrowth=Reduces the armor and shield armor of affected units by 2 for 15 seconds and spawns 2 Broodlings when the infested unit dies. Reveals cloaked and burrowed units.
 Button/Tooltip/FusionCore=Contains Liberator, Raven and Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Liberator at the Starport<n/><n/>- Battlecruisers at the Starport
+Button/Tooltip/Ghost=Sniper. Can use EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/GhostCancel=Cancels the current Lock On, and allows you to select a new target.
 Button/Tooltip/GuardianShield=Creates a range 4 aura that modifies incoming ranged damage to friendly units by <d ref="Behavior,GuardianShield,DamageResponse.ModifyAmount"/>.
 Button/Tooltip/Hallucination=Creates hallucinations that cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d ref="Behavior,HallucinationTimedLife,Duration"/> seconds. Enemy detectors reveal hallucinations.
@@ -271,7 +272,8 @@ Button/Tooltip/IncubateTumor=Incubates an exhausted Creep Tumor, giving it the a
 Button/Tooltip/IncubatedTumor=A burrowed creep generator. Creep feeds nearby Zerg structures.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
 Button/Tooltip/InfestationPit=Contains upgrades for Infestors.<n/><n/><c val="ffff8a">Enables:</c><n/>- Infestors from Larvae
 Button/Tooltip/InfestedTerrans=Spawn an Infested Terran. Infested Terrans last <d ref="Behavior,InfestedTerranTimedLife,Duration"/> seconds.
-Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 25 (+25 to armored) damage to nearby units.
+Button/Tooltip/Infestor=Infestation specialist. Can use the Fungal Growth, Plague Cloud, and Parasitic Bomb abilities.
+Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 25 (+45 to armored) damage to nearby units.
 Button/Tooltip/Lair=Evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Overseers from Overlords<n/>- Lurkers from Hydralisks<n/>- Swarm Hosts from Larvae
 Button/Tooltip/LairDefense=Spawn a wave of 3 Broodlings every 2 seconds for 20 seconds.
 Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCenter,Name"/>, <d stringref="Unit,OrbitalCommand,Name"/>, <d stringref="Unit,Barracks,Name"/>, <d stringref="Unit,Factory,Name"/> and <d stringref="Unit,Starport,Name"/>.<n/><n/><n/>
@@ -279,6 +281,7 @@ Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structur
 Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
 Button/Tooltip/MasteryTychusMedivacBuff=Reduces the cooldown of the Dropship Pickup ability.
 Button/Tooltip/MedRadar=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
+Button/Tooltip/Medic=Support trooper. Heals nearby biological units and can use Stim, Perimeter Scan, and Nano Matrix.
 Button/Tooltip/MedicDefensiveMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
 Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
@@ -373,7 +376,8 @@ Button/Tooltip/UpgradeBuildingArmorLevel1=Upgrades the armor of <c val="ffff8a">
 Button/Tooltip/UpgradeToPlanetaryFortress=Upgrades Command Center to a Planetary Fortress, greatly increasing its armor, arming it with a powerful defensive turret and allows 2 <c val="ffff8a">SCVs</c> to be created simultaneously. Cannot lift off.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/VikingAssault2=Durable support mech. Loaded with gatling guns and strong anti-capital air missiles. Can switch into Fighter Mode to fly over obstacles.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/VikingGround2=Durable support mech. Loaded with gatling guns and strong anti-capital air missiles. Can switch into Fighter Mode to fly over obstacles.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
-Button/Tooltip/ViperConsume=Latches onto the target structure, dealing <d ref="Effect,ViperConsumeDamage,Amount * Effect,ViperConsumeStructureCreatePersistent,PeriodCount"/> damage and restoring <d ref="(Effect,ViperConsumeStructureModifyCaster,VitalArray[2].Change / Behavior,TimeScaleConversionBehavior,Duration)" precision="1"/> energy to the Viper every second. Lasts for <d ref="Effect,ViperConsumeStructureCreatePersistent,PeriodCount * Effect,ViperConsumeStructureCreatePersistent,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/Viper=Flying caster. Able to manipulate battlefield conditions. Can use Consume, Infested Terran, Abduct, and Blinding Spores abilities.
+Button/Tooltip/ViperConsume=Latches onto the target unit or structure, dealing <d ref="Effect,ViperConsumeDamage,Amount * Effect,ViperConsumeStructureCreatePersistent,PeriodCount"/> damage and restoring <d ref="(Effect,ViperConsumeStructureModifyCaster,VitalArray[2].Change / Behavior,TimeScaleConversionBehavior,Duration)" precision="1"/> energy to the Viper every second. If a unit or structure with energy is targeted that unit also lose energy and the Viper restoring even more energy. Lasts for <d ref="Effect,ViperConsumeStructureCreatePersistent,PeriodCount * Effect,ViperConsumeStructureCreatePersistent,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/VoidRayHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/VoidRaySwarmDamageBoost=Realigns the Void Ray's Prismatic Beam to triple its damage for <d ref="Behavior,VoidRaySwarmDamageBoost,Duration[0]"/> seconds. Significantly slows down the Void Ray.
 Button/Tooltip/VoidSwarmHostSpawnLocust=Spawns 2 Locusts. Locusts have a <d ref="Behavior,LocustMPTimedLife,Duration"/> second timed life.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>

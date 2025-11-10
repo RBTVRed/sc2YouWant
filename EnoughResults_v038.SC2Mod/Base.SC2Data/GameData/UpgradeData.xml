@@ -323,46 +323,59 @@
         <EffectArray Reference="Unit,Firebat,LifeArmor" Value="1"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryWeaponsLevel1">
+        <EffectArray index="5" Value="1"/>
         <EffectArray index="10" Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <EffectArray index="11" Reference="Effect,C10CanisterRifle,Amount" Value="3"/>
         <!--<EffectArray Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>-->
         <EffectArray Reference="Weapon,MedicP45GaussPistol,Level" Value="1"/>
         <EffectArray Reference="Effect,MedicP45GaussPistol@Damage,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,Firebat,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>
         <EffectArray Reference="Weapon,Firebat,Level" Value="1"/>
-        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="1"/>
+        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="5"/>
         <EffectArray Reference="Effect,FirebatUFullFireproof,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,D8Charge,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>
         <EffectArray Reference="Weapon,D8Charge,Level" Value="1"/>
         <EffectArray Reference="Effect,D8ChargeBombExplode@Damage,Amount" Value="1"/>
-        <EffectArray Reference="Effect,D8ChargeBombExplode@DamageStructure,Amount" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageDisplay,Amount" Value="3"/>
+        <EffectArray Reference="Weapon,WeaponKD8Charge,Level" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageStructure,Amount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryWeaponsLevel2">
         <EffectArray index="10" Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <EffectArray index="11" Reference="Effect,C10CanisterRifle,Amount" Value="3"/>
         <!--<EffectArray Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>-->
         <EffectArray Reference="Weapon,MedicP45GaussPistol,Level" Value="1"/>
         <EffectArray Reference="Effect,MedicP45GaussPistol@Damage,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,Firebat,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <EffectArray Reference="Weapon,Firebat,Level" Value="1"/>
-        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="1"/>
+        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="5"/>
         <EffectArray Reference="Effect,FirebatUFullFireproof,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,D8Charge,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <EffectArray Reference="Weapon,D8Charge,Level" Value="1"/>
         <EffectArray Reference="Effect,D8ChargeBombExplode@Damage,Amount" Value="1"/>
-        <EffectArray Reference="Effect,D8ChargeBombExplode@DamageStructure,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,WeaponKD8Charge,Level" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageDisplay,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageStructure,Amount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryWeaponsLevel3">
         <EffectArray index="10" Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
+        <EffectArray index="11" Reference="Effect,C10CanisterRifle,Amount" Value="3"/>
         <!--<EffectArray Operation="Set" Reference="Weapon,MedicP45GaussPistol,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>-->
         <EffectArray Reference="Weapon,MedicP45GaussPistol,Level" Value="1"/>
         <EffectArray Reference="Effect,MedicP45GaussPistol@Damage,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,Firebat,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
         <EffectArray Reference="Weapon,Firebat,Level" Value="1"/>
-        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="1"/>
+        <EffectArray Reference="Effect,FirebatUFull,Amount" Value="5"/>
         <EffectArray Reference="Effect,FirebatUFullFireproof,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,D8Charge,Icon" Value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
         <EffectArray Reference="Weapon,D8Charge,Level" Value="1"/>
         <EffectArray Reference="Effect,D8ChargeBombExplode@Damage,Amount" Value="1"/>
-        <EffectArray Reference="Effect,D8ChargeBombExplode@DamageStructure,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,WeaponKD8Charge,Level" Value="1"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageDisplay,Amount" Value="3"/>
+        <EffectArray Reference="Effect,KD8ChargeExplodeDamageStructure,Amount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="TerranShipWeaponsLevel1">
         <EffectArray index="7" Reference="Effect,LanzerTorpedoesDamage,Amount" Value="1.000000"/>
@@ -441,9 +454,31 @@
         <EffectArray Reference="Unit,NapalmHellion,LifeArmor" Value="1"/>
     </CUpgrade>
     <CUpgrade id="TerranVehicleWeaponsLevel1">
-        <EffectArray Operation="Set" Reference="Weapon,CycloneBurstLockOn,DisplayEffect" Value="CycloneBurstLockOn@Damage"/>
-        <EffectArray Reference="Effect,CycloneBurstLockOn@Damage,Amount" Value="1"/>
-        <EffectArray Operation="Set" Reference="Weapon,CycloneBurstLockOn,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray index="2" Value="4"/>
+        <EffectArray index="7" Reference="Effect,WidowMineExplodeDirect,Amount" Value="30"/>
+        <EffectArray index="8" Value="10"/>
+        <EffectArray index="9" Value="10"/>
+        <EffectArray index="20" Reference="Weapon,WarHound,Level"/>
+        <EffectArray index="21" Operation="Set" Reference="Weapon,WarHound,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray index="22" Reference="Effect,WarHoundMelee,Amount" Value="2"/>
+        <EffectArray index="23" Reference="Effect,WarHound,Amount" Value="2"/>
+        <EffectArray index="24" Operation="Add" Reference="Weapon,WidowMineDummy,Level" Value="1"/>
+        <EffectArray index="25" Operation="Set" Reference="Weapon,WidowMineDummy,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray index="26" Reference="Effect,MineDroneDirectDamage,Amount" Value="5"/>
+        <EffectArray index="27" Reference="Effect,MineDroneExplodeDamage,Amount"/>
+        <EffectArray index="28" Reference="Weapon,HellionTank,Icon"/>
+        <EffectArray index="29" Reference="Effect,HellionTankDamage,Amount" Value="2"/>
+        <EffectArray index="30" Reference="Weapon,HellionTank,Level"/>
+        <EffectArray index="31" Operation="Add" Reference="Weapon,LanceMissileLaunchers,Level" Value="1"/>
+        <EffectArray index="32" Reference="Effect,LanceMissileLaunchersDamage,Amount" Value="3"/>
+        <EffectArray index="33" Reference="Effect,CycloneAttackWeaponDamage,Amount" Value="2"/>
+        <EffectArray index="34" Operation="Set" Reference="Weapon,LanceMissileLaunchers,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray index="35" Reference="Weapon,TyphoonMissilePod,Level" Value="1"/>
+        <EffectArray index="36" Operation="Set" Reference="Weapon,TyphoonMissilePod,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
+        <EffectArray index="37" Operation="Add" Reference="Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]" Value="1"/>
+        <EffectArray index="38" Operation="Set" Reference="Weapon,CycloneBurstLockOn,DisplayEffect" Value="CycloneBurstLockOn@Damage"/>
+        <EffectArray index="39" Operation="Add" Reference="Effect,CycloneBurstLockOn@Damage,Amount" Value="1"/>
+        <EffectArray index="40" Operation="Set" Reference="Weapon,CycloneBurstLockOn,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
         <EffectArray Reference="Weapon,CycloneBurstLockOn,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,TwinGatlingCannon,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
         <EffectArray Reference="Weapon,TwinGatlingCannon,Level" Value="1"/>
@@ -455,12 +490,38 @@
         <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
         <EffectArray Reference="Effect,NapalmGrenade@DamageDoTInitialFireproof,Amount" Value="1"/>
         <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodicFireproof,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WidowMineExplodeSplash,Amount" Value="3"/>
+        <EffectArray Reference="Effect,CrucioShockCannonBlast,Amount" Value="10"/>
+        <EffectArray Reference="Effect,AutoTurret,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,AutoTurret,Level" Value="1"/>
         <AffectedUnitArray value="CycloneBurstLockOn@Weapon"/>
     </CUpgrade>
     <CUpgrade id="TerranVehicleWeaponsLevel2">
-        <EffectArray Reference="Effect,CycloneBurstLockOn@Damage,Amount" Value="1"/>
-        <EffectArray Operation="Set" Reference="Weapon,CycloneBurstLockOn,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
-        <EffectArray Reference="Weapon,CycloneBurstLockOn,Level" Value="1"/>
+        <EffectArray index="2" Value="4"/>
+        <EffectArray index="7" Value="10"/>
+        <EffectArray index="8" Value="10"/>
+        <EffectArray index="9" Value="10"/>
+        <EffectArray index="20" Reference="Weapon,WarHound,Level"/>
+        <EffectArray index="21" Operation="Set" Reference="Weapon,WarHound,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <EffectArray index="22" Reference="Effect,WarHoundMelee,Amount" Value="2"/>
+        <EffectArray index="23" Reference="Effect,WarHound,Amount" Value="2"/>
+        <EffectArray index="24" Operation="Add" Reference="Weapon,WidowMineDummy,Level" Value="1"/>
+        <EffectArray index="25" Operation="Set" Reference="Weapon,WidowMineDummy,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <EffectArray index="26" Reference="Effect,MineDroneDirectDamage,Amount" Value="5"/>
+        <EffectArray index="27" Reference="Effect,MineDroneExplodeDamage,Amount"/>
+        <EffectArray index="28" Reference="Weapon,HellionTank,Icon"/>
+        <EffectArray index="29" Reference="Effect,HellionTankDamage,Amount" Value="2"/>
+        <EffectArray index="30" Reference="Weapon,HellionTank,Level"/>
+        <EffectArray index="31" Operation="Add" Reference="Weapon,LanceMissileLaunchers,Level" Value="1"/>
+        <EffectArray index="32" Reference="Effect,LanceMissileLaunchersDamage,Amount" Value="3"/>
+        <EffectArray index="33" Reference="Effect,CycloneAttackWeaponDamage,Amount" Value="2"/>
+        <EffectArray index="34" Operation="Set" Reference="Weapon,LanceMissileLaunchers,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <EffectArray index="35" Reference="Weapon,TyphoonMissilePod,Level" Value="1"/>
+        <EffectArray index="36" Operation="Set" Reference="Weapon,TyphoonMissilePod,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <EffectArray index="37" Operation="Add" Reference="Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]" Value="1"/>
+        <EffectArray index="38" Reference="Effect,CycloneBurstLockOn@Damage,Amount"/>
+        <EffectArray index="39" Reference="Weapon,CycloneBurstLockOn,Icon"/>
+        <EffectArray index="40" Reference="Weapon,CycloneBurstLockOn,Level"/>
         <EffectArray Operation="Set" Reference="Weapon,TwinGatlingCannon,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
         <EffectArray Reference="Weapon,TwinGatlingCannon,Level" Value="1"/>
         <EffectArray Reference="Effect,TwinGatlingCannons,Amount" Value="1"/>
@@ -468,11 +529,37 @@
         <EffectArray Reference="Weapon,NapalmGrenade,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,NapalmGrenade,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
         <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WidowMineExplodeDirect,Amount" Value="30"/>
+        <EffectArray Reference="Effect,WidowMineExplodeSplash,Amount" Value="3"/>
+        <EffectArray Reference="Effect,AutoTurret,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,AutoTurret,Level" Value="1"/>
     </CUpgrade>
     <CUpgrade id="TerranVehicleWeaponsLevel3">
-        <EffectArray Reference="Effect,CycloneBurstLockOn@Damage,Amount" Value="1"/>
-        <EffectArray Operation="Set" Reference="Weapon,CycloneBurstLockOn,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
-        <EffectArray Reference="Weapon,CycloneBurstLockOn,Level" Value="1"/>
+        <EffectArray index="2" Value="4"/>
+        <EffectArray index="7" Value="10"/>
+        <EffectArray index="8" Value="10"/>
+        <EffectArray index="9" Value="10"/>
+        <EffectArray index="20" Reference="Weapon,WarHound,Level"/>
+        <EffectArray index="21" Operation="Set" Reference="Weapon,WarHound,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <EffectArray index="22" Reference="Effect,WarHoundMelee,Amount" Value="2"/>
+        <EffectArray index="23" Reference="Effect,WarHound,Amount" Value="2"/>
+        <EffectArray index="24" Operation="Add" Reference="Weapon,WidowMineDummy,Level" Value="1"/>
+        <EffectArray index="25" Operation="Set" Reference="Weapon,WidowMineDummy,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <EffectArray index="26" Reference="Effect,MineDroneDirectDamage,Amount" Value="5"/>
+        <EffectArray index="27" Reference="Effect,MineDroneExplodeDamage,Amount"/>
+        <EffectArray index="28" Reference="Weapon,HellionTank,Icon"/>
+        <EffectArray index="29" Reference="Effect,HellionTankDamage,Amount" Value="2"/>
+        <EffectArray index="30" Reference="Weapon,HellionTank,Level"/>
+        <EffectArray index="31" Operation="Add" Reference="Weapon,LanceMissileLaunchers,Level" Value="1"/>
+        <EffectArray index="32" Reference="Effect,LanceMissileLaunchersDamage,Amount" Value="3"/>
+        <EffectArray index="33" Reference="Effect,CycloneAttackWeaponDamage,Amount" Value="2"/>
+        <EffectArray index="34" Operation="Set" Reference="Weapon,LanceMissileLaunchers,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <EffectArray index="35" Reference="Weapon,TyphoonMissilePod,Level" Value="1"/>
+        <EffectArray index="36" Operation="Set" Reference="Weapon,TyphoonMissilePod,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <EffectArray index="37" Operation="Add" Reference="Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]" Value="1"/>
+        <EffectArray index="38" Reference="Effect,CycloneBurstLockOn@Damage,Amount"/>
+        <EffectArray index="39" Reference="Weapon,CycloneBurstLockOn,Icon"/>
+        <EffectArray index="40" Reference="Weapon,CycloneBurstLockOn,Level"/>
         <EffectArray Reference="Effect,TwinGatlingCannons,Amount" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,TwinGatlingCannon,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
         <EffectArray Reference="Weapon,TwinGatlingCannon,Level" Value="1"/>
@@ -480,6 +567,10 @@
         <EffectArray Reference="Weapon,NapalmGrenade,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,NapalmGrenade,Icon" Value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
         <EffectArray Reference="Effect,NapalmGrenade@DamageDoTPeriodic,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WidowMineExplodeDirect,Amount" Value="30"/>
+        <EffectArray Reference="Effect,WidowMineExplodeSplash,Amount" Value="3"/>
+        <EffectArray Reference="Effect,AutoTurret,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,AutoTurret,Level" Value="1"/>
     </CUpgrade>
     <!-- Balance change for balance patch of Nov 11th 2013 -->
     <CUpgrade id="TunnelingClaws">
@@ -505,17 +596,186 @@
         <EffectArray index="2" Value="0.5"/>
         <EffectArray index="3" Value="1"/>
     </CUpgrade>
+    <CUpgrade id="ZergFlyerWeaponsLevel1">
+        <EffectArray index="2" Value="1"/>
+        <EffectArray index="3" Value="1"/>
+        <EffectArray index="5" Value="1"/>
+        <EffectArray index="6" Value="1"/>
+        <EffectArray index="8" Reference="Effect,ParasiteSporeDamage,Amount"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray index="10" Reference="Weapon,BroodlingStrike,Icon"/>
+        <EffectArray index="11" Reference="Weapon,ParasiteSpore,Icon"/>
+        <EffectArray index="12" Operation="Add" Reference="Weapon,Suicide,Level" Value="1"/>
+        <EffectArray index="13" Reference="Effect,SuicideDamage,Amount" Value="5"/>
+        <EffectArray index="14" Reference="Effect,ParasiteSporeDamage,AttributeBonus[Armored]" Value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerWeaponsLevel2">
+        <EffectArray index="2" Value="1"/>
+        <EffectArray index="3" Value="1"/>
+        <EffectArray index="5" Value="1"/>
+        <EffectArray index="6" Value="1"/>
+        <EffectArray index="8" Reference="Effect,ParasiteSporeDamage,AttributeBonus[Armored]"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerWeaponsLevel3">
+        <EffectArray index="2" Value="1"/>
+        <EffectArray index="3" Value="1"/>
+        <EffectArray index="5" Value="1"/>
+        <EffectArray index="6" Value="1"/>
+        <EffectArray index="8" Reference="Effect,ParasiteSporeDamage,AttributeBonus[Armored]"/>
+    </CUpgrade>
+    <CUpgrade id="ZergGroundArmorsLevel1"/>
     <CUpgrade id="ZergMeleeWeaponsLevel1">
-        <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="2"/>
-        <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="2"/>
+        <EffectArray index="3" Value="5"/>
+        <EffectArray index="8" Value="10"/>
+        <EffectArray index="9" Value="10"/>
+        <EffectArray index="10" Value="0"/>
+        <EffectArray index="11" Value="0"/>
+        <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="10"/>
+        <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="0"/>
     </CUpgrade>
     <CUpgrade id="ZergMeleeWeaponsLevel2">
-        <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="2"/>
-        <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="2"/>
+        <EffectArray index="3" Value="5"/>
+        <EffectArray index="8" Value="10"/>
+        <EffectArray index="9" Value="10"/>
+        <EffectArray index="10" Value="0"/>
+        <EffectArray index="11" Value="0"/>
+        <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="10"/>
+        <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="0"/>
     </CUpgrade>
     <CUpgrade id="ZergMeleeWeaponsLevel3">
-        <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="2"/>
-        <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="2"/>
+        <EffectArray index="3" Value="5"/>
+        <EffectArray index="8" Value="10"/>
+        <EffectArray index="9" Value="10"/>
+        <EffectArray index="10" Value="0"/>
+        <EffectArray index="11" Value="0"/>
+        <EffectArray Reference="Effect,VolatileBurstSplashDamage,AttributeBonus[Light]" Value="0"/>
+        <EffectArray Reference="Effect,VolatileBurstSplashDamage,Amount" Value="10"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMissileWeaponsLevel1">
+        <EffectArray index="1" Reference="Weapon,Talons,Level"/>
+        <EffectArray index="2" Reference="Effect,Talons,Amount" Value="1.000000"/>
+        <EffectArray index="3" Reference="Effect,AcidSpines,Amount"/>
+        <EffectArray index="4" Reference="Weapon,AcidSaliva,Level" Value="1"/>
+        <EffectArray index="5" Reference="Effect,AcidSalivaU,Amount" Value="2"/>
+        <EffectArray index="6" Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray index="7" Reference="Effect,HydraliskMelee,Amount"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,NeedleSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Weapon,AcidSaliva,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="12" Reference="Weapon,LocustMP,Icon"/>
+        <EffectArray index="13" Reference="Weapon,TalonsMissile,Icon"/>
+        <EffectArray index="14" Reference="Weapon,LocustMPMelee,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray index="15" Operation="Add" Reference="Weapon,TalonsMissile,Level" Value="1"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,LocustMP,Level" Value="1"/>
+        <EffectArray index="17" Operation="Add" Reference="Weapon,LocustMPMelee,Level" Value="1"/>
+        <EffectArray index="18" Operation="Add" Reference="Effect,LocustMPMeleeDamage,Amount" Value="1"/>
+        <EffectArray index="19" Operation="Add" Reference="Effect,TalonsMissileDamage,Amount" Value="1.000000"/>
+        <EffectArray index="20" Operation="Set" Reference="Weapon,RavagerWeapon,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="21" Reference="Weapon,RavagerWeapon,Level"/>
+        <EffectArray index="22" Reference="Effect,RavagerWeaponDamage,Amount" Value="3"/>
+        <EffectArray index="23" Operation="Set" Reference="Weapon,LurkerMP,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="24" Reference="Weapon,LurkerMP,Level"/>
+        <EffectArray index="25" Reference="Effect,LurkerMPDamage,Amount" Value="5"/>
+        <EffectArray index="26" Operation="Add" Reference="Effect,InfestedAcidSpines,Amount" Value="2"/>
+        <EffectArray index="27" Reference="Effect,InfestedGuassRifle,Amount"/>
+        <EffectArray index="28" Reference="Weapon,InfestedGuassRifle,Level" Value="1"/>
+        <EffectArray index="29" Reference="Weapon,InfestedGuassRifle,Icon"/>
+        <EffectArray index="30" Reference="Weapon,InfestedAcidSpines,Level"/>
+        <EffectArray index="31" Operation="Set" Reference="Weapon,InfestedAcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMissileWeaponsLevel2">
+        <EffectArray index="1" Reference="Weapon,Talons,Level"/>
+        <EffectArray index="2" Reference="Effect,Talons,Amount" Value="1.000000"/>
+        <EffectArray index="3" Reference="Effect,AcidSpines,Amount"/>
+        <EffectArray index="4" Reference="Weapon,AcidSaliva,Level" Value="1"/>
+        <EffectArray index="5" Reference="Weapon,AcidSpines,Level"/>
+        <EffectArray index="6" Reference="Effect,HydraliskMelee,Amount" Value="1"/>
+        <EffectArray index="7" Reference="Effect,RoachUMelee,Amount" Value="2"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,NeedleSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Weapon,AcidSaliva,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="12" Reference="Weapon,LocustMP,Icon"/>
+        <EffectArray index="13" Reference="Weapon,TalonsMissile,Icon"/>
+        <EffectArray index="14" Reference="Weapon,LocustMPMelee,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray index="15" Operation="Add" Reference="Weapon,TalonsMissile,Level" Value="1"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,LocustMP,Level" Value="1"/>
+        <EffectArray index="17" Operation="Add" Reference="Weapon,LocustMPMelee,Level" Value="1"/>
+        <EffectArray index="18" Operation="Add" Reference="Effect,LocustMPMeleeDamage,Amount" Value="1"/>
+        <EffectArray index="19" Operation="Add" Reference="Effect,TalonsMissileDamage,Amount" Value="1.000000"/>
+        <EffectArray index="20" Operation="Set" Reference="Weapon,RavagerWeapon,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="21" Reference="Weapon,RavagerWeapon,Level"/>
+        <EffectArray index="22" Reference="Effect,RavagerWeaponDamage,Amount" Value="3"/>
+        <EffectArray index="23" Reference="Weapon,LurkerMP,Level"/>
+        <EffectArray index="24" Reference="Effect,LurkerMPDamage,Amount" Value="5"/>
+        <EffectArray index="25" Reference="Effect,InfestedAcidSpines,Amount" Value="2"/>
+        <EffectArray index="26" Operation="Add" Reference="Effect,InfestedGuassRifle,Amount" Value="1"/>
+        <EffectArray index="27" Reference="Weapon,InfestedGuassRifle,Level"/>
+        <EffectArray index="28" Operation="Set" Reference="Weapon,InfestedGuassRifle,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="29" Operation="Add" Reference="Weapon,InfestedAcidSpines,Level" Value="1"/>
+        <EffectArray index="30" Operation="Set" Reference="Weapon,InfestedAcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="31" Operation="Set" Reference="Weapon,Spinesdisabled,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMissileWeaponsLevel3">
+        <EffectArray index="1" Reference="Weapon,Talons,Level"/>
+        <EffectArray index="2" Reference="Effect,Talons,Amount" Value="1.000000"/>
+        <EffectArray index="3" Reference="Effect,AcidSpines,Amount"/>
+        <EffectArray index="4" Reference="Weapon,AcidSaliva,Level" Value="1"/>
+        <EffectArray index="5" Reference="Effect,AcidSalivaU,Amount" Value="2"/>
+        <EffectArray index="6" Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray index="7" Reference="Effect,HydraliskMelee,Amount"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,NeedleSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Weapon,AcidSaliva,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="12" Reference="Weapon,LocustMP,Icon"/>
+        <EffectArray index="13" Reference="Weapon,TalonsMissile,Icon"/>
+        <EffectArray index="14" Reference="Weapon,LocustMPMelee,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="15" Operation="Add" Reference="Weapon,TalonsMissile,Level" Value="1"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,LocustMP,Level" Value="1"/>
+        <EffectArray index="17" Operation="Add" Reference="Weapon,LocustMPMelee,Level" Value="1"/>
+        <EffectArray index="18" Operation="Add" Reference="Effect,LocustMPMeleeDamage,Amount" Value="1"/>
+        <EffectArray index="19" Operation="Add" Reference="Effect,TalonsMissileDamage,Amount" Value="1.000000"/>
+        <EffectArray index="20" Operation="Set" Reference="Weapon,RavagerWeapon,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="21" Reference="Weapon,RavagerWeapon,Level"/>
+        <EffectArray index="22" Reference="Effect,RavagerWeaponDamage,Amount" Value="3"/>
+        <EffectArray index="23" Reference="Weapon,LurkerMP,Level"/>
+        <EffectArray index="24" Reference="Effect,LurkerMPDamage,Amount" Value="5"/>
+        <EffectArray index="25" Reference="Effect,InfestedAcidSpines,Amount" Value="2"/>
+        <EffectArray index="26" Operation="Add" Reference="Effect,InfestedGuassRifle,Amount" Value="1"/>
+        <EffectArray index="27" Reference="Weapon,InfestedGuassRifle,Level"/>
+        <EffectArray index="28" Operation="Set" Reference="Weapon,InfestedGuassRifle,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="29" Operation="Add" Reference="Weapon,InfestedAcidSpines,Level" Value="1"/>
+        <EffectArray index="30" Operation="Set" Reference="Weapon,InfestedAcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="31" Operation="Set" Reference="Weapon,Spinesdisabled,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
     </CUpgrade>
     <CUpgrade id="hydraliskspeed">
         <EffectArray index="1" Operation="Add" Reference="Weapon,NeedleSpines,MinScanRange" Value="1"/>
