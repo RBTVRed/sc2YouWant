@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitCompareField id="CanHaveEnergySource">
+        <WhichUnit Value="Source"/>
+        <Compare value="GE"/>
+        <Field value="EnergyMax"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareField id="CanHaveEnergyCaster">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Field value="EnergyMax"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareField>
     <CValidatorCombine id="EMPDetectorUnit">
         <CombineArray value="IsMedic"/>
         <CombineArray value="IsRaven"/>

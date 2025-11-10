@@ -931,6 +931,7 @@
         <On Terms="Effect.ViperConsumeDamage.Start" Send="ActionDamage"/>
         <Lifetime value="100.000000"/>
     </CActorAction>
+    <CActorModel id="ViperConsumeStructureHealImpactModel"/>
     <CActorModel id="FloatingTextPalletMinerals2" parent="FloatingTextActorDefault" effectPickup="PickupPalletMinerals2" actorCreate="PickupPalletMineralsText">
         <On index="1" Terms="ActorCreation" Send="Create PickupPalletMinerals2"/>
     </CActorModel>
@@ -1436,6 +1437,9 @@
     <CActorUnit id="Viper">
         <On Terms="Abil.InfestedTerrans.SourceCastStart" Send="$Spell"/>
     </CActorUnit>
+    <CActorModel id="ViperConsumeStructureTentacle">
+        <On Terms="Effect.ViperConsumeStructureLaunchMissile.Start; ValidateUnit CanHaveEnergy" Send="SetTintColor 170,0,255"/>
+    </CActorModel>
     <CActorModel id="WallBuild" parent="TerranBuildingBuild"/>
     <CActorUnit id="Wall" parent="TerranBuildingEx" unitName="Wall">
         <Aliases value="_UnitLarge"/>

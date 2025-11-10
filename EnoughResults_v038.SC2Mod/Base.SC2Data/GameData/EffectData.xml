@@ -1791,7 +1791,27 @@
             <Change value="-12.5"/>
         </VitalArray>
     </CEffectModifyUnit>
-    <CEffectSet id="ViperConsumeStructurePeriodicSet"/>
+    <CEffectModifyUnit id="ViperConsumeStructureModifyEnergyCaster">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="1.25"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="ViperConsumeStructureModifyEnergyTarget">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Energy">
+            <Change value="-12.5"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="ViperConsumeStructurePeriodicEnergySet">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ViperConsumeStructureModifyEnergyTarget"/>
+        <EffectArray value="ViperConsumeStructureModifyEnergyCaster"/>
+    </CEffectSet>
+    <CEffectSet id="ViperConsumeStructurePeriodicSet">
+        <EffectArray value="ViperConsumeStructurePeriodicEnergySet"/>
+    </CEffectSet>
     <CEffectDamage id="VoidRaySwarmDamage">
         <Amount value="5"/>
         <AttributeBonus index="Armored" value="0"/>
