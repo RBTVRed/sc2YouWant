@@ -49,7 +49,7 @@
         <Aliases index="2" value="_UnitMedium"/>
     </CActorUnit>
     <CActorUnit id="HighTemplar">
-        <On Terms="WeaponStart.HighTemplarWeaponInstant.AttackStart" Send="$Spell,A"/>
+        <On Terms="WeaponStart.PsiLightning.AttackStart" Send="$Spell,A"/>
     </CActorUnit>
     <CActorAction id="HighTemplarWeaponInstant@Action" parent="GenericAttack" effectAttack="HighTemplarWeaponInstant@CP">
         <LaunchSiteOps Ops="SOpAttachCenter SOpMoveByDot15"/>

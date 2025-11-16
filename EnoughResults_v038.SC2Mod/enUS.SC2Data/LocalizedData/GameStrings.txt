@@ -787,6 +787,7 @@ Weapon/Name/MothershipCoreWeapon2=Purify
 Weapon/Name/NapalmGrenade=Napalm Grenade
 Weapon/Name/NexusDefenseBeam=Nexus Defense Beam
 Weapon/Name/P38ScytheGuassPistol=Dual P-45 Gauss Pistol
+Weapon/Name/PsiBlast=Psi Lightning
 Weapon/Name/ReaperD8Charge=D8 Charge
 Weapon/Name/SingleP45GuassPistol=Single P-45 Guass Pistol
 Weapon/Name/ThermalLance=Thermal Lance

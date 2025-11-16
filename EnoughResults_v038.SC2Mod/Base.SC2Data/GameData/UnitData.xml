@@ -719,7 +719,7 @@
         </CardLayouts>
         <Radius value="0.5625"/>
         <MinimapRadius value="0.5625"/>
-        <WeaponArray index="0" Link="HighTemplarWeaponInstant"/>
+        <WeaponArray index="0" Link="PsiLightning"/>
     </CUnit>
     <CUnit id="Hive">
         <LifeStart value="5000"/>
@@ -1351,7 +1351,6 @@
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
-        <Speed value="2.25"/>
         <Sight value="10"/>
         <AbilArray index="0" Link="stop"/>
         <AbilArray index="1" Link="move"/>
@@ -1480,7 +1479,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
-        <Speed value="1.668"/>
+        <Speed value="1.5"/>
         <ShieldsStart value="120"/>
         <ShieldsMax value="120"/>
         <ShieldRegenRate value="1.5"/>
@@ -1559,7 +1558,7 @@
         <LifeStart value="400"/>
         <LifeMax value="400"/>
         <LifeArmor value="1"/>
-        <Speed value="0.461"/>
+        <Speed value="0.5"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
             <LayoutButtons index="6" Column="1"/>
@@ -1571,7 +1570,7 @@
         <TurningRate value="180"/>
     </CUnit>
     <CUnit id="OverlordTransport">
-        <Speed value="0.6406"/>
+        <Speed value="0.75"/>
         <LifeStart value="400"/>
         <LifeMax value="400"/>
         <LifeArmor value="1"/>
@@ -1586,7 +1585,7 @@
     <CUnit id="Overseer">
         <LifeStart value="600"/>
         <LifeMax value="600"/>
-        <Speed value="1.668"/>
+        <Speed value="1.5"/>
         <AbilArray Link="IncubateTumor"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
@@ -2919,7 +2918,7 @@
         <ShieldsStart value="280"/>
         <ShieldsMax value="280"/>
         <ShieldRegenRate value="1.5"/>
-        <Speed value="2.625"/>
+        <Speed value="2.5"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>

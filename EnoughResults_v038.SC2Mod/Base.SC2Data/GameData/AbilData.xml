@@ -77,6 +77,11 @@
     <CAbilEffectTarget id="InfestedTerrans">
         <Range index="0" value="9"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="MedivacSpeedBoost">
+        <Cost index="0">
+            <Cooldown TimeUse="35"/>
+        </Cost>
+    </CAbilEffectInstant>
     <CAbilMorph id="MorphToInfestedTerran">
         <InfoArray index="0">
             <SectionArray index="Abils">

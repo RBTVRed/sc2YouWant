@@ -8,6 +8,12 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BurrowedAmbusher@Applicator"/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="DisruptionBeamDamage">
+        <AttributeBonus index="Light" value="8"/>
+        <AttributeBonus index="Structure" value="12"/>
+        <ShieldBonus value="8"/>
+        <Amount value="8"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="EMPApplyDetectorDisableBehavior">
         <ValidatorArray index="0" value="NotInvulnerable"/>
         <ValidatorArray value="NotStructureTarget"/>
@@ -1406,12 +1412,6 @@
         <PeriodicEffectArray value="ThermalLanceSwitch"/>
         <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
-    <CEffectDamage id="DisruptionBeamDamage">
-        <Amount value="8"/>
-        <AttributeBonus index="Light" value="8"/>
-        <AttributeBonus index="Structure" value="12"/>
-        <ShieldBonus value="8"/>
-    </CEffectDamage>
     <CEffectSet id="GravitonBeamPeriodicSet">
         <EffectArray value="GravitonBeamHeightBehavior"/>
         <EffectArray value="DisableCasterWeaponsApplyBehavior"/>
@@ -1424,7 +1424,6 @@
     <CEffectDamage id="ThermalLanceDamageAir" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <AttributeBonus index="Armored" value="6"/>
-        <AttributeBonus index="Massive" value="6"/>
         <Kind value="Ranged"/>
         <Amount value="8"/>
         <AreaArray Radius="1.3" Fraction="1"/>
@@ -1578,7 +1577,6 @@
     <CEffectDamage id="ThermalLanceDamageGround" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <AttributeBonus index="Armored" value="6"/>
-        <AttributeBonus index="Massive" value="6"/>
         <Kind value="Ranged"/>
         <Amount value="8"/>
         <AreaArray Radius="1.3" Fraction="1"/>
