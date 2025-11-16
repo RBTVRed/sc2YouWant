@@ -2950,6 +2950,7 @@
         <MinimapRadius value="0.5625"/>
         <Speed value="2"/>
         <CostResource index="Vespene" value="0"/>
+        <CargoSize value="1"/>
     </CUnit>
     <CUnit id="WidowMineBurrowed">
         <Food value="-1"/>
