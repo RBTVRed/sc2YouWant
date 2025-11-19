@@ -102,7 +102,7 @@
         <AlertIcon value="Assets\Textures\btn-unit-terran-vikingfighter.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="MedicDefensiveMatrix">
+    <CButton id="NanoMatrix">
         <Name value="Button/Name/DefensiveMatrix"/>
         <Icon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
         <AlertName value="Button/Name/DefensiveMatrix"/>
@@ -238,7 +238,7 @@
         <Icon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
     </CButton>
-    <CButton id="MedRadar">
+    <CButton id="PerimeterScan">
         <Icon value="Assets\Textures\btn-upgrade-tychus-detection.dds"/>
     </CButton>
     <CButton id="Wall">

@@ -21,16 +21,16 @@ Abil/Name/FirstAid=First Aid
 Abil/Name/IncubateTumor=Incubate Tumor
 Abil/Name/LoadUnloadBunkerNeosteel=Load-Unload (Bunker) Neosteel
 Abil/Name/MassCloakingField=Mass Cloaking Field
-Abil/Name/MedicDefensiveMatrix=Defensive Matrix
 Abil/Name/MedicalSuppliesCalldown=Medical Supplies Calldown
-Abil/Name/MedicalSweep=Med Scanner
 Abil/Name/MorphToNeosteelBunker=Morph to Neosteel Bunker
 Abil/Name/MothershipCoreMassRecall=Mass Recall to Pylon
+Abil/Name/NanoMatrix=Nano Matrix
 Abil/Name/NeosteelBunkerTransport=Load-Unload
 Abil/Name/NitroPacks=Nitro Packs
 Abil/Name/OozeSnare=Ooze Snare
 Abil/Name/OrbitalCommandCalldownRepairDrone=Calldown Repair Drone
 Abil/Name/OrbitalCommandCalldownRepairDrone@Morph=Morph
+Abil/Name/PerimeterScan=Perimeter Scan
 Abil/Name/PickupPalletMinerals2=Pickup Pallet Minerals Copy
 Abil/Name/PickupPalletMinerals22=Pickup Pallet Minerals Copy Copy
 Abil/Name/PickupPalletMinerals23=Pickup Pallet Minerals Copy Copy 2
@@ -68,14 +68,14 @@ Behavior/Name/FungalGrowthArmorReduction=FungalGrowthArmorReduction
 Behavior/Name/IncubateDummy=Incubate Dummy
 Behavior/Name/Incubated=Incubated
 Behavior/Name/InfestorIsBurrowed=Infestor Is Burrowed
-Behavior/Name/MedRadar@Detector=Med Scanner
-Behavior/Name/MedicDefensiveMatrix=Defensive Matrix
 Behavior/Name/MicrobialShroudAura=Microbial Shroud Aura
+Behavior/Name/NanoMatrix=Nano Matrix
 Behavior/Name/NapalmGrenade@DoT=Burning
 Behavior/Name/ObeliskSlow=Slow
 Behavior/Name/OozeSnare=Ooze Snare
 Behavior/Name/OozeSnareStructure=Ooze Snare
 Behavior/Name/ParasiticBombDamage=Parasitic Bomb Damage
+Behavior/Name/PerimeterScan@Detector=Perimeter Scan
 Behavior/Name/PointDefenseDroneArmorReduction=PointDefenseDroneArmorReduction
 Behavior/Name/PulsarLocked=Pulsar Locked
 Behavior/Name/PulsarLockedPhoton=Pulsar Locked
@@ -108,13 +108,13 @@ Behavior/Tooltip/EMPDetectorDisable=Target was recently hit by an EMP Round, mak
 Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodlings if the affected unit dies.
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/Incubated=This structure functions 75% slower.
-Behavior/Tooltip/MedRadar@Detector=This unit is revealing the area around it and detecting cloaked units.
-Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
 Behavior/Tooltip/MicrobialShroudAura=Incoming ranged damage reduced by 3.
+Behavior/Tooltip/NanoMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
 Behavior/Tooltip/NapalmGrenade@DoT=Target is under the effects of a Napalm Grenade and will take massive damage while in this area of effect.
 Behavior/Tooltip/ObeliskSlow=This unit has reduced movement and attack speed.
 Behavior/Tooltip/ParasiticBomb=This unit is taking damage over time.
 Behavior/Tooltip/ParasiticBombDamage=This unit is taking damage over time.
+Behavior/Tooltip/PerimeterScan@Detector=This unit is revealing the area around it and detecting cloaked units.
 Behavior/Tooltip/PulsarLocked=This structure's weapon is disabled.
 Behavior/Tooltip/PulsarLockedPhoton=This structure's weapon is disabled.
 Behavior/Tooltip/RapidConstruction=This structure has 50% increased build speed.
@@ -161,7 +161,6 @@ Button/Name/LairDefense=Lair Defense
 Button/Name/LiftOffResearch=Research Lift Off
 Button/Name/MassCloakingField=Cloaking Field
 Button/Name/MasteryTychusMedivacBuff=Dropship Pickup Cooldown
-Button/Name/MedRadar=Perimeter Scan
 Button/Name/Medivac=Build Dropship
 Button/Name/MorphToNeosteelBunker=Transform to Neosteel Bunker
 Button/Name/MothershipCoreMassRecall=Transference
@@ -171,6 +170,7 @@ Button/Name/ObeliskHardenedShield=Hardened Shield
 Button/Name/ObeliskSlowSearcher=Slow Aura
 Button/Name/OozeSnare=Ooze Snare
 Button/Name/OrbitalCommandCalldownRepairDrone=Calldown: Construction Drone
+Button/Name/PerimeterScan=Perimeter Scan
 Button/Name/PointDefenseDrone=Build Targeting Drone
 Button/Name/RapidConstruction=Rapid Construction
 Button/Name/RavenShredderMissile=Concussive Missile
@@ -280,9 +280,7 @@ Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCe
 Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structure, dealing 280 damage over 14 seconds. Can move while firing. Cancels if target moves out of range.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or ground structures.</c>
 Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
 Button/Tooltip/MasteryTychusMedivacBuff=Reduces the cooldown of the Dropship Pickup ability.
-Button/Tooltip/MedRadar=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
 Button/Tooltip/Medic=Support trooper. Heals nearby biological units and can use Stim, Perimeter Scan, and Nano Matrix.
-Button/Tooltip/MedicDefensiveMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
 Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
 Button/Tooltip/Medivac=Air transport. Can place Auto-Turrets.
@@ -292,6 +290,7 @@ Button/Tooltip/MissileTurret=Anti-air defensive structure.<n/><n/><c val="#Color
 Button/Tooltip/MorphToNeosteelBunker=Transforms the Bunker into a Neosteel Bunker. The Neosteel Bunker can carry 4 additional cargo and has an additional 300 life.
 Button/Tooltip/MothershipCoreMassRecall=Teleports the Arbiter and all nearby units owned by the player to the target point within a power field.
 Button/Tooltip/MutateintoLurkerDen=Enables Lurkers from Hydralisks.
+Button/Tooltip/NanoMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/NapalmGrenade=Attacks set the ground ablaze, dealing up to <d ref="Effect,NapalmGrenade@DamageDoTInitial,Amount + (Effect,NapalmGrenade@CPDoT,PeriodCount + 1 * Effect,NapalmGrenade@DamageDoTPeriodic,Amount)"/> damage to ground units at the target location over <d ref="Effect,NapalmGrenade@CPDoT,PeriodicPeriodArray[0] * Effect,NapalmGrenade@CPDoT,PeriodCount"/> seconds.
 Button/Tooltip/NapalmHellion=Fast scout. Attack create a lingering pool of fire that deals damage to ground units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Nexus=Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<n/><n/><c val="ffff8a">Enables:</c><n/>- Probes<n/>- Warp Prism
@@ -307,6 +306,7 @@ Button/Tooltip/OracleWeaponOn=Charges the Oracle's Pulsar Beam and allows it to 
 Button/Tooltip/OrbitalCommand=Upgrades Command Center to an Orbital Command, unlocking Calldown: Construction Drone and Scanner Sweep. Cannot load SCVs.
 Button/Tooltip/OrbitalCommandCalldownRepairDrone=Drops a robotic Construction Drone at the target location that can construct Terran structures and repairs mechanical units and structures for free.<n/><n/>Construction Drones last <d ref="Behavior,OrbitalCommandCalldownRepairDrone@TimedLife,Duration"/> seconds before their systems fail.
 Button/Tooltip/ParasiticBomb=Creates a parasitic cloud that deals <d ref="Behavior,ParasiticBomb,Duration/Behavior,ParasiticBomb,Period*Effect,ParasiticBombDotDamage,Amount"/> (+336 to armored) damage over <d ref="Behavior,ParasiticBomb,Duration"/> seconds to the target and enemy air units nearby. If the target dies, the cloud remains in the air where the enemy died until it expires.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or structures.</c>
+Button/Tooltip/PerimeterScan=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
 Button/Tooltip/PhasingMode=Transforms the Warp Prism to Phasing Mode and generates a power radius similar to that of a Pylon. In this mode the Warp Prism can also recharge Protoss shields. The Warp Prism cannot move in this mode.
 Button/Tooltip/Phoenix=Air-superiority fighter.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/PhoenixHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
@@ -561,10 +561,7 @@ Effect/Name/KD8ChargeExplodeSwitch=KD8 Charge Explode Switch
 Effect/Name/LanzerTorpedoesGround=Halo Rockets (Persistent)
 Effect/Name/LanzerTorpedoesLMGround=Halo Rockets (Launch Missile)
 Effect/Name/LocustMPDamage=Locust MP Damage Copy
-Effect/Name/MedRadar@AB=Apply Behavior
-Effect/Name/MedicDefensiveMatrix@AB=Apply Behavior
 Effect/Name/MedicDefensiveMatrix@RB=Remove Behavior
-Effect/Name/MedicDefensiveMatrix@Set=Set
 Effect/Name/MedicP45GaussPistol@Damage=Damage
 Effect/Name/MedicalSuppliesHeal=Medical Supplies Heal
 Effect/Name/ModifyUnitReleaseAllUnits=Modify Unit Release All Units
@@ -574,6 +571,8 @@ Effect/Name/MorphToNeosteelBunker@Set=Set
 Effect/Name/MothershipCoreWeaponDamage2=Mothership Core Weapon Damage
 Effect/Name/MothershipCoreWeaponLM2=Mothership Core Weapon LM
 Effect/Name/MuleBlueMineralDropSet=Mule Blue Mineral Drop Set
+Effect/Name/NanoMatrix@AB=Nano Matrix AB
+Effect/Name/NanoMatrix@Set=Nano Matrox Set
 Effect/Name/NapalmGrenade@AB=Apply Behavior
 Effect/Name/NapalmGrenade@CPDoT=Create Persistent
 Effect/Name/NapalmGrenade@Damage=Damage
@@ -615,6 +614,7 @@ Effect/Name/OrbitalCommandCalldownRepairDrone@SetPlacement=Set
 Effect/Name/OrbitalCommandCalldownRepairDroneOrbitalCommandCalldownRepairDrone@SetFinal=Set
 Effect/Name/ParasiticBombSearchAP=Parasitic Bomb Search AP
 Effect/Name/ParticleBeam2=Particle Beam
+Effect/Name/PerimeterScan@AB=PerimeterScan AB
 Effect/Name/PickupKill2=Pickup Kill Copy
 Effect/Name/PickupKill22=Pickup Kill Copy Copy
 Effect/Name/PickupKill23=Pickup Kill Copy Copy 2

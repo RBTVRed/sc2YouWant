@@ -71,7 +71,7 @@
     </CAbilEffectTarget>
     <CAbilEffectInstant id="ImmortalOverload">
         <Cost index="0">
-            <Cooldown TimeUse="105"/>
+            <Cooldown TimeUse="126"/>
         </Cost>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="InfestedTerrans">
@@ -449,15 +449,16 @@
             <Button DefaultButtonFace="" Requirements=""/>
         </InfoArray>
     </CAbilResearch>
-    <CAbilEffectTarget id="MedicDefensiveMatrix">
+    <CAbilEffectTarget id="NanoMatrix">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="MedicDefensiveMatrix@Set"/>
+        <DataCollection value="MedicDefensiveMatrix"/>
+        <Effect index="0" value="NanoMatrix@Set"/>
         <Cost>
             <Vital index="Energy" value="100"/>
         </Cost>
         <TargetFilters value="Visible;Self,Enemy,Massive,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="MedicDefensiveMatrix"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NanoMatrix"/>
     </CAbilEffectTarget>
     <CAbilResearch id="EngineeringBayResearch">
         <InfoArray index="Research1">
@@ -874,9 +875,9 @@
             <Vital index="Energy" value="75"/>
         </Cost>
     </CAbilEffectTarget>
-    <CAbilEffectInstant id="MedicalSweep">
+    <CAbilEffectInstant id="PerimeterScan">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="MedRadar@AB"/>
+        <Effect index="0" value="PerimeterScan@AB"/>
         <Flags index="BestUnit" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="Transient" value="1"/>
@@ -885,8 +886,8 @@
             <Cooldown TimeUse="2"/>
         </Cost>
         <Arc value="360"/>
-        <AINotifyEffect value="MedRadar@AB"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="MedRadar"/>
+        <AINotifyEffect value="PerimeterScan@AB"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PerimeterScan"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="SeekerMissile">
         <Cost index="0">
@@ -981,7 +982,6 @@
         <Effect index="0" value="IgniteAfterburnersRB"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DisableIgniteAfterburners" Requirements="ShowDisableAfterburners"/>
         <Cost index="0">
-            <Vital index="Energy" value="0"/>
             <Cooldown TimeUse="1"/>
         </Cost>
     </CAbilEffectInstant>

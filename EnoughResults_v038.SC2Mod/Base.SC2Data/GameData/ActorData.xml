@@ -411,13 +411,13 @@
         <On index="66" Terms="WeaponStart.TwinIbiksCannon; AnimPlaying Birth"/>
         <On index="67" Terms="WeaponStop.TwinIbiksCannon"/>
     </CActorUnit>
-    <CActorModel id="MedRadar@Model" parent="ModelAnimationStyleContinuous">
+    <CActorModel id="PerimeterScan@Model" parent="ModelAnimationStyleContinuous">
         <Terms value="Cap 1"/>
         <Inherits index="CloakEffect" value="1"/>
         <Inherits index="Visibility" value="1"/>
-        <On Terms="Behavior.MedRadar@Detector.On" Send="Create"/>
-        <On Terms="Behavior.MedRadar@Detector.Off" Send="Destroy"/>
-        <On Terms="ActorCreation.MedRadar@Model" Send="SetTintColor {255,255,255 3.000000}"/>
+        <On Terms="Behavior.PerimeterScan@Detector.On" Send="Create"/>
+        <On Terms="Behavior.PerimeterScan@Detector.Off" Send="Destroy"/>
+        <On Terms="ActorCreation.PerimeterScan@Model" Send="SetTintColor {255,255,255 3.000000}"/>
         <Host Subject="_Unit"/>
         <HostSiteOps Ops="SOpAttachOverhead SOpForwardSouth" HoldRotation="1"/>
         <Model value="ScannerSweepModel"/>
@@ -450,17 +450,17 @@
         <Sound value="EMPBurstSound"/>
     </CActorSound>
     <CActorSound id="MedicDefensiveMatrix@SoundStart" parent="SoundOneShot">
-        <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
-        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="Destroy"/>
+        <On Terms="Behavior.NanoMatrix.On" Send="Create"/>
+        <On Terms="Behavior.NanoMatrix.Off" Send="Destroy"/>
         <Sound value="Battlecruiser_DefensiveMatrixBirth"/>
     </CActorSound>
     <CActorSound id="MedicDefensiveMatrix@SoundDeath" parent="SoundOneShot">
-        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="Create"/>
+        <On Terms="Behavior.NanoMatrix.Off" Send="Create"/>
         <Sound value="Battlecruiser_DefensiveMatrixDeath"/>
     </CActorSound>
     <CActorModel id="MedicDefensiveMatrix@Model" parent="ModelAddition">
-        <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
-        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.NanoMatrix.On" Send="Create"/>
+        <On Terms="Behavior.NanoMatrix.Off" Send="AnimBracketStop BSD"/>
         <Model value="DefensiveMatrixModel"/>
         <AutoScaleFactor value="1.000000"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
@@ -673,7 +673,7 @@
     <!-- Medic ................................................................................. -->
     <!--                                                                                         -->
     <CActorUnit id="Medic">
-        <On Terms="Abil.MedicDefensiveMatrix.SourceCastStart" Send="$Spell 0 -1.000000 -1.000000 0.500000 AsDuration"/>
+        <On Terms="Abil.NanoMatrix.SourceCastStart" Send="$Spell 0 -1.000000 -1.000000 0.500000 AsDuration"/>
         <Remove Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <Remove Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
         <Remove Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>

@@ -8,7 +8,7 @@
         <EffectArray index="1" removed="1"/>
     </CUpgrade>
     <CUpgrade id="BarrierDurationResearch">
-        <EffectArray Operation="Multiply" Reference="Behavior,TakenDamage,Duration" Value="2"/>
+        <EffectArray Reference="Behavior,TakenDamage,Duration" Value="28.000000"/>
         <AffectedUnitArray value="Immortal"/>
         <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
     </CUpgrade>

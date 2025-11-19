@@ -73,22 +73,25 @@
     </CDataCollectionAbil>
     <CDataCollectionAbil id="MedRadar">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
-        <DataRecord Entry="Actor,MedRadar@Model"/>
-        <DataRecord Entry="Behavior,MedRadar@Detector"/>
-        <DataRecord Entry="Button,MedRadar"/>
-        <DataRecord Entry="Effect,MedRadar@AB"/>
+        <DataRecord Entry="Actor,PerimeterScan@Model"/>
+        <DataRecord Entry="Behavior,PerimeterScan@Detector"/>
+        <DataRecord Entry="Button,PerimeterScan"/>
+        <DataRecord Entry="Effect,PerimeterScan@AB"/>
+        <Button value="PerimeterScan"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="MedicDefensiveMatrix">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
-        <DataRecord Entry="Abil,MedicDefensiveMatrix"/>
+        <DataRecord Entry="Abil,NanoMatrix"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundStart"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundDeath"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@Model"/>
-        <DataRecord Entry="Behavior,MedicDefensiveMatrix"/>
-        <DataRecord Entry="Button,MedicDefensiveMatrix"/>
-        <DataRecord Entry="Effect,MedicDefensiveMatrix@Set"/>
-        <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
+        <DataRecord Entry="Behavior,NanoMatrix"/>
+        <DataRecord Entry="Button,NanoMatrix"/>
+        <DataRecord Entry="Effect,NanoMatrix@Set"/>
+        <DataRecord Entry="Effect,NanoMatrix@AB"/>
         <DataRecord Entry="Effect,MedicDefensiveMatrix@RB"/>
+        <Button value="NanoMatrix"/>
+        <TechInfoAbil value="NanoMatrix"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="SpawnLarvaSolo">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>

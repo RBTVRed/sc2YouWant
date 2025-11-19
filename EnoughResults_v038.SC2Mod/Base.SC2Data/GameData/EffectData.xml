@@ -40,7 +40,7 @@
     </CEffectSwitch>
     <CEffectRemoveBehavior id="MedicDefensiveMatrix@RB">
         <EditorCategories value="Race:Terran"/>
-        <BehaviorLink value="MedicDefensiveMatrix"/>
+        <BehaviorLink value="NanoMatrix"/>
     </CEffectRemoveBehavior>
     <CEffectDamage id="PurificationNovaDamage">
         <Amount value="185"/>
@@ -449,13 +449,13 @@
         <AttributeBonus index="Armored" value="25"/>
         <Amount value="50"/>
     </CEffectDamage>
-    <CEffectApplyBehavior id="MedicDefensiveMatrix@AB">
+    <CEffectApplyBehavior id="NanoMatrix@AB">
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="MedicDefensiveMatrix"/>
+        <Behavior value="NanoMatrix"/>
     </CEffectApplyBehavior>
-    <CEffectSet id="MedicDefensiveMatrix@Set">
+    <CEffectSet id="NanoMatrix@Set">
         <EditorCategories value="Race:Terran"/>
-        <EffectArray value="MedicDefensiveMatrix@AB"/>
+        <EffectArray value="NanoMatrix@AB"/>
     </CEffectSet>
     <CEffectEnumArea id="FungalGrowthSearch">
         <AreaArray index="0" Radius="2"/>
@@ -827,10 +827,10 @@
     <CEffectCreatePersistent id="RavenShredderMissileTintCP">
         <PeriodCount value="160"/>
     </CEffectCreatePersistent>
-    <CEffectApplyBehavior id="MedRadar@AB">
+    <CEffectApplyBehavior id="PerimeterScan@AB">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="MedRadar@Detector"/>
+        <Behavior value="PerimeterScan@Detector"/>
         <Duration value="15"/>
     </CEffectApplyBehavior>
     <!-- This handles the timeout -->

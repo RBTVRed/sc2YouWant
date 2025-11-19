@@ -244,12 +244,12 @@
         <Duration value="60"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ImmortalOverload">
-        <DamageResponse ModifyLimit="450"/>
+        <DamageResponse ModifyLimit="500"/>
     </CBehaviorBuff>
     <CBehaviorWander id="InstallationZergWander">
         <Range value="3"/>
     </CBehaviorWander>
-    <CBehaviorBuff id="MedRadar@Detector">
+    <CBehaviorBuff id="PerimeterScan@Detector">
         <InfoIcon value="Assets\Textures\btn-upgrade-tychus-detection.dds"/>
         <BehaviorCategories index="User14" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -258,7 +258,7 @@
             <StateFlags index="SuppressUnitUseLineOfSight" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="MedicDefensiveMatrix">
+    <CBehaviorBuff id="NanoMatrix">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -505,7 +505,7 @@
         <PeriodicEffect value="SwarmPheromones"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TakenDamage">
-        <Duration value="21"/>
+        <Duration value="14"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TownHallLoad@AttackSpeed">
         <InfoFlags index="Hidden" value="1"/>

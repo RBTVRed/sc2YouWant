@@ -1228,11 +1228,11 @@
         <CostResource index="Vespene" value="75"/>
         <AbilArray Link="StimpackMedic"/>
         <AbilArray Link="SpreadOut"/>
-        <AbilArray Link="MedicDefensiveMatrix"/>
-        <AbilArray Link="MedicalSweep"/>
+        <AbilArray Link="NanoMatrix"/>
+        <AbilArray Link="PerimeterScan"/>
         <CardLayouts index="0">
             <LayoutButtons index="6" Column="1"/>
-            <LayoutButtons index="7" Face="MedicDefensiveMatrix" AbilCmd="MedicDefensiveMatrix,Execute" Column="3"/>
+            <LayoutButtons index="7" Face="NanoMatrix" AbilCmd="NanoMatrix,255" Column="3"/>
             <LayoutButtons index="8">
                 <Face value="SpreadOut"/>
                 <Type value="AbilCmd"/>
@@ -1242,7 +1242,7 @@
                 <Column value="4"/>
             </LayoutButtons>
             <LayoutButtons Face="StimMedic" Type="AbilCmd" AbilCmd="StimpackMedic,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="MedRadar" Type="AbilCmd" AbilCmd="MedicalSweep,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="PerimeterScan" Type="AbilCmd" AbilCmd="PerimeterScan,255" Row="2" Column="2"/>
         </CardLayouts>
         <SubgroupPriority value="82"/>
     </CUnit>
