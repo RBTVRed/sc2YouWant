@@ -55,17 +55,17 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="BlindingCloud">
         <Tooltip value="Behavior/Tooltip/ParasiticBomb"/>
-        <Period value="0.5"/>
-        <InitialEffect value="BlindingCloudDamageNotify"/>
-        <PeriodicEffect value="BlindingCloudDamage"/>
+        <Period value="1"/>
+        <InitialEffect value="PlagueCloudDamageNotify"/>
+        <PeriodicEffect value="PlagueCloudDamageUnit"/>
         <Modification RangedWeaponRange="0"/>
         <Duration value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="BlindingCloudStructure">
         <Tooltip value="Behavior/Tooltip/ParasiticBomb"/>
-        <Period value="0.5"/>
-        <InitialEffect value="BlindingCloudDamageNotify"/>
-        <PeriodicEffect value="BlindingCloudDamage"/>
+        <Period value="1"/>
+        <InitialEffect value="PlagueCloudDamageNotify"/>
+        <PeriodicEffect value="PlagueCloudDamageStructure"/>
         <Modification WeaponRange="0"/>
         <Duration value="1"/>
     </CBehaviorBuff>
@@ -149,8 +149,8 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Duration value="0.625"/>
         <Period value="0.5"/>
-        <InitialEffect value="BlindingCloudDamageNotify"/>
-        <PeriodicEffect value="BlindingCloudDamage"/>
+        <InitialEffect value="PlagueCloudDamageNotify"/>
+        <PeriodicEffect value="PlagueCloudDamageUnit"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="OozeSnareStructure">
         <Tooltip value="Behavior/Tooltip/ParasiticBomb"/>
@@ -160,8 +160,8 @@
         <TimeScaleSource Value="Global"/>
         <Duration value="0.625"/>
         <Period value="0.5"/>
-        <InitialEffect value="BlindingCloudDamageNotify"/>
-        <PeriodicEffect value="BlindingCloudDamage"/>
+        <InitialEffect value="PlagueCloudDamageNotify"/>
+        <PeriodicEffect value="PlagueCloudDamageUnit"/>
         <Modification DetectArc="0" RadarArc="0"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="CycloneCloakCrossSpectrumDampeners">

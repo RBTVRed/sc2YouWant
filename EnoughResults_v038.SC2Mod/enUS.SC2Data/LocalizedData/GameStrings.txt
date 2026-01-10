@@ -208,7 +208,7 @@ Button/Tooltip/Armory=Contains weapon and armor upgrades for Factory and Starpor
 Button/Tooltip/AutoTurret=Automated defensive turret. Times out after <d ref="Behavior,AutoTurretTimedLife,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>  Can detect cloaked and burrowed units.
 Button/Tooltip/Banshee=Tactical-strike aircraft. Can be upgraded to use cloak.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Barracks=Infantry-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs<n/>- Orbital Commands from Command Centers
-Button/Tooltip/BlindingCloud=Creates a cloud that deals up to <d ref="(1 + Effect,BlindingCloudCP,PeriodCount) * Effect,BlindingCloudDamage,Amount"/> damage to affected enemy ground units over <d ref="(1 + Effect,BlindingCloudCP,PeriodCount) * Effect,BlindingCloudCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/BlindingCloud=Creates a cloud that deals up to 250 damage (+250 to armored) to affected enemy ground units and structures over 35 seconds.
 Button/Tooltip/BuildCreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildCreepTumorPropagate=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildTechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
@@ -456,8 +456,13 @@ Effect/Name/AdeptPhaseShiftManual@SwitchFinal=Switch
 Effect/Name/AdeptPhaseShiftManual@Teleport=Teleport
 Effect/Name/AmorphousArmorcloudCP=MicrobialShroudCP
 Effect/Name/ArbiterMassCloakingAP=Arbiter Mass Cloaking AP
-Effect/Name/BlindingCloudDamage=Blinding Cloud Damage
-Effect/Name/BlindingCloudDamageNotify=Blinding Cloud Damage
+Effect/Name/BlindingCloudAB=Plague Cloud AB
+Effect/Name/BlindingCloudCP=Plague Cloud CP
+Effect/Name/BlindingCloudSearch=Plague Cloud Search
+Effect/Name/BlindingCloudStructureAB=Plague Cloud Structure AB
+Effect/Name/BlindingCloudStructureSet=Plague Cloud Structure (Set)
+Effect/Name/BlindingCloudSwitch=Plague Cloud Switch
+Effect/Name/BlindingCloudTransportIterateTransport=Plague Cloud Transport (Iterate Transport)
 Effect/Name/BlindingSpores@AB=BlindingSpores@AB
 Effect/Name/BroodlingShotAB=Broodling Shot
 Effect/Name/BroodlingShotCU=Broodling Shot
@@ -631,6 +636,9 @@ Effect/Name/PickupPalletMineralsSet22=Pickup Pallet Minerals Set Copy Copy
 Effect/Name/PickupPalletMineralsSet23=Pickup Pallet Minerals Set Copy Copy 2
 Effect/Name/PickupPalletMineralsSet24=Pickup Pallet Minerals Set Copy Copy 3
 Effect/Name/PickupVespeneGas=Pickup Vespene Gas
+Effect/Name/PlagueCloudDamageNotify=Plague Cloud Damage
+Effect/Name/PlagueCloudDamageStructure=Plague Cloud Damage (Structure)
+Effect/Name/PlagueCloudDamageUnit=Plague Cloud Damage (Unit)
 Effect/Name/PointDefenseDroneArmorReductionApply=PointDefenseDroneArmorReductionApply
 Effect/Name/PointDefenseDroneArmorReductionSearch=PointDefenseDroneArmorReductionSearch
 Effect/Name/PurificationNovaDamagePartial=Purification Nova

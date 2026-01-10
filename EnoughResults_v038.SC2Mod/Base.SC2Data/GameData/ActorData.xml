@@ -1438,9 +1438,6 @@
     <CActorUnit id="Viper">
         <On Terms="Abil.InfestedTerrans.SourceCastStart" Send="$Spell"/>
     </CActorUnit>
-    <CActorModel id="ViperConsumeStructureTentacle">
-        <On Terms="Effect.ViperConsumeStructureLaunchMissile.Start; ValidateUnit CanHaveEnergy" Send="SetTintColor 170,0,255"/>
-    </CActorModel>
     <CActorModel id="WallBuild" parent="TerranBuildingBuild"/>
     <CActorUnit id="Wall" parent="TerranBuildingEx" unitName="Wall">
         <Aliases value="_UnitLarge"/>

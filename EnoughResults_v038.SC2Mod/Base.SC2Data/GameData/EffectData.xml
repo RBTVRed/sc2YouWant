@@ -4,6 +4,25 @@
         <AttributeBonus index="Armored" value="4"/>
         <Amount value="12"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="BlindingCloudAB"/>
+    <CEffectCreatePersistent id="BlindingCloudCP">
+        <PeriodCount value="49"/>
+        <PeriodicPeriodArray index="0" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="BlindingCloudSearch">
+        <SearchFilters value="-;Player,Ally,Air,Missile,Dead,Invulnerable"/>
+        <AreaArray index="0" Radius="3.5"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="BlindingCloudStructureAB"/>
+    <CEffectSet id="BlindingCloudStructureSet"/>
+    <CEffectSwitch id="BlindingCloudSwitch"/>
+    <CEffectEnumTransport id="BlindingCloudTransportIterateTransport"/>
+    <CEffectDamage id="PlagueCloudDamageStructure">
+        <ValidatorArray value="IsStructure"/>
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="5"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="BurrowedAmbusher@AB">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BurrowedAmbusher@Buff"/>
@@ -215,10 +234,6 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="OozeSnare"/>
     </CEffectApplyBehavior>
-    <CEffectCreatePersistent id="BlindingCloudCP">
-        <PeriodCount value="127"/>
-        <PeriodicPeriodArray index="0" value="1"/>
-    </CEffectCreatePersistent>
     <CEffectEnumTransport id="OozeSnareTransportIterateTransport">
         <ValidatorArray value="IsBunker"/>
         <EditorCategories value=""/>
@@ -306,15 +321,12 @@
     <CEffectApplyBehavior id="ArbiterMPCloakingFieldApply">
         <ValidatorArray index="2" removed="1"/>
     </CEffectApplyBehavior>
-    <CEffectDamage id="BlindingCloudDamage">
-        <ValidatorArray value="TargetIsEnemyOrNeutral"/>
+    <CEffectDamage id="PlagueCloudDamageUnit">
+        <ValidatorArray value="NotStructure"/>
         <EditorCategories value="Race:Zerg"/>
-        <Amount value="3"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="5"/>
     </CEffectDamage>
-    <CEffectEnumArea id="BlindingCloudSearch">
-        <AreaArray index="0" Radius="3.5"/>
-        <SearchFilters value="-;Player,Ally,Air,Missile,Dead,Invulnerable"/>
-    </CEffectEnumArea>
     <CEffectApplyBehavior id="BroodlingShotAB">
         <EditorCategories value=""/>
         <Behavior value="BroodlingFate"/>
@@ -558,7 +570,7 @@
         <AttributeBonus index="Armored" value="9"/>
         <Amount value="9"/>
     </CEffectDamage>
-    <CEffectDamage id="BlindingCloudDamageNotify">
+    <CEffectDamage id="PlagueCloudDamageNotify">
         <ValidatorArray value="TargetIsEnemyOrNeutral"/>
         <EditorCategories value="Race:Zerg"/>
         <ResponseFlags index="Acquire" value="1"/>
