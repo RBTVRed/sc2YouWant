@@ -145,7 +145,7 @@ Button/Name/CloakCycloneOff=Decloak
 Button/Name/CloakOnCyclone=Cloak
 Button/Name/CompactedShield=Compacted Shield
 Button/Name/DeactivateAbsorptionShield=Deactivate Absorption Shield
-Button/Name/DefensiveMatrix=Nano Matrix
+Button/Name/DefensiveMatrix=Rescue Matrix
 Button/Name/DisableIgniteAfterburners=Disable Ignite Afterburners
 Button/Name/DormantMetabolism=Dormant Metabolism
 Button/Name/EnergyBinder=Energy Binder
@@ -280,7 +280,7 @@ Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCe
 Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structure, dealing 280 damage over 14 seconds. Can move while firing. Cancels if target moves out of range.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or ground structures.</c>
 Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
 Button/Tooltip/MasteryTychusMedivacBuff=Reduces the cooldown of the Dropship Pickup ability.
-Button/Tooltip/Medic=Support trooper. Heals nearby biological units and can use Stim, Perimeter Scan, and Nano Matrix.
+Button/Tooltip/Medic=Support trooper. Heals nearby biological units and can use Stim, Perimeter Scan, and Rescue Matrix.
 Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
 Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
 Button/Tooltip/Medivac=Air transport. Can place Auto-Turrets.

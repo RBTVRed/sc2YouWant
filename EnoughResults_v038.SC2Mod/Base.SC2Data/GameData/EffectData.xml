@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectDamage id="AcidSpines">
+        <AttributeBonus index="Armored" value="4"/>
+        <Amount value="12"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="BurrowedAmbusher@AB">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BurrowedAmbusher@Buff"/>
@@ -873,6 +877,14 @@
         <EditorCategories value=""/>
         <AreaArray Radius="12" Effect="SwarmPheremones"/>
     </CEffectEnumArea>
+    <CEffectDamage id="Talons">
+        <AttributeBonus index="Armored" value="4"/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalonsMissileDamage">
+        <AttributeBonus index="Armored" value="4"/>
+        <Amount value="12"/>
+    </CEffectDamage>
     <CEffectDamage id="ThorsHammerDamage">
         <Amount value="60"/>
         <AttributeBonus index="Structure" value="30"/>

@@ -16,7 +16,6 @@
         <Range value="8"/>
         <Period value="0.6"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="AcidSpines"/>
     <CWeaponLegacy id="Adept">
         <Period value="2.4"/>
     </CWeaponLegacy>
@@ -208,9 +207,7 @@
         <Range value="9"/>
         <Period value="2.5"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="NeedleClaws">
-        <Period value="0.8"/>
-    </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleClaws"/>
     <CWeaponLegacy id="NeedleSpines">
         <Period value="1.4"/>
         <DamagePoint value="0.05"/>
