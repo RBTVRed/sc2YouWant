@@ -52,8 +52,8 @@
     </CEffectSet>
     <CEffectDamage id="KD8ChargeExplodeDamage">
         <ValidatorArray index="0" removed="1"/>
-        <AttributeBonus index="Armored" value="45"/>
-        <Amount value="25"/>
+        <AttributeBonus index="Armored" value="30"/>
+        <Amount value="40"/>
     </CEffectDamage>
     <CEffectSwitch id="KD8ChargeExplodeSwitch">
         <ValidatorArray value="IsNotPhasedUnit"/>
