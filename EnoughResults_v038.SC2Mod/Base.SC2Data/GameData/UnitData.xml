@@ -300,6 +300,7 @@
             <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
         </CardLayouts>
         <Speed value="2"/>
+        <Food value="-1"/>
     </CUnit>
     <CUnit id="ChangelingMarine">
         <BehaviorArray Link="Detector7"/>
@@ -312,6 +313,7 @@
         <Speed value="2"/>
         <LifeStart value="90"/>
         <LifeMax value="90"/>
+        <Food value="-1"/>
     </CUnit>
     <CUnit id="ChangelingMarineShield">
         <BehaviorArray Link="Detector7"/>
@@ -323,6 +325,7 @@
         <LifeStart value="115"/>
         <LifeMax value="115"/>
         <Sight value="7"/>
+        <Food value="-1"/>
     </CUnit>
     <CUnit id="ChangelingZealot">
         <ShieldsStart value="200"/>
@@ -334,6 +337,7 @@
             <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="1"/>
         </CardLayouts>
         <Sight value="7"/>
+        <Food value="-1"/>
     </CUnit>
     <CUnit id="ChangelingZergling">
         <BehaviorArray Link="Detector7"/>
@@ -348,6 +352,7 @@
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
         <Sight value="7"/>
+        <Food value="-1"/>
     </CUnit>
     <CUnit id="ChangelingZerglingWings">
         <BehaviorArray Link="Detector7"/>
@@ -362,6 +367,7 @@
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
         <Sight value="7"/>
+        <Food value="-1"/>
     </CUnit>
     <CUnit id="Colossus">
         <Collide index="ForceField" value="1"/>
