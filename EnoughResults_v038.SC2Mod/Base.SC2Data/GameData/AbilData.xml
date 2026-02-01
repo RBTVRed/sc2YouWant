@@ -1488,6 +1488,7 @@
         <TargetFilters index="0" value="-;Missile,Stasis,UnderConstruction,Dead,Hidden"/>
         <SmartValidatorArray value="NotCreepTumor"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ViperParasiticBombRelay"/>
     <CAbilEffectInstant id="VoidRaySwarmDamageBoost">
         <Cost index="0">
             <Cooldown TimeUse="90"/>

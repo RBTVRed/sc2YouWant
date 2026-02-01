@@ -836,7 +836,7 @@
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="ParasiticBombTimer">
-        <Duration value="25"/>
+        <Duration value="21"/>
     </CBehaviorBuff>
     <CBehaviorPowerUser id="PowerUserWarpable">
         <PowerStageArray index="1">

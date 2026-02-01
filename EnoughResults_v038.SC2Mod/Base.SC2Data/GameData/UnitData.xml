@@ -185,8 +185,8 @@
         <CardLayouts index="0">
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
-        <LifeStart value="280"/>
-        <LifeMax value="280"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
     </CUnit>
     <CUnit id="Barracks">
         <LifeStart value="2000"/>
@@ -1010,11 +1010,10 @@
     <CUnit id="Infestor">
         <LifeStart value="180"/>
         <LifeMax value="180"/>
-        <AbilArray index="3" Link="BlindingCloud"/>
-        <AbilArray index="5" Link="AmorphousArmorcloudInstant"/>
-        <AbilArray index="6" Link="SpreadOut"/>
-        <AbilArray Link="OozeSnare"/>
-        <AbilArray Link="ParasiticBomb"/>
+        <AbilArray index="2" Link="SpreadOut"/>
+        <AbilArray index="3" Link="BurrowInfestorDown"/>
+        <AbilArray index="5" Link="BlindingCloud"/>
+        <AbilArray index="6" Link="ParasiticBomb"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons index="5" Face="AcquireMove" AbilCmd="move,AcquireMove"/>
@@ -1077,11 +1076,10 @@
         <LifeMax value="180"/>
         <EnergyRegenRate value="0.1875"/>
         <Speed value="1.25"/>
-        <AbilArray index="4" Link="BlindingCloud"/>
-        <AbilArray index="5" Link="FungalGrowth"/>
-        <AbilArray Link="AmorphousArmorcloudInstant"/>
-        <AbilArray Link="SpreadOut"/>
-        <AbilArray Link="OozeSnare"/>
+        <AbilArray index="2" Link="SpreadOut"/>
+        <AbilArray index="3" Link="BurrowInfestorUp"/>
+        <AbilArray index="4" Link="FungalGrowth"/>
+        <AbilArray index="5" Link="BlindingCloud"/>
         <AbilArray Link="ParasiticBomb"/>
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="Attack" AbilCmd="attack,Execute" Row="0"/>
