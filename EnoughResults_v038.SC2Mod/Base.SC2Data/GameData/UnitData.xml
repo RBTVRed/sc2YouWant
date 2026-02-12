@@ -1797,8 +1797,8 @@
         </CardLayouts>
     </CUnit>
     <CUnit id="Reaper">
-        <LifeStart value="140"/>
-        <LifeMax value="140"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
         <LifeRegenDelay value="0"/>
         <LifeRegenRate value="0"/>
         <Mover value="Ground"/>
@@ -2428,7 +2428,7 @@
         <AbilArray index="0" Link="move"/>
         <AbilArray index="1" Link="stop"/>
         <AbilArray index="2" Link="TownHallLoad"/>
-        <AbilArray index="3" removed="1"/>
+        <AbilArray index="3" Link="CommandCenterLand"/>
         <Sight value="13"/>
     </CUnit>
     <CUnit id="EngineeringBay">

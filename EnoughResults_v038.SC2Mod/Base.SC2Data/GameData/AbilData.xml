@@ -468,7 +468,7 @@
         <InfoArray index="Research6" Upgrade="">
             <Button DefaultButtonFace="" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Research10" Time="105" Upgrade="LiftOffResearch">
+        <InfoArray index="Research10" Time="132" Upgrade="LiftOffResearch">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="50"/>
             <Button DefaultButtonFace="LiftOffResearch" State="Restricted" Requirements="LiftOffResearchQueue"/>
