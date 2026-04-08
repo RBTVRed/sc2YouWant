@@ -806,6 +806,8 @@ Sound/Name/ObeliskHardenedShield=ObeliskHardenedShield
 Sound/Name/Sentry_WeaponEnd2=Sentry_WeaponEnd Copy
 Sound/Name/Sentry_WeaponLoop2=Sentry_WeaponLoop Copy
 Sound/Name/Sentry_WeaponStart2=Sentry_WeaponStart Copy
+Unit/EditorDescription/Bunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range for rifle units inside.</c>
+Unit/EditorDescription/NeosteelBunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range for rifle units inside.</c>
 Unit/EditorPrefix/BroodlingShot=Weapon -
 Unit/EditorPrefix/LurkerDenMP=Enough Mod -
 Unit/EditorPrefix/Minerals=Pickup -

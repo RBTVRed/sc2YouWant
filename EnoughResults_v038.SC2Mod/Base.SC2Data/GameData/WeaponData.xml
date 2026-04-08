@@ -41,7 +41,7 @@
         <Period value="3.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="C10CanisterRifle">
-        <Range value="9"/>
+        <Range value="8"/>
         <Period value="3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
@@ -157,6 +157,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Period value="2.4"/>
+        <Range value="3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
         <Period value="1.4"/>

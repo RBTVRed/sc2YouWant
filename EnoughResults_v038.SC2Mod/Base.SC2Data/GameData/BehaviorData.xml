@@ -290,7 +290,7 @@
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="BunkerWeaponRangeBonus">
-        <Modification WeaponRange="0" RangedWeaponRange="2">
+        <Modification WeaponRange="0" RangedWeaponRange="1">
             <AbilLinkEnableArray index="0" removed="1"/>
             <AbilLinkEnableArray index="1" removed="1"/>
             <AbilLinkEnableArray index="2" removed="1"/>
@@ -980,7 +980,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <DisableValidatorArray value="RangeBonusBeneficiary"/>
-        <Modification RangedWeaponRange="2"/>
+        <Modification RangedWeaponRange="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="CombatDrugs">
         <EditorCategories value="AbilityorEffectType:Units"/>

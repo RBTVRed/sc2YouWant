@@ -14,9 +14,13 @@
         <ScaleMax value="1.700000,1.700000,1.700000"/>
         <ScaleMin value="1.700000,1.700000,1.700000"/>
     </CModel>
-    <CModel id="D8ChargeAttackLaunch">
-        <ScaleMax value="0.660000,0.660000,0.660000"/>
-        <ScaleMin value="0.660000,0.660000,0.660000"/>
+    <CModel id="FirebatAttackLaunch">
+        <ScaleMax value="1.000000,3.000000,1.000000"/>
+        <ScaleMin value="1.000000,3.000000,1.000000"/>
+    </CModel>
+    <CModel id="FirebatBunkerAttackLaunch">
+        <ScaleMax value="1.000000,4.000000,1.000000"/>
+        <ScaleMin value="1.000000,4.000000,1.000000"/>
     </CModel>
     <CModel id="GhostNukeIndicator">
         <AnimSpeed value="1.150000"/>
@@ -53,6 +57,10 @@
     </CModel>
     <CModel id="HighTemplarAttackImpact">
         <Model value="Assets\Effects\Neutral\Void_VoidSliver_PsiArcImpact\Void_VoidSliver_PsiArcImpact.m3"/>
+    </CModel>
+    <CModel id="KD8ChargeLow">
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
     </CModel>
     <CModel id="OozeSnare" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\Murvar_Coop_OppressiveStench\Murvar_Coop_OppressiveStench.m3"/>
@@ -306,6 +314,8 @@
     </CModel>
     <CModel id="KD8Charge">
         <AnimSpeed value="0.600000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
     </CModel>
     <CModel id="Dropship" parent="MedivacBase">
         <Model value="Assets\Units\Terran\Dropship\Dropship_NoCross.m3"/>

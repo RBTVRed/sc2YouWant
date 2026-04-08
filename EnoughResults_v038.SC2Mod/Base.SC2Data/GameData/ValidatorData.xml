@@ -127,7 +127,6 @@
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="RangeBonusBeneficiary">
         <CombineArray value="IsMarine"/>
-        <CombineArray value="IsMedic"/>
         <CombineArray value="IsGhost"/>
     </CValidatorCombine>
     <CValidatorUnitCompareBehaviorCount id="PointDefenseDroneArmorReductionShouldApply">

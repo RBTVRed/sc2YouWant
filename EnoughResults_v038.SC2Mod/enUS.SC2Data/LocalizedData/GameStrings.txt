@@ -214,7 +214,7 @@ Button/Tooltip/BuildCreepTumor=A burrowed creep generator. Creep feeds nearby Ze
 Button/Tooltip/BuildCreepTumorPropagate=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildTechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
 Button/Tooltip/BuildTechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
-Button/Tooltip/Bunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +2 range to units inside.</c>
+Button/Tooltip/Bunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range for rifle units inside.</c>
 Button/Tooltip/BurrowDown=Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection and take 50% less damage.
 Button/Tooltip/BurrowedAmbusher=After unburrowing, this unit will gain increased movement speed for <d ref="Behavior,BurrowedAmbusher@Buff,Duration" precision="1"/> seconds.
 Button/Tooltip/CalldownMedicalSupplies=Drops Medical Supplies. The Medical Supplies heals nearby units.
@@ -274,7 +274,7 @@ Button/Tooltip/IncubatedTumor=A burrowed creep generator. Creep feeds nearby Zer
 Button/Tooltip/InfestationPit=Contains upgrades for Infestors.<n/><n/><c val="ffff8a">Enables:</c><n/>- Infestors from Larvae
 Button/Tooltip/InfestedTerrans=Spawn an Infested Terran. Infested Terrans last <d ref="Behavior,InfestedTerranTimedLife,Duration"/> seconds.
 Button/Tooltip/Infestor=Infestation specialist. Can use the Fungal Growth, Plague Cloud, and Parasitic Bomb abilities.
-Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 25 (+45 to armored) damage to nearby units.
+Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 30 (+40 to armored) damage to nearby units and 40 damage to structures.
 Button/Tooltip/Lair=Evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Overseers from Overlords<n/>- Lurkers from Hydralisks<n/>- Swarm Hosts from Larvae
 Button/Tooltip/LairDefense=Spawn a wave of 3 Broodlings every 2 seconds for 20 seconds.
 Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCenter,Name"/>, <d stringref="Unit,OrbitalCommand,Name"/>, <d stringref="Unit,Barracks,Name"/>, <d stringref="Unit,Factory,Name"/> and <d stringref="Unit,Starport,Name"/>.<n/><n/><n/>
@@ -294,6 +294,7 @@ Button/Tooltip/MutateintoLurkerDen=Enables Lurkers from Hydralisks.
 Button/Tooltip/NanoMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/NapalmGrenade=Attacks set the ground ablaze, dealing up to <d ref="Effect,NapalmGrenade@DamageDoTInitial,Amount + (Effect,NapalmGrenade@CPDoT,PeriodCount + 1 * Effect,NapalmGrenade@DamageDoTPeriodic,Amount)"/> damage to ground units at the target location over <d ref="Effect,NapalmGrenade@CPDoT,PeriodicPeriodArray[0] * Effect,NapalmGrenade@CPDoT,PeriodCount"/> seconds.
 Button/Tooltip/NapalmHellion=Fast scout. Attack create a lingering pool of fire that deals damage to ground units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/NeosteelBunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range for rifle units inside.</c>
 Button/Tooltip/Nexus=Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<n/><n/><c val="ffff8a">Enables:</c><n/>- Probes<n/>- Warp Prism
 Button/Tooltip/NukeArm=Arms the Silo with a Tactical Nuke.<n/><n/>Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage in a large radius.<n/><n/>Use a Ghost to designate the target.
 Button/Tooltip/NukeCalldown=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage to enemies in a large radius.

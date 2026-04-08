@@ -1618,7 +1618,7 @@
         </InfoArray>
     </CAbilResearch>
     <CAbilEffectTarget id="heal">
-        <Range index="0" value="6"/>
+        <Range index="0" value="5"/>
     </CAbilEffectTarget>
     <CAbilQueue id="que5CancelToSelection">
         <Flags index="Passive" value="1"/>
