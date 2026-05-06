@@ -19,6 +19,12 @@
         <Parameters value="0"/>
         <Operation value="Maximum"/>
     </CAccumulatorArithmetic>
+    <CAccumulatorVitals id="TargetCurrentEnergy">
+        <Ratio value="1"/>
+        <VitalType value="Energy"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
     <CAccumulatorVitals id="TargetCurrentLife">
         <Ratio value="1"/>
         <UnitSource Value="Target"/>
@@ -37,5 +43,24 @@
         <Parameters value="0">
             <AccumulatorArray value="TargetCurrentShields"/>
         </Parameters>
+    </CAccumulatorArithmetic>
+    <CAccumulatorConstant id="ViperConsumeStructure@EnergyAmount">
+        <Amount value="12"/>
+    </CAccumulatorConstant>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyRestored">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyAmount"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="TargetCurrentEnergy"/>
+        </Parameters>
+        <Operation value="Minimum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyDamaged">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyRestored"/>
+        </Parameters>
+        <Parameters value="-1"/>
+        <Operation value="Multiply"/>
     </CAccumulatorArithmetic>
 </Catalog>

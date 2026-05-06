@@ -909,6 +909,17 @@
     <CEffectRemoveBehavior id="TownHallLoad@RBAttackSpeed">
         <BehaviorLink value="TownHallLoad@AttackSpeed"/>
     </CEffectRemoveBehavior>
+    <CEffectModifyUnit id="ViperConsumeStructureModifyCaster">
+        <VitalArray index="Life">
+            <Change value="6"/>
+        </VitalArray>
+        <VitalArray index="Energy">
+            <Change value="0"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="ViperConsumeStructurePeriodicSet">
+        <EffectArray value="ViperConsumeStructure@SetPeriodicEnergy"/>
+    </CEffectSet>
     <CEffectDamage id="VolatileBurstFriendlyBuildingDamage">
         <Amount value="150"/>
     </CEffectDamage>
@@ -1801,36 +1812,33 @@
         <ValidatorArray index="3" removed="1"/>
         <ValidatorArray index="4" removed="1"/>
     </CEffectLaunchMissile>
-    <CEffectModifyUnit id="ViperConsumeStructureModifyCaster">
-        <VitalArray index="Energy">
-            <Change value="1.25"/>
-        </VitalArray>
-    </CEffectModifyUnit>
     <CEffectModifyUnit id="ViperConsumeStructureModifyTarget">
         <VitalArray index="Life">
             <Change value="-12.5"/>
         </VitalArray>
     </CEffectModifyUnit>
-    <CEffectModifyUnit id="ViperConsumeStructureModifyEnergyCaster">
+    <CEffectModifyUnit id="ViperConsumeStructure@MUCasterEnergy">
         <EditorCategories value="Race:Zerg"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
-            <Change value="1.25"/>
+            <Change value="0">
+                <AccumulatorArray value="ViperConsumeStructure@EnergyRestored"/>
+            </Change>
         </VitalArray>
     </CEffectModifyUnit>
-    <CEffectModifyUnit id="ViperConsumeStructureModifyEnergyTarget">
+    <CEffectModifyUnit id="ViperConsumeStructure@MUTargetEnergy">
         <EditorCategories value="Race:Zerg"/>
         <VitalArray index="Energy">
-            <Change value="-12.5"/>
+            <Change value="0">
+                <AccumulatorArray value="ViperConsumeStructure@EnergyDamaged"/>
+            </Change>
         </VitalArray>
     </CEffectModifyUnit>
-    <CEffectSet id="ViperConsumeStructurePeriodicEnergySet">
+    <CEffectSet id="ViperConsumeStructure@SetPeriodicEnergy">
         <EditorCategories value="Race:Zerg"/>
-        <EffectArray value="ViperConsumeStructureModifyEnergyTarget"/>
-        <EffectArray value="ViperConsumeStructureModifyEnergyCaster"/>
-    </CEffectSet>
-    <CEffectSet id="ViperConsumeStructurePeriodicSet">
-        <EffectArray value="ViperConsumeStructurePeriodicEnergySet"/>
+        <EffectArray value="ViperConsumeStructure@MUCasterEnergy"/>
+        <EffectArray value="ViperConsumeStructure@MUTargetEnergy"/>
+        <ValidatorArray value="hasEnergy"/>
     </CEffectSet>
     <CEffectDamage id="VoidRaySwarmDamage">
         <Amount value="5"/>
