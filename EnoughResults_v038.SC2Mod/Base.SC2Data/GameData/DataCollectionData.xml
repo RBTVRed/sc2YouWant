@@ -149,6 +149,12 @@
         <DataRecord Entry="Effect,SpawnLarvaSolo@CUPlaceholder"/>
         <DataRecord Entry="Unit,SpawnLarvaSolo@Missile"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="TelepathicSuppression">
+        <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
+        <DataRecord Entry="Behavior,TelepathicSuppression@Aura"/>
+        <DataRecord Entry="Behavior,TelepathicSuppression"/>
+        <DataRecord Entry="Effect,TelepathicSuppression@SA"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="TownHallLoad">
         <EditorCategories value="DataGroup:Ability,Race:Neutral"/>
         <DataRecord Entry="Abil,TownHallLoad"/>

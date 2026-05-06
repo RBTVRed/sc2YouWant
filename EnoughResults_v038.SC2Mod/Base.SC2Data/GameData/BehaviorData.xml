@@ -512,6 +512,34 @@
     <CBehaviorBuff id="TakenDamage">
         <Duration value="14"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="TelepathicSuppression@Cancel">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsOverseerSiegeMode"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="TelepathicSuppression@IOCancel"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TelepathicSuppression@Aura">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="TelepathicSuppression@SA"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <FinalEffect value="TelepathicSuppression@ABCancel"/>
+        <Modification>
+            <VitalRegenArray index="Energy" value="-1.4765"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TelepathicSuppression">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\ui_textchatbutton_muted.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.625"/>
+        <Modification>
+            <StateFlags index="SuppressEnergy" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="TownHallLoad@AttackSpeed">
         <InfoFlags index="Hidden" value="1"/>
         <MaxStackCount value="50"/>

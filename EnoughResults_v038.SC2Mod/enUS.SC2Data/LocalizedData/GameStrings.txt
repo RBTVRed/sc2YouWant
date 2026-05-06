@@ -90,6 +90,8 @@ Behavior/Name/StimpackMedic=Stimpack
 Behavior/Name/SwarmHostisBurrowed=Swarm Host is Burrowed
 Behavior/Name/SwarmPheromones=Swarm Pheromones
 Behavior/Name/SwarmPheromonesEmitter=Swarm Pheromones Emitter
+Behavior/Name/TelepathicSuppression=Telepathic Suppression
+Behavior/Name/TelepathicSuppression@Aura=Telepathic Suppression
 Behavior/Name/Transfusion=Transfusion
 Behavior/Name/Unleash=Unleash
 Behavior/Name/UnloadAllInBunker=Unload All In Bunker
@@ -128,6 +130,7 @@ Behavior/Tooltip/StimpackFirebat=This unit moves and attacks more quickly while 
 Behavior/Tooltip/StimpackMedic=This unit moves, attacks and heal more quickly while under the effects of Stimpack.
 Behavior/Tooltip/SwarmPheromones=Increases the speed of Locust while near a Swarm Host.
 Behavior/Tooltip/SwarmPheromonesEmitter=Increases the speed of nearby Locust
+Behavior/Tooltip/TelepathicSuppression=This unit can't cast abilities that cost energy.
 Behavior/Tooltip/TemporalField=This unit's attack and movement speeds are increased  by 75%.
 Behavior/Tooltip/Transfusion=This unit is rapidly regenerating health.
 Behavior/Tooltip/VoidRaySwarmDamageBoost=Increase this unit's damage.
@@ -188,6 +191,7 @@ Button/Name/SpreadOut=Spread Out
 Button/Name/StimFirebat=Use Stimpack
 Button/Name/StimMedic=Use Stimpack
 Button/Name/SwarmPheromones=Swarm Pheromones
+Button/Name/TelepathicSuppression=Telepathic Suppression
 Button/Name/TownHallLoad@Load=Load
 Button/Name/TownHallLoad@UnloadAll=Unload All
 Button/Name/UnleashNydusWorm=Unleash Nydus Worm
@@ -290,6 +294,8 @@ Button/Tooltip/MedivacLoad=Loads units into the Dropship's hold.
 Button/Tooltip/MedivacSpeedBoost=Increases the Dropship's movement speed by 70% until out of energy.
 Button/Tooltip/MissileTurret=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/MorphToNeosteelBunker=Transforms the Bunker into a Neosteel Bunker. The Neosteel Bunker can carry 4 additional cargo and has an additional 300 life.
+Button/Tooltip/MorphtoOverseerNormal=Restores the Overseer's ability to move.
+Button/Tooltip/MorphtoOverseerSiege=Prevents enemy units in a large radius around the <d stringref="Unit,Overseer,Name"/> from casting spells that cost energy, but removes its ability to move. This ability can be canceled after activation.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,TelepathicSuppression@Aura,Modification.VitalRegenArray[2] + Unit,OverseerSiegeMode,EnergyRegenRate)" precision="1"/> energy per second.</c>
 Button/Tooltip/MothershipCoreMassRecall=Teleports the Arbiter and all nearby units owned by the player to the target point within a power field.
 Button/Tooltip/MutateintoLurkerDen=Enables Lurkers from Hydralisks.
 Button/Tooltip/NanoMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
@@ -370,6 +376,7 @@ Button/Tooltip/SwarmPheromones=Increases speed by +3 for Locust within 12 range 
 Button/Tooltip/TechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
 Button/Tooltip/TechLabFactory=Vehicle-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Siege Tanks<n/>- Thor with Armory
 Button/Tooltip/TechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
+Button/Tooltip/TelepathicSuppression=Enemies near the caster can't cast spells that cost energy.
 Button/Tooltip/TemporalField=The Arbiter warps spacetime within the target area for <d ref="Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodCount*Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodicPeriodArray[0]"/> seconds. All enemy units and structures within the field will have attack and movement speeds increased by <d ref="(Behavior,TemporalField,Modification.MoveSpeedMultiplier)*100-100"/>%.
 Button/Tooltip/TownHallLoad@Load=Loads units into the structure.
 Button/Tooltip/TownHallLoad@UnloadAll=Unloads all units.
@@ -423,6 +430,7 @@ DataCollection/Name/RepairDrone=Repair Drone
 DataCollection/Name/RepairDroneRepair=Repair
 DataCollection/Name/RuptureTumor=Rupture Tumor
 DataCollection/Name/SpawnLarvaSolo=Spawn Larva
+DataCollection/Name/TelepathicSuppression=Telepathic Suppression
 DataCollection/Name/TownHallLoad=Town Hall Load
 DataCollection/Name/TransientAssaultMode=Transient Assault Mode
 DataCollection/Name/TransientFighterMode=Transient Fighter Mode
@@ -685,6 +693,10 @@ Effect/Name/StimpackMedic=Stim Pack (Apply Buff) Medic
 Effect/Name/SupplyDepotDropMorph=Supply Depot Drop Morph
 Effect/Name/SwarmPheremones=Swarm Pheremones
 Effect/Name/SwarmPheromones=Swarm Pheromones
+Effect/Name/TelepathicSuppression@AB=Apply Behavior
+Effect/Name/TelepathicSuppression@ABCancel=Apply Behavior
+Effect/Name/TelepathicSuppression@IOCancel=Issue Order
+Effect/Name/TelepathicSuppression@SA=Search Area
 Effect/Name/ThermalLanceCPInUse=Thermal Lance CP (In Use)
 Effect/Name/ThermalLanceDamageAir=Thermal Lance Damage (Air)
 Effect/Name/ThermalLanceDamageGround=Thermal Lance Damage (Ground)

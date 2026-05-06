@@ -898,6 +898,24 @@
         <AttributeBonus index="Armored" value="4"/>
         <Amount value="12"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="TelepathicSuppression@AB">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="TelepathicSuppression"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TelepathicSuppression@ABCancel">
+        <ValidatorArray index="0" value="IsOverseerSiegeMode"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="TelepathicSuppression@Cancel"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="TelepathicSuppression@IOCancel">
+        <EditorCategories value="Race:Zerg"/>
+        <Abil value="OverseerSiegeModeMorphtoOverseer"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="TelepathicSuppression@SA">
+        <EditorCategories value="Race:Zerg"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="10" Effect="TelepathicSuppression@AB"/>
+    </CEffectEnumArea>
     <CEffectDamage id="ThorsHammerDamage">
         <Amount value="60"/>
         <AttributeBonus index="Structure" value="30"/>

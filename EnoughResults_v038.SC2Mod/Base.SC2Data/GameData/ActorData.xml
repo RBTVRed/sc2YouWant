@@ -18,6 +18,15 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="TelepathicSuppression@ModelImpact" parent="ModelAnimationStyleContinuous">
+        <On Terms="Behavior.TelepathicSuppression.On" Send="Create"/>
+        <On Terms="Behavior.TelepathicSuppression.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,0,255 2.000000}"/>
+        <Host Subject="_Unit"/>
+        <HostSiteOps Ops="SOpAttachOrigin" HoldRotation="1"/>
+        <Model value="TelepathicSuppression@Impact"/>
+        <AutoScaleFactor value="1.250000"/>
+    </CActorModel>
     <CActorModel id="BlindingSpores@ModelAttachment" parent="ModelAddition">
         <Inherits index="BaseModelScale" value="0"/>
         <Inherits index="Scale" value="0"/>
@@ -253,6 +262,13 @@
     <CActorRange id="ScannerSweepVisual">
         <Range value="11.000000"/>
     </CActorRange>
+    <CActorModel id="TelepathicSuppression@ModelAura" parent="ModelAnimationStyleContinuous">
+        <On Terms="Behavior.TelepathicSuppression@Aura.On" Send="Create"/>
+        <On Terms="Behavior.TelepathicSuppression@Aura.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 64,0,255"/>
+        <Model value="TelepathicSuppression@Impact"/>
+        <Scale value="7.500000"/>
+    </CActorModel>
     <CActorModel id="TemporalFieldAura" parent="ModelAnimationStyleContinuous">
         <On Terms="Effect.TemporalFieldAfterBubbleCreatePersistent.Start" Send="Create"/>
         <On Terms="Effect.TemporalFieldAfterBubbleCreatePersistent.Stop" Send="AnimBracketStop BSD"/>

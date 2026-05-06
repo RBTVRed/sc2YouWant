@@ -36,6 +36,9 @@
         <Compare value="GT"/>
         <Behavior value="Contaminated"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="IsOverseerSiegeMode">
+        <Value value="OverseerSiegeMode"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="NotFirebat">
         <Value value="Firebat"/>
         <Find value="0"/>

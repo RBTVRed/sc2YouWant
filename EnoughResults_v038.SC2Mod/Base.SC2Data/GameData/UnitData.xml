@@ -1611,10 +1611,13 @@
             <LayoutButtons index="8" Column="1"/>
             <LayoutButtons index="9" Column="2"/>
             <LayoutButtons Face="IncubateTumor" Type="AbilCmd" AbilCmd="IncubateTumor,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="TelepathicSuppression" Type="Passive" Behavior="TelepathicSuppression@Aura" Row="1" Column="2"/>
         </CardLayouts>
         <LifeStart value="400"/>
         <LifeMax value="400"/>
-        <Sight value="14"/>
+        <Sight value="11"/>
+        <BehaviorArray index="0" Link="Detector11"/>
+        <BehaviorArray Link="TelepathicSuppression@Aura"/>
     </CUnit>
     <CUnit id="Phoenix">
         <EnergyStart value="0"/>
