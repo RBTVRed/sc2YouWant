@@ -711,28 +711,18 @@
         <ValidatorArray index="0" removed="1"/>
         <ValidatorArray index="1" removed="1"/>
     </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="Contaminate2">
-        <ValidatorArray value="noMarkers"/>
-        <EditorCategories value="Race:Zerg"/>
-        <WhichLocation Value="TargetUnit"/>
-        <Flags index="Channeled" value="1"/>
-        <InitialEffect value="ContaminateApplyBehavior2"/>
-        <PeriodCount value="24"/>
-        <PeriodicValidator value="NotDead"/>
-        <PeriodicEffectArray value="IncubateLM"/>
-        <PeriodicPeriodArray value="0.125"/>
-    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="ContaminateApplyBehavior">
         <ValidatorArray index="0" removed="1"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ContaminateApplyBehavior2">
+    <CEffectApplyBehavior id="Contaminate@ABMakeCreep">
         <EditorCategories value="Race:Zerg"/>
-        <Behavior value="Incubated"/>
+        <Behavior value="Contaminate@MakeCreep"/>
     </CEffectApplyBehavior>
     <CEffectSet id="ContaminateCastSet">
         <ValidatorArray value="NotStaticD"/>
         <EditorCategories value=""/>
         <EffectArray value="Contaminate"/>
+        <EffectArray value="Contaminate@ABMakeCreep"/>
     </CEffectSet>
     <CEffectCreatePersistent id="CorruptorDamagingCorruption@CP">
         <ValidatorArray value=""/>

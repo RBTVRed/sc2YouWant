@@ -99,7 +99,7 @@ Behavior/Tooltip/BlindingSpores=This unit had its sight reduced.
 Behavior/Tooltip/BurrowedAmbusher@Buff=This unit has increased movement speed.
 Behavior/Tooltip/CombatDrugs=Combat Drugs are healing the Reaper.
 Behavior/Tooltip/CompactedShield@Buff=This unit takes 50% less damage from any single attack.
-Behavior/Tooltip/Contaminated=This structure functions 75% slower.
+Behavior/Tooltip/Contaminated=This structure is functioning <d ref="100 * (1 - Behavior,Contaminated,Modification.RateMultiplierArray[Cooldown])"/>% slower and generating creep.
 Behavior/Tooltip/CorruptorDamagingCorruption=This unit receives <d ref="Behavior,CorruptorDamagingCorruption,DamageResponse.ModifyAmount"/> extra damage from all sources and is taking <d ref="Accumulator,CorruptorDamagingCorruption@Damage,Amount / Behavior,CorruptorDamagingCorruption,Period"/> damage per second down to a minimum of 1 life.
 Behavior/Tooltip/CycloneBurstLockOn@Target=This unit has been targeted by a Cyclone's Lock On ability.
 Behavior/Tooltip/CycloneCloak=This unit is cloaked and will only be revealed by detectors or effects.
@@ -229,7 +229,7 @@ Button/Tooltip/ColossusHallucination=This hallucinated copy functions like the o
 Button/Tooltip/CombatDrugs=Regenerates life quickly for 14 seconds.
 Button/Tooltip/CombatShield=Increases Marine life by 25.
 Button/Tooltip/CompactedShield=Friendly ground units and structures in the target area take 50% less damage from any single source for <d ref="Behavior,CompactedShield@Buff,Duration"/> seconds. Does not affect massive units.
-Button/Tooltip/Contaminate=The target non-defencive structure functions 75% slower for <d ref="Behavior,Contaminated,Duration"/> seconds.
+Button/Tooltip/Contaminate=The target structure functions 75% slower for <d ref="Behavior,Contaminated,Duration"/> seconds. While <d stringref="Behavior,Contaminated,Name"/>, the target generates creep in a small area. Can not target defensive structures.
 Button/Tooltip/Corruptor=Anti-air flyer. Can use Corruption. Can morph into a Brood Lord.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/CorruptorDamagingCorruption=Covers the target enemy unit in damaging slime, dealing <d ref="Accumulator,CorruptorDamagingCorruption@Damage,Amount / Behavior,CorruptorDamagingCorruption,Period"/> damage per second for <d ref="Behavior,CorruptorDamagingCorruption,Duration"/> seconds or until the target is close to death. While affected, the target takes <d ref="Behavior,CorruptorDamagingCorruption,DamageResponse.ModifyAmount"/> additional damage from all sources.
 Button/Tooltip/CreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
@@ -305,7 +305,7 @@ Button/Tooltip/OozeSnare=Creates ooze that slows enemy ground units by 75%.
 Button/Tooltip/Oracle=Flying caster. Can use Revelation, Stasis Ward, and Absorption Shield. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/OracleBuildStasisTrap=Places a cloaked Stasis Ward at the target location that lasts 7 minutes. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <d ref="Behavior,OracleStasisTrapTarget,Duration"/> seconds. Trapped units cannot be attacked or affected by abilities.
 Button/Tooltip/OracleHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
-Button/Tooltip/OracleWeaponOn=Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<n/>Attacking enemy defencive structures disables their weapon temporarily.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,OracleWeapon,Modification.VitalRegenArray[2] + Unit,Oracle,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/OracleWeaponOn=Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<n/>Attacking enemy defensive structures disables their weapon temporarily.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,OracleWeapon,Modification.VitalRegenArray[2] + Unit,Oracle,EnergyRegenRate)" precision="1"/> energy per second.</c>
 Button/Tooltip/OrbitalCommand=Upgrades Command Center to an Orbital Command, unlocking Calldown: Construction Drone and Scanner Sweep. Cannot load SCVs.
 Button/Tooltip/OrbitalCommandCalldownRepairDrone=Drops a robotic Construction Drone at the target location that can construct Terran structures and repairs mechanical units and structures for free.<n/><n/>Construction Drones last <d ref="Behavior,OrbitalCommandCalldownRepairDrone@TimedLife,Duration"/> seconds before their systems fail.
 Button/Tooltip/ParasiticBomb=Creates a parasitic cloud that deals <d ref="Behavior,ParasiticBomb,Duration/Behavior,ParasiticBomb,Period*Effect,ParasiticBombDotDamage,Amount"/> (+<d ref="Behavior,ParasiticBomb,Duration/Behavior,ParasiticBomb,Period*Effect,ParasiticBombDotDamage,AttributeBonus[Armored],Amount"/> to armored) damage over <d ref="Behavior,ParasiticBomb,Duration"/> seconds to the target and enemy air units nearby. If the target dies, the cloud remains in the air where the enemy died until it expires.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or structures.</c>
@@ -398,6 +398,7 @@ DataCollection/Name/AdeptPhaseShiftManual=Phase Shift
 DataCollection/Name/BurrowedAmbusher=Burrowed Ambusher
 DataCollection/Name/CargoTracker=CargoTracker
 DataCollection/Name/CompactedShield=Compacted Shield
+DataCollection/Name/Contaminate=Contaminate
 DataCollection/Name/CorruptorDamagingCorruption=Damaging Corruption
 DataCollection/Name/CreepTumorSpawnChangeling=Spawn Changeling
 DataCollection/Name/CycloneBurstLockOn=Burst Lock-On
@@ -497,8 +498,7 @@ Effect/Name/CombatDrugsHeal=Combat Drugs Heal
 Effect/Name/CommandBeam=Command Beam
 Effect/Name/CompactedShield@AB=Apply Behavior
 Effect/Name/CompactedShield@SA=Search Area
-Effect/Name/Contaminate2=Contaminate Copy
-Effect/Name/ContaminateApplyBehavior2=Contaminate Apply Behavior Copy
+Effect/Name/Contaminate@ABMakeCreep=Apply Behavior
 Effect/Name/ContaminateCastSet=Contaminate Cast Set
 Effect/Name/CorruptorDamagingCorruption@AB=Apply Behavior
 Effect/Name/CorruptorDamagingCorruption@CP=Create Persistent
@@ -731,7 +731,7 @@ Error/IsNexus=Must target Pylon
 Error/IsPylon=Must target Pylon
 Must target Pylon=
 Must target an Exhausted Creep Tumor.=Must target an Exhausted Creep Tumor.
-NotStaticD=Can not target defencive structures.
+NotStaticD=Can not target defensive structures.
 RequirementNode/Tooltip/CountBehaviorCreepTumorNotExhaustedCompleteOnlyAtUnit1036107909=Creep Tumor not exhausted.
 RequirementNode/Tooltip/CountBehaviorInfestorIsBurrowedCompleteOnlyAtUnit455390697= 
 RequirementNode/Tooltip/CountBehaviorObeliskHardenedShieldCompleteOnlyAtUnit3482060043=Obelisk operational and with shields

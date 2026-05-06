@@ -40,6 +40,31 @@
         <DataRecord Entry="Sound,CompactedShield@ImpactSound"/>
         <DataRecord Entry="Sound,CompactedShield@LaunchSound"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="Contaminate">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,Contaminate"/>
+        <DataRecord Entry="Actor,Contaminate"/>
+        <DataRecord Entry="Actor,ContaminateEndSound"/>
+        <DataRecord Entry="Actor,ContaminateImpactSound"/>
+        <DataRecord Entry="Actor,ContaminateLaunchSound"/>
+        <DataRecord Entry="Actor,ContaminateLoopSound"/>
+        <DataRecord Entry="Actor,ContaminateMissile"/>
+        <DataRecord Entry="Actor,ContaminateModel"/>
+        <DataRecord Entry="Actor,ContaminateRange"/>
+        <DataRecord Entry="Behavior,Contaminated"/>
+        <DataRecord Entry="Behavior,Contaminate@MakeCreep"/>
+        <DataRecord Entry="Button,Contaminate"/>
+        <DataRecord Entry="Effect,Contaminate"/>
+        <DataRecord Entry="Effect,Contaminate@ABMakeCreep"/>
+        <DataRecord Entry="Footprint,Contaminate@CreepFootprint"/>
+        <DataRecord Entry="Model,ContaminateModel"/>
+        <DataRecord Entry="Model,ContaminateWeapon"/>
+        <DataRecord Entry="Mover,Contaminate"/>
+        <DataRecord Entry="Unit,ContaminateWeapon"/>
+        <DataRecord Entry="Validator,Contaminate@IsContaminated"/>
+        <DataRecord Entry="Validator,ContaminateTargetFilters"/>
+        <DataRecord Entry="Validator,NotContaminated"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="CorruptorDamagingCorruption">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
         <DataRecord Entry="Abil,CorruptorDamagingCorruption"/>

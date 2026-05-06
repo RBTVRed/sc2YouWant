@@ -1098,6 +1098,16 @@
         <Start value="CreepGrowthCreepWormCreepFootprint"/>
         <Grown value="CreepGrowthCreepWormCreepFootprint"/>
     </CBehaviorCreepSource>
+    <!-- Period rate should be relative to accomodate Contaminate's slowing effect -->
+    <CBehaviorCreepSource id="Contaminate@MakeCreep">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Period value="0.125"/>
+        <Start value="Contaminate@CreepFootprint"/>
+        <Birth value="Footprint4x4CreepSourceStart"/>
+        <Grown value="Contaminate@CreepFootprint"/>
+        <RemoveValidatorArray value="Contaminate@IsContaminated"/>
+    </CBehaviorCreepSource>
     <CBehaviorCreepSource id="makeCreep8x6">
         <Period value="0.5"/>
     </CBehaviorCreepSource>

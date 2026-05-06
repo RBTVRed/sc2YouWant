@@ -32,6 +32,10 @@
         <Type value="SelectAlias"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsLurkerUnBurrowed"/>
+    <CValidatorUnitCompareBehaviorCount id="Contaminate@IsContaminated">
+        <Compare value="GT"/>
+        <Behavior value="Contaminated"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="NotFirebat">
         <Value value="Firebat"/>
         <Find value="0"/>
