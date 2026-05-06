@@ -39,6 +39,9 @@
     <CActorSiteOpLocalOffset id="EMPDetectorDisableOffset">
         <LocalOffset value="0.000000,0.000000,-0.500000"/>
     </CActorSiteOpLocalOffset>
+    <CActorUnit id="KD8Charge">
+        <On Terms="AnimPlay; AnimName Death" Send="SetScale 1.200000"/>
+    </CActorUnit>
     <!--                                                                                         -->
     <!-- Lurker ................................................................................ -->
     <!--                                                                                         -->
