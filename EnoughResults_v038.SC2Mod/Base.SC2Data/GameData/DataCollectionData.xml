@@ -151,9 +151,17 @@
     </CDataCollectionAbil>
     <CDataCollectionAbil id="TelepathicSuppression">
         <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
+        <DataRecord Entry="Actor,TelepathicSuppression@ModelImpact"/>
+        <DataRecord Entry="Actor,TelepathicSuppression@ModelAura"/>
         <DataRecord Entry="Behavior,TelepathicSuppression@Aura"/>
         <DataRecord Entry="Behavior,TelepathicSuppression"/>
+        <DataRecord Entry="Behavior,TelepathicSuppression@Cancel"/>
+        <DataRecord Entry="Button,TelepathicSuppression"/>
         <DataRecord Entry="Effect,TelepathicSuppression@SA"/>
+        <DataRecord Entry="Effect,TelepathicSuppression@AB"/>
+        <DataRecord Entry="Effect,TelepathicSuppression@ABCancel"/>
+        <DataRecord Entry="Effect,TelepathicSuppression@IOCancel"/>
+        <DataRecord Entry="Model,TelepathicSuppression@Impact"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="TownHallLoad">
         <EditorCategories value="DataGroup:Ability,Race:Neutral"/>
