@@ -323,6 +323,7 @@ Behavior/Name/ArchonMerging=Archon Merging
 Behavior/Name/BunkerCargoController=Cargo Controller
 Behavior/Name/BurrowedAmbusher=Delay
 Behavior/Name/BurrowedAmbusher@Applicator=Applicator
+Behavior/Name/BurrowedDamageReduction=Burrowed Damage Reduction
 Behavior/Name/CargoTracker=Cargo Tracker
 Behavior/Name/Changeling2=Changeling (Timed Life)
 Behavior/Name/CreepGrowthCreepWorm=Creep Growth Creep Worm

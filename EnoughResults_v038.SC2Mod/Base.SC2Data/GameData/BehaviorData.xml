@@ -126,6 +126,7 @@
             <DamageTakenFraction index="Splash" value="-0.5"/>
         </Modification>
         <DamageResponse ModifyFraction="0"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="EMPChannelCombat">
         <Alignment value="Positive"/>

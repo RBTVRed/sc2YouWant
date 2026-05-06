@@ -59,7 +59,6 @@ Behavior/Name/BlindingCloud=Plague Cloud
 Behavior/Name/BlindingCloudStructure=Plague Cloud
 Behavior/Name/BlindingSpores=Blinding Spores
 Behavior/Name/BurrowedAmbusher@Buff=Ambush!
-Behavior/Name/BurrowedDamageReduction=Burrowed Damage Reduction
 Behavior/Name/CombatDrugs=Combat Drugs
 Behavior/Name/CompactedShield@Buff=Compacted Shield
 Behavior/Name/CycloneCloak=Cloak

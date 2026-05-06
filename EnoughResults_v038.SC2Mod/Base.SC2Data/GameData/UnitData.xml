@@ -2739,6 +2739,7 @@
     <CUnit id="SwarmHostMP">
         <CostResource index="Vespene" value="200"/>
         <BehaviorArray Link="SwarmHostisBurrowed"/>
+        <BehaviorArray Link="SwarmPheromonesEmitter"/>
         <AbilArray index="3" Link="SwarmHostSpawnLocusts"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
