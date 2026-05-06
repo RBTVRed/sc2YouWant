@@ -138,6 +138,14 @@
     <CActorSiteOpUp id="SOpRollClockwise180">
         <Up value="0.000000,0.000000,-1.000000"/>
     </CActorSiteOpUp>
+    <CActorSound id="SpawnChangelingSound2" parent="SoundOneShot">
+        <On Terms="Effect.CreepTumorSpawnChangeling@Set.Start" Send="Create"/>
+        <Sound value="Overseer_SpawnChangeling"/>
+    </CActorSound>
+    <CActorSound id="CreepTumorSpawnChangeling@SoundSpawn" parent="SoundOneShot">
+        <On Terms="Effect.CreepTumorSpawnChangeling@CU.Start" Send="Create"/>
+        <Sound value="Overseer_SpawnChangeling"/>
+    </CActorSound>
     <CActorSound id="SpawnLarvaSolo@SoundLaunch" parent="SoundOneShot">
         <On Terms="Abil.SpawnLarvaSolo.SourceCastStart" Send="Create"/>
         <Sound value="Queen_SpawnLarvaLaunch"/>
@@ -989,8 +997,8 @@
     <CActorUnit id="CreepTumor">
         <On Terms="Effect.IncubateTumor.Start; At Target" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
         <On Terms="Effect.IncubateTumor.Start; At Target" Send="AnimPlay CoverStart Cover,Start 0 0.000000"/>
-        <On Terms="Effect.RuptureTumor.Start; At Target" Send="AnimPlay CoverSpell Cover,Spell"/>
-        <On Terms="Effect.RuptureTumor.Start; At Target" Send="AnimClear Cover"/>
+        <On Terms="Effect.RuptureTumor@MURemoveCharge.Start; At Target" Send="AnimPlay CoverSpell Cover,Spell"/>
+        <On Terms="Effect.RuptureTumor@MURemoveCharge.Start; At Target" Send="AnimClear Cover"/>
     </CActorUnit>
     <CActorRange id="CycloneLockOnTrackingRange">
         <Range value="17.000000"/>
@@ -1243,7 +1251,7 @@
         <On index="6" Send="$Birth 0 0.000000 0.000000 6.200000 AsDuration"/>
     </CActorProgress>
     <CActorModel id="QueenCreepBirth">
-        <On Terms="Effect.RuptureTumorSet.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.RuptureTumor@Set.Start; At Caster" Send="Create"/>
     </CActorModel>
     <CActorModel id="RavagerCorrosiveBilePrecursor">
         <Scale value="2.000000"/>

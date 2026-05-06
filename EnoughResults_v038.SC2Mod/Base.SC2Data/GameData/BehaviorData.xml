@@ -28,6 +28,10 @@
         <Duration value="0.0625"/>
         <ExpireEffect value="BurrowedAmbusher@AB"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Changeling2" parent="TimedLife">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="150"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="EMPDetectorDisable">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-status-detector-disabled.dds"/>

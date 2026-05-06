@@ -61,6 +61,14 @@
         <DataRecord Entry="Accumulator,CorruptorDamagingCorruption@Damage"/>
         <DataRecord Entry="Accumulator,CorruptorDamagingCorruption@DamageAccumulator"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="CreepTumorSpawnChangeling">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,CreepTumorSpawnChangeling"/>
+        <DataRecord Entry="Actor,CreepTumorSpawnChangeling@SoundSpawn"/>
+        <DataRecord Entry="Button,CreepTumorSpawnChangeling"/>
+        <DataRecord Entry="Effect,CreepTumorSpawnChangeling@CU"/>
+        <DataRecord Entry="Effect,CreepTumorSpawnChangeling@Set"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="DecayOffCreep">
         <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
         <DataRecord Entry="Behavior,DecayOffCreep"/>
@@ -92,6 +100,13 @@
         <DataRecord Entry="Effect,MedicDefensiveMatrix@RB"/>
         <Button value="NanoMatrix"/>
         <TechInfoAbil value="NanoMatrix"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="RuptureTumor">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,RuptureTumor"/>
+        <DataRecord Entry="Button,RuptureTumor"/>
+        <DataRecord Entry="Effect,RuptureTumor@CU"/>
+        <DataRecord Entry="Effect,RuptureTumor@Set"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="SpawnLarvaSolo">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>

@@ -13,6 +13,7 @@ Abil/Name/Chargemew=Charge
 Abil/Name/CombatDrugs=Combat Drugs
 Abil/Name/CompactedShield=Compacted Shield
 Abil/Name/CorruptorDamagingCorruption=Corruption
+Abil/Name/CreepTumorSpawnChangeling=Spawn Changeling
 Abil/Name/CycloneBurstLockOn@Cancel=Cancel
 Abil/Name/CycloneCloak=Cloaking Field
 Abil/Name/DeactivateAbsortionShield=Deactivate Absortion Shield
@@ -210,7 +211,7 @@ Button/Tooltip/AutoTurret=Automated defensive turret. Times out after <d ref="Be
 Button/Tooltip/Banshee=Tactical-strike aircraft. Can be upgraded to use cloak.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Barracks=Infantry-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs<n/>- Orbital Commands from Command Centers
 Button/Tooltip/BlindingCloud=Creates a cloud that deals up to 250 damage (+250 to armored) to affected enemy ground units and structures over 35 seconds.
-Button/Tooltip/BuildCreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
+Button/Tooltip/BuildCreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one <d stringref="Unit,Changeling,Name"/> or one additional <d stringref="Unit,CreepTumor,Name"/>.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildCreepTumorPropagate=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildTechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
 Button/Tooltip/BuildTechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
@@ -233,6 +234,7 @@ Button/Tooltip/Contaminate=The target non-defencive structure functions 75% slow
 Button/Tooltip/Corruptor=Anti-air flyer. Can use Corruption. Can morph into a Brood Lord.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/CorruptorDamagingCorruption=Covers the target enemy unit in damaging slime, dealing <d ref="Accumulator,CorruptorDamagingCorruption@Damage,Amount / Behavior,CorruptorDamagingCorruption,Period"/> damage per second for <d ref="Behavior,CorruptorDamagingCorruption,Duration"/> seconds or until the target is close to death. While affected, the target takes <d ref="Behavior,CorruptorDamagingCorruption,DamageResponse.ModifyAmount"/> additional damage from all sources.
 Button/Tooltip/CreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
+Button/Tooltip/CreepTumorSpawnChangeling=Spawns <d ref="Effect,CreepTumorSpawnChangeling@CU,SpawnCount"/> <lang rule="plural"><d stringref="Unit,[d stringref='Effect,CreepTumorSpawnChangeling@CU,SpawnUnit[0]'/],Name"/>,<d stringref="Unit,[d stringref='Effect,CreepTumorSpawnChangeling@CU,SpawnUnit[0]'/],Name"/>s</lang>. <d stringref="Unit,Changeling,Name"/>s cannot attack and die after <d time="[d stringref='Behavior,Changeling,Duration'/]"/>. When a <d stringref="Unit,Changeling,Name"/> first encounters an enemy unit, it will match that unit's color and change into a <d stringref="Unit,Zealot,Name"/>, <d stringref="Unit,Marine,Name"/>, or <d stringref="Unit,Zergling,Name"/>, depending on the enemy race.
 Button/Tooltip/CyberneticsCore=Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<n/><n/><c val="ffff8a">Enables:</c><n/>- Sentries at the Gateway<n/>- Stalkers at the Gateway
 Button/Tooltip/D8ChargeBomb=Explodes after a short delay, doing 30 initial damage.
 Button/Tooltip/DeactivateAbsorptionShield=Disables the Oracle's Absortion shield.
@@ -351,7 +353,7 @@ Button/Tooltip/ResearchShieldWall=<c val="ffff8a">Marines</c> gain +25 life.
 Button/Tooltip/RoachWarren=Contains upgrades for Roaches.<n/><n/><c val="ffff8a">Enables:</c><n/>- Roaches from Larvae
 Button/Tooltip/RoboticsBay=Contains upgrades for the Observer, Warp Prism, and Colossus.<n/><n/><c val="ffff8a">Enables:</c><n/>- Colossi at the Robotics Facility
 Button/Tooltip/RoboticsFacility=Warps in Protoss robotic units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Observers<n/>- Immortals<n/>- Disruptors
-Button/Tooltip/RuptureTumor=Ruptures the Tumor, spawning two Broodlings.
+Button/Tooltip/RuptureTumor=Spawns <d ref="Effect,RuptureTumor@CU,SpawnCount"/> <lang rule="plural"><d stringref="Unit,[d stringref='Effect,RuptureTumor@CU,SpawnUnit[0]'/],Name"/>,<d stringref="Unit,[d stringref='Effect,RuptureTumor@CU,SpawnUnit[0]'/],Name"/>s</lang> that can attack your opponents. <d stringref="Unit,[d stringref='Effect,RuptureTumor@CU,SpawnUnit[0]'/],Name"/>s last <d time="[d stringref='Behavior,BroodlingFate,Duration'/]"/>.
 Button/Tooltip/Scan=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="21"/>.
 Button/Tooltip/SensorTower=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy. <n/><c val="FFE303">Detector</c>
 Button/Tooltip/Snipe=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
@@ -391,12 +393,14 @@ Button/Tooltip/WarpPrismHallucination=This hallucinated copy functions like the 
 Button/Tooltip/WidowMineBioSplash=Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <d ref="Effect,WidowMineExplodeDirect,Amount"/> damage to their primary target, and <d ref="Effect,WidowMineExplodeSplash,Amount"/> splash damage to units nearby.<n/><n/><c val="#ColorAttackInfo">Cooldown: <d ref="Abil,WidowMineAttack,Cost[0].Cooldown[0].TimeUse[0]"/> seconds.</c>
 Button/Tooltip/ZealotHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/zerglingattackspeed=Increases the damage against armored units and structures and the attack speed of <c val="ffff8a">Zerglings</c> by 60%.
+Button/TooltipAppender/CreepTumorSingleUse=<n/><n/>The Creep Tumor can only use one ability.
 CreepTumor Exhausted=Must target an Exhausted Creep Tumor.
 DataCollection/Name/AdeptPhaseShiftManual=Phase Shift
 DataCollection/Name/BurrowedAmbusher=Burrowed Ambusher
 DataCollection/Name/CargoTracker=CargoTracker
 DataCollection/Name/CompactedShield=Compacted Shield
 DataCollection/Name/CorruptorDamagingCorruption=Damaging Corruption
+DataCollection/Name/CreepTumorSpawnChangeling=Spawn Changeling
 DataCollection/Name/CycloneBurstLockOn=Burst Lock-On
 DataCollection/Name/D8ChargeBomb=D8 Charge Bomb
 DataCollection/Name/D8ChargeBombClusterbomb=Clusterbomb
@@ -417,6 +421,7 @@ DataCollection/Name/ReaperD8Charge=D8 Charge
 DataCollection/Name/ReaperD8ChargeClusterbomb=D8 Charge Clusterbomb
 DataCollection/Name/RepairDrone=Repair Drone
 DataCollection/Name/RepairDroneRepair=Repair
+DataCollection/Name/RuptureTumor=Rupture Tumor
 DataCollection/Name/SpawnLarvaSolo=Spawn Larva
 DataCollection/Name/TownHallLoad=Town Hall Load
 DataCollection/Name/TransientAssaultMode=Transient Assault Mode
@@ -500,6 +505,8 @@ Effect/Name/CorruptorDamagingCorruption@AB=Apply Behavior
 Effect/Name/CorruptorDamagingCorruption@CP=Create Persistent
 Effect/Name/CorruptorDamagingCorruption@Damage=Damage
 Effect/Name/CorruptorDamagingCorruption@LM=Launch Missile
+Effect/Name/CreepTumorSpawnChangeling@CU=Create Unit
+Effect/Name/CreepTumorSpawnChangeling@Set=Set
 Effect/Name/CycloneBurstLockOn@ABAlternateWeapon=Apply Behavior
 Effect/Name/CycloneBurstLockOn@ABDisableAttack=Apply Behavior
 Effect/Name/CycloneBurstLockOn@ABRangeDummy=Apply Behavior
@@ -654,8 +661,8 @@ Effect/Name/RechargeShieldsHeal=Recharge Shields Heal
 Effect/Name/RemoveGhostChannel=Remove Ghost Channel
 Effect/Name/RemovePrismaticAlignment=Remove Prismatic Alignment
 Effect/Name/RepairDroneRepair@CH=Create Healer
-Effect/Name/RuptureTumor=Rupture Tumor
-Effect/Name/RuptureTumorSet=Rupture Tumor Set
+Effect/Name/RuptureTumor@CU=Create Unit
+Effect/Name/RuptureTumor@Set=Set
 Effect/Name/SeekerMissileImpactABSlow=SeekerMissileImpactABSlow
 Effect/Name/SeekerMissileImpactSearchArea=SeekerMissileImpactSearchArea
 Effect/Name/SeekerMissileImpactSet=SeekerMissileImpactSet

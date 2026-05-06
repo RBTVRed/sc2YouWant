@@ -5,6 +5,9 @@
         <Icon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
     </CButton>
+    <CButton id="BuildCreepTumorPropagate">
+        <TooltipAppender Text="Button/TooltipAppender/CreepTumorSingleUse"/>
+    </CButton>
     <CButton id="BurrowedAmbusher">
         <Icon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-burrowcharge.dds"/>
@@ -64,6 +67,14 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="ResearchBarrier"/>
+    </CButton>
+    <CButton id="CreepTumorSpawnChangeling">
+        <Name value="Button/Name/SpawnChangeling"/>
+        <TooltipAppender Text="Button/TooltipAppender/CreepTumorSingleUse"/>
+        <Icon value="Assets\Textures\BTN-Unit-Zerg-changeling.dds"/>
+        <AlertName value="Button/Name/SpawnChangeling"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Zerg-changeling.dds"/>
+        <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="TownHallLoad@Load">
         <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
@@ -210,6 +221,7 @@
     </CButton>
     <CButton id="RuptureTumor">
         <Icon value="Assets\Textures\talent-zagara-level08-incubatebroodlings.dds"/>
+        <TooltipAppender Text="Button/TooltipAppender/CreepTumorSingleUse"/>
     </CButton>
     <CButton id="SpawnLarvaSolo">
         <Icon value="Assets\Textures\btn-unit-zerg-larva.dds"/>

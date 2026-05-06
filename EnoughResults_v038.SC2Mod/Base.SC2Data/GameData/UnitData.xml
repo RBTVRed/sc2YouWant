@@ -817,11 +817,13 @@
     </CUnit>
     <CUnit id="CreepTumorBurrowed">
         <AbilArray Link="RuptureTumor"/>
+        <AbilArray Link="CreepTumorSpawnChangeling"/>
         <BehaviorArray Link="ZergBuildingDies2"/>
         <BehaviorArray Link="CreepTumorNotExhausted"/>
         <BehaviorArray Link="SuppressCloakDuringConstruction"/>
         <CardLayouts index="0">
             <LayoutButtons Face="RuptureTumor" Type="AbilCmd" AbilCmd="RuptureTumor,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="CreepTumorSpawnChangeling" Type="AbilCmd" AbilCmd="CreepTumorSpawnChangeling,Execute" Row="2" Column="2"/>
         </CardLayouts>
         <FlagArray index="Cloaked" value="1"/>
         <FlagArray index="Buried" value="1"/>

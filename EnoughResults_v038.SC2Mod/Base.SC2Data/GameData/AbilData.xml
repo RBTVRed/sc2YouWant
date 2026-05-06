@@ -369,6 +369,24 @@
             <Vital index="Energy" value="75"/>
         </Cost>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="CreepTumorSpawnChangeling">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="CreepTumorSpawnChangeling@Set"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CreepTumorBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Cooldown Link="Abil/CreepTumorBuild" Location="Unit"/>
+        </Cost>
+        <AINotifyEffect value="CreepTumorSpawnChangeling@Set"/>
+        <ProducedUnitArray value="Changeling"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CreepTumorSpawnChangeling"/>
+    </CAbilEffectInstant>
     <CAbilMorph id="StarportLiftOff">
         <CmdButtonArray index="Execute" Requirements="LiftOffResearch"/>
     </CAbilMorph>
@@ -1158,9 +1176,19 @@
     </CAbilResearch>
     <CAbilEffectInstant id="RuptureTumor">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="RuptureTumorSet"/>
-        <SmartValidatorArray value="CreepTumorBuildChargeAvaliable"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="RuptureTumor" Requirements="CreepTumorNotExhausted"/>
+        <Effect index="0" value="RuptureTumor@Set"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RuptureTumor"/>
+        <Cost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CreepTumorBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Cooldown Link="Abil/CreepTumorBuild" Location="Unit"/>
+        </Cost>
+        <AINotifyEffect value="RuptureTumor@MURemoveCharge"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="SpawnLarva">
         <Cost index="0">

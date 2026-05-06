@@ -209,6 +209,17 @@
     <CEffectCreatePersistent id="RevelationPersistent">
         <ExpireDelay value="56"/>
     </CEffectCreatePersistent>
+    <CEffectSet id="CreepTumorSpawnChangeling@Set">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="CreepTumorSpawnChangeling@CU"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="CreepTumorSpawnChangeling@CU">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="ChangelingTimedLife"/>
+        <SpawnUnit value="Changeling"/>
+        <SpawnRange value="2"/>
+    </CEffectCreateUnit>
     <CEffectRemoveBehavior id="SpawnLarvaSolo@RBConjoined">
         <EditorCategories value="Race:Zerg"/>
         <BehaviorLink value="SpawnLarvaConjoined"/>
@@ -1377,15 +1388,9 @@
         <AttributeBonus index="Structure" value="10"/>
         <Amount value="15"/>
     </CEffectDamage>
-    <CEffectModifyUnit id="RuptureTumor">
+    <CEffectSet id="RuptureTumor@Set">
         <EditorCategories value=""/>
-        <Cost Abil="CreepTumorBuild,Build1" ChargeCountUse="1"/>
-    </CEffectModifyUnit>
-    <CEffectSet id="RuptureTumorSet">
-        <ValidatorArray value="RuptureTumorSetTargetFilters"/>
-        <EditorCategories value=""/>
-        <EffectArray value="ZergBuildingSpawnBroodling2"/>
-        <EffectArray value="RuptureTumor"/>
+        <EffectArray value="RuptureTumor@CU"/>
     </CEffectSet>
     <CEffectApplyBehavior id="SensorTowerDuriationAB">
         <ValidatorArray index="0" value="SensorTowerNotCurrentlybeingRevealed"/>
@@ -1914,6 +1919,15 @@
     <CEffectCreateUnit id="FungalGrowth@SpawnBroodling">
         <EditorCategories value="Race:Zerg"/>
         <WhichLocation Value="SourcePoint"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnOwner Value="Caster"/>
+        <SpawnEffect value="BroodlingTimedLife"/>
+        <SpawnUnit value="Broodling"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="RuptureTumor@CU">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetPoint"/>
         <CreateFlags index="Placement" value="0"/>
         <SpawnOwner Value="Caster"/>
         <SpawnEffect value="BroodlingTimedLife"/>

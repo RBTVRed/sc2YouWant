@@ -8,6 +8,7 @@ Button/Hotkey/CloakOnCyclone=C
 Button/Hotkey/CombatDrugs=C
 Button/Hotkey/CompactedShield=S
 Button/Hotkey/CorruptorDamagingCorruption=C
+Button/Hotkey/CreepTumorSpawnChangeling=G
 Button/Hotkey/DeactivateAbsorptionShield=D
 Button/Hotkey/DisableIgniteAfterburners=G
 Button/Hotkey/EvolveCreepGeneration=C
