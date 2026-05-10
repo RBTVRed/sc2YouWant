@@ -65,6 +65,79 @@
             <Cooldown Link=""/>
         </CancelCost>
     </CAbilEffectTarget>
+    <CAbilMorph id="BurrowDroneUp">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowInfestorUp">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowQueenUp">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowRavagerDown">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Delay" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="1.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowRoachUp">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowUltraliskDown">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="2.5"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Delay" value="2.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="2.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowUltraliskUp">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
     <CAbilEffectTarget id="EMP">
         <CastIntroTime value="0.5"/>
         <Effect index="0" value="EMPChannelInitialSet"/>
@@ -92,6 +165,21 @@
             </SectionArray>
             <SectionArray index="Stats">
                 <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="MorphToSwarmHostMP">
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="0"/>
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0"/>
+                <DurationArray index="Duration" value="0.4"/>
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
@@ -201,7 +289,7 @@
     <CAbilMorph id="BurrowBanelingUp">
         <InfoArray index="0" RandomDelayMax="0.25">
             <SectionArray index="Actor">
-                <DurationArray index="Duration" value="0.5"/>
+                <DurationArray index="Duration" value="0.4"/>
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
@@ -221,6 +309,11 @@
         <CmdButtonArray index="Execute">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
+        <InfoArray index="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
     </CAbilMorph>
     <CAbilEffectTarget id="CorruptorDamagingCorruption">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
@@ -247,20 +340,28 @@
         <EffectArray index="Cancel" value="CreepTumorLaunchMissile"/-->
     </CAbilBuild>
     <CAbilMorph id="BurrowHydraliskUp">
-        <InfoArray index="0" RandomDelayMax="0"/>
+        <InfoArray index="0" RandomDelayMax="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
     </CAbilMorph>
     <CAbilMorph id="BurrowRavagerUp">
         <InfoArray index="0" RandomDelayMax="0">
             <SectionArray index="Actor">
-                <DurationArray index="Duration" value="0.1"/>
+                <DurationArray index="Duration" value="0.4"/>
             </SectionArray>
             <SectionArray index="Stats">
-                <DurationArray index="Duration" value="0.1"/>
+                <DurationArray index="Duration" value="0.4"/>
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
     <CAbilMorph id="BurrowZerglingUp">
-        <InfoArray index="0" RandomDelayMax="0"/>
+        <InfoArray index="0" RandomDelayMax="0">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.4"/>
+            </SectionArray>
+        </InfoArray>
     </CAbilMorph>
     <CAbilArmMagazine id="CarrierHangar">
         <Leash value="16"/>
