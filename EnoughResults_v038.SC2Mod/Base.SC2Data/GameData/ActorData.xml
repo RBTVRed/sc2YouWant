@@ -18,8 +18,22 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorSimple id="MedicDefensiveMatrix@SimpleModelSelector">
+        <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
+        <On Terms="ActorCreation; ValidateUnit IsLiberator" Send="Create MedicDefensiveMatrix@ModelLiberator"/>
+        <On Terms="ActorCreation; ValidateUnit IsLiberator" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="Create MedicDefensiveMatrix@Model"/>
+        <On Terms="ActorCreation" Send="Destroy"/>
+    </CActorSimple>
+    <CActorModel id="MedicDefensiveMatrix@ModelLiberator" parent="ModelAddition">
+        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpMoveBackByDot25"/>
+        <Model value="DefensiveMatrixModel"/>
+        <Scale value="1.000000,1.400000,1.000000"/>
+        <AutoScaleFactor value="1.000000"/>
+        <Aliases value="_DefensiveMatrix"/>
+    </CActorModel>
     <CActorUnit id="Changeling">
-        <On Terms="Signal.*.InstantBirth; AnimPlaying Birth"/>
         <On Terms="Signal.*.InstantBirth; AnimPlaying Birth" Send="AnimClear Birth"/>
     </CActorUnit>
     <CActorSimple id="CreepTumorSpawnChangeling@SimpleClearBirth">
@@ -512,21 +526,21 @@
         <Sound value="EMPBurstSound"/>
     </CActorSound>
     <CActorSound id="MedicDefensiveMatrix@SoundStart" parent="SoundOneShot">
-        <On Terms="Behavior.NanoMatrix.On" Send="Create"/>
-        <On Terms="Behavior.NanoMatrix.Off" Send="Destroy"/>
+        <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
+        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="Destroy"/>
         <Sound value="Battlecruiser_DefensiveMatrixBirth"/>
     </CActorSound>
     <CActorSound id="MedicDefensiveMatrix@SoundDeath" parent="SoundOneShot">
-        <On Terms="Behavior.NanoMatrix.Off" Send="Create"/>
+        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="Create"/>
         <Sound value="Battlecruiser_DefensiveMatrixDeath"/>
     </CActorSound>
     <CActorModel id="MedicDefensiveMatrix@Model" parent="ModelAddition">
-        <On Terms="Behavior.NanoMatrix.On" Send="Create"/>
-        <On Terms="Behavior.NanoMatrix.Off" Send="AnimBracketStop BSD"/>
-        <Model value="DefensiveMatrixModel"/>
-        <AutoScaleFactor value="1.000000"/>
+        <Aliases value="_DefensiveMatrix"/>
+        <On Terms="Behavior.MedicDefensiveMatrix.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="DefensiveMatrixModel"/>
         <Scale value="1.400000"/>
+        <AutoScaleFactor value="1.000000"/>
     </CActorModel>
     <CActorRange id="HeroDetectorRadarRange_Detector16">
         <Terms value="Cap 1"/>
@@ -735,7 +749,7 @@
     <!-- Medic ................................................................................. -->
     <!--                                                                                         -->
     <CActorUnit id="Medic">
-        <On Terms="Abil.NanoMatrix.SourceCastStart" Send="$Spell 0 -1.000000 -1.000000 0.500000 AsDuration"/>
+        <On Terms="Abil.MedicDefensiveMatrix.SourceCastStart" Send="$Spell 0 -1.000000 -1.000000 0.500000 AsDuration"/>
         <Remove Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <Remove Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
         <Remove Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>

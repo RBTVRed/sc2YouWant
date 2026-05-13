@@ -263,7 +263,7 @@
             <StateFlags index="SuppressUnitUseLineOfSight" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="NanoMatrix">
+    <CBehaviorBuff id="MedicDefensiveMatrix">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>

@@ -22,10 +22,10 @@ Abil/Name/FirstAid=First Aid
 Abil/Name/IncubateTumor=Incubate Tumor
 Abil/Name/LoadUnloadBunkerNeosteel=Load-Unload (Bunker) Neosteel
 Abil/Name/MassCloakingField=Mass Cloaking Field
+Abil/Name/MedicDefensiveMatrix=Nano Matrix
 Abil/Name/MedicalSuppliesCalldown=Medical Supplies Calldown
 Abil/Name/MorphToNeosteelBunker=Morph to Neosteel Bunker
 Abil/Name/MothershipCoreMassRecall=Mass Recall to Pylon
-Abil/Name/NanoMatrix=Nano Matrix
 Abil/Name/NeosteelBunkerTransport=Load-Unload
 Abil/Name/NitroPacks=Nitro Packs
 Abil/Name/OozeSnare=Ooze Snare
@@ -69,8 +69,8 @@ Behavior/Name/FungalGrowthArmorReduction=FungalGrowthArmorReduction
 Behavior/Name/IncubateDummy=Incubate Dummy
 Behavior/Name/Incubated=Incubated
 Behavior/Name/InfestorIsBurrowed=Infestor Is Burrowed
+Behavior/Name/MedicDefensiveMatrix=Nano Matrix
 Behavior/Name/MicrobialShroudAura=Microbial Shroud Aura
-Behavior/Name/NanoMatrix=Nano Matrix
 Behavior/Name/NapalmGrenade@DoT=Burning
 Behavior/Name/ObeliskSlow=Slow
 Behavior/Name/OozeSnare=Ooze Snare
@@ -110,8 +110,8 @@ Behavior/Tooltip/EMPDetectorDisable=Target was recently hit by an EMP Round, mak
 Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodlings if the affected unit dies.
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/Incubated=This structure functions 75% slower.
+Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
 Behavior/Tooltip/MicrobialShroudAura=Incoming ranged damage reduced by 3.
-Behavior/Tooltip/NanoMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
 Behavior/Tooltip/NapalmGrenade@DoT=Target is under the effects of a Napalm Grenade and will take massive damage while in this area of effect.
 Behavior/Tooltip/ObeliskSlow=This unit has reduced movement and attack speed.
 Behavior/Tooltip/ParasiticBomb=This unit is taking damage over time.
@@ -148,7 +148,6 @@ Button/Name/CloakCycloneOff=Decloak
 Button/Name/CloakOnCyclone=Cloak
 Button/Name/CompactedShield=Compacted Shield
 Button/Name/DeactivateAbsorptionShield=Deactivate Absorption Shield
-Button/Name/DefensiveMatrix=Rescue Matrix
 Button/Name/DisableIgniteAfterburners=Disable Ignite Afterburners
 Button/Name/DormantMetabolism=Dormant Metabolism
 Button/Name/EnergyBinder=Energy Binder
@@ -164,6 +163,7 @@ Button/Name/LairDefense=Lair Defense
 Button/Name/LiftOffResearch=Research Lift Off
 Button/Name/MassCloakingField=Cloaking Field
 Button/Name/MasteryTychusMedivacBuff=Dropship Pickup Cooldown
+Button/Name/MedicDefensiveMatrix=Rescue Matrix
 Button/Name/Medivac=Build Dropship
 Button/Name/MorphToNeosteelBunker=Transform to Neosteel Bunker
 Button/Name/MothershipCoreMassRecall=Transference
@@ -286,6 +286,7 @@ Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structur
 Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
 Button/Tooltip/MasteryTychusMedivacBuff=Reduces the cooldown of the Dropship Pickup ability.
 Button/Tooltip/Medic=Support trooper. Heals nearby biological units and can use Stim, Perimeter Scan, and Rescue Matrix.
+Button/Tooltip/MedicDefensiveMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
 Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
 Button/Tooltip/Medivac=Air transport. Can place Auto-Turrets.
@@ -297,7 +298,6 @@ Button/Tooltip/MorphtoOverseerNormal=Restores the Overseer's ability to move.
 Button/Tooltip/MorphtoOverseerSiege=Prevents enemy units in a large radius around the <d stringref="Unit,Overseer,Name"/> from casting spells that cost energy, but removes its ability to move. This ability can be canceled after activation.
 Button/Tooltip/MothershipCoreMassRecall=Teleports the Arbiter and all nearby units owned by the player to the target point within a power field.
 Button/Tooltip/MutateintoLurkerDen=Enables Lurkers from Hydralisks.
-Button/Tooltip/NanoMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/NapalmGrenade=Attacks set the ground ablaze, dealing up to <d ref="Effect,NapalmGrenade@DamageDoTInitial,Amount + (Effect,NapalmGrenade@CPDoT,PeriodCount + 1 * Effect,NapalmGrenade@DamageDoTPeriodic,Amount)"/> damage to ground units at the target location over <d ref="Effect,NapalmGrenade@CPDoT,PeriodicPeriodArray[0] * Effect,NapalmGrenade@CPDoT,PeriodCount"/> seconds.
 Button/Tooltip/NapalmHellion=Fast scout. Attack create a lingering pool of fire that deals damage to ground units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/NeosteelBunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range for rifle units inside.</c>
@@ -584,7 +584,9 @@ Effect/Name/KD8ChargeExplodeSwitch=KD8 Charge Explode Switch
 Effect/Name/LanzerTorpedoesGround=Halo Rockets (Persistent)
 Effect/Name/LanzerTorpedoesLMGround=Halo Rockets (Launch Missile)
 Effect/Name/LocustMPDamage=Locust MP Damage Copy
+Effect/Name/MedicDefensiveMatrix@AB=Apply Behavior
 Effect/Name/MedicDefensiveMatrix@RB=Remove Behavior
+Effect/Name/MedicDefensiveMatrix@Set=Set
 Effect/Name/MedicP45GaussPistol@Damage=Damage
 Effect/Name/MedicalSuppliesHeal=Medical Supplies Heal
 Effect/Name/ModifyUnitReleaseAllUnits=Modify Unit Release All Units
@@ -594,8 +596,6 @@ Effect/Name/MorphToNeosteelBunker@Set=Set
 Effect/Name/MothershipCoreWeaponDamage2=Mothership Core Weapon Damage
 Effect/Name/MothershipCoreWeaponLM2=Mothership Core Weapon LM
 Effect/Name/MuleBlueMineralDropSet=Mule Blue Mineral Drop Set
-Effect/Name/NanoMatrix@AB=Nano Matrix AB
-Effect/Name/NanoMatrix@Set=Nano Matrox Set
 Effect/Name/NapalmGrenade@AB=Apply Behavior
 Effect/Name/NapalmGrenade@CPDoT=Create Persistent
 Effect/Name/NapalmGrenade@Damage=Damage

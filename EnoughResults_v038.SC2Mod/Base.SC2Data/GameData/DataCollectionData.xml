@@ -118,17 +118,17 @@
     </CDataCollectionAbil>
     <CDataCollectionAbil id="MedicDefensiveMatrix">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
-        <DataRecord Entry="Abil,NanoMatrix"/>
+        <DataRecord Entry="Abil,MedicDefensiveMatrix"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundStart"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@SoundDeath"/>
         <DataRecord Entry="Actor,MedicDefensiveMatrix@Model"/>
-        <DataRecord Entry="Behavior,NanoMatrix"/>
-        <DataRecord Entry="Button,NanoMatrix"/>
-        <DataRecord Entry="Effect,NanoMatrix@Set"/>
-        <DataRecord Entry="Effect,NanoMatrix@AB"/>
+        <DataRecord Entry="Actor,MedicDefensiveMatrix@ModelLiberator"/>
+        <DataRecord Entry="Actor,MedicDefensiveMatrix@SimpleModelSelector"/>
+        <DataRecord Entry="Behavior,MedicDefensiveMatrix"/>
+        <DataRecord Entry="Button,MedicDefensiveMatrix"/>
         <DataRecord Entry="Effect,MedicDefensiveMatrix@RB"/>
-        <Button value="NanoMatrix"/>
-        <TechInfoAbil value="NanoMatrix"/>
+        <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
+        <DataRecord Entry="Effect,MedicDefensiveMatrix@Set"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="RuptureTumor">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>

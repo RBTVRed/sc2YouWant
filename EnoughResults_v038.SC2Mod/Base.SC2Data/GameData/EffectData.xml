@@ -73,7 +73,7 @@
     </CEffectSwitch>
     <CEffectRemoveBehavior id="MedicDefensiveMatrix@RB">
         <EditorCategories value="Race:Terran"/>
-        <BehaviorLink value="NanoMatrix"/>
+        <BehaviorLink value="MedicDefensiveMatrix"/>
     </CEffectRemoveBehavior>
     <CEffectDamage id="PurificationNovaDamage">
         <Amount value="185"/>
@@ -486,13 +486,13 @@
         <AttributeBonus index="Armored" value="25"/>
         <Amount value="50"/>
     </CEffectDamage>
-    <CEffectApplyBehavior id="NanoMatrix@AB">
+    <CEffectApplyBehavior id="MedicDefensiveMatrix@AB">
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="NanoMatrix"/>
+        <Behavior value="MedicDefensiveMatrix"/>
     </CEffectApplyBehavior>
-    <CEffectSet id="NanoMatrix@Set">
+    <CEffectSet id="MedicDefensiveMatrix@Set">
         <EditorCategories value="Race:Terran"/>
-        <EffectArray value="NanoMatrix@AB"/>
+        <EffectArray value="MedicDefensiveMatrix@AB"/>
     </CEffectSet>
     <CEffectEnumArea id="FungalGrowthSearch">
         <AreaArray index="0" Radius="2"/>

@@ -35,6 +35,16 @@
         <Value value="Firebat"/>
         <Type value="SelectAlias"/>
     </CValidatorUnitType>
+    <CValidatorCombine id="IsLiberator">
+        <CombineArray value="IsLiberatorAA"/>
+        <CombineArray value="IsLiberatorAG"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="IsLiberatorAG">
+        <Value value="LiberatorAG"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsLiberatorAA">
+        <Value value="Liberator"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="IsLurkerUnBurrowed"/>
     <CValidatorUnitCompareBehaviorCount id="Contaminate@IsContaminated">
         <Compare value="GT"/>

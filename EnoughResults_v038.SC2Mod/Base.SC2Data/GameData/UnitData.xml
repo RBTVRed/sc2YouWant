@@ -1234,11 +1234,11 @@
         <CostResource index="Vespene" value="75"/>
         <AbilArray Link="StimpackMedic"/>
         <AbilArray Link="SpreadOut"/>
-        <AbilArray Link="NanoMatrix"/>
+        <AbilArray Link="MedicDefensiveMatrix"/>
         <AbilArray Link="PerimeterScan"/>
         <CardLayouts index="0">
             <LayoutButtons index="6" Column="1"/>
-            <LayoutButtons index="7" Face="NanoMatrix" AbilCmd="NanoMatrix,Execute" Column="3"/>
+            <LayoutButtons index="7" Face="MedicDefensiveMatrix" AbilCmd="MedicDefensiveMatrix,Execute" Column="3"/>
             <LayoutButtons index="8">
                 <Face value="SpreadOut"/>
                 <Type value="AbilCmd"/>

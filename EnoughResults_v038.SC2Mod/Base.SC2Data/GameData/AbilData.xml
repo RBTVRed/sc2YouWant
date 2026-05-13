@@ -568,16 +568,15 @@
             <Button DefaultButtonFace="" Requirements=""/>
         </InfoArray>
     </CAbilResearch>
-    <CAbilEffectTarget id="NanoMatrix">
+    <CAbilEffectTarget id="MedicDefensiveMatrix">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <DataCollection value="MedicDefensiveMatrix"/>
-        <Effect index="0" value="NanoMatrix@Set"/>
+        <Effect index="0" value="MedicDefensiveMatrix@Set"/>
         <Cost>
             <Vital index="Energy" value="100"/>
         </Cost>
         <TargetFilters value="Visible;Self,Enemy,Massive,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="NanoMatrix"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MedicDefensiveMatrix"/>
     </CAbilEffectTarget>
     <CAbilResearch id="EngineeringBayResearch">
         <InfoArray index="Research1">
