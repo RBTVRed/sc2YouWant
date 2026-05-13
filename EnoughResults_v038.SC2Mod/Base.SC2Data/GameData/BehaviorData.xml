@@ -524,11 +524,7 @@
         <TimeScaleSource Value="Global"/>
         <Period value="0.5"/>
         <PeriodicEffect value="TelepathicSuppression@SA"/>
-        <RemoveValidatorArray value="hasEnergy"/>
         <FinalEffect value="TelepathicSuppression@ABCancel"/>
-        <Modification>
-            <VitalRegenArray index="Energy" value="-1.4765"/>
-        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="TelepathicSuppression">
         <Alignment value="Negative"/>

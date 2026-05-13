@@ -295,7 +295,7 @@ Button/Tooltip/MedivacSpeedBoost=Increases the Dropship's movement speed by 70% 
 Button/Tooltip/MissileTurret=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/MorphToNeosteelBunker=Transforms the Bunker into a Neosteel Bunker. The Neosteel Bunker can carry 4 additional cargo and has an additional 300 life.
 Button/Tooltip/MorphtoOverseerNormal=Restores the Overseer's ability to move.
-Button/Tooltip/MorphtoOverseerSiege=Prevents enemy units in a large radius around the <d stringref="Unit,Overseer,Name"/> from casting spells that cost energy, but removes its ability to move. This ability can be canceled after activation.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,TelepathicSuppression@Aura,Modification.VitalRegenArray[2] + Unit,OverseerSiegeMode,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/MorphtoOverseerSiege=Prevents enemy units in a large radius around the <d stringref="Unit,Overseer,Name"/> from casting spells that cost energy, but removes its ability to move. This ability can be canceled after activation.
 Button/Tooltip/MothershipCoreMassRecall=Teleports the Arbiter and all nearby units owned by the player to the target point within a power field.
 Button/Tooltip/MutateintoLurkerDen=Enables Lurkers from Hydralisks.
 Button/Tooltip/NanoMatrix=Surrounds the target unit with a shield that reduces all damage taken by 75% for <d ref="Behavior,MedicDefensiveMatrix,Duration"/> seconds.
