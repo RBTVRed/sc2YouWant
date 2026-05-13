@@ -911,6 +911,7 @@
     <CEffectApplyBehavior id="TelepathicSuppression@AB">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="TelepathicSuppression"/>
+        <ValidatorArray index="0" value="CanHaveEnergy"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="TelepathicSuppression@ABCancel">
         <ValidatorArray index="0" value="IsOverseerSiegeMode"/>

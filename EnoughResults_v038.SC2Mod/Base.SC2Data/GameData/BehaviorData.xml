@@ -539,6 +539,7 @@
         <Modification>
             <StateFlags index="SuppressEnergy" value="1"/>
         </Modification>
+        <RemoveValidatorArray value="CanHaveEnergy"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TownHallLoad@AttackSpeed">
         <InfoFlags index="Hidden" value="1"/>
