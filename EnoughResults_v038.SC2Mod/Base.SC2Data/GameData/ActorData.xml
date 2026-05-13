@@ -18,6 +18,17 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorUnit id="Changeling">
+        <On Terms="Signal.*.InstantBirth; AnimPlaying Birth"/>
+        <On Terms="Signal.*.InstantBirth; AnimPlaying Birth" Send="AnimClear Birth"/>
+    </CActorUnit>
+    <CActorSimple id="CreepTumorSpawnChangeling@SimpleClearBirth">
+        <On Terms="Effect.CreepTumorSpawnChangeling@MUBirthDummy.Start; At Target" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="Signal InstantBirth"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetScale 0.001000 0.000000 BirthScale"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="ClearScale 0.250000 BirthScale"/>
+        <On Terms="ActorCreation" Send="Destroy"/>
+    </CActorSimple>
     <CActorModel id="TelepathicSuppression@ModelImpact" parent="ModelAnimationStyleContinuous">
         <On Terms="Behavior.TelepathicSuppression.On" Send="Create"/>
         <On Terms="Behavior.TelepathicSuppression.Off" Send="AnimBracketStop BSD"/>
@@ -268,6 +279,11 @@
         <On Terms="ActorCreation" Send="SetTintColor 64,0,255"/>
         <Model value="TelepathicSuppression@Impact"/>
         <Scale value="7.500000"/>
+    </CActorModel>
+    <CActorModel id="CreepTumorSpawnChangeling@ModelBirth" parent="ModelAnimationStyleOneShot">
+        <Flags index="SuppressSaveLoad" value="0"/>
+        <On Terms="Effect.CreepTumorSpawnChangeling@MUBirthDummy.Start" Send="Create"/>
+        <Model value="CreepSprayImpactExplosion"/>
     </CActorModel>
     <CActorModel id="TemporalFieldAura" parent="ModelAnimationStyleContinuous">
         <On Terms="Effect.TemporalFieldAfterBubbleCreatePersistent.Start" Send="Create"/>

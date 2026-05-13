@@ -90,9 +90,13 @@
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
         <DataRecord Entry="Abil,CreepTumorSpawnChangeling"/>
         <DataRecord Entry="Actor,CreepTumorSpawnChangeling@SoundSpawn"/>
+        <DataRecord Entry="Actor,CreepTumorSpawnChangeling@SimpleClearBirth"/>
+        <DataRecord Entry="Actor,CreepTumorSpawnChangeling@ModelBirth"/>
         <DataRecord Entry="Button,CreepTumorSpawnChangeling"/>
-        <DataRecord Entry="Effect,CreepTumorSpawnChangeling@CU"/>
         <DataRecord Entry="Effect,CreepTumorSpawnChangeling@Set"/>
+        <DataRecord Entry="Effect,CreepTumorSpawnChangeling@CU"/>
+        <DataRecord Entry="Effect,CreepTumorSpawnChangeling@MUBirthDummy"/>
+        <DataRecord Entry="Effect,CreepTumorSpawnChangeling@SetCreate"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="DecayOffCreep">
         <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
