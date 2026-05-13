@@ -12,6 +12,10 @@
         <Field value="EnergyMax"/>
         <Value value="1"/>
     </CValidatorUnitCompareField>
+    <CValidatorCombine id="ConsumePeriodicCheck">
+        <CombineArray index="0" value="TargetNotDeadAndCasterNotDead"/>
+        <CombineArray index="1" value="ViperConsumeMinimumVitality"/>
+    </CValidatorCombine>
     <CValidatorCombine id="EMPDetectorUnit">
         <CombineArray value="IsMedic"/>
         <CombineArray value="IsRaven"/>
@@ -39,6 +43,10 @@
     <CValidatorUnitType id="IsOverseerSiegeMode">
         <Value value="OverseerSiegeMode"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareVitality id="ViperConsumeMinimumVitality">
+        <Compare value="GT"/>
+        <Value value="12"/>
+    </CValidatorUnitCompareVitality>
     <CValidatorUnitType id="NotFirebat">
         <Value value="Firebat"/>
         <Find value="0"/>

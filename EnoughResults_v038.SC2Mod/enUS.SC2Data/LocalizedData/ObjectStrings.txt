@@ -970,6 +970,7 @@ Validator/Name/TargetIsChangeling=Target Is Changeling
 Validator/Name/ThermalLanceRange=Thermal Lance Range
 Validator/Name/ThermalLanceRangeExtended=Thermal Lance Range Extended
 Validator/Name/TransientAssaultMode@PlacementCheck=Placement Check
+Validator/Name/ViperConsumeMinimumVitality=ViperConsumeMinimumVitality
 Validator/Name/WeaponKD8Charge@NotOnCooldown=Not On Cooldown
 Validator/Name/ZergBleedProfusely2=Zerg Bleed Profusely
 Weapon/EditorPrefix/Adept2=Adept -
