@@ -91,7 +91,6 @@ Behavior/Name/SwarmHostisBurrowed=Swarm Host is Burrowed
 Behavior/Name/SwarmPheromones=Swarm Pheromones
 Behavior/Name/SwarmPheromonesEmitter=Swarm Pheromones Emitter
 Behavior/Name/TelepathicSuppression=Telepathic Suppression
-Behavior/Name/TelepathicSuppression@Aura=Telepathic Suppression
 Behavior/Name/Transfusion=Transfusion
 Behavior/Name/Unleash=Unleash
 Behavior/Name/UnloadAllInBunker=Unload All In Bunker

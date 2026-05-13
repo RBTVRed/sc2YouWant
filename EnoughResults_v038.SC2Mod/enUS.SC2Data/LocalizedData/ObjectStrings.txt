@@ -361,6 +361,7 @@ Behavior/Name/PointDefenseDroneArmorReductionSearcher=PointDefenseDroneArmorRedu
 Behavior/Name/SpawnLarvaSolo@ConjoinedRemover=Conjoined Remover
 Behavior/Name/SupplyDepotDropMorph=Supply Depot Drop Morph
 Behavior/Name/SuppressCloakDuringConstruction=Suppress Cloak During Construction
+Behavior/Name/TelepathicSuppression@Aura=Telepathic Suppression
 Behavior/Name/TelepathicSuppression@Cancel=Cancel
 Behavior/Name/TimedLife10=Timed Life 10
 Behavior/Name/TownHallLoad@AttackSpeed=Cargo Attack Speed

@@ -525,6 +525,7 @@
         <Period value="0.5"/>
         <PeriodicEffect value="TelepathicSuppression@SA"/>
         <FinalEffect value="TelepathicSuppression@ABCancel"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TelepathicSuppression">
         <Alignment value="Negative"/>
