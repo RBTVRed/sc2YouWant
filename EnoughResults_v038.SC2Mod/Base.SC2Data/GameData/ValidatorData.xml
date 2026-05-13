@@ -229,8 +229,9 @@
         <Value value="WarpPrismPhasing"/>
         <Find value="0"/>
     </CValidatorUnitType>
-    <CValidatorUnitType id="IsPylon">
-        <ResultNoUnit value="Error,Error/IsNexus"/>
+    <CValidatorUnitType id="NotPylon" parent="IsPylon">
+        <ResultFailed value="CantTargetThatUnit,Error/NotPylon"/>
+        <Find value="0"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsSensorTower">
         <Value value="SensorTower"/>

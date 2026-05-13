@@ -745,8 +745,8 @@ Effect/Name/WeaponKD8Charge@Switch=Switch
 Effect/Name/ZergBuildingSpawnBroodling2=Zerg Building Spawn Broodling 2
 Effect/Name/ZergBuildingSpawnBroodling2Delay=Zerg Building Spawn Broodling 2 (Delay)
 Effect/Name/ZergBuildingSpawnBroodling4=Zerg Building Spawn Broodling 4
-Error/IsNexus=Must target Pylon
 Error/IsPylon=Must target Pylon
+Error/NotPylon=Can't target a <d stringref="Unit,Pylon,Name"/>
 Must target Pylon=
 Must target an Exhausted Creep Tumor.=Must target an Exhausted Creep Tumor.
 NotStaticD=Can not target defensive structures.
