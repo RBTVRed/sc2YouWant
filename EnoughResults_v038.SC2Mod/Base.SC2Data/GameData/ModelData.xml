@@ -4,7 +4,7 @@
         <Radius value="0.750000"/>
     </CModel>
     <CModel id="TelepathicSuppression@Impact" parent="PersistentSpellFX">
-        <Model value="Assets\Effects\Zerg\QueenRegenAura\QueenRegenAura.m3"/>
+        <Model value="Assets\Effects\Zerg\UnitStunImpact\UnitStunImpact.m3"/>
         <EditorCategories value="Race:Zerg"/>
         <Radius value="1.000000"/>
     </CModel>
@@ -175,6 +175,11 @@
     <CModel id="ScannerSweepModel">
         <ScaleMax value="0.840000,0.840000,0.840000"/>
         <ScaleMin value="0.840000,0.840000,0.840000"/>
+    </CModel>
+    <CModel id="TelepathicSuppression@Aura" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\QueenRegenAura\QueenRegenAura.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Radius value="1.000000"/>
     </CModel>
     <CModel id="TempestAttackImpact">
         <ScaleMax value="1.300000,1.300000,1.300000"/>
