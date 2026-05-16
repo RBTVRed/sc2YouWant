@@ -180,13 +180,16 @@
     <CDataCollectionAbil id="ViperConsumeStructure">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
         <DataRecord Entry="Abil,ViperConsumeStructure"/>
-        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyAmount"/>
-        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyRestored"/>
-        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyDamaged"/>
-        <DataRecord Entry="Button,ViperConsume"/>
+        <DataRecord Entry="Actor,ViperConsumeStructure"/>
+        <DataRecord Entry="Behavior,ViperConsumeStructure"/>
         <DataRecord Entry="Effect,ViperConsumeStructure@SetPeriodicEnergy"/>
         <DataRecord Entry="Effect,ViperConsumeStructure@MUCasterEnergy"/>
         <DataRecord Entry="Effect,ViperConsumeStructure@MUTargetEnergy"/>
+        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyRestored"/>
+        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyDamage"/>
+        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyAmount"/>
+        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyRestoreRatio"/>
+        <DataRecord Entry="Accumulator,ViperConsumeStructure@EnergyToDrain"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="WeaponKD8Charge">
         <EditorCategories value="DataGroup:Weapon,Race:Terran,ObjectType:Projectile"/>

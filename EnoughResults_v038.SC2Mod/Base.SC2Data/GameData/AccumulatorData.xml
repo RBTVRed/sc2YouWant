@@ -47,7 +47,26 @@
     <CAccumulatorConstant id="ViperConsumeStructure@EnergyAmount">
         <Amount value="12"/>
     </CAccumulatorConstant>
+    <CAccumulatorConstant id="ViperConsumeStructure@EnergyRestoreRatio">
+        <Amount value="1"/>
+    </CAccumulatorConstant>
     <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyRestored">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyToDrain"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyRestoreRatio"/>
+        </Parameters>
+        <Operation value="Multiply"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyDamage">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyToDrain"/>
+        </Parameters>
+        <Parameters value="-1"/>
+        <Operation value="Multiply"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyToDrain">
         <Parameters value="0">
             <AccumulatorArray value="ViperConsumeStructure@EnergyAmount"/>
         </Parameters>
@@ -55,12 +74,5 @@
             <AccumulatorArray value="TargetCurrentEnergy"/>
         </Parameters>
         <Operation value="Minimum"/>
-    </CAccumulatorArithmetic>
-    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyDamaged">
-        <Parameters value="0">
-            <AccumulatorArray value="ViperConsumeStructure@EnergyRestored"/>
-        </Parameters>
-        <Parameters value="-1"/>
-        <Operation value="Multiply"/>
     </CAccumulatorArithmetic>
 </Catalog>

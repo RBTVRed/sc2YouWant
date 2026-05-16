@@ -949,6 +949,8 @@
     </CEffectModifyUnit>
     <CEffectSet id="ViperConsumeStructurePeriodicSet">
         <EffectArray value="ViperConsumeStructure@SetPeriodicEnergy"/>
+        <ValidatorArray index="0" removed="1"/>
+        <ValidatorArray index="1" removed="1"/>
     </CEffectSet>
     <CEffectDamage id="VolatileBurstFriendlyBuildingDamage">
         <Amount value="150"/>
@@ -1860,7 +1862,7 @@
         <EditorCategories value="Race:Zerg"/>
         <VitalArray index="Energy">
             <Change value="0">
-                <AccumulatorArray value="ViperConsumeStructure@EnergyDamaged"/>
+                <AccumulatorArray value="ViperConsumeStructure@EnergyDamage"/>
             </Change>
         </VitalArray>
     </CEffectModifyUnit>
