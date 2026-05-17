@@ -121,13 +121,14 @@
     <CAbilMorph id="BurrowUltraliskDown">
         <InfoArray index="0">
             <SectionArray index="Actor">
-                <DurationArray index="Duration" value="2.5"/>
+                <!-- Note: Actor durations beyond 2.0 cause the Ultralisk to continuously emit smoke particles -->
+                <DurationArray index="Duration" value="2"/>
             </SectionArray>
             <SectionArray index="Collide">
-                <DurationArray index="Delay" value="2.5"/>
+                <DurationArray index="Delay" value="2"/>
             </SectionArray>
             <SectionArray index="Stats">
-                <DurationArray index="Delay" value="2.5"/>
+                <DurationArray index="Delay" value="2"/>
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
