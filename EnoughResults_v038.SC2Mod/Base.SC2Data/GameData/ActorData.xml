@@ -43,6 +43,19 @@
         <On Terms="ActorCreation" Target="_Unit" Send="ClearScale 0.250000 BirthScale"/>
         <On Terms="ActorCreation" Send="Destroy"/>
     </CActorSimple>
+    <CActorUnit id="Stalker">
+        <DeathCustomData index="0" SyncPassChance="80"/>
+        <DeathCustomData index="1" SyncPassChance="80"/>
+        <DeathCustomData index="2" SyncPassChance="80"/>
+        <DeathCustomData index="3" SyncPassChance="88"/>
+        <DeathCustomData index="4" SyncPassChance="80"/>
+        <DeathCustomData index="6" SyncPassChance="40"/>
+        <DeathCustomData index="7" SyncPassChance="80"/>
+        <DeathCustomData index="8" SyncPassChance="52.8"/>
+        <DeathCustomData index="9" SyncPassChance="80"/>
+        <DeathCustomData index="10" SyncPassChance="80"/>
+        <DeathCustomData index="12" SyncPassChance="80"/>
+    </CActorUnit>
     <CActorModel id="TelepathicSuppression@ModelImpact" parent="ModelAnimationStyleContinuous">
         <On Terms="Behavior.TelepathicSuppression.On" Send="Create"/>
         <On Terms="Behavior.TelepathicSuppression.Off" Send="AnimBracketStop BSD"/>
