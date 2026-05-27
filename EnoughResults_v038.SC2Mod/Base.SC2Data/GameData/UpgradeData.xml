@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CUpgrade id="AdeptPiercingAttack">
-        <EffectArray index="0" Operation="Subtract" Reference="Weapon,Adept,Period" Value="0.800000"/>
+        <EffectArray index="0" Operation="Subtract" Reference="Weapon,Adept,Period" Value="0.900000"/>
     </CUpgrade>
     <CUpgrade id="AnabolicSynthesis">
         <EffectArray index="0" Operation="Add" Reference="Unit,Ultralisk,Speed" Value="0.800700"/>
@@ -23,10 +23,10 @@
         <AffectedUnitArray value="Cyclone"/>
     </CUpgrade>
     <CUpgrade id="CentrificalHooks">
-        <EffectArray index="0" Value="0.398400"/>
+        <EffectArray index="0" Operation="Set" Value="2.500000"/>
     </CUpgrade>
     <CUpgrade id="Charge">
-        <EffectArray index="0" Value="0.441400"/>
+        <EffectArray index="0" Operation="Set" Value="2.500000"/>
     </CUpgrade>
     <CUpgrade id="DiggingClaws">
         <EffectArray index="1" Operation="Set" Value="1.500000"/>
@@ -915,6 +915,6 @@
         <EffectArray index="1" Reference="Effect,Claws,AttributeBonus[Armored]" Value="3"/>
     </CUpgrade>
     <CUpgrade id="zerglingmovementspeed">
-        <EffectArray index="0" Operation="Multiply" Value="1.601500"/>
+        <EffectArray index="0" Operation="Set" Value="4.250000"/>
     </CUpgrade>
 </Catalog>

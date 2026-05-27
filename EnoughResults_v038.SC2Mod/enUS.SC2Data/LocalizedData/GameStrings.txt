@@ -200,10 +200,11 @@ Button/Name/WarpInObelisk=Warp In Obelisk
 Button/Name/XelNagaHealingShrine2=Xel Naga Healing Shrine Copy
 Button/Tooltip/AbsorptionShield=Decreases incoming damage that is less than 15 to 1 damage to the Oracle.<n/> <n/><c val="f078ff">Drains <d ref="-Behavior,AbsorptionShield,Modification.VitalRegenMultiplier[Energy] * Unit,Oracle,EnergyRegenRate" precision="1"/> energy per second.</c>
 Button/Tooltip/AdeptHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
-Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable Shade that can move but cannot attack. Can be reactivated to teleport the Adept to the Shade's location. Expires after <d ref="Behavior,AdeptPhaseShiftManual@Timer,Duration"/> seconds.
+Button/Tooltip/AdeptPhaseShift=Projects an invulnerable Shade that can move but cannot attack. After <d time="10"/>, the Adept's Shade disappear. Shades detecting cloaked and burrowed units.
+Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable Shade that can move but cannot attack. Shades detecting cloaked and burrowed units. Can be reactivated to teleport the Adept to the Shade's location. Expires after <d ref="Behavior,AdeptPhaseShiftManual@Timer,Duration"/> seconds.
 Button/Tooltip/AdeptPhaseShiftManual@Teleport=Teleports the Adept to the Shade, destroying the Shade in the process.
-Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 50%.
-Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 50%.
+Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 75%.
+Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 75%.
 Button/Tooltip/AmorphousArmorcloud=Creates a shroud at a target point that blinds enemy air units, reducing its sight to 1. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/AnionPulseCrystals=Doubles the damage of the Phoenix.
 Button/Tooltip/Arbiter=Flying caster. Can use Time Warp, Mass Cloaking and Recall in a Power Field.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
@@ -224,7 +225,7 @@ Button/Tooltip/CalldownMedicalSupplies=Drops Medical Supplies. The Medical Suppl
 Button/Tooltip/CalldownRepairDrone=Drops a Repair Drone onto at the target location. Repair Drones repair mechanical units at no cost and can construct buildings.
 Button/Tooltip/CancelPrismaticAlignment=Returns Void Ray damage and speed to normal values.
 Button/Tooltip/ChannelSnipe=After aiming for 2 seconds, the Ghost fires a sniper round every 2 seconds dealing <d ref="Effect,ChannelSnipeDamage,Amount"/> (+20 to Massive) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo"></c><n/><c val="f078ff">Each additional sniper round costs 10 energy.</c>
-Button/Tooltip/Charge=The Zealot gains increased speed for 2 seconds.
+Button/Tooltip/Charge=Zealot gains increased speed for 2 seconds.
 Button/Tooltip/CliffSight=This unit can see up cliffs.
 Button/Tooltip/CloakCycloneOff=Decloaks the selected unit, making it visible to enemies.
 Button/Tooltip/CloakOnCyclone=Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,BansheeCloak,Modification.VitalRegenArray[2] + Unit,Banshee,EnergyRegenRate)" precision="1"/> energy per second.</c>
@@ -236,7 +237,7 @@ Button/Tooltip/Contaminate=The target structure functions 75% slower for <d ref=
 Button/Tooltip/Corruptor=Anti-air flyer. Can use Corruption. Can morph into a Brood Lord.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/CorruptorDamagingCorruption=Covers the target enemy unit in damaging slime, dealing <d ref="Accumulator,CorruptorDamagingCorruption@Damage,Amount / Behavior,CorruptorDamagingCorruption,Period"/> damage per second for <d ref="Behavior,CorruptorDamagingCorruption,Duration"/> seconds or until the target is close to death. While affected, the target takes <d ref="Behavior,CorruptorDamagingCorruption,DamageResponse.ModifyAmount"/> additional damage from all sources.
 Button/Tooltip/CreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
-Button/Tooltip/CreepTumorSpawnChangeling=Spawns <d ref="Effect,CreepTumorSpawnChangeling@CU,SpawnCount"/> <lang rule="plural"><d stringref="Unit,[d stringref='Effect,CreepTumorSpawnChangeling@CU,SpawnUnit[0]'/],Name"/>,<d stringref="Unit,[d stringref='Effect,CreepTumorSpawnChangeling@CU,SpawnUnit[0]'/],Name"/>s</lang>. <d stringref="Unit,Changeling,Name"/>s cannot attack and die after <d time="[d stringref='Behavior,Changeling,Duration'/]"/>. When a <d stringref="Unit,Changeling,Name"/> first encounters an enemy unit, it will match that unit's color and change into a <d stringref="Unit,Zealot,Name"/>, <d stringref="Unit,Marine,Name"/>, or <d stringref="Unit,Zergling,Name"/>, depending on the enemy race.
+Button/Tooltip/CreepTumorSpawnChangeling=Spawns <d ref="Effect,CreepTumorSpawnChangeling@CU,SpawnCount"/> <lang rule="plural"><d stringref="Unit,[d stringref='Effect,CreepTumorSpawnChangeling@CU,SpawnUnit[0]'/],Name"/>,<d stringref="Unit,[d stringref='Effect,CreepTumorSpawnChangeling@CU,SpawnUnit[0]'/],Name"/>s</lang>. <d stringref="Unit,Changeling,Name"/>s cannot attack and die after <d time="[d stringref='Behavior,Changeling,Duration'/]"/>. When a <d stringref="Unit,Changeling,Name"/> first encounters an enemy unit, it will match that unit's color and change into a <d stringref="Unit,Zealot,Name"/>, <d stringref="Unit,Marine,Name"/>, or <d stringref="Unit,Zergling,Name"/>, depending on the enemy race. Changelings detecting cloaked and burrowed units.
 Button/Tooltip/CyberneticsCore=Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<n/><n/><c val="ffff8a">Enables:</c><n/>- Sentries at the Gateway<n/>- Stalkers at the Gateway
 Button/Tooltip/D8ChargeBomb=Explodes after a short delay, doing 30 initial damage.
 Button/Tooltip/DeactivateAbsorptionShield=Disables the Oracle's Absortion shield.
@@ -250,7 +251,7 @@ Button/Tooltip/EngineeringBay=Contains upgrades for Terran infantry and structur
 Button/Tooltip/EvolveAnabolicSynthesis2=Increases the movement speed of <c val="ffff8a">Ultralisks</c>.
 Button/Tooltip/EvolveCentrificalHooks=<c val="ffff8a">Banelings</c> gain increased movement speed.
 Button/Tooltip/EvolveCreepGeneration=Allows <c val="ffff8a">Overlords</c> to generate creep.
-Button/Tooltip/EvolveDiggingClaws=Reduces the time <c val="ffff8a">Lurkers</c> take to burrow from 4 to 1 second.
+Button/Tooltip/EvolveDiggingClaws=Reduces the time <c val="ffff8a">Lurkers</c> take to burrow from 3 to 1 second.
 Button/Tooltip/EvolveDragonflyWings=Increases the movement speed of <c val="ffff8a">Locusts</c>.
 Button/Tooltip/EvolveGlialRegeneration=Roaches gain double life regeneration.
 Button/Tooltip/EvolveInfestorEnergyUpgrade=Doubles the energy regeneration of the Infestor. 
@@ -340,7 +341,7 @@ Button/Tooltip/ResearchBallisticRange=Increases the range of <c val="ffff8a">Lib
 Button/Tooltip/ResearchBarrier=Increases <c val="ffff8a">Immortal</c> Barrier duration to 30 seconds.
 Button/Tooltip/ResearchBattlecruiserSpecializations=Enables use of the <c val="ffff8a">Battlecruiser</c> Yamato Cannon.
 Button/Tooltip/ResearchBurrow=Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack and take 50% less damage. A burrowed unit is invisible unless revealed by detectors or effects.
-Button/Tooltip/ResearchCharge=The Zealot gains increased speed for 2 seconds.
+Button/Tooltip/ResearchCharge=Increases the movement speed of <c val="ffff8a">Zealots</c> and allow <c val="ffff8a">Zealots</c> to move very fast for 2 seconds.
 Button/Tooltip/ResearchCycloneCloak=Enables <c val="ffff8a">Cyclone</c> to use the Cloak ability. Cloak renders the <c val="ffff8a">Cyclone</c> invisible to enemies unless the unit is revealed by detectors or effects.
 Button/Tooltip/ResearchDrillClaws=Allows <c val="ffff8a">Widow Mines</c> to move, burrow and unburrow faster.
 Button/Tooltip/ResearchEnergyBinder=Increases Guardian Shield damage absorption by 1.
@@ -362,6 +363,7 @@ Button/Tooltip/Scan=Reveals an area of the map, detecting cloaked and burrowed u
 Button/Tooltip/SensorTower=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy. <n/><c val="FFE303">Detector</c>
 Button/Tooltip/Snipe=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
 Button/Tooltip/Snipe2=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
+Button/Tooltip/SpawnChangeling=Creates a Changeling. Changelings cannot attack and die after <d time="150"/>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race. Changelings detecting cloaked and burrowed units.
 Button/Tooltip/SpawnLarvaSolo=Spawns 4 Larvae that can morph into Zerg units. Larva slowly die off creep.
 Button/Tooltip/SpreadOut=Orders selected units to spread out.
 Button/Tooltip/StalkerHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
@@ -398,6 +400,7 @@ Button/Tooltip/WarpPrismHallucination=This hallucinated copy functions like the 
 Button/Tooltip/WidowMineBioSplash=Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <d ref="Effect,WidowMineExplodeDirect,Amount"/> damage to their primary target, and <d ref="Effect,WidowMineExplodeSplash,Amount"/> splash damage to units nearby.<n/><n/><c val="#ColorAttackInfo">Cooldown: <d ref="Abil,WidowMineAttack,Cost[0].Cooldown[0].TimeUse[0]"/> seconds.</c>
 Button/Tooltip/ZealotHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/zerglingattackspeed=Increases the damage against armored units and structures and the attack speed of <c val="ffff8a">Zerglings</c> by 60%.
+Button/Tooltip/zerglingmovementspeed=Increases the movement speed of <c val="ffff8a">Zerglings</c>.
 Button/TooltipAppender/CreepTumorSingleUse=<n/><n/>The Creep Tumor can only use one ability.
 CreepTumor Exhausted=Must target an Exhausted Creep Tumor.
 DataCollection/Name/AdeptPhaseShiftManual=Phase Shift
