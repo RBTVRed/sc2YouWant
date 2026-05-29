@@ -586,6 +586,11 @@
         <LifeRegenRateCreep value="2"/>
         <AddedOnArray/>
     </CUnit>
+    <CUnit id="Egg">
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmor value="5"/>
+    </CUnit>
     <CUnit id="EvolutionChamber">
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
