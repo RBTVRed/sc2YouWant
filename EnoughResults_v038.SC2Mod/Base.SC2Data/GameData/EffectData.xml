@@ -216,6 +216,21 @@
         <Death value="Electrocute"/>
         <ShieldBonus value="60"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="QueenBroodPheromones@AB">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="QueenBroodPheromones"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="QueenBroodPheromones@LM">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="QueenBroodPheromones@SA"/>
+        <AmmoUnit value="QueenBroodPheromones@Weapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="QueenBroodPheromones@SA">
+        <EditorCategories value="Race:Zerg"/>
+        <SearchFilters value="Ground;Self,Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="1.25" Effect="QueenBroodPheromones@AB"/>
+    </CEffectEnumArea>
     <CEffectCreatePersistent id="RevelationPersistent">
         <ExpireDelay value="56"/>
     </CEffectCreatePersistent>

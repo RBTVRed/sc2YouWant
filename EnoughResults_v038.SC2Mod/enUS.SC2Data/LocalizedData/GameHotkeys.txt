@@ -33,6 +33,7 @@ Button/Hotkey/ObeliskSlowSearcher=None
 Button/Hotkey/OozeSnare=B
 Button/Hotkey/OrbitalCommandCalldownRepairDrone=D
 Button/Hotkey/PerimeterScan=W
+Button/Hotkey/QueenBroodPheromones=B
 Button/Hotkey/RapidConstruction=C
 Button/Hotkey/RechargeShields=R
 Button/Hotkey/RepairDroneRepair=R

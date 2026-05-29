@@ -456,6 +456,17 @@
         <Range index="0" value="7"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PsiStorm"/>
+    <CAbilEffectTarget id="QueenBroodPheromones">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="QueenBroodPheromones@LM"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+        </Cost>
+        <Range value="4"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="QueenBroodPheromones@SA"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="QueenBroodPheromones"/>
+    </CAbilEffectTarget>
     <CAbilMorph id="SiegeMode">
         <InfoArray index="0">
             <SectionArray index="Actor">
@@ -1485,6 +1496,12 @@
         <Cost index="0">
             <Vital index="Energy" value="50"/>
             <Cooldown TimeUse="0"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Transfusion">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="85"/>
         </Cost>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="TransientFighterMode">

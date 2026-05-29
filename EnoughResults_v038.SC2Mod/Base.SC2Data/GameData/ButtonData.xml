@@ -18,6 +18,11 @@
     <CButton id="Contaminate">
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
     </CButton>
+    <CButton id="QueenBroodPheromones">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="TelepathicSuppression">
         <Icon value="Assets\Textures\btn-ability-zerg-leech.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-leech.dds"/>
