@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CModel id="QueenBroodPheromones@Buff" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\Zagara_MassFrenzy_State\Zagara_MassFrenzy_State.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="QueenBroodPheromones@Impact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\Zagara_MassFrenzy\Zagara_MassFrenzy.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="0.333333,0.333333,0.333333"/>
+        <ScaleMin value="0.333333,0.333333,0.333333"/>
+    </CModel>
+    <CModel id="QueenBroodPheromones@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\StukovMissile\StukovMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
     <CModel id="Raven">
         <Radius value="0.750000"/>
     </CModel>

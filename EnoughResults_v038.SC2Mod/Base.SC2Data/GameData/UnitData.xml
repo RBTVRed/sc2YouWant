@@ -1255,6 +1255,11 @@
         </CardLayouts>
         <SubgroupPriority value="82"/>
     </CUnit>
+    <CUnit id="QueenBroodPheromones@Weapon" parent="MISSILE_INVULNERABLE">
+        <Race value="Zerg"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
     <CUnit id="SpawnLarvaSolo@Missile" parent="MISSILE_INVULNERABLE">
         <Race value="Zerg"/>
         <Mover value="LarvaReleaseMissile"/>
@@ -1684,9 +1689,10 @@
         <AbilArray index="5" Link="Transfusion"/>
         <AbilArray index="6" Link="SpreadOut"/>
         <AbilArray Link="SpawnLarvaSolo"/>
+        <AbilArray Link="QueenBroodPheromones"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="BuildCreepTumor" AbilCmd="QueenBuild,Build1" Column="0"/>
-            <LayoutButtons index="6" Face="Transfusion" AbilCmd="Transfusion,Execute" Column="1"/>
+            <LayoutButtons index="6" Face="Transfusion" AbilCmd="Transfusion,Execute" Row="1"/>
             <LayoutButtons index="7" Face="BurrowDown" AbilCmd="BurrowQueenDown,Execute" Column="3"/>
             <LayoutButtons index="8" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="9" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
@@ -1695,7 +1701,7 @@
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="13" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
             <LayoutButtons index="14" Face="SpawnLarvaSolo" AbilCmd="SpawnLarvaSolo,Execute" Column="2"/>
-            <LayoutButtons index="15" removed="1"/>
+            <LayoutButtons index="15" Face="QueenBroodPheromones" AbilCmd="QueenBroodPheromones,Execute" Column="1"/>
             <LayoutButtons index="16" removed="1"/>
             <LayoutButtons index="17" removed="1"/>
             <LayoutButtons index="18" removed="1"/>

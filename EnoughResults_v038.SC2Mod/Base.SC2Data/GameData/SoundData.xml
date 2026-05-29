@@ -110,6 +110,18 @@
         <Pitch value="-2.000000,2.000000"/>
         <Volume value="-9.000000,-9.000000"/>
     </CSound>
+    <CSound id="QueenBroodPheromones@Launch" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zeratul\Zeratul_VoidPrisonLaunch0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Zeratul\Zeratul_VoidPrisonLaunch1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Zeratul\Zeratul_VoidPrisonLaunch2.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="QueenBroodPheromones@Impact" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_AcidSporesImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_AcidSporesImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_AcidSporesImpact2.wav"/>
+    </CSound>
     <CSound id="Sentry_WeaponEnd2" parent="Combat">
         <EditorCategories value="Race:Protoss"/>
         <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_WeaponEnd.wav"/>

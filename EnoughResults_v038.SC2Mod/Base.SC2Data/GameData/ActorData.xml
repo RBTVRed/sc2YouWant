@@ -18,6 +18,27 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="QueenBroodPheromones@ModelBuff" parent="ModelAddition">
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On Terms="Behavior.QueenBroodPheromones.On" Send="Create"/>
+        <On Terms="Behavior.QueenBroodPheromones.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="QueenBroodPheromones@Buff"/>
+        <AutoScaleFactor value="2.000000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
     <CActorSimple id="MedicDefensiveMatrix@SimpleModelSelector">
         <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
         <On Terms="ActorCreation; ValidateUnit IsLiberator" Send="Create MedicDefensiveMatrix@ModelLiberator"/>
@@ -43,6 +64,27 @@
         <On Terms="ActorCreation" Target="_Unit" Send="ClearScale 0.250000 BirthScale"/>
         <On Terms="ActorCreation" Send="Destroy"/>
     </CActorSimple>
+    <CActorSplat id="QueenBroodPheromones@CursorSplat" parent="ZergCursorSplat" abil="QueenBroodPheromones"/>
+    <CActorRange id="QueenBroodPheromones@Range" parent="RangeAbil" abil="QueenBroodPheromones"/>
+    <CActorAction id="QueenBroodPheromones@Attack" parent="GenericAttack" effectImpact="QueenBroodPheromones@SA" effectLaunch="QueenBroodPheromones@LM">
+        <LaunchAssets Sound="QueenBroodPheromones@Launch"/>
+        <Missile value="QueenBroodPheromones@Missile"/>
+        <ShieldFlashType value="None"/>
+    </CActorAction>
+    <CActorMissile id="QueenBroodPheromones@Missile" parent="GenericAttackMissile" unitName="QueenBroodPheromones@Weapon">
+        <On Terms="ActorCreation" Send="SetTintColor 255,0,255"/>
+        <On Terms="ActorCreation" Send="SetOpacity 0.250000"/>
+        <Model value="QueenBroodPheromones@Missile"/>
+    </CActorMissile>
+    <CActorSound id="QueenBroodPheromones@SoundImpact" parent="SoundOneShot">
+        <On Terms="Effect.QueenBroodPheromones@SA.Start" Send="Create"/>
+        <Sound value="QueenBroodPheromones@Impact"/>
+    </CActorSound>
+    <CActorModel id="QueenBroodPheromones@ModelImpact" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.QueenBroodPheromones@SA.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,0,255"/>
+        <Model value="QueenBroodPheromones@Impact"/>
+    </CActorModel>
     <CActorUnit id="Stalker">
         <DeathCustomData index="0" SyncPassChance="80"/>
         <DeathCustomData index="1" SyncPassChance="80"/>
@@ -511,6 +553,7 @@
     <!--                                                                                         -->
     <CActorUnit id="Queen">
         <On Terms="Abil.SpawnLarvaSolo.SourceCastStart" Send="AnimPlay WorkStart Stand,Work,Start"/>
+        <On Terms="Abil.QueenBroodPheromones.SourceCastStart" Send="AnimPlay SpellB Spell,B 0 -1.000000 -1.000000 0.500000 AsDuration"/>
     </CActorUnit>
     <CActorModel id="RavenScramblerMissileImpactModel" parent="ModelAnimationStyleOneShot">
         <On Terms="Effect.RavenScramblerMissileSA.Start; At Source" Send="Create"/>

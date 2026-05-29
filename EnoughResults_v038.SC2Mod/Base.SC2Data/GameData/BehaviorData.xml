@@ -447,6 +447,16 @@
         <Period value="0.125"/>
         <PeriodicEffect value="PointDefenseDroneArmorReductionSearch"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="QueenBroodPheromones">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <Modification AttackSpeedMultiplier="1.5"/>
+        <DamageResponse ModifyFraction="0.5">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="RavenShredderMissileArmorReduction">
         <Name value="Behavior/Name/Slow"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-slow.dds"/>

@@ -130,6 +130,9 @@
         <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
         <DataRecord Entry="Effect,MedicDefensiveMatrix@Set"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="QueenBroodPheromones">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="RuptureTumor">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
         <DataRecord Entry="Abil,RuptureTumor"/>
