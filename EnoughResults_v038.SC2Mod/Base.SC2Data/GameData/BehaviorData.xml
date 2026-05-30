@@ -18,7 +18,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-dehaka-speedboost.dds"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsNotBuried"/>
-        <Duration value="3"/>
+        <Duration value="2.5"/>
         <Modification MoveSpeedBonus="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="BurrowedAmbusher@Applicator">

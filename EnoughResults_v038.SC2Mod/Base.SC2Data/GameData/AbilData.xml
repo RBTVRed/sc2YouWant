@@ -460,7 +460,7 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="QueenBroodPheromones@LM"/>
         <Cost>
-            <Vital index="Energy" value="75"/>
+            <Vital index="Energy" value="100"/>
         </Cost>
         <Range value="4"/>
         <CastOutroTime value="0.5"/>
@@ -1633,6 +1633,7 @@
     <CAbilEffectTarget id="ViperConsumeStructure">
         <TargetFilters index="0" value="-;Missile,Stasis,UnderConstruction,Dead,Hidden"/>
         <SmartValidatorArray value="NotCreepTumor"/>
+        <Range index="0" value="6"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ViperParasiticBombRelay"/>
     <CAbilEffectInstant id="VoidRaySwarmDamageBoost">
