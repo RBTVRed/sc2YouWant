@@ -451,7 +451,7 @@
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
-        <Duration value="20"/>
+        <Duration value="21"/>
         <Modification AttackSpeedMultiplier="1.5"/>
         <DamageResponse ModifyFraction="0.5">
             <Chance value="1"/>

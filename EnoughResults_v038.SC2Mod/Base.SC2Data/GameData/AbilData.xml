@@ -1750,6 +1750,18 @@
         </InfoArray>
     </CAbilBuild>
     <CAbilResearch id="evolutionchamberresearch">
+        <InfoArray index="Research4">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+        </InfoArray>
+        <InfoArray index="Research5">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+        </InfoArray>
+        <InfoArray index="Research6">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+        </InfoArray>
         <InfoArray index="Research10" Upgrade="">
             <Button DefaultButtonFace="" Requirements="QueenOnCreep"/>
         </InfoArray>

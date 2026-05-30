@@ -19,7 +19,7 @@
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
     </CButton>
     <CButton id="QueenBroodPheromones">
-        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-disintegration.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
@@ -233,7 +233,7 @@
         <TooltipAppender Text="Button/TooltipAppender/CreepTumorSingleUse"/>
     </CButton>
     <CButton id="SpawnLarvaSolo">
-        <Icon value="Assets\Textures\btn-unit-zerg-larva.dds"/>
+        <Icon value="Assets\Textures\btn-unit-zerg-larvalqueen.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-larva.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
