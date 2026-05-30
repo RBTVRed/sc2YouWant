@@ -195,7 +195,7 @@
     <CModel id="TelepathicSuppression@Aura" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\QueenRegenAura\QueenRegenAura.m3"/>
         <EditorCategories value="Race:Zerg"/>
-        <Radius value="1.000000"/>
+        <Radius value="0.900000"/>
     </CModel>
     <CModel id="TempestAttackImpact">
         <ScaleMax value="1.300000,1.300000,1.300000"/>

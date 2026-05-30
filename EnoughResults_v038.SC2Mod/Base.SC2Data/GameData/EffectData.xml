@@ -941,7 +941,7 @@
     <CEffectEnumArea id="TelepathicSuppression@SA">
         <EditorCategories value="Race:Zerg"/>
         <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Dead,Hidden"/>
-        <AreaArray Radius="10" Effect="TelepathicSuppression@AB"/>
+        <AreaArray Radius="9" Effect="TelepathicSuppression@AB"/>
     </CEffectEnumArea>
     <CEffectDamage id="ThorsHammerDamage">
         <Amount value="60"/>
