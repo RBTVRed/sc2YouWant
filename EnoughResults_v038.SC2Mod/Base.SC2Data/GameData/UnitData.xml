@@ -1486,7 +1486,7 @@
         </CardLayouts>
         <ShieldsStart value="150"/>
         <ShieldsMax value="150"/>
-        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Minerals" value="75"/>
     </CUnit>
     <CUnit id="Observer">
         <AbilArray Link="SpreadOut"/>
