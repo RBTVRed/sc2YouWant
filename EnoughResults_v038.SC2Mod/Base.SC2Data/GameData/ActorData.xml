@@ -34,7 +34,7 @@
         <On Terms="Behavior.QueenBroodPheromones.Off" Send="AnimBracketStop BSD"/>
         <On Terms="Behavior.QueenBroodPheromones@Weak.On" Send="Create"/>
         <On Terms="Behavior.QueenBroodPheromones@Weak.Off" Send="AnimBracketStop BSD"/>
-        <On Terms="ActorCreation" Send="SetTintColor 64,64,64"/>
+        <On Terms="ActorCreation" Send="SetTintColor 128,64,255"/>
         <HostSiteOps Ops="SOpAttachOrigin"/>
         <Model value="QueenBroodPheromones@Buff"/>
         <AutoScaleFactor value="1.000000"/>
