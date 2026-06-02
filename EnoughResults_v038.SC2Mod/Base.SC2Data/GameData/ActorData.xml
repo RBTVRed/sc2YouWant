@@ -37,10 +37,11 @@
         <On Terms="ActorCreation" Send="SetTintColor 128,64,255"/>
         <HostSiteOps Ops="SOpAttachOrigin"/>
         <Model value="QueenBroodPheromones@Buff"/>
-        <AutoScaleFactor value="1.000000"/>
+        <AutoScaleFactor value="2.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
         <ModelFlags index="UseSyncSeed" value="0"/>
+        <Scale value="0.500000"/>
     </CActorModel>
     <CActorSimple id="MedicDefensiveMatrix@SimpleModelSelector">
         <On Terms="Behavior.MedicDefensiveMatrix.On" Send="Create"/>
