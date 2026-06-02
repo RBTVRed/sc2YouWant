@@ -32,9 +32,12 @@
         <Inherits index="WarpGroup" value="0"/>
         <On Terms="Behavior.QueenBroodPheromones.On" Send="Create"/>
         <On Terms="Behavior.QueenBroodPheromones.Off" Send="AnimBracketStop BSD"/>
-        <HostSiteOps Ops="SOpAttachCenter"/>
+        <On Terms="Behavior.QueenBroodPheromones@Weak.On" Send="Create"/>
+        <On Terms="Behavior.QueenBroodPheromones@Weak.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 128,128,128"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpMoveDownByDot75"/>
         <Model value="QueenBroodPheromones@Buff"/>
-        <AutoScaleFactor value="2.000000"/>
+        <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
         <ModelFlags index="UseSyncSeed" value="0"/>

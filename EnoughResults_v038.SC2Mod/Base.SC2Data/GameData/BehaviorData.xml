@@ -452,10 +452,17 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Duration value="21"/>
-        <Modification AttackSpeedMultiplier="1.5"/>
-        <DamageResponse ModifyFraction="0.5">
-            <Chance value="1"/>
-        </DamageResponse>
+        <Modification MoveSpeedBonus="0.5" AttackSpeedMultiplier="1.5">
+            <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            <VitalMaxArray index="Life" value="90"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="QueenBroodPheromones@Weak" parent="QueenBroodPheromones">
+        <Modification>
+            <VitalMaxArray index="Life" value="30"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RavenShredderMissileArmorReduction">
         <Name value="Behavior/Name/Slow"/>

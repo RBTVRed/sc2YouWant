@@ -222,7 +222,37 @@
     <CEffectApplyBehavior id="QueenBroodPheromones@AB">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="QueenBroodPheromones"/>
-        <ValidatorArray index="0" value="QueenBroodPheromones@UnitCenterRange"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="QueenBroodPheromones@SetApply">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="QueenBroodPheromones@AB"/>
+        <EffectArray value="QueenBroodPheromones@MUHeal"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="QueenBroodPheromones@MUHeal">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life">
+            <Change value="90"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="QueenBroodPheromones@MUHealWeak">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life">
+            <Change value="30"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="QueenBroodPheromones@SetApplyWeak">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="QueenBroodPheromones@ABWeak"/>
+        <EffectArray value="QueenBroodPheromones@MUHealWeak"/>
+    </CEffectSet>
+    <CEffectSwitch id="QueenBroodPheromones@Switch">
+        <EditorCategories value="Race:Zerg"/>
+        <CaseArray Validator="QueenBroodPheromones@WeakTarget" Effect="QueenBroodPheromones@SetApplyWeak"/>
+        <CaseDefault value="QueenBroodPheromones@SetApply"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="QueenBroodPheromones@ABWeak">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="QueenBroodPheromones@Weak"/>
     </CEffectApplyBehavior>
     <CEffectLaunchMissile id="QueenBroodPheromones@LM">
         <EditorCategories value="Race:Zerg"/>
@@ -233,7 +263,7 @@
     <CEffectEnumArea id="QueenBroodPheromones@SA">
         <EditorCategories value="Race:Zerg"/>
         <SearchFilters value="Ground;Self,Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
-        <AreaArray Radius="1.25" Effect="QueenBroodPheromones@AB"/>
+        <AreaArray Radius="1.25" Effect="QueenBroodPheromones@Switch"/>
     </CEffectEnumArea>
     <CEffectCreatePersistent id="RevelationPersistent">
         <ExpireDelay value="56"/>

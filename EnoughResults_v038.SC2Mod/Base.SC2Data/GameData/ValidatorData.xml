@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitType id="IsBaneling">
+        <Value value="Baneling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsBroodling">
+        <Value value="Broodling"/>
+    </CValidatorUnitType>
     <CValidatorUnitCompareField id="CanHaveEnergySource">
         <WhichUnit Value="Source"/>
         <Compare value="GE"/>
@@ -146,6 +152,13 @@
     <CValidatorUnitCompareBehaviorCount id="FungalGrowthArmorReductionShouldApply">
         <Behavior value="FungalGrowthArmorReduction"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="QueenBroodPheromones@WeakTarget">
+        <CombineArray value="IsBaneling"/>
+        <CombineArray value="IsBanelingBurrowed"/>
+        <CombineArray value="IsBroodling"/>
+        <CombineArray value="TargetIsChangeling"/>
+        <CombineArray value="IsDisguisedChangeling"/>
+    </CValidatorCombine>
     <CValidatorCombine id="RangeBonusBeneficiary">
         <CombineArray value="IsMarine"/>
         <CombineArray value="IsGhost"/>
