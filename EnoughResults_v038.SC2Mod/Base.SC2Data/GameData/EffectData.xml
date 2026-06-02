@@ -75,6 +75,9 @@
         <EditorCategories value="Race:Terran"/>
         <BehaviorLink value="MedicDefensiveMatrix"/>
     </CEffectRemoveBehavior>
+    <CEffectEnumArea id="PsiStormSearch">
+        <AreaArray index="0" Radius="3.2"/>
+    </CEffectEnumArea>
     <CEffectDamage id="PurificationNovaDamage">
         <Amount value="185"/>
     </CEffectDamage>
@@ -219,6 +222,7 @@
     <CEffectApplyBehavior id="QueenBroodPheromones@AB">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="QueenBroodPheromones"/>
+        <ValidatorArray index="0" value="QueenBroodPheromones@UnitCenterRange"/>
     </CEffectApplyBehavior>
     <CEffectLaunchMissile id="QueenBroodPheromones@LM">
         <EditorCategories value="Race:Zerg"/>
@@ -1201,9 +1205,6 @@
         <AreaArray index="2" Radius="9"/>
         <AttributeBonus index="Structure" value="250"/>
     </CEffectDamage>
-    <CEffectEnumArea id="PsiStormSearch">
-        <AreaArray index="0" Radius="3.2"/>
-    </CEffectEnumArea>
     <CEffectCreatePersistent id="SingleP45GaussPistolCreatePersistent">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnit"/>

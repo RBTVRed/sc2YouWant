@@ -64,7 +64,12 @@
         <On Terms="ActorCreation" Target="_Unit" Send="ClearScale 0.250000 BirthScale"/>
         <On Terms="ActorCreation" Send="Destroy"/>
     </CActorSimple>
-    <CActorSplat id="QueenBroodPheromones@CursorSplat" parent="ZergCursorSplat" abil="QueenBroodPheromones"/>
+    <!--Scale is set to a value that would be 0.5 radius above the base radius of the area.-->
+    <!--At an effect radius of 1.25, this would be 1.75, which amounts to 1.4 times scale.-->
+    <!--The scale should affect a named scale or it will be replaced by or replace the area-adjusted scale.-->
+    <CActorSplat id="QueenBroodPheromones@CursorSplat" parent="ZergCursorSplat" abil="QueenBroodPheromones">
+        <On Terms="ActorCreation" Send="SetScale 1.400000 0.000000 ScaleAdjustment"/>
+    </CActorSplat>
     <CActorRange id="QueenBroodPheromones@Range" parent="RangeAbil" abil="QueenBroodPheromones"/>
     <CActorAction id="QueenBroodPheromones@Attack" parent="GenericAttack" effectImpact="QueenBroodPheromones@SA" effectLaunch="QueenBroodPheromones@LM">
         <LaunchAssets Sound="QueenBroodPheromones@Launch"/>

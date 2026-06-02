@@ -613,6 +613,7 @@ Effect/EditorSuffix/P38ScytheGuassPistolCopy2=(Damage)
 Effect/EditorSuffix/ParticleBeam2=(Damage)
 Effect/EditorSuffix/PlagueCloudDamageNotify=(Notify)
 Effect/EditorSuffix/PurificationNovaDamagePartial=(Damage) (Partial)
+Effect/EditorSuffix/QueenBroodPheromones@AB2=(Impact)
 Effect/EditorSuffix/SpawnLarvaSolo=Solo
 Effect/EditorSuffix/SpawnLarvaSolo@ABConjoined=(Conjoined)
 Effect/EditorSuffix/SpawnLarvaSolo@ABConjoinedRemover=(Conjoined Remover)

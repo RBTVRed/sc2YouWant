@@ -132,6 +132,26 @@
     </CDataCollectionAbil>
     <CDataCollectionAbil id="QueenBroodPheromones">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,QueenBroodPheromones"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@ModelBuff"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@CursorSplat"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@Range"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@Attack"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@Missile"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@SoundImpact"/>
+        <DataRecord Entry="Actor,QueenBroodPheromones@ModelImpact"/>
+        <DataRecord Entry="Behavior,QueenBroodPheromones"/>
+        <DataRecord Entry="Button,QueenBroodPheromones"/>
+        <DataRecord Entry="Effect,QueenBroodPheromones@LM"/>
+        <DataRecord Entry="Effect,QueenBroodPheromones@SA"/>
+        <DataRecord Entry="Effect,QueenBroodPheromones@AB"/>
+        <DataRecord Entry="Model,QueenBroodPheromones@Buff"/>
+        <DataRecord Entry="Model,QueenBroodPheromones@Missile"/>
+        <DataRecord Entry="Model,QueenBroodPheromones@Impact"/>
+        <DataRecord Entry="Sound,QueenBroodPheromones@Launch"/>
+        <DataRecord Entry="Sound,QueenBroodPheromones@Impact"/>
+        <DataRecord Entry="Unit,QueenBroodPheromones@Weapon"/>
+        <DataRecord Entry="Validator,QueenBroodPheromones@UnitCenterRange"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="RuptureTumor">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
