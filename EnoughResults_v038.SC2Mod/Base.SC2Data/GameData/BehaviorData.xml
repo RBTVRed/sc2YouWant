@@ -457,7 +457,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Duration value="21"/>
-        <Modification MoveSpeedBonus="0.5" AttackSpeedMultiplier="1.5">
+        <Modification MoveSpeedBonus="0.5" AttackSpeedMultiplier="1.6">
             <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
             <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
             <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
