@@ -593,6 +593,7 @@
         <LifeStart value="80"/>
         <LifeMax value="80"/>
         <LifeArmor value="4"/>
+        <HotkeyAlias value=""/>
     </CUnit>
     <CUnit id="EvolutionChamber">
         <LifeStart value="1500"/>
