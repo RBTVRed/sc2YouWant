@@ -10,7 +10,7 @@
         <PeriodicPeriodArray index="0" value="1"/>
     </CEffectCreatePersistent>
     <CEffectEnumArea id="BlindingCloudSearch">
-        <SearchFilters value="-;Player,Ally,Air,Missile,Dead,Invulnerable"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Dead,Invulnerable"/>
         <AreaArray index="0" Radius="3.5"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="BlindingCloudStructureAB"/>
