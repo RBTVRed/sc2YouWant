@@ -173,6 +173,7 @@
         <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@RBPhaseShift">
             <Button DefaultButtonFace="AdeptPhaseShiftManual@Cancel"/>
         </InfoArray>
+        <Flags index="BestUnit" value="0"/>
         <Flags index="Transient" value="1"/>
     </CAbilSpecialize>
     <CAbilSpecialize id="AdeptPhaseShiftManual@End">
@@ -183,6 +184,7 @@
         <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@ETUCancelCaster">
             <Button DefaultButtonFace="AdeptPhaseShiftManual@Cancel" Requirements="AdeptPhaseShiftManual@Casting"/>
         </InfoArray>
+        <Flags index="BestUnit" value="0"/>
         <Flags index="Transient" value="1"/>
     </CAbilSpecialize>
     <CAbilEffectTarget id="AdeptPhaseShiftManual">
