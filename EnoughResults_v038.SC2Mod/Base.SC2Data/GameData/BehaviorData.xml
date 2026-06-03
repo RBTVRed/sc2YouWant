@@ -96,7 +96,7 @@
         <TechAliasArray value="_Transfer"/>
         <Duration value="0.5625"/>
         <!--<Duration value="0.625"/>-->
-        <Modification SightMaximum="1">
+        <Modification SightMaximum="1" RangedWeaponRange="-128">
             <StateFlags index="SuppressDetection" value="1"/>
         </Modification>
     </CBehaviorBuff>
