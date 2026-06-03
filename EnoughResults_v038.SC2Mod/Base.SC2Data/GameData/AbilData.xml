@@ -1631,7 +1631,7 @@
         </InfoArray>
     </CAbilMorph>
     <CAbilEffectTarget id="ViperConsumeStructure">
-        <TargetFilters index="0" value="-;Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <TargetFilters index="0" value="-;Self,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
         <SmartValidatorArray value="NotCreepTumor"/>
         <Range index="0" value="6"/>
     </CAbilEffectTarget>
