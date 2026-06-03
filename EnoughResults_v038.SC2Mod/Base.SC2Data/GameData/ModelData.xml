@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CModel id="LarvalQueenEgg@Eggsplosion" parent="EggDeathVariationBase">
+        <Model value="Assets\Units\Zerg\YagdraEggDeath\YagdraEggDeath.m3"/>
+        <TextureDeclares Prefix="zergegg_">
+            <Adaptions TriggerOnSubstring="_diffuse_" Slot="main"/>
+            <Adaptions TriggerOnSubstring="_emissive_" Slot="main.emissive"/>
+            <Adaptions TriggerOnSubstring="_normal_" Slot="main.normal"/>
+            <Adaptions TriggerOnSubstring="_specular_" Slot="main.specular"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="LarvalQueenEgg" parent="EggBase">
+        <Model value="Assets\Units\Zerg\YagdraEgg\YagdraEgg.m3"/>
+        <ScaleMax value="0.425000,0.425000,0.425000"/>
+        <ScaleMin value="0.425000,0.425000,0.425000"/>
+        <TextureDeclares Prefix="zergegg_">
+            <Adaptions TriggerOnSubstring="_diffuse_" Slot="main"/>
+            <Adaptions TriggerOnSubstring="_emissive_" Slot="main.emissive"/>
+            <Adaptions TriggerOnSubstring="_normal_" Slot="main.normal"/>
+            <Adaptions TriggerOnSubstring="_specular_" Slot="main.specular"/>
+        </TextureDeclares>
+        <VariationCount value="1"/>
+    </CModel>
+    <CModel id="LarvalQueen" parent="LarvaBase"/>
+    <CModel id="LarvalQueen@Death" parent="LarvaDeathBase">
+        <Model value="Assets\Units\Zerg\LarvalQueenDeath\LarvalQueenDeath.m3"/>
+    </CModel>
     <CModel id="QueenBroodPheromones@Buff" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\BanelingEggNestBuffEnergy_NoLight\BanelingEggNestBuffEnergy_NoLight.m3"/>
         <EditorCategories value="Race:Terran"/>

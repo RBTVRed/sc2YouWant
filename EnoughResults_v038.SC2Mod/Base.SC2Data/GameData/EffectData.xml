@@ -291,7 +291,7 @@
         <EditorCategories value=""/>
         <CreateFlags index="OffsetByRadius" value="0"/>
         <CreateFlags index="Placement" value="0"/>
-        <SpawnUnit value="Larva"/>
+        <SpawnUnit value="LarvalQueen"/>
         <SpawnEffect value="SpawnLarvaSolo@SetCreate"/>
     </CEffectCreateUnit>
     <CEffectLaunchMissile id="SpawnLarvaSolo@LM">

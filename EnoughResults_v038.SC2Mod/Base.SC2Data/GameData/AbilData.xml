@@ -890,6 +890,60 @@
             <Button Requirements="HaveLair"/>
         </InfoArray>
     </CAbilTrain>
+    <CAbilTrain id="LarvalQueenTrain" parent="LarvaTrain">
+        <Name value="Abil/Name/LarvalQueenTrain"/>
+        <MorphUnit value="LarvalQueenEgg"/>
+        <InfoArray index="Train1">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train2">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train4">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train5">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train7">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train10">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train11">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train12">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train13">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Train15">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilTrain>
     <CAbilEffectTarget id="LiberatorAGTarget">
         <Range index="0" value="8"/>
     </CAbilEffectTarget>

@@ -20,6 +20,7 @@ Abil/Name/DeactivateAbsortionShield=Deactivate Absortion Shield
 Abil/Name/DropToSupplyDepot=Drop To Supply Depot
 Abil/Name/FirstAid=First Aid
 Abil/Name/IncubateTumor=Incubate Tumor
+Abil/Name/LarvalQueenTrain=Morph Unit (Larval Queen -> Basic)
 Abil/Name/LoadUnloadBunkerNeosteel=Load-Unload (Bunker) Neosteel
 Abil/Name/MassCloakingField=Mass Cloaking Field
 Abil/Name/MedicDefensiveMatrix=Nano Matrix
@@ -288,6 +289,8 @@ Button/Tooltip/Infestor=Infestation specialist. Can use the Fungal Growth, Plagu
 Button/Tooltip/KD8Charge=Explodes after a short delay, dealing 30 (+40 to armored) damage to nearby units and 40 damage to structures.
 Button/Tooltip/Lair=Evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Overseers from Overlords<n/>- Lurkers from Hydralisks<n/>- Swarm Hosts from Larvae
 Button/Tooltip/LairDefense=Spawn a wave of 3 Broodlings every 2 seconds for 20 seconds.
+Button/Tooltip/LarvalQueen=Morphs into Zerg units.
+Button/Tooltip/LarvalQueenEgg=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/LiftOffResearch=Enables Lift Off for <d stringref="Unit,CommandCenter,Name"/>, <d stringref="Unit,OrbitalCommand,Name"/>, <d stringref="Unit,Barracks,Name"/>, <d stringref="Unit,Factory,Name"/> and <d stringref="Unit,Starport,Name"/>.<n/><n/><n/>
 Button/Tooltip/LockOn=Locks the Cyclone's weapons on the target unit or structure, dealing 280 damage over 14 seconds. Can move while firing. Cancels if target moves out of range.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or ground structures.</c>
 Button/Tooltip/MassCloakingField=Cloaks the Arbiter and nearby allied units for 25 seconds.
@@ -371,7 +374,7 @@ Button/Tooltip/SensorTower=Reveals the locations of enemy units at long range. T
 Button/Tooltip/Snipe=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
 Button/Tooltip/Snipe2=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c> 
 Button/Tooltip/SpawnChangeling=Creates a Changeling. Changelings cannot attack and die after <d time="150"/>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race. Changelings detecting cloaked and burrowed units.
-Button/Tooltip/SpawnLarvaSolo=Spawns 4 Larvae that can morph into Zerg units. Larva slowly die off creep.
+Button/Tooltip/SpawnLarvaSolo=Spawns 4 Larvae that can morph into Zerg units. These <d stringref="Unit,LarvalQueen,Name"/> produce units <d ref="100 * (Behavior,LarvalQueenTrain@TimeScale,Modification.TimeScale - 1)"/>% faster. <d stringref="Unit,LarvalQueen,Name"/> slowly die off creep.
 Button/Tooltip/SpreadOut=Orders selected units to spread out.
 Button/Tooltip/StalkerHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Drop Ships<n/>- Banshees
@@ -425,6 +428,8 @@ DataCollection/Name/D8ChargeClusterbomb=D8 Charge Clusterbomb
 DataCollection/Name/D8ChargeClusterbombExplode=Explode
 DataCollection/Name/DecayOffCreep=Decay Off Creep
 DataCollection/Name/LarvaPlaceholder=Larva Placeholder
+DataCollection/Name/LarvalQueen=Larval Queen
+DataCollection/Name/LarvalQueenEgg=Larval Queen Egg
 DataCollection/Name/MedRadar=Med Radar
 DataCollection/Name/MedicDefensiveMatrix=Defensive Matrix
 DataCollection/Name/MedicP45GaussPistol=P-45 Gauss Pistol
@@ -805,6 +810,8 @@ Unit/Name/ForceField2=Force Field
 Unit/Name/HydraliskGroundWeapon=Broodling Shot
 Unit/Name/IncubateTumormissile=Incubate Tumor missile
 Unit/Name/IncubatedTumor=Incubated Tumor
+Unit/Name/LarvalQueen=Larva
+Unit/Name/LarvalQueenEgg=Zerg Cocoon
 Unit/Name/MedicalSupplies=Medical Supplies
 Unit/Name/Medivac=Dropship
 Unit/Name/Minerals=Minerals

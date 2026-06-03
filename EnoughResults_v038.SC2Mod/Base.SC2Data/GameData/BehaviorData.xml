@@ -44,6 +44,11 @@
     <CBehaviorBuff id="Fireproof">
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="LarvalQueenTrain@TimeScale">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification TimeScale="2"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MicrobialShroudAura">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
@@ -502,7 +507,7 @@
     <CBehaviorBuff id="SpawnLarvaSolo@ConjoinedRemover">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
-        <DisableValidatorArray value="IsEgg"/>
+        <DisableValidatorArray value="IsLarvalQueenEgg"/>
         <Duration value="0.0625"/>
         <ExpireEffect value="SpawnLarvaSolo@RBConjoined"/>
     </CBehaviorBuff>

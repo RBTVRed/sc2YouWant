@@ -586,10 +586,13 @@
         <LifeRegenRateCreep value="2"/>
         <AddedOnArray/>
     </CUnit>
-    <CUnit id="Egg">
-        <LifeStart value="100"/>
-        <LifeMax value="100"/>
-        <LifeArmor value="5"/>
+    <CUnit id="LarvalQueenEgg" parent="Egg">
+        <ReviveType value="LarvalQueenEgg"/>
+        <BehaviorArray Link="LarvalQueenTrain@TimeScale"/>
+        <SubgroupAlias value="LarvalQueenEgg"/>
+        <LifeStart value="80"/>
+        <LifeMax value="80"/>
+        <LifeArmor value="4"/>
     </CUnit>
     <CUnit id="EvolutionChamber">
         <LifeStart value="1500"/>
@@ -1221,6 +1224,24 @@
         <InnerRadius value="0.625"/>
         <Fidget DistanceMax="16" TurnAngle="45" TurningRate="45"/>
         <BehaviorArray index="1" Link="DecayOffCreep"/>
+    </CUnit>
+    <CUnit id="LarvalQueen" parent="Larva">
+        <ReviveType value="LarvalQueen"/>
+        <AbilArray index="0" Link="LarvalQueenTrain"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" AbilCmd="LarvalQueenTrain,Train1"/>
+            <LayoutButtons index="1" AbilCmd="LarvalQueenTrain,Train2"/>
+            <LayoutButtons index="2" AbilCmd="LarvalQueenTrain,Train3"/>
+            <LayoutButtons index="3" AbilCmd="LarvalQueenTrain,Train10" Row="1" Column="1"/>
+            <LayoutButtons index="4" AbilCmd="LarvalQueenTrain,Train5" Column="3"/>
+            <LayoutButtons index="5" AbilCmd="LarvalQueenTrain,Train11" Column="2"/>
+            <LayoutButtons index="6" AbilCmd="LarvalQueenTrain,Train7"/>
+            <LayoutButtons index="9" AbilCmd="LarvalQueenTrain,Train4" Row="0" Column="3"/>
+            <LayoutButtons index="10" AbilCmd="LarvalQueenTrain,Train13"/>
+            <LayoutButtons index="11" AbilCmd="LarvalQueenTrain,Train12" Column="4"/>
+            <LayoutButtons index="12" AbilCmd="LarvalQueenTrain,Train15" Column="0"/>
+        </CardLayouts>
+        <HotkeyAlias value=""/>
     </CUnit>
     <CUnit id="LarvaPlaceholder" parent="Larva">
         <Mover value="Ground"/>

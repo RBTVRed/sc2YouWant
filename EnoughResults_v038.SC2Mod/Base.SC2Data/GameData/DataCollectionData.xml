@@ -108,6 +108,19 @@
         <DataRecord Entry="Actor,LarvaPlaceholder"/>
         <DataRecord Entry="Unit,LarvaPlaceholder"/>
     </CDataCollectionAbil>
+    <CDataCollectionUnit id="LarvalQueen">
+        <EditorCategories value="DataGroup:Unit,Race:Zerg,ObjectType:Unit"/>
+        <DataRecord Entry="Actor,LarvalQueen@SoundDeath"/>
+        <DataRecord Entry="Actor,LarvalQueen"/>
+        <DataRecord Entry="Unit,LarvalQueen"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="LarvalQueenEgg">
+        <EditorCategories value="DataGroup:Unit,Race:Zerg,ObjectType:Unit"/>
+        <DataRecord Entry="Actor,LarvalQueenEgg"/>
+        <DataRecord Entry="Actor,LarvalQueenEgg@SoundDeath"/>
+        <DataRecord Entry="Model,LarvalQueenEgg"/>
+        <DataRecord Entry="Unit,LarvalQueenEgg"/>
+    </CDataCollectionUnit>
     <CDataCollectionAbil id="MedRadar">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
         <DataRecord Entry="Actor,PerimeterScan@Model"/>

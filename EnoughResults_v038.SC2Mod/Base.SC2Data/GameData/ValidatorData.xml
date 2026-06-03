@@ -37,6 +37,9 @@
     <CValidatorUnitFilters id="IsDetector">
         <Filters value="Detector;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitType id="IsLarvalQueenEgg">
+        <Value value="LarvalQueenEgg"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="IsFirebat">
         <Value value="Firebat"/>
         <Type value="SelectAlias"/>

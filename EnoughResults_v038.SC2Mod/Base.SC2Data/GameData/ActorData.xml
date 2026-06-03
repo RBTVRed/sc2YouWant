@@ -18,6 +18,81 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="LarvalQueenEgg@ModelEggsplosion" parent="ModelAnimationStyleOneShotNoOrphan">
+        <CopySource value="Egg"/>
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <AcceptedTransfers index="Textures" value="1"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOriginStationary SOpShadow"/>
+        <Model value="LarvalQueenEgg@Eggsplosion"/>
+        <ModelFlags index="UseSyncSeed" value="1"/>
+    </CActorModel>
+    <CActorUnit id="LarvalQueenEgg" parent="GenericUnitStandard" unitName="LarvalQueenEgg">
+        <Aliases value="_UnitSmall"/>
+        <On Terms="AbilMorph.*.Start; MorphTo LarvalQueenEgg" Send="Create"/>
+        <On Terms="AbilMorph.*.Cancel" Send="Destroy"/>
+        <On Terms="ActorCreation; ModelName Egg" Send="TextureSelectBySlot main"/>
+        <On Terms="ActorCreation; ModelName Egg" Send="TextureSelectByMatch main.specular main"/>
+        <On Terms="ActorCreation; ModelName Egg" Send="TextureSelectByMatch main.normal main"/>
+        <On Terms="ActorCreation; ModelName Egg" Send="TextureSelectByMatch main.emissive main"/>
+        <On Terms="AbilTrain.LarvalQueenTrain.Finish" Send="Create LarvalQueenEgg@ModelEggsplosion"/>
+        <On Terms="UnitDeathCustomize.LarvalQueenEgg" Send="Create LarvalQueenEgg@ModelEggsplosion"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="ZergSmallUnitDeath" SoundLink="Egg_Explode"/>
+        <DeathArray index="TrainingComplete" SoundLink="Uni_DeathFXSilentKill"/>
+        <PortraitModel value="EggPortrait"/>
+        <BarOffset value="40"/>
+        <BarWidth value="36"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-Egg.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-zerg-egg.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-egg.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-Egg.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSound id="LarvalQueenEgg@SoundDeath" parent="SoundOneShot">
+        <On Terms="UnitDeath.LarvalQueenEgg; PassChance 25.000000" Send="Create"/>
+        <Sound value="Egg_Death"/>
+    </CActorSound>
+    <CActorSound id="LarvalQueenTrain@SoundReady" parent="SoundOneShot">
+        <On Terms="AbilTrain.LarvalQueenTrain.Finish" Send="Create"/>
+        <Sound value="Egg_Ready"/>
+    </CActorSound>
+    <CActorProgress id="LarvalQueenTrain@Progress">
+        <On Terms="Abil.LarvalQueenTrain.Start" Send="Create"/>
+        <On Terms="Abil.LarvalQueenTrain.Stop" Send="Destroy"/>
+        <StageArray AnimProps="Stand,Work" BlendTime="0.000000"/>
+        <StageArray AnimProps="Stand"/>
+    </CActorProgress>
+    <CActorUnit id="LarvalQueen" parent="GenericUnitMorph" unitName="LarvalQueen">
+        <Aliases value="_UnitSmall"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="LarvalQueen@Death" SoundLink="Larva_Explode"/>
+        <DeathArray index="TrainingComplete" SoundLink="Uni_DeathFXSilentKill"/>
+        <PortraitModel value="LarvaPortrait"/>
+        <WalkAnimMoveSpeed value="0.3984"/>
+        <BarOffset value="5"/>
+        <BarWidth value="30"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-Larva.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-zerg-larva.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <SoundArray index="What" value="Larva_What"/>
+        <SoundArray index="Pissed" value="Larva_Pissed"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-larva.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-Larva.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSound id="LarvalQueen@SoundDeath" parent="SoundOneShot">
+        <On Terms="UnitDeath.LarvalQueen; PassChance 25.000000" Send="Create"/>
+        <Sound value="Larva_Death"/>
+    </CActorSound>
     <CActorModel id="QueenBroodPheromones@ModelBuff" parent="ModelAddition">
         <Inherits index="CastShadows" value="0"/>
         <Inherits index="CloakEffect" value="0"/>
@@ -257,7 +332,7 @@
         <Missile value="SpawnLarvaSolo@Missile"/>
     </CActorAction>
     <CActorMissile id="SpawnLarvaSolo@Missile" parent="GenericAttackMissile" unitName="SpawnLarvaSolo@Missile">
-        <Model value="LarvaReleaseMissile"/>
+        <Model value="LarvalQueen"/>
         <BarHeight value="7"/>
         <BarOffset value="100"/>
         <BarWidth value="60"/>
