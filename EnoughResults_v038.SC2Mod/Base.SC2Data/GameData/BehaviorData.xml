@@ -502,7 +502,9 @@
         <RemoveValidatorArray value="NotOracleStasisTrapped"/>
         <RemoveValidatorArray value="SourceNotDead"/>
         <RemoveValidatorArray value="ObeliskSlowRangeLE3"/>
+        <RemoveValidatorArray value="IsNotBuried"/>
         <Modification MoveSpeedMultiplier="0.25" AttackSpeedMultiplier="0.25"/>
+        <BehaviorCategories index="Slow" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SpawnLarvaSolo@ConjoinedRemover">
         <InfoFlags index="Hidden" value="1"/>

@@ -361,6 +361,7 @@
     </CEffectCreateUnit>
     <CEffectApplyBehavior id="ObeliskSlowApply">
         <ValidatorArray index="0" value="ObeliskSlowShouldApply"/>
+        <ValidatorArray value="IsNotBuried"/>
         <Behavior value="ObeliskSlow"/>
     </CEffectApplyBehavior>
     <CEffectEnumArea id="ObeliskSlowSearch">

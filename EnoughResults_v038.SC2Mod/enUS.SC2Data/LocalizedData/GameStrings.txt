@@ -315,7 +315,7 @@ Button/Tooltip/Nexus=Primary structure. Can receive gathered resources. Can use 
 Button/Tooltip/NukeArm=Arms the Silo with a Tactical Nuke.<n/><n/>Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage in a large radius.<n/><n/>Use a Ghost to designate the target.
 Button/Tooltip/NukeCalldown=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 750 (+250 vs. structures) damage to enemies in a large radius.
 Button/Tooltip/ObeliskHardenedShield=Reduces a maximum of 70 incoming damage to 1 while the Obelisk still has shields.
-Button/Tooltip/ObeliskSlowSearcher=Slows enemies near the Obelisk
+Button/Tooltip/ObeliskSlowSearcher=Nearby enemy ground unit attack and movement speeds are slowed by <d ref="100 * (1 - Behavior,ObeliskSlow,Modification.MoveSpeedMultiplier)"/>%. Does not affect burrowed units.
 Button/Tooltip/OozeSnare=Creates ooze that slows enemy ground units by 75%.
 Button/Tooltip/Oracle=Flying caster. Can use Revelation, Stasis Ward, and Absorption Shield. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/OracleBuildStasisTrap=Places a cloaked Stasis Ward at the target location that lasts 7 minutes. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <d ref="Behavior,OracleStasisTrapTarget,Duration"/> seconds. Trapped units cannot be attacked or affected by abilities.
