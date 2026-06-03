@@ -988,6 +988,16 @@
     <CEffectRemoveBehavior id="TownHallLoad@RBAttackSpeed">
         <BehaviorLink value="TownHallLoad@AttackSpeed"/>
     </CEffectRemoveBehavior>
+    <CEffectSwitch id="TransfusionSwitch">
+        <ValidatorArray value="LifeNotFull"/>
+        <ValidatorArray value="NotDisintegrating"/>
+        <EditorCategories value="Race:Zerg"/>
+        <CaseArray Validator="IsStructureTarget" Effect="TransfusionStructure"/>
+        <CaseDefault value="Transfusion"/>
+    </CEffectSwitch>
+    <CEffectSet id="TransfusionImpactSet">
+        <EffectArray index="0" value="TransfusionSwitch"/>
+    </CEffectSet>
     <CEffectModifyUnit id="ViperConsumeStructureModifyCaster">
         <VitalArray index="Life">
             <Change value="5"/>
@@ -1711,7 +1721,15 @@
     </CEffectCreatePersistent>
     <CEffectModifyUnit id="Transfusion">
         <VitalArray index="Life">
-            <Change value="5"/>
+            <Change value="9.091"/>
+        </VitalArray>
+        <ValidatorArray index="0" removed="1"/>
+        <ValidatorArray index="1" removed="1"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TransfusionStructure" parent="Transfusion">
+        <Name value="Effect/Name/TransfusionStructure"/>
+        <VitalArray index="Life">
+            <Change value="45.4545"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectApplyBehavior id="TransfusionAP">

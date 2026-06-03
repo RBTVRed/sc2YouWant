@@ -1063,10 +1063,9 @@
     <CBehaviorBuff id="SupplyDepotDropMorph"/>
     <CBehaviorBuff id="Transfusion">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="14"/>
+        <Duration value="8"/>
         <Period value="0.25"/>
-        <PeriodCount value="56"/>
-        <PeriodicEffect value="Transfusion"/>
+        <PeriodicEffect value="TransfusionSwitch"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Unleash">
         <EditorCategories value="AbilityorEffectType:Units"/>

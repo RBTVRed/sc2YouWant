@@ -388,7 +388,7 @@ Button/Tooltip/TelepathicSuppression=Enemies near the caster can't cast spells t
 Button/Tooltip/TemporalField=The Arbiter warps spacetime within the target area for <d ref="Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodCount*Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodicPeriodArray[0]"/> seconds. All enemy units and structures within the field will have attack and movement speeds increased by <d ref="(Behavior,TemporalField,Modification.MoveSpeedMultiplier)*100-100"/>%.
 Button/Tooltip/TownHallLoad@Load=Loads units into the structure.
 Button/Tooltip/TownHallLoad@UnloadAll=Unloads all units.
-Button/Tooltip/Transfusion=Restores 200 life to target biological unit or structure over 8 seconds.
+Button/Tooltip/Transfusion=Restores <d ref="(Behavior,Transfusion,Duration / Behavior,Transfusion,Period + 1) * Effect,Transfusion,VitalArray[Life].Change"/> (<d ref="(Behavior,Transfusion,Duration / Behavior,Transfusion,Period + 1) * Effect,TransfusionStructure,VitalArray[Life].Change"/> vs Structure) life to target biological unit or structure over <d ref="Behavior,Transfusion,Duration"/> seconds.
 Button/Tooltip/TwilightCouncil=Contains upgrades for Zealots, Sentrys, Stalkers and Adepts.
 Button/Tooltip/UpgradeBuildingArmorLevel1=Upgrades the armor of <c val="ffff8a">structures</c> by 2.
 Button/Tooltip/UpgradeToPlanetaryFortress=Upgrades Command Center to a Planetary Fortress, greatly increasing its armor, arming it with a powerful defensive turret and allows 2 <c val="ffff8a">SCVs</c> to be created simultaneously. Cannot lift off.<n/><n/><c val="ffff8a">Can attack ground units.</c>
@@ -727,6 +727,8 @@ Effect/Name/ThermalLancesAddtoCooldown=Thermal Lances Add to Cooldown
 Effect/Name/TownHallLoad@ABAttackSpeed=Apply Behavior
 Effect/Name/TownHallLoad@RBAttackSpeed=Remove Behavior
 Effect/Name/TransfusionAP=Transfusion AP
+Effect/Name/TransfusionStructure=Transfusion
+Effect/Name/TransfusionSwitch=Transfusion Switch
 Effect/Name/TransientAssaultMode@ABDisableWeapons=Apply Behavior
 Effect/Name/TransientAssaultMode@ABHeight=Apply Behavior
 Effect/Name/TransientAssaultMode@CP=Create Persistent
