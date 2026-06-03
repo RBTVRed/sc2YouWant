@@ -1704,9 +1704,8 @@
     </CEffectDamage>
     <CEffectSwitch id="ThermalLanceSwitch">
         <EditorCategories value=""/>
-        <CaseArray Validator="TargetIsAir" Effect="ThermalLanceDamageAir"/>
-        <CaseArray Validator="TargetIsGround" Effect="ThermalLanceDamageGround"/>
-        <CaseArray Validator="IsColossus" Effect="ThermalLanceDamageGround"/>
+        <CaseArray Validator="GroundUnitFilter" Effect="ThermalLanceDamageGround"/>
+        <CaseArray Validator="AirUnitFilter" Effect="ThermalLanceDamageAir"/>
     </CEffectSwitch>
     <CEffectModifyUnit id="ThermalLancesAddtoCooldown">
         <EditorCategories value=""/>
