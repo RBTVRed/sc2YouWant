@@ -1364,7 +1364,9 @@
     <CAbilEffectInstant id="SpreadOut">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="SpreadOut"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SpreadOut">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="Stimpack">
         <Cost index="0">
