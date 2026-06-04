@@ -456,7 +456,7 @@
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
-        <Duration value="21"/>
+        <Duration value="28"/>
         <Modification MoveSpeedBonus="0.5" AttackSpeedMultiplier="1.6">
             <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
             <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
@@ -468,6 +468,7 @@
         <Modification>
             <VitalMaxArray index="Life" value="30"/>
         </Modification>
+        <Duration value="21"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RavenShredderMissileArmorReduction">
         <Name value="Behavior/Name/Slow"/>

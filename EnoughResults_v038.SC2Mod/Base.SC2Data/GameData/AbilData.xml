@@ -462,7 +462,7 @@
         <Cost>
             <Vital index="Energy" value="100"/>
         </Cost>
-        <Range value="4"/>
+        <Range value="5"/>
         <CastOutroTime value="0.5"/>
         <CursorEffect value="QueenBroodPheromones@SA"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="QueenBroodPheromones"/>
