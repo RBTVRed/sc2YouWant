@@ -3,7 +3,6 @@ Abil/Name/AdeptPhaseShiftManual=Psionic Transfer
 Abil/Name/AdeptPhaseShiftManual@End=End
 Abil/Name/AdeptPhaseShiftManual@EndTarget=End
 Abil/Name/AmorphousArmorcloud=Blinding Spores
-Abil/Name/AmorphousArmorcloudInstant=Amorphous Armorcloud
 Abil/Name/BlindingCloud=Plague Cloud
 Abil/Name/BroodlingSwarm=Broodling Swarm
 Abil/Name/BroodlingTrain=Broodling Train
@@ -59,7 +58,8 @@ Abil/Name/ViperParasiticBombRelay=ParasiticBombRelay (Unnamed)
 Abil/Name/VoidRaySwarmDamageBoostRemove=Void Ray Swarm Damage Boost Remove
 Behavior/Name/BlindingCloud=Plague Cloud
 Behavior/Name/BlindingCloudStructure=Plague Cloud
-Behavior/Name/BlindingSpores=Blinding Spores
+Behavior/Name/BlindingSpores@Enemy=Blinding Spores
+Behavior/Name/BlindingSpores@Friendly=Blinding Spores
 Behavior/Name/BurrowedAmbusher@Buff=Ambush!
 Behavior/Name/CombatDrugs=Combat Drugs
 Behavior/Name/CompactedShield@Buff=Compacted Shield
@@ -72,7 +72,6 @@ Behavior/Name/IncubateDummy=Incubate Dummy
 Behavior/Name/Incubated=Incubated
 Behavior/Name/InfestorIsBurrowed=Infestor Is Burrowed
 Behavior/Name/MedicDefensiveMatrix=Nano Matrix
-Behavior/Name/MicrobialShroudAura=Microbial Shroud Aura
 Behavior/Name/NapalmGrenade@DoT=Burning
 Behavior/Name/ObeliskSlow=Slow
 Behavior/Name/OozeSnare=Ooze Snare
@@ -100,7 +99,8 @@ Behavior/Name/Unleash=Unleash
 Behavior/Name/UnloadAllInBunker=Unload All In Bunker
 Behavior/Name/WarpingInDoubleDamageTaken=Warping In Double Damage Taken
 Behavior/Tooltip/AmorphousArmorcloud=Incoming damage from air units reduced by <d ref="Behavior,AmorphousArmorcloud,DamageResponse.ModifyFraction*100" precision="1"/>%.
-Behavior/Tooltip/BlindingSpores=This unit had its sight reduced.
+Behavior/Tooltip/BlindingSpores@Enemy=This unit's sight and weapon ranges are reduced and it can't detect.
+Behavior/Tooltip/BlindingSpores@Friendly=This unit is taking reduced damage from ranged attacks.
 Behavior/Tooltip/BurrowedAmbusher@Buff=This unit has increased movement speed.
 Behavior/Tooltip/CombatDrugs=Combat Drugs are healing the Reaper.
 Behavior/Tooltip/CompactedShield@Buff=This unit takes 50% less damage from any single attack.
@@ -115,7 +115,6 @@ Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodli
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/Incubated=This structure functions 75% slower.
 Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
-Behavior/Tooltip/MicrobialShroudAura=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/NapalmGrenade@DoT=Target is under the effects of a Napalm Grenade and will take massive damage while in this area of effect.
 Behavior/Tooltip/ObeliskSlow=This unit has reduced movement and attack speed.
 Behavior/Tooltip/ParasiticBomb=This unit is taking damage over time.
@@ -145,6 +144,7 @@ Button/Name/AdeptPhaseShiftManual@Teleport=Teleport
 Button/Name/AmorphousArmorcloud=Blinding Spores
 Button/Name/BarrierDurationResearch=Research Extended Barrier Duration
 Button/Name/BlindingCloud=Plague Cloud
+Button/Name/BlindingSpores=Blinding Spores
 Button/Name/BurrowedAmbusher=Ambusher
 Button/Name/CalldownMedicalSupplies=Calldown: Medical Supplies
 Button/Name/CalldownRepairDrone=Calldown: Repair Drone
@@ -221,6 +221,7 @@ Button/Tooltip/AutoTurret=Automated defensive turret. Times out after <d ref="Be
 Button/Tooltip/Banshee=Tactical-strike aircraft. Can be upgraded to use cloak.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Barracks=Infantry-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs<n/>- Orbital Commands from Command Centers
 Button/Tooltip/BlindingCloud=Creates a cloud that deals up to 250 damage (+250 to armored) to affected enemy ground units and structures over 35 seconds.
+Button/Tooltip/BlindingSpores=Creates a shroud around the caster that blinds enemy air units, reducing their sight range to <d ref="Behavior,BlindingSpores@Enemy,Modification.SightMaximum"/>, disabling detection, and reducing weapon range to melee.<n/><n/>Friendly air units within the shroud take <d ref="100 * (1 - Behavior,BlindingSpores@Friendly,DamageResponse.ModifyFraction)"/>% reduced damage from ranged weapons that don't deal splash damage.<n/><n/>Lasts <d ref="Behavior,BlindingSpores@Aura,Duration"/> seconds.
 Button/Tooltip/BuildCreepTumor=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one <d stringref="Unit,Changeling,Name"/> or one additional <d stringref="Unit,CreepTumor,Name"/>.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildCreepTumorPropagate=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn two Broodlings or one additional Creep Tumor.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg heal faster on creep.</c>
 Button/Tooltip/BuildTechLabBarracks=Infantry-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Firebats<n/>- Medics<n/>- Ghosts with Ghost Academy
@@ -414,6 +415,7 @@ Button/Tooltip/zerglingmovementspeed=Increases the movement speed of <c val="fff
 Button/TooltipAppender/CreepTumorSingleUse=<n/><n/>The Creep Tumor can only use one ability.
 CreepTumor Exhausted=Must target an Exhausted Creep Tumor.
 DataCollection/Name/AdeptPhaseShiftManual=Phase Shift
+DataCollection/Name/BlindingSpores=Blinding Spores
 DataCollection/Name/BurrowedAmbusher=Burrowed Ambusher
 DataCollection/Name/CargoTracker=CargoTracker
 DataCollection/Name/CompactedShield=Compacted Shield
@@ -494,7 +496,11 @@ Effect/Name/BlindingCloudStructureAB=Plague Cloud Structure AB
 Effect/Name/BlindingCloudStructureSet=Plague Cloud Structure (Set)
 Effect/Name/BlindingCloudSwitch=Plague Cloud Switch
 Effect/Name/BlindingCloudTransportIterateTransport=Plague Cloud Transport (Iterate Transport)
-Effect/Name/BlindingSpores@AB=BlindingSpores@AB
+Effect/Name/BlindingSpores@ABCaster=Apply Behavior
+Effect/Name/BlindingSpores@ABEnemy=Apply Behavior
+Effect/Name/BlindingSpores@ABFriendly=Apply Behavior
+Effect/Name/BlindingSpores@SA=Search Area
+Effect/Name/BlindingSpores@SwitchApply=Switch
 Effect/Name/BroodlingShotAB=Broodling Shot
 Effect/Name/BroodlingShotCU=Broodling Shot
 Effect/Name/BroodlingShotD=Broodling Shot

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CDataCollectionAbil id="BlindingSpores">
+        <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,BlindingSpores"/>
+        <DataRecord Entry="Actor,BlindingSpores@ModelAttachmentEnemy"/>
+        <DataRecord Entry="Actor,BlindingSpores@SoundLoop"/>
+        <DataRecord Entry="Actor,BlindingSpores@ModelAura"/>
+        <DataRecord Entry="Behavior,BlindingSpores@Enemy"/>
+        <DataRecord Entry="Behavior,BlindingSpores@Aura"/>
+        <DataRecord Entry="Button,BlindingSpores"/>
+        <DataRecord Entry="Effect,BlindingSpores@ABEnemy"/>
+        <DataRecord Entry="Effect,BlindingSpores@SA"/>
+        <DataRecord Entry="Effect,BlindingSpores@ABCaster"/>
+        <DataRecord Entry="Model,BlindingSpores@Cloud"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="BurrowedAmbusher">
         <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
         <DataRecord Entry="Actor,BurrowedAmbusher@Model"/>

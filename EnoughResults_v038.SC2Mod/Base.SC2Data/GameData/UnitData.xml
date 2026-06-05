@@ -2924,12 +2924,12 @@
         <AbilArray index="3" Link="Yoink"/>
         <AbilArray index="4" Link="SpreadOut"/>
         <AbilArray index="5" Link="InfestedTerrans"/>
-        <AbilArray Link="AmorphousArmorcloud"/>
+        <AbilArray Link="BlindingSpores"/>
         <CardLayouts index="0">
             <LayoutButtons index="7" Face="FaceEmbrace" AbilCmd="Yoink,Execute"/>
             <LayoutButtons index="8" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
             <LayoutButtons index="9" Face="InfestedTerrans" AbilCmd="InfestedTerrans,Execute" Column="1"/>
-            <LayoutButtons Face="AmorphousArmorcloud" Type="AbilCmd" AbilCmd="AmorphousArmorcloud,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="BlindingSpores" Type="AbilCmd" AbilCmd="BlindingSpores,Execute" Row="2" Column="3"/>
         </CardLayouts>
         <LifeStart value="300"/>
         <LifeMax value="300"/>

@@ -18,6 +18,31 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="BlindingSpores@ModelAttachmentFriendly" parent="ModelAddition">
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <On Terms="Behavior.BlindingSpores@Friendly.On" Send="Create"/>
+        <On Terms="Behavior.BlindingSpores@Friendly.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachHead"/>
+        <Model value="BlindingSpores@FriendlyAttachment"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="BlindingSpores@ModelAura" parent="ModelAnimationStyleContinuous">
+        <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Behavior.BlindingSpores@Aura.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
+        <On Terms="Behavior.BlindingSpores@Aura.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
+        <Model value="BlindingSpores@Cloud"/>
+    </CActorModel>
+    <CActorSound id="BlindingSpores@SoundLoop" parent="SoundContinuous">
+        <On Terms="Effect.BlindingSpores@ABCaster.Start" Send="Create"/>
+        <On Terms="Effect.BlindingSpores@ABCaster.Stop" Send="Destroy"/>
+        <Sound value="AmorphousArmorcloud_Gas"/>
+        <Layers Sound="AmorphousArmorcloud_Creep_Loop"/>
+    </CActorSound>
     <CActorModel id="LarvalQueenEgg@ModelEggsplosion" parent="ModelAnimationStyleOneShotNoOrphan">
         <CopySource value="Egg"/>
         <Inherits index="BaseModelScale" value="1"/>
@@ -192,14 +217,14 @@
         <Inherits index="BaseModelScale" value="1"/>
         <Inherits index="Scale" value="1"/>
     </CActorModel>
-    <CActorModel id="BlindingSpores@ModelAttachment" parent="ModelAddition">
+    <CActorModel id="BlindingSpores@ModelAttachmentEnemy" parent="ModelAddition">
         <Inherits index="BaseModelScale" value="0"/>
         <Inherits index="Scale" value="0"/>
         <Inherits index="TintColor" value="0"/>
-        <On Terms="Behavior.BlindingSpores.On" Send="Create"/>
-        <On Terms="Behavior.BlindingSpores.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.BlindingSpores@Enemy.On" Send="Create"/>
+        <On Terms="Behavior.BlindingSpores@Enemy.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachHead"/>
-        <Model value="AmorphousArmorcloudModelAttachment"/>
+        <Model value="BlindingSpores@EnemyAttachment"/>
         <AutoScaleFactor value="1.000000"/>
     </CActorModel>
     <CActorBeamSimple id="ArchonAttackBeam">
@@ -238,16 +263,13 @@
         <!--<On index="5" Terms="Effect.AmorphousArmorcloudCP.Start; At Caster"/>
         <On index="7" Terms="Effect.AmorphousArmorcloudCP.Stop; At Caster"/>-->
         <On Terms="ActorCreation.AmorphousArmorcloud" Send="SetOpacity 1.000000"/>
-        <HostSiteOps Ops="MicrobialShroudOffset SOpMoveUpBy4"/>
+        <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
         <Scale value="0.400000"/>
         <!--On Terms="ActorCreation" Send="SetTintColor {255,0,0 3.000000}"/-->
     </CActorModel>
     <CActorModel id="BlindingCloud">
         <On Terms="ActorCreation" Send="SetTintColor 255,0,255"/>
         <HostSiteOps Ops="OozeSnareOffset"/>
-    </CActorModel>
-    <CActorModel id="BlindingCloudModelAttachment">
-        <On Terms="ActorCreation" Send="SetTintColor 255,0,255"/>
     </CActorModel>
     <CActorSiteOpLocalOffset id="BlindingCloudOffset2">
         <EditorCategories value=""/>

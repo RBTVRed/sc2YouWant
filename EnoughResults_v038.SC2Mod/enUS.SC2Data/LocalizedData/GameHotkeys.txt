@@ -1,6 +1,7 @@
 ﻿Button/Hotkey/AbsorptionShield=B
 Button/Hotkey/AdeptPhaseShiftManual@Teleport=R
 Button/Hotkey/AmorphousArmorcloud=B
+Button/Hotkey/BlindingSpores=B
 Button/Hotkey/CalldownMedicalSupplies=X
 Button/Hotkey/CancelPrismaticAlignment=C
 Button/Hotkey/CliffSight=

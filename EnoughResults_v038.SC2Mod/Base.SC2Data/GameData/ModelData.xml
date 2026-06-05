@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CModel id="BlindingSpores@EnemyAttachment" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\MicrobialShroudImpact\MicrobialShroudImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <SelectionRadius value="0.312500"/>
+        <ShadowRadius value="0.312500"/>
+    </CModel>
+    <CModel id="BlindingSpores@FriendlyAttachment" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\MicrobialShroudImpact\MicrobialShroudImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <SelectionRadius value="0.312500"/>
+        <ShadowRadius value="0.312500"/>
+    </CModel>
+    <CModel id="BlindingSpores@Cloud" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\MicrobialShroud\MicrobialShroud.m3"/>
+        <AnimSpeed value="0.700000"/>
+        <EditorCategories value="Race:Zerg"/>
+        <RadiusLoose value="0.540000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
     <CModel id="LarvalQueenEgg@Eggsplosion" parent="EggDeathVariationBase">
         <Model value="Assets\Units\Zerg\YagdraEggDeath\YagdraEggDeath.m3"/>
         <TextureDeclares Prefix="zergegg_">

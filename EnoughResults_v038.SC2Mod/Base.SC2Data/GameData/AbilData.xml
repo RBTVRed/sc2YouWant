@@ -3,20 +3,18 @@
     <CAbilEffectTarget id="AmorphousArmorcloud">
         <Range index="0" value="10"/>
     </CAbilEffectTarget>
-    <CAbilEffectInstant id="AmorphousArmorcloudInstant">
+    <CAbilEffectInstant id="BlindingSpores">
+        <Name value="Abil/Name/AmorphousArmorcloud"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
-        <Effect index="0" value="AmorphousArmorcloudCP"/>
-        <Flags index="AllowMovement" value="1"/>
+        <Effect index="0" value="BlindingSpores@ABCaster"/>
         <Flags index="BestUnit" value="1"/>
-        <Flags index="NoDeceleration" value="1"/>
-        <Flags index="RangeUseCasterRadius" value="0"/>
-        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Energy" value="1"/>
+            <Vital index="Energy" value="100"/>
         </Cost>
-        <CursorEffect value="AmorphousArmorcloudSearch"/>
+        <CursorEffect value="BlindingSpores@SA"/>
         <AINotifyEffect value="AmorphousArmorcloudCP"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="AmorphousArmorcloud"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BlindingSpores"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="AdeptPhaseShift">
         <Cost index="0">

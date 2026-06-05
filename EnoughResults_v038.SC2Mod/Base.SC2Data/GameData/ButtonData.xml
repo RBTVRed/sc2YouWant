@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CButton id="AmorphousArmorcloud"/>
+    <CButton id="BlindingSpores">
+        <Icon value="Assets\Textures\btn-ability-zerg-darkswarm.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-darkswarm.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="BlindingCloud">
         <Icon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>

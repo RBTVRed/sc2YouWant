@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectSwitch id="BlindingSpores@SwitchApply">
+        <EditorCategories value="Race:Zerg"/>
+        <CaseArray Validator="TargetIsAllyorPlayer" Effect="BlindingSpores@ABFriendly"/>
+        <CaseDefault value="BlindingSpores@ABEnemy"/>
+    </CEffectSwitch>
     <CEffectDamage id="AcidSpines">
         <AttributeBonus index="Armored" value="4"/>
         <Amount value="12"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="BlindingSpores@ABFriendly">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="BlindingSpores@Friendly"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="BlindingSpores@SA">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="Air;Missile,Dead,Invulnerable"/>
+        <AreaArray Radius="3.5" Effect="BlindingSpores@SwitchApply"/>
+    </CEffectEnumArea>
     <CEffectApplyBehavior id="BlindingCloudAB"/>
     <CEffectCreatePersistent id="BlindingCloudCP">
         <PeriodCount value="49"/>
@@ -148,9 +163,13 @@
         <!--<WhichLocation Value="SourceUnit"/>-->
         <PeriodCount value="90"/>
     </CEffectCreatePersistent>
-    <CEffectApplyBehavior id="BlindingSpores@AB">
+    <CEffectApplyBehavior id="BlindingSpores@ABCaster">
         <EditorCategories value="Race:Zerg"/>
-        <Behavior value="BlindingSpores"/>
+        <Behavior value="BlindingSpores@Aura"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="BlindingSpores@ABEnemy">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="BlindingSpores@Enemy"/>
     </CEffectApplyBehavior>
     <CEffectSet id="EMPChannelInitialSet">
         <EditorCategories value="Race:Terran"/>
@@ -385,7 +404,7 @@
         <Amount value="6"/>
     </CEffectDamage>
     <CEffectEnumArea id="AmorphousArmorcloudSearch">
-        <AreaArray index="0" Radius="5" Effect="BlindingSpores@AB"/>
+        <AreaArray index="0" Radius="5"/>
         <SearchFilters value="Air;Player,Ally,Missile,Dead,Invulnerable"/>
         <!--<ImpactLocation Value="SourceUnit"/>-->
     </CEffectEnumArea>
