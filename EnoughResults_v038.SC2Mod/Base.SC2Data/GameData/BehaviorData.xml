@@ -15,11 +15,6 @@
             <Kind index="Melee" value="0"/>
             <Kind index="Splash" value="0"/>
             <Kind index="NoProc" value="0"/>
-            <ExcludeEffectInChainArray value="PsionicShockwaveDamage"/>
-            <ExcludeEffectInChainArray value="LanceMissileLaunchersDamage"/>
-            <ExcludeEffectInChainArray value="TempestDamage"/>
-            <ExcludeEffectInChainArray value="ThermalLanceDamageAir"/>
-            <ExcludeEffectInChainArray value="LiberatorMissileDamage"/>
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
