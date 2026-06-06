@@ -36,7 +36,16 @@
         <On Terms="Behavior.BlindingSpores@Aura.Off" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SetTintColor 192,64,32"/>
         <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
-        <Model value="BlindingSpores@Cloud"/>
+        <Model value="BlindingSpores@Aura"/>
+    </CActorModel>
+    <CActorModel id="BlindingSpores@ModelCloud" parent="ModelAnimationStyleContinuous">
+        <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Behavior.BlindingSpores@Aura.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
+        <On Terms="Behavior.BlindingSpores@Aura.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
+        <Model value="BlindingSpores@Cloud2"/>
     </CActorModel>
     <CActorSound id="BlindingSpores@SoundLoop" parent="SoundContinuous">
         <On Terms="Effect.BlindingSpores@ABCaster.Start" Send="Create"/>

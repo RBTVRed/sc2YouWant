@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CModel id="BlindingSpores@Cloud2" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\MicrobialShroud\MicrobialShroud.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <RadiusLoose value="3.500000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
     <CModel id="BlindingSpores@EnemyAttachment" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\MicrobialShroudImpact\MicrobialShroudImpact.m3"/>
         <EditorCategories value="Race:Zerg"/>
@@ -12,11 +19,10 @@
         <SelectionRadius value="0.312500"/>
         <ShadowRadius value="0.312500"/>
     </CModel>
-    <CModel id="BlindingSpores@Cloud" parent="PersistentSpellFX">
+    <CModel id="BlindingSpores@Aura" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\Stukov_Infested_Liberator_Missile_AOE\Stukov_Infested_Liberator_Missile_AOE.m3"/>
-        <AnimSpeed value="0.700000"/>
         <EditorCategories value="Race:Zerg"/>
-        <RadiusLoose value="0.540000"/>
+        <RadiusLoose value="3.500000"/>
         <ScaleMax value="1.250000,1.250000,1.250000"/>
         <ScaleMin value="1.250000,1.250000,1.250000"/>
     </CModel>
