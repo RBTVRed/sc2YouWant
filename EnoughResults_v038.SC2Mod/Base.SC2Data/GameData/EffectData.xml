@@ -1218,6 +1218,7 @@
         <AttributeBonus index="Armored" value="25"/>
         <AttributeBonus index="Massive" value="0"/>
         <AreaArray Radius="1.2" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="LanzerTorpedoesGround">
         <EditorCategories value="Race:Terran"/>
