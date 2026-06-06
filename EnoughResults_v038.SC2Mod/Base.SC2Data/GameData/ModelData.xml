@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CModel id="BlindingSpores@Cloud2" parent="PersistentSpellFX">
-        <Model value="Assets\Effects\Zerg\MicrobialShroud\MicrobialShroud.m3"/>
+        <Model value="Assets\Effects\Zerg\Defiler_DarkSwarm_AOE\Defiler_DarkSwarm_AOE.m3"/>
         <EditorCategories value="Race:Zerg"/>
         <RadiusLoose value="3.500000"/>
         <ScaleMax value="0.600000,0.600000,0.600000"/>

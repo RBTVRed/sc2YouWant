@@ -45,6 +45,7 @@
         <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
         <On Terms="Behavior.BlindingSpores@Aura.Off" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SetOpacity 0.500000"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,192,192"/>
         <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
         <Model value="BlindingSpores@Cloud2"/>
     </CActorModel>
