@@ -13,12 +13,12 @@
         <ShadowRadius value="0.312500"/>
     </CModel>
     <CModel id="BlindingSpores@Cloud" parent="PersistentSpellFX">
-        <Model value="Assets\Effects\Zerg\MicrobialShroud\MicrobialShroud.m3"/>
+        <Model value="Assets\Effects\Zerg\Stukov_Infested_Liberator_Missile_AOE\Stukov_Infested_Liberator_Missile_AOE.m3"/>
         <AnimSpeed value="0.700000"/>
         <EditorCategories value="Race:Zerg"/>
         <RadiusLoose value="0.540000"/>
-        <ScaleMax value="0.600000,0.600000,0.600000"/>
-        <ScaleMin value="0.600000,0.600000,0.600000"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
     </CModel>
     <CModel id="LarvalQueenEgg@Eggsplosion" parent="EggDeathVariationBase">
         <Model value="Assets\Units\Zerg\YagdraEggDeath\YagdraEggDeath.m3"/>
