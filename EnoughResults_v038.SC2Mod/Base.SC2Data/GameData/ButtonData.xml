@@ -23,6 +23,9 @@
     <CButton id="Contaminate">
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
     </CButton>
+    <CButton id="MothershipCoreMassRecall">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-darkpylonrecall.dds"/>
+    </CButton>
     <CButton id="QueenBroodPheromones">
         <Icon value="Assets\Textures\btn-ability-protoss-disintegration.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-stukov-bansheemorelife.dds"/>

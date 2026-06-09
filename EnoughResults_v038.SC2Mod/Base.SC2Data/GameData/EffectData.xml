@@ -1020,7 +1020,7 @@
     </CEffectSet>
     <CEffectModifyUnit id="ViperConsumeStructureModifyCaster">
         <VitalArray index="Life">
-            <Change value="5"/>
+            <Change value="4"/>
         </VitalArray>
         <VitalArray index="Energy">
             <Change value="0"/>
@@ -1912,7 +1912,7 @@
     </CEffectIssueOrder>
     <CEffectDamage id="ViperConsumeDamage">
         <EditorCategories value=""/>
-        <Amount value="10"/>
+        <Amount value="8"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Flags index="Notification" value="1"/>

@@ -2767,6 +2767,8 @@
         <LifeMax value="240"/>
         <LifeRegenRateCreep value="2"/>
         <Sight value="4"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Armored" value="0"/>
     </CUnit>
     <CUnit id="SwarmHostMP">
         <CostResource index="Vespene" value="200"/>
@@ -2808,6 +2810,8 @@
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
         <Sight value="7"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Armored" value="0"/>
     </CUnit>
     <CUnit id="Thor">
         <AbilArray Link="SpreadOut"/>
