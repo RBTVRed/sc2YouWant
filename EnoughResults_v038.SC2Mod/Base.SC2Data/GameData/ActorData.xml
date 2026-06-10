@@ -44,19 +44,8 @@
         <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
         <On Terms="Behavior.BlindingSpores@Aura.On" Send="Create"/>
         <On Terms="Behavior.BlindingSpores@Aura.Off" Send="Destroy"/>
-        <On Terms="ActorCreation" Send="SetTintColor {192,192,0 5.000000}"/>
         <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
         <Model value="BlindingSpores@Cloud"/>
-    </CActorModel>
-    <CActorModel id="BlindingSpores@ModelCloudSecondary" parent="ModelAnimationStyleContinuous">
-        <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>
-        <On Terms="ActorOrphan" Send="Destroy"/>
-        <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
-        <On Terms="Behavior.BlindingSpores@Aura.On" Send="Create"/>
-        <On Terms="Behavior.BlindingSpores@Aura.Off" Send="Destroy"/>
-        <On Terms="ActorCreation" Send="SetTintColor {192,192,0 5.000000}"/>
-        <HostSiteOps Ops="SOpAttachCenter SOp180" HoldRotation="1"/>
-        <Model value="BlindingSpores@CloudSecondary"/>
     </CActorModel>
     <CActorSound id="BlindingSpores@SoundLoop" parent="SoundContinuous">
         <On Terms="Effect.BlindingSpores@ABCaster.Start" Send="Create"/>

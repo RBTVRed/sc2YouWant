@@ -6,7 +6,6 @@
         <DataRecord Entry="Actor,BlindingSpores@ModelAttachmentFriendly"/>
         <DataRecord Entry="Actor,BlindingSpores@ModelAura"/>
         <DataRecord Entry="Actor,BlindingSpores@ModelCloud"/>
-        <DataRecord Entry="Actor,BlindingSpores@ModelCloudSecondary"/>
         <DataRecord Entry="Actor,BlindingSpores@SoundLoop"/>
         <DataRecord Entry="Actor,BlindingSpores@ModelAttachmentEnemy"/>
         <DataRecord Entry="Behavior,BlindingSpores@Friendly"/>
@@ -20,9 +19,8 @@
         <DataRecord Entry="Effect,BlindingSpores@ABEnemy"/>
         <DataRecord Entry="Model,BlindingSpores@FriendlyAttachment"/>
         <DataRecord Entry="Model,BlindingSpores@Aura"/>
-        <DataRecord Entry="Model,BlindingSpores@EnemyAttachment"/>
         <DataRecord Entry="Model,BlindingSpores@Cloud"/>
-        <DataRecord Entry="Model,BlindingSpores@CloudSecondary"/>
+        <DataRecord Entry="Model,BlindingSpores@EnemyAttachment"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="BurrowedAmbusher">
         <EditorCategories value="DataGroup:Buff,Race:Zerg"/>
