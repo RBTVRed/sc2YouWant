@@ -42,7 +42,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="C10CanisterRifle">
         <Range value="8"/>
-        <Period value="3"/>
+        <Period value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
         <Range value="14"/>

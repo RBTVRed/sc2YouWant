@@ -823,7 +823,7 @@
         <HarvestAmount value="8"/>
     </CBehaviorResource>
     <CBehaviorBuff id="OracleStasisTrapTarget">
-        <Duration value="28"/>
+        <Duration value="35"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ParasiticBombDelayTimedLife">
         <Duration value="21"/>
