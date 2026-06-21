@@ -96,10 +96,6 @@
     <CEffectDamage id="PurificationNovaDamage">
         <Amount value="185"/>
     </CEffectDamage>
-    <CEffectEnumArea id="PurificationNovaTargettedSearch">
-        <AreaArray index="0" Radius="0.25"/>
-        <AreaArray Radius="1.5" Effect="PurificationNovaDamagePartial"/>
-    </CEffectEnumArea>
     <CEffectCreateUnit id="HallucinationCreateProbe">
         <SpawnCount value="5"/>
     </CEffectCreateUnit>
@@ -238,6 +234,10 @@
         <Death value="Electrocute"/>
         <ShieldBonus value="60"/>
     </CEffectDamage>
+    <CEffectEnumArea id="PurificationNovaTargettedSearch">
+        <AreaArray index="0" Radius="0.25"/>
+        <AreaArray Radius="2" Effect="PurificationNovaDamagePartial"/>
+    </CEffectEnumArea>
     <CEffectApplyBehavior id="QueenBroodPheromones@AB">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="QueenBroodPheromones"/>

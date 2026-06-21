@@ -138,6 +138,9 @@
         <On Terms="UnitDeath.LarvalQueen; PassChance 25.000000" Send="Create"/>
         <Sound value="Larva_Death"/>
     </CActorSound>
+    <CActorSplat id="PurificationNovaCursorSplat">
+        <Scale value="2.130000"/>
+    </CActorSplat>
     <CActorModel id="QueenBroodPheromones@ModelBuff" parent="ModelAddition">
         <Inherits index="CastShadows" value="0"/>
         <Inherits index="CloakEffect" value="0"/>
