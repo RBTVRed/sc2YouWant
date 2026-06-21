@@ -708,7 +708,6 @@
     <CEffectDamage id="C10CanisterRifle">
         <AttributeBonus index="Light" value="0"/>
         <AttributeBonus index="Biological" value="25"/>
-        <AttributeBonus index="Massive" value="25"/>
         <Amount value="25"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="CalldownMULECreatePersistent">
