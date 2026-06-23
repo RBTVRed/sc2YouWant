@@ -22,10 +22,7 @@
         </Cost>
     </CAbilEffectTarget>
     <CAbilArmMagazine id="ArmSiloWithNuke">
-        <InfoArray index="Ammo1" Time="33">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
+        <InfoArray index="Ammo1" Time="33"/>
     </CAbilArmMagazine>
     <CAbilMorph id="AssaultMode">
         <InfoArray index="0" RandomDelayMax="0">
@@ -410,7 +407,6 @@
     <CAbilEffectTarget id="EnergyRecharge">
         <Cost index="0">
             <Vital index="Energy" value="75"/>
-            <Cooldown TimeUse="0"/>
         </Cost>
     </CAbilEffectTarget>
     <CAbilBuild id="FactoryAddOns">
@@ -767,8 +763,12 @@
     </CAbilResearch>
     <CAbilEffectTarget id="Feedback"/>
     <CAbilTrain id="GatewayTrain">
-        <InfoArray index="Train2" Time="50"/>
-        <InfoArray index="Train6" Time="42"/>
+        <InfoArray index="Train1" Time="39"/>
+        <InfoArray index="Train2" Time="39"/>
+        <InfoArray index="Train4" Time="60"/>
+        <InfoArray index="Train5" Time="60"/>
+        <InfoArray index="Train6" Time="39"/>
+        <InfoArray index="Train7" Time="39"/>
     </CAbilTrain>
     <CAbilEffectTarget id="GravitonBeam">
         <Range index="0" value="5"/>
@@ -1670,8 +1670,6 @@
         </InfoArray>
     </CAbilMorph>
     <CAbilMorph id="UpgradeToWarpGate">
-        <Flags index="AutoCast" value="0"/>
-        <Flags index="AutoCastOn" value="0"/>
         <InfoArray index="0">
             <SectionArray index="Abils">
                 <DurationArray index="Delay" value="5"/>
@@ -1683,6 +1681,10 @@
                 <DurationArray index="Delay" value="5"/>
             </SectionArray>
         </InfoArray>
+        <Cost>
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+        </Cost>
     </CAbilMorph>
     <CAbilEffectTarget id="ViperConsumeStructure">
         <TargetFilters index="0" value="-;Self,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
@@ -1707,32 +1709,32 @@
     <CAbilWarpTrain id="WarpGateTrain">
         <InfoArray index="Train1" Time="12">
             <Resource index="Minerals" value="25"/>
-            <Charge Location="Unit" TimeUse="24"/>
+            <Charge Location="Unit" TimeUse="39"/>
             <Cooldown Location="Unit"/>
         </InfoArray>
         <InfoArray index="Train2" Time="12">
             <Resource index="Minerals" value="25"/>
-            <Charge Location="Unit" TimeUse="36"/>
+            <Charge Location="Unit" TimeUse="39"/>
             <Cooldown Location="Unit"/>
         </InfoArray>
         <InfoArray index="Train4" Time="12">
             <Resource index="Minerals" value="25"/>
-            <Charge Location="Unit" TimeUse="41"/>
+            <Charge Location="Unit" TimeUse="60"/>
             <Cooldown Location="Unit"/>
         </InfoArray>
         <InfoArray index="Train5" Time="12">
             <Resource index="Minerals" value="25"/>
-            <Charge Location="Unit" TimeUse="41"/>
+            <Charge Location="Unit" TimeUse="60"/>
             <Cooldown Location="Unit"/>
         </InfoArray>
         <InfoArray index="Train6" Time="12">
             <Resource index="Minerals" value="25"/>
-            <Charge Location="Unit" TimeUse="28"/>
+            <Charge Location="Unit" TimeUse="39"/>
             <Cooldown Location="Unit"/>
         </InfoArray>
         <InfoArray index="Train7" Time="12">
             <Resource index="Minerals" value="25"/>
-            <Charge Location="Unit" TimeUse="24"/>
+            <Charge Location="Unit" TimeUse="39"/>
             <Cooldown Location="Unit"/>
         </InfoArray>
     </CAbilWarpTrain>
@@ -1805,18 +1807,6 @@
         </InfoArray>
     </CAbilBuild>
     <CAbilResearch id="evolutionchamberresearch">
-        <InfoArray index="Research4">
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="100"/>
-        </InfoArray>
-        <InfoArray index="Research5">
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="150"/>
-        </InfoArray>
-        <InfoArray index="Research6">
-            <Resource index="Minerals" value="200"/>
-            <Resource index="Vespene" value="200"/>
-        </InfoArray>
         <InfoArray index="Research10" Upgrade="">
             <Button DefaultButtonFace="" Requirements="QueenOnCreep"/>
         </InfoArray>
