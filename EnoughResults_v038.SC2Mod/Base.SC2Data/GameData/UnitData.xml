@@ -7,8 +7,8 @@
     </CUnit>
     <CUnit id="Adept">
         <LifeArmor value="0"/>
-        <ShieldsStart value="125"/>
-        <ShieldsMax value="125"/>
+        <ShieldsStart value="140"/>
+        <ShieldsMax value="140"/>
         <ShieldArmor value="1"/>
         <ShieldRegenDelay value="5"/>
         <ShieldRegenRate value="5"/>
@@ -28,11 +28,13 @@
         </CardLayouts>
         <Radius value="0.5625"/>
         <Sight value="7"/>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
     </CUnit>
     <CUnit id="AdeptPhaseShift">
         <Sight value="7"/>
         <CardLayouts index="0">
-            <LayoutButtons index="7" AbilCmd="AdeptPhaseShiftManual@EndTarget,Specialize2"/>
+            <LayoutButtons AbilCmd="AdeptPhaseShiftManual@EndTarget,Specialize2" Row="0" Column="0"/>
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
             <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="3"/>
             <LayoutButtons Face="AdeptPhaseShiftManual@Teleport" Type="AbilCmd" AbilCmd="AdeptPhaseShiftManual@EndTarget,Specialize1" Row="2" Column="1"/>
@@ -967,7 +969,6 @@
         <CargoSize value="8"/>
         <WeaponArray Link="BroodlingShot"/>
         <Sight value="13"/>
-        <CostResource index="Minerals" value="350"/>
     </CUnit>
     <CUnit id="Hydralisk">
         <Attributes index="Light" value="0"/>
@@ -1453,7 +1454,7 @@
         <AbilArray index="7" Link="NexusMassRecall"/>
         <AbilArray index="8" Link="CompactedShield"/>
         <AbilArray index="9" Link="attack"/>
-        <AbilArray index="10" Link="stop"/>
+        <AbilArray Link="stop"/>
         <AbilArray Link="TownHallLoad"/>
         <AbilArray Link="EnergyRecharge"/>
         <CardLayouts index="0">
@@ -1878,7 +1879,7 @@
             <LayoutButtons index="10" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="11" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
             <LayoutButtons index="12" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
-            <LayoutButtons index="13" Face="BurrowUp" AbilCmd="BurrowRoachUp,Execute" Column="4"/>
+            <LayoutButtons index="13" AbilCmd="BurrowRoachUp,Execute"/>
             <LayoutButtons index="14" Face="BurrowedAmbusher" Type="Passive" AbilCmd="" Behavior="BurrowedAmbusher"/>
             <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
