@@ -2997,6 +2997,8 @@
         <Speed value="2"/>
         <CostResource index="Vespene" value="0"/>
         <CargoSize value="1"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
     </CUnit>
     <CUnit id="WidowMineBurrowed">
         <Food value="-1"/>
@@ -3009,6 +3011,8 @@
         <MinimapRadius value="0.4375"/>
         <CostResource index="Vespene" value="0"/>
         <BehaviorArray Link="BurrowedDamageReduction"/>
+        <LifeStart value="70"/>
+        <LifeMax value="70"/>
     </CUnit>
     <CUnit id="Zealot">
         <BehaviorArray Link="WarpingInDoubleDamageTaken"/>

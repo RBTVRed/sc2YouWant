@@ -407,6 +407,7 @@
     <CAbilEffectTarget id="EnergyRecharge">
         <Cost index="0">
             <Vital index="Energy" value="75"/>
+            <Charge TimeUse="0"/>
         </Cost>
     </CAbilEffectTarget>
     <CAbilBuild id="FactoryAddOns">
@@ -582,7 +583,12 @@
         </Cost>
         <TargetFilters value="Visible;Self,Enemy,Massive,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="MedicDefensiveMatrix"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MedicDefensiveMatrix">
+            <Flags index="AllowSelfCast" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel">
+            <Flags index="AllowSelfCast" value="1"/>
+        </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilResearch id="EngineeringBayResearch">
         <InfoArray index="Research1">
