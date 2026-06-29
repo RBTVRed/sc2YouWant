@@ -51,6 +51,9 @@
         <AttributeBonus index="Armored" value="40"/>
         <Amount value="30"/>
     </CEffectDamage>
+    <CEffectEnumArea id="OracleStasisTrapActivate">
+        <SearchFilters value="Ground;Self,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectDamage id="PlagueCloudDamageStructure">
         <ValidatorArray value="IsStructure"/>
         <EditorCategories value="Race:Zerg"/>
