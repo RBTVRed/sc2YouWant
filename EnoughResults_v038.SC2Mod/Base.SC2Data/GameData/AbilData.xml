@@ -142,6 +142,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="GhostRemoteViewing@AB"/>
         <Cost>
+            <Vital index="Energy" value="75"/>
             <Cooldown TimeUse="28"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="GhostRemoteViewing"/>
@@ -415,7 +416,7 @@
     <CAbilEffectTarget id="EnergyRecharge">
         <Cost index="0">
             <Vital index="Energy" value="75"/>
-            <Charge TimeUse="0"/>
+            <Charge CountMax="0" CountUse="0" TimeUse="0"/>
         </Cost>
     </CAbilEffectTarget>
     <CAbilBuild id="FactoryAddOns">
@@ -589,7 +590,7 @@
         <Cost>
             <Vital index="Energy" value="100"/>
         </Cost>
-        <TargetFilters value="Visible;Self,Enemy,Massive,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Enemy,Massive,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MedicDefensiveMatrix">
             <Flags index="AllowSelfCast" value="1"/>

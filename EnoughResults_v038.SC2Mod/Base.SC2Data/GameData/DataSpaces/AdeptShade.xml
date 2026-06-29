@@ -195,7 +195,7 @@
         <Flags index="TransientPreferred" value="1"/>
         <Cost>
             <Charge Link="Abil/AdeptPhaseShift"/>
-            <Cooldown Link="Abil/AdeptPhaseShift" TimeUse="12"/>
+            <Cooldown Link="Abil/AdeptPhaseShift" TimeStart="5" TimeUse="12"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
