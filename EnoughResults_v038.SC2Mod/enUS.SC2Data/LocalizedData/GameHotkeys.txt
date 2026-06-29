@@ -18,6 +18,7 @@ Button/Hotkey/EvolveDragonflyWings=L
 Button/Hotkey/EvolveInfestorEnergyUpgrade2=G
 Button/Hotkey/FirstAid=F
 Button/Hotkey/GhostCancel=Escape
+Button/Hotkey/GhostRemoteViewing=R
 Button/Hotkey/HatcheryDefense=B
 Button/Hotkey/HiveDefense=B
 Button/Hotkey/HunterSeekerMissile=E

@@ -138,6 +138,14 @@
         <CastIntroTime value="0.5"/>
         <Effect index="0" value="EMPChannelInitialSet"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="GhostRemoteViewing">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GhostRemoteViewing@AB"/>
+        <Cost>
+            <Cooldown TimeUse="28"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GhostRemoteViewing"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="ImmortalOverload">
         <Cost index="0">
             <Cooldown TimeUse="126"/>

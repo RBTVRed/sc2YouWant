@@ -18,6 +18,7 @@ Abil/Name/CycloneCloak=Cloaking Field
 Abil/Name/DeactivateAbsortionShield=Deactivate Absortion Shield
 Abil/Name/DropToSupplyDepot=Drop To Supply Depot
 Abil/Name/FirstAid=First Aid
+Abil/Name/GhostRemoteViewing=Remote Viewing
 Abil/Name/IncubateTumor=Incubate Tumor
 Abil/Name/LarvalQueenTrain=Morph Unit (Larval Queen -> Basic)
 Abil/Name/LoadUnloadBunkerNeosteel=Load-Unload (Bunker) Neosteel
@@ -68,6 +69,7 @@ Behavior/Name/CycloneCloakCrossSpectrumDampeners=Cloak
 Behavior/Name/EMPChannelCombat=EMP Steady Targeting
 Behavior/Name/EMPDetectorDisable=EMP Detection Disabled
 Behavior/Name/FungalGrowthArmorReduction=FungalGrowthArmorReduction
+Behavior/Name/GhostRemoteViewing=Remote Viewing
 Behavior/Name/IncubateDummy=Incubate Dummy
 Behavior/Name/Incubated=Incubated
 Behavior/Name/InfestorIsBurrowed=Infestor Is Burrowed
@@ -112,6 +114,7 @@ Behavior/Tooltip/CycloneCloakCrossSpectrumDampeners=This unit is cloaked and wil
 Behavior/Tooltip/EMPChannelCombat=This unit is carefully aiming.
 Behavior/Tooltip/EMPDetectorDisable=Target was recently hit by an EMP Round, making it unable to detected cloaked units.
 Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodlings if the affected unit dies.
+Behavior/Tooltip/GhostRemoteViewing=This unit has increased weapon and sight range and deals bonus damage vs Armored.
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
 Behavior/Tooltip/Incubated=This structure functions 75% slower.
 Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
@@ -163,6 +166,7 @@ Button/Name/EvolveDragonflyWings=Evolve Dragonfly Wings
 Button/Name/EvolveGlialRegeneration=Evolve Rapid Regrowth
 Button/Name/FirstAid=First Aid
 Button/Name/GhostCancel=Cancel
+Button/Name/GhostRemoteViewing=Remote Viewing
 Button/Name/HatcheryDefense=Hatchery Defense
 Button/Name/HiveDefense=Hive Defense
 Button/Name/IncubateTumor=Incubate Tumor
@@ -284,6 +288,7 @@ Button/Tooltip/FungalGrowth=Reduces the armor and shield armor of affected units
 Button/Tooltip/FusionCore=Contains Liberator, Raven and Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Liberator at the Starport<n/><n/>- Battlecruisers at the Starport
 Button/Tooltip/Ghost=Sniper. Can use EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/GhostCancel=Cancels the current Lock On, and allows you to select a new target.
+Button/Tooltip/GhostRemoteViewing=Grants the caster a bonus <d ref="Behavior,GhostRemoteViewing,Modification.SightBonus"/> sight range and <d ref="Behavior,GhostRemoteViewing,Modification.RangedWeaponRange"/> weapon range for <d ref="Behavior,GhostRemoteViewing,Duration"/> <lang rule="plural">second,seconds</lang>.
 Button/Tooltip/GuardianShield=Creates a range 4 aura that modifies incoming ranged damage to friendly units by <d ref="Behavior,GuardianShield,DamageResponse.ModifyAmount"/>.
 Button/Tooltip/Hallucination=Creates hallucinations that cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d ref="Behavior,HallucinationTimedLife,Duration"/> seconds. Enemy detectors reveal hallucinations.
 Button/Tooltip/HatcheryDefense=Constantly spawn 2 Broodlings for 14 seconds.
@@ -445,6 +450,7 @@ DataCollection/Name/D8ChargeBombExplode=Explode
 DataCollection/Name/D8ChargeClusterbomb=D8 Charge Clusterbomb
 DataCollection/Name/D8ChargeClusterbombExplode=Explode
 DataCollection/Name/DecayOffCreep=Decay Off Creep
+DataCollection/Name/GhostRemoteViewing=Remote Viewing
 DataCollection/Name/LarvaPlaceholder=Larva Placeholder
 DataCollection/Name/LarvalQueen=Larval Queen
 DataCollection/Name/LarvalQueenEgg=Larval Queen Egg
@@ -604,6 +610,7 @@ Effect/Name/FirebatSwitch=Flame Thrower (Switch)
 Effect/Name/FirebatUFullFireproof=Flame Thrower (Damage) (Fireproof)
 Effect/Name/FungalGrowth@SpawnBroodling=Fungal Growth@Spawn Broodling
 Effect/Name/FungalGrowthArmorReductionAB=FungalGrowthArmorReductionAB
+Effect/Name/GhostRemoteViewing@AB=Apply Behavior
 Effect/Name/HighTemplarWeaponInstant@CP=HighTemplarWeaponInstant@CP
 Effect/Name/HighTemplarWeaponInstant@Damage=High Templar Weapon Instant @ Damage
 Effect/Name/HighTemplarWeaponInstant@DamageBurst=High Templar Weapon Instant @ Damage Burst

@@ -448,6 +448,7 @@ DataCollection/EditorPrefix/CycloneBurstLockOn=Cyclone -
 DataCollection/EditorPrefix/D8ChargeBombClusterbomb=D8 Charge Bomb -
 DataCollection/EditorPrefix/D8ChargeBombExplode=D8 Charge Bomb -
 DataCollection/EditorPrefix/D8ChargeClusterbombExplode=D8 Charge Clusterbomb -
+DataCollection/EditorPrefix/GhostRemoteViewing=Ghost -
 DataCollection/EditorPrefix/MedicDefensiveMatrix=Medic -
 DataCollection/EditorPrefix/MedicP45GaussPistol=Medic -
 DataCollection/EditorPrefix/NeosteelBunkerTransport=Neosteel Bunker -

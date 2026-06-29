@@ -59,6 +59,15 @@
     <CBehaviorBuff id="Fireproof">
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="GhostRemoteViewing">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-dehaka-detector.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="28"/>
+        <Modification SightBonus="5" RangedWeaponRange="7">
+            <DamageDealtAttributeScaled index="Armored" value="65"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="LarvalQueenTrain@TimeScale">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -906,7 +915,7 @@
         <Duration value="21"/>
     </CBehaviorBuff>
     <CBehaviorPowerUser id="PowerUserWarpable">
-        <PowerStageArray index="1">
+        <PowerStageArray>
             <Modification>
                 <RateMultiplierArray index="Progress" value="2"/>
             </Modification>
@@ -1168,8 +1177,5 @@
         <Birth value="Footprint4x4CreepSourceStart"/>
         <Grown value="Contaminate@CreepFootprint"/>
         <RemoveValidatorArray value="Contaminate@IsContaminated"/>
-    </CBehaviorCreepSource>
-    <CBehaviorCreepSource id="makeCreep8x6">
-        <Period value="0.5"/>
     </CBehaviorCreepSource>
 </Catalog>

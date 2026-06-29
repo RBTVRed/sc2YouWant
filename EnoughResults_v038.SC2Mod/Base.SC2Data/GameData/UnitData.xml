@@ -671,6 +671,7 @@
         <CostResource index="Vespene" value="200"/>
         <AbilArray Link="SpreadOut"/>
         <AbilArray Link="SteadyTargettingCancel"/>
+        <AbilArray Link="GhostRemoteViewing"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="AttackGhost" AbilCmd="attack,Execute" Row="0"/>
             <LayoutButtons index="6" Face="NukeCalldown" AbilCmd="TacNukeStrike,Execute" Row="1" Column="0"/>
@@ -679,7 +680,7 @@
             <LayoutButtons index="9" Face="EMP" AbilCmd="EMP,Execute" Column="1"/>
             <LayoutButtons index="10" Face="WeaponsFree" AbilCmd="GhostWeaponsFree,Execute" Row="1" Column="3"/>
             <LayoutButtons index="11" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Column="4"/>
-            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="12" Face="GhostRemoteViewing" AbilCmd="GhostRemoteViewing,Execute" Column="0"/>
             <LayoutButtons index="13" removed="1"/>
         </CardLayouts>
         <Radius value="0.5"/>
