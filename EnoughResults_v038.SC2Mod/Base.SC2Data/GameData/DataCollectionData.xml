@@ -128,9 +128,11 @@
     <CDataCollectionAbil id="GhostRemoteViewing">
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
         <DataRecord Entry="Abil,GhostRemoteViewing"/>
+        <DataRecord Entry="Actor,GhostRemoteViewing@ModelAttachment"/>
         <DataRecord Entry="Behavior,GhostRemoteViewing"/>
         <DataRecord Entry="Button,GhostRemoteViewing"/>
         <DataRecord Entry="Effect,GhostRemoteViewing@AB"/>
+        <DataRecord Entry="Model,GhostRemoteViewing@Attachment"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="LarvaPlaceholder">
         <EditorCategories value=""/>

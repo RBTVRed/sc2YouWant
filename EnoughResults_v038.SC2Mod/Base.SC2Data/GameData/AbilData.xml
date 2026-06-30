@@ -146,6 +146,7 @@
             <Cooldown TimeUse="28"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="GhostRemoteViewing"/>
+        <Flags index="Transient" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ImmortalOverload">
         <Cost index="0">

@@ -21,6 +21,12 @@
         <SelectionRadius value="0.312500"/>
         <ShadowRadius value="0.312500"/>
     </CModel>
+    <CModel id="GhostRemoteViewing@Attachment" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\Nova_Buff_Damage\Nova_Buff_Damage.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <SelectionRadius value="0.312500"/>
+        <ShadowRadius value="0.312500"/>
+    </CModel>
     <CModel id="BlindingSpores@FriendlyAttachment" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\MicrobialShroudImpact\MicrobialShroudImpact.m3"/>
         <EditorCategories value="Race:Zerg"/>

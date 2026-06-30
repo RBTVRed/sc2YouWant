@@ -18,6 +18,16 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="GhostRemoteViewing@ModelAttachment" parent="ModelAddition">
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <On Terms="Behavior.GhostRemoteViewing.On" Send="Create"/>
+        <On Terms="Behavior.GhostRemoteViewing.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Model value="GhostRemoteViewing@Attachment"/>
+    </CActorModel>
     <CActorModel id="BlindingSpores@ModelAttachmentFriendly" parent="ModelAddition">
         <Inherits index="BaseModelScale" value="0"/>
         <Inherits index="Scale" value="0"/>
@@ -1168,6 +1178,8 @@
         <On index="6" removed="1"/>
         <On index="7" removed="1"/>
         <On index="8" removed="1"/>
+        <On index="9" removed="1"/>
+        <On index="10" removed="1"/>
     </CActorRange>
     <CActorAction id="ConsumeShieldHitter" parent="AoEAttackBase">
         <On Terms="Effect.ViperConsumeStructureCreatePersistent.Start" Send="Create"/>
@@ -1382,6 +1394,8 @@
         <On index="64" Terms="Effect.OracleRevelationSearch.Start" Send="Create Oracle_StasisTrap_Explode"/>
         <On index="67" removed="1"/>
         <On index="68" removed="1"/>
+        <On index="69" removed="1"/>
+        <On index="70" removed="1"/>
     </CActorUnit>
     <CActorModel id="OracleStasisTrapExplosion">
         <Remove index="0" removed="1"/>
