@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorCombine id="IsProtossAndNotProtossBuildingFire">
+        <Type value="And"/>
+        <CombineArray value="IsProtoss"/>
+        <CombineArray value="NotProtossBurnDownFire"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="IsTerranAndNotTerranBuildingFire">
+        <Type value="And"/>
+        <CombineArray value="IsTerran"/>
+        <CombineArray value="NotBurnDownFire"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareVital id="LifeGETwoFifth">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="GE"/>
+        <Type value="Fraction"/>
+        <Value value="0.4"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorCombine id="NotBurnDownFire">
+        <Type value="And"/>
+        <CombineArray value="LifeGETwoFifth"/>
+        <CombineArray value="BurnDownValid"/>
+    </CValidatorCombine>
     <CValidatorUnitType id="IsBaneling">
         <Value value="Baneling"/>
     </CValidatorUnitType>
@@ -62,6 +83,19 @@
     <CValidatorUnitType id="IsOverseerSiegeMode">
         <Value value="OverseerSiegeMode"/>
     </CValidatorUnitType>
+    <CValidatorCombine id="NotProtossBurnDownFire">
+        <Type value="And"/>
+        <CombineArray value="NotProtossBurnDownFireThreshold"/>
+        <CombineArray value="ProtossBurnDownValid"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="NotProtossBurnDownFireThreshold">
+        <CombineArray value="ShieldGEOneEighth"/>
+        <CombineArray value="LifeGEThreeQuarter"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="ProtossOrTerranBuildingFire">
+        <CombineArray value="IsProtossAndProtossBuildingFire"/>
+        <CombineArray value="IsTerranAndTerranBuildingFire"/>
+    </CValidatorCombine>
     <CValidatorUnitType id="NotFirebat">
         <Value value="Firebat"/>
         <Find value="0"/>
@@ -155,6 +189,11 @@
     <CValidatorUnitCompareBehaviorCount id="FungalGrowthArmorReductionShouldApply">
         <Behavior value="FungalGrowthArmorReduction"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="NotProtossNorTerranBuildingFire">
+        <ResultFailed value="NotEnoughLife"/>
+        <CombineArray value="IsProtossAndNotProtossBuildingFire"/>
+        <CombineArray value="IsTerranAndNotTerranBuildingFire"/>
+    </CValidatorCombine>
     <CValidatorCombine id="QueenBroodPheromones@WeakTarget">
         <CombineArray value="IsBaneling"/>
         <CombineArray value="IsBanelingBurrowed"/>
@@ -175,6 +214,13 @@
     <CValidatorLocationCompareRange id="SeekerMissileMaxLaunchRangeExtended">
         <Range value="16"/>
     </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareVital id="ShieldGEOneEighth">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="GE"/>
+        <Type value="Fraction"/>
+        <Value value="0.125"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
     <CValidatorLocationCompareRange id="SourceGE4FromTarget">
         <WhichLocation Value="TargetUnit"/>
         <Compare value="GE"/>
@@ -184,6 +230,16 @@
         <Value value="Changeling"/>
         <Type value="SelectAlias"/>
     </CValidatorUnitType>
+    <CValidatorCombine id="IsTerranAndTerranBuildingFire">
+        <Type value="And"/>
+        <CombineArray value="IsTerran"/>
+        <CombineArray value="BurnDownFire"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="IsProtossAndProtossBuildingFire">
+        <Type value="And"/>
+        <CombineArray value="IsProtoss"/>
+        <CombineArray value="ProtossBurnDownFire"/>
+    </CValidatorCombine>
     <CValidatorUnitCompareCooldown id="WeaponKD8Charge@NotOnCooldown">
         <WhichUnit Value="Caster"/>
         <CooldownLink value="KD8Charge"/>
@@ -191,12 +247,7 @@
         <Compare value="LE"/>
     </CValidatorUnitCompareCooldown>
     <CValidatorCombine id="BurnDownFire">
-        <CombineArray index="0" value="LifeLTOneThird2"/>
-    </CValidatorCombine>
-    <CValidatorCombine id="BurnDownFire2">
-        <Type value="And"/>
-        <CombineArray value="LifeLTOneThird2"/>
-        <CombineArray value="BurnDownValid"/>
+        <CombineArray index="0" value="LifeLTTwoFifth"/>
     </CValidatorCombine>
     <CValidatorUnitCompareVital id="CasterEnergyGE10" parent="CasterEnergyLT50">
         <Compare value="GE"/>
@@ -258,7 +309,7 @@
     <CValidatorUnitType id="IsSensorTower">
         <Value value="SensorTower"/>
     </CValidatorUnitType>
-    <CValidatorUnitCompareVital id="LifeLTOneThird2">
+    <CValidatorUnitCompareVital id="LifeLTTwoFifth">
         <ResultFailed value="TooMuchLife"/>
         <Compare value="LT"/>
         <Type value="Fraction"/>
@@ -438,13 +489,6 @@
         <Compare value="LT"/>
         <Range value="12"/>
     </CValidatorLocationCompareRange>
-    <CValidatorCombine id="ZergBleedProfusely2">
-        <Type value="And"/>
-        <CombineArray value="LairNotMorphing"/>
-        <CombineArray value="HatcheryNotMorphing"/>
-        <CombineArray value="LifeLTOneThird2"/>
-        <CombineArray value="ZergBleedingValid"/>
-    </CValidatorCombine>
     <CValidatorUnitFilters id="empUTargetFilters">
         <Filters value="-;Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>

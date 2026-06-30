@@ -419,6 +419,7 @@
             <RateMultiplierArray index="Spawn" value="0.25"/>
             <RateMultiplierArray index="Creep" value="0.25"/>
         </Modification>
+        <RemoveValidatorArray value="NotProtossNorTerranBuildingFire"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="CorruptorDamagingCorruption">
         <Name value="Behavior/Name/Corruption"/>

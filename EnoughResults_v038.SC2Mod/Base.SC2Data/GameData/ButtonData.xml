@@ -22,6 +22,7 @@
     </CButton>
     <CButton id="Contaminate">
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-stukov-infeststructure.dds"/>
     </CButton>
     <CButton id="GhostRemoteViewing">
         <Icon value="Assets\Textures\btn-ability-dehaka-detector.dds"/>

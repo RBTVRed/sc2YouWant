@@ -805,6 +805,7 @@
     <CEffectSet id="ContaminateCastSet">
         <ValidatorArray value="NotStaticD"/>
         <ValidatorArray value="NotPylon"/>
+        <ValidatorArray value="NotProtossNorTerranBuildingFire"/>
         <EditorCategories value=""/>
         <EffectArray value="Contaminate"/>
         <EffectArray value="Contaminate@ABMakeCreep"/>
