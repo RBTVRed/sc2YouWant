@@ -134,6 +134,9 @@
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
+    <CAbilHarvest id="DroneHarvest">
+        <Effect value="HarvestEfficiencyLoss@CP"/>
+    </CAbilHarvest>
     <CAbilEffectTarget id="EMP">
         <CastIntroTime value="0.5"/>
         <Effect index="0" value="EMPChannelInitialSet"/>
@@ -460,6 +463,9 @@
         </Cost>
         <Range index="0" value="7"/>
     </CAbilEffectTarget>
+    <CAbilHarvest id="ProbeHarvest">
+        <Effect value="HarvestEfficiencyLoss@CP"/>
+    </CAbilHarvest>
     <CAbilEffectTarget id="PsiStorm"/>
     <CAbilEffectTarget id="QueenBroodPheromones">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
@@ -472,6 +478,9 @@
         <CursorEffect value="QueenBroodPheromones@SA"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="QueenBroodPheromones"/>
     </CAbilEffectTarget>
+    <CAbilHarvest id="SCVHarvest">
+        <Effect value="HarvestEfficiencyLoss@CP"/>
+    </CAbilHarvest>
     <CAbilMorph id="SiegeMode">
         <InfoArray index="0">
             <SectionArray index="Actor">

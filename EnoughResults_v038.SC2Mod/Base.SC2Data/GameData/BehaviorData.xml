@@ -3,6 +3,14 @@
     <CBehaviorBuff default="1" id="SwarmHostEggAnimationDefault">
         <Duration value="14"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CarryMineralFieldMineralsNoRemove">
+        <BehaviorCategories index="User6" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HarvestEfficiencyLoss@ResourceNode">
+        <InfoFlags index="Hidden" value="1"/>
+        <MaxStackCount value="2"/>
+        <Duration value="3"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BlindingSpores@Friendly">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-zerg-darkswarm.dds"/>
@@ -66,6 +74,15 @@
         <Duration value="28"/>
         <Modification SightBonus="5" RangedWeaponRange="7">
             <DamageDealtAttributeScaled index="Armored" value="65"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HarvestEfficiencyLoss">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-tips-richminerals.dds"/>
+        <MaxStackCount value="2"/>
+        <Duration value="6"/>
+        <Modification>
+            <ResourceHarvestAmountMultiplier index="Minerals" value="-0.25"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="LarvalQueenTrain@TimeScale">
@@ -377,11 +394,13 @@
                 <Cooldown Link="Behavior/CarryMineralFieldMinerals"/>
             </Cost>
         </DamageResponse>
+        <BehaviorCategories index="User6" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="CarryMineralFieldMinerals">
         <DamageResponse Fatal="1" Handled="DropBlueMineralsSwitch">
             <Chance value="1"/>
         </DamageResponse>
+        <BehaviorCategories index="User6" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ChannelSnipeCombat">
         <FinalEffect value=""/>

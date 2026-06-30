@@ -489,6 +489,16 @@
         <Compare value="LT"/>
         <Range value="12"/>
     </CValidatorLocationCompareRange>
+    <CValidatorUnitOrderQueue id="SourceHarvestingTarget">
+        <WhichUnit Value="Source"/>
+        <AbilClass value="CAbilHarvest"/>
+        <Target Value="TargetUnit"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitCompareBehaviorCount id="SourceCarryingResources">
+        <WhichUnit Value="Source"/>
+        <Compare value="GT"/>
+        <Categories index="User6" value="1"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitFilters id="empUTargetFilters">
         <Filters value="-;Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>

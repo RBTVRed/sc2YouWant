@@ -19,6 +19,10 @@
         <Parameters value="0"/>
         <Operation value="Maximum"/>
     </CAccumulatorArithmetic>
+    <CAccumulatorBehavior id="HarvestEfficiencyLoss@ResourceNodeStackCount">
+        <Behavior value="HarvestEfficiencyLoss@ResourceNode"/>
+        <UnitSource Value="Target"/>
+    </CAccumulatorBehavior>
     <CAccumulatorVitals id="TargetCurrentEnergy">
         <Ratio value="1"/>
         <VitalType value="Energy"/>
