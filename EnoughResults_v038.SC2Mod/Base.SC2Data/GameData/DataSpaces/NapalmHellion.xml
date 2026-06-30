@@ -73,9 +73,64 @@
         <AreaArray Radius="1.125" Effect="NapalmGrenade@AB"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
+    <CAbilTransport id="HellionTransport">
+        <AbilSetId value="ULdS"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="HellionTransport@Load"/>
+        <CmdButtonArray index="UnloadAll">
+            <Flags index="Hidden" value="1"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadAt" DefaultButtonFace="HellionTransport@UnloadAll"/>
+        <CmdButtonArray index="UnloadUnit">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="LoadAll" DefaultButtonFace="HellionTransport@LoadNearby"/>
+        <MaxCargoCount value="1"/>
+        <MaxCargoSize value="1"/>
+        <TotalCargoSpace value="1"/>
+        <TargetFilters value="Visible;Ally,Neutral,Enemy,Dead,Hidden"/>
+        <LoadValidatorArray value="HellionTransport@TargetFilters"/>
+        <Flags index="CargoDeath" value="1"/>
+        <UnloadPeriod value="1"/>
+        <SearchRadius value="4"/>
+    </CAbilTransport>
+    <CValidatorCombine id="HellionTransport@TargetFilters">
+        <ResultFailed value="CantTargetThatUnit,Error/HellionTransport"/>
+        <CombineArray value="IsWidowMine"/>
+    </CValidatorCombine>
     <CValidatorUnitFilters id="NapalmGrenade@TargetFilters">
         <Filters value="Ground;Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
+    <CButton id="HellionTransport@Load">
+        <Name value="Button/Name/Load"/>
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <AlertName value="Button/Name/Load"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="HellionTransport@UnloadAll">
+        <Name value="Button/Name/MedivacUnloadAll"/>
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <AlertName value="Button/Name/MedivacUnloadAll"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+        <Tooltip value="Button/Tooltip/MedivacUnloadAll"/>
+        <AlertTooltip value="Button/Tooltip/MedivacUnloadAll"/>
+    </CButton>
+    <CButton id="HellionTransport@LoadNearby">
+        <Name value="Button/Name/LoadNearby"/>
+        <Tooltip value="Button/Tooltip/HellionTransport@Load"/>
+        <Icon value="Assets\Textures\btn-techupgrade-terran-expandedhull.dds"/>
+        <AlertIcon value="Assets\Textures\btn-techupgrade-terran-expandedhull.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="NapalmHellion">
         <Icon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-hellion.dds"/>
@@ -271,6 +326,14 @@
         <Pitch value="-1.000000,1.000000"/>
         <Volume value="-4.000000,-3.000000"/>
     </CSound>
+    <CDataCollectionAbil id="HellionTransport">
+        <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
+        <DataRecord Entry="Abil,HellionTransport"/>
+        <DataRecord Entry="Button,HellionTransport@UnloadAll"/>
+        <DataRecord Entry="Button,HellionTransport@Load"/>
+        <DataRecord Entry="Button,HellionTransport@LoadNearby"/>
+        <DataRecord Entry="Validator,HellionTransport@TargetFilters"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="NapalmGrenade">
         <EditorCategories value="DataGroup:Weapon,Race:Terran,ObjectType:Projectile"/>
         <DataRecord Entry="Actor,NapalmGrenade@ImpactModel"/>
@@ -345,6 +408,7 @@
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="SpreadOut"/>
+        <AbilArray Link="HellionTransport"/>
         <WeaponArray Link="NapalmGrenade" Turret="Hellion"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
@@ -354,6 +418,9 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="NapalmGrenade" Type="Passive" Row="1" Column="0"/>
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="HellionTransport@LoadNearby" Type="AbilCmd" AbilCmd="HellionTransport,LoadAll" Row="1" Column="2"/>
+            <LayoutButtons Face="HellionTransport@Load" Type="AbilCmd" AbilCmd="HellionTransport,Load" Row="2" Column="2"/>
+            <LayoutButtons Face="HellionTransport@UnloadAll" Type="AbilCmd" AbilCmd="HellionTransport,UnloadAt" Row="2" Column="3"/>
         </CardLayouts>
         <Radius value="0.625"/>
         <SeparationRadius value="0.75"/>

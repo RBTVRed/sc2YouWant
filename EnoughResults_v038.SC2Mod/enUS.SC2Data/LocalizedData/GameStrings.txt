@@ -19,6 +19,7 @@ Abil/Name/DeactivateAbsortionShield=Deactivate Absortion Shield
 Abil/Name/DropToSupplyDepot=Drop To Supply Depot
 Abil/Name/FirstAid=First Aid
 Abil/Name/GhostRemoteViewing=Remote Viewing
+Abil/Name/HellionTransport=Transport
 Abil/Name/IncubateTumor=Incubate Tumor
 Abil/Name/LarvalQueenTrain=Morph Unit (Larval Queen -> Basic)
 Abil/Name/LoadUnloadBunkerNeosteel=Load-Unload (Bunker) Neosteel
@@ -178,6 +179,7 @@ Button/Name/MassCloakingField=Cloaking Field
 Button/Name/MasteryTychusMedivacBuff=Dropship Pickup Cooldown
 Button/Name/MedicDefensiveMatrix=Rescue Matrix
 Button/Name/Medivac=Build Dropship
+Button/Name/MedivacUnloadAll=Unload All
 Button/Name/MorphToNeosteelBunker=Transform to Neosteel Bunker
 Button/Name/MorphtoOverseerNormal=Cancel Synaptic Suppression
 Button/Name/MorphtoOverseerSiege=Synaptic Suppression
@@ -294,6 +296,7 @@ Button/Tooltip/GhostRemoteViewing=Grants the caster a bonus <d ref="Behavior,Gho
 Button/Tooltip/GuardianShield=Creates a range 4 aura that modifies incoming ranged damage to friendly units by <d ref="Behavior,GuardianShield,DamageResponse.ModifyAmount"/>.
 Button/Tooltip/Hallucination=Creates hallucinations that cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d ref="Behavior,HallucinationTimedLife,Duration"/> seconds. Enemy detectors reveal hallucinations.
 Button/Tooltip/HatcheryDefense=Constantly spawn 2 Broodlings for 14 seconds.
+Button/Tooltip/HellionTransport@Load=Loads a <d stringref="Unit,WidowMine,Name"/> into the <d stringref="Unit,NapalmHellion,Name"/>.
 Button/Tooltip/HighCapacityFuelTanks=Increases the Dropship's fuel reserves, allowing Ignite Afterburners to last 50% longer.
 Button/Tooltip/HighTemplar=Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/HighTemplarHallucination=These hallucinated copies function like the original unit, but they cannot use active abilities, deals less damage, and die more easily. Hallucinations last <d time="60"/> before they disappear.
@@ -320,8 +323,8 @@ Button/Tooltip/MedicDefensiveMatrix=Surrounds the target unit with a shield that
 Button/Tooltip/MedicHeal=Heals a friendly biological target.<n/><n/>Heals 27 life per 1 energy.
 Button/Tooltip/MedicalSupplies=Heals nearby friendly units..<n/>
 Button/Tooltip/Medivac=Air transport. Can place Auto-Turrets.
-Button/Tooltip/MedivacLoad=Loads units into the Dropship's hold.
 Button/Tooltip/MedivacSpeedBoost=Increases the Dropship's movement speed by 70% until out of energy.
+Button/Tooltip/MedivacUnloadAll=Unloads all units.
 Button/Tooltip/MissileTurret=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/MorphToNeosteelBunker=Transforms the Bunker into a Neosteel Bunker. The Neosteel Bunker can carry 4 additional cargo and has an additional 300 life.
 Button/Tooltip/MorphToOverseer=Advanced aerial observer. Provides the same supply as an Overlord. Can use the Synaptic Suppression, Incubate Tumor and Contaminate abilities.<n/><n/><c val="FFE303">Detector</c>
@@ -454,6 +457,7 @@ DataCollection/Name/D8ChargeClusterbombExplode=Explode
 DataCollection/Name/DecayOffCreep=Decay Off Creep
 DataCollection/Name/GhostRemoteViewing=Remote Viewing
 DataCollection/Name/HarvestEfficiencyLoss=Harvest Efficiency Loss
+DataCollection/Name/HellionTransport=Hellion Transport
 DataCollection/Name/LarvaPlaceholder=Larva Placeholder
 DataCollection/Name/LarvalQueen=Larval Queen
 DataCollection/Name/LarvalQueenEgg=Larval Queen Egg
@@ -812,6 +816,7 @@ Effect/Name/ZergBuildingSpawnBroodling2Delay=Zerg Building Spawn Broodling 2 (De
 Effect/Name/ZergBuildingSpawnBroodling4=Zerg Building Spawn Broodling 4
 Error/CantTargetWarpingInStructures=Can't target structures that are warping in.
 Error/CantTargetWarpingInUnits=Can't target units that are warping in.
+Error/HellionTransport=Must target deactivated <d stringref="Unit,WidowMine,Name"/>
 Error/IsPylon=Must target Pylon
 Error/NotPylon=Can't target a <d stringref="Unit,Pylon,Name"/>
 Must target Pylon=

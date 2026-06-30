@@ -148,6 +148,24 @@
         <On Terms="UnitDeath.LarvalQueen; PassChance 25.000000" Send="Create"/>
         <Sound value="Larva_Death"/>
     </CActorSound>
+    <CActorSound id="MedivacTransportLoadSound2" parent="SoundOneShot">
+        <On Terms="AbilTransport.MedivacTransport.TransportLoad" Send="Create"/>
+        <On Terms="AbilTransport.HellionTransport.TransportLoad" Send="Create"/>
+        <On Terms="AbilTransport.CommandCenterTransport.TransportLoad" Send="Create"/>
+        <On Terms="AbilTransport.NeosteelBunkerTransport.TransportLoad" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOriginStationary"/>
+        <Sound value="Medivac_Load"/>
+    </CActorSound>
+    <CActorSound id="MedivacTransportUnloadSound2" parent="SoundOneShot">
+        <On Terms="AbilTransport.MedivacTransport.TransportUnload" Send="Create"/>
+        <On Terms="AbilTransport.HellionTransport.TransportUnload" Send="Create"/>
+        <On Terms="AbilTransport.CommandCenterTransport.TransportUnload" Send="Create"/>
+        <On Terms="AbilTransport.NeosteelBunkerTransport.TransportUnload" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOriginStationary"/>
+        <Sound value="Medivac_Unload"/>
+    </CActorSound>
     <CActorSplat id="PurificationNovaCursorSplat">
         <Scale value="2.130000"/>
     </CActorSplat>
