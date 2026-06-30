@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectModifyUnit id="AdeptPhaseShiftManual@MUTeleportCooldown">
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="AdeptPhaseShiftManual@End,Specialize1" CooldownOperation="Set">
+            <Fraction Cooldown="1"/>
+        </Cost>
+    </CEffectModifyUnit>
     <CEffectRemoveBehavior id="AdeptPhaseShiftManual@RBTimer">
         <EditorCategories value="Race:Protoss"/>
         <BehaviorLink value="AdeptPhaseShiftManual@Timer"/>
@@ -82,6 +88,7 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="AdeptPhaseShiftManual@ABCaster"/>
         <EffectArray value="AdeptPhaseShiftManual@CU"/>
+        <EffectArray value="AdeptPhaseShiftManual@MUTeleportCooldown"/>
         <TargetLocationType value="Point"/>
     </CEffectSet>
     <CEffectApplyBehavior id="AdeptPhaseShiftManual@ABTimer">
@@ -166,8 +173,8 @@
     </CEffectSet>
     <CAbilSpecialize id="AdeptPhaseShiftManual@EndTarget">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <DataCollection value="AdeptPhaseShiftManual@End"/>
         <InfoArray index="Specialize1" Effect="AdeptPhaseShiftManual@RBTimer">
+            <Cooldown Location="Unit" TimeStart="7" TimeUse="7"/>
             <Button DefaultButtonFace="AdeptPhaseShiftManual@Teleport"/>
         </InfoArray>
         <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@RBPhaseShift">
@@ -179,6 +186,7 @@
     <CAbilSpecialize id="AdeptPhaseShiftManual@End">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <InfoArray index="Specialize1" Effect="AdeptPhaseShiftManual@SetCasterFinal">
+            <Cooldown Location="Unit" TimeStart="7" TimeUse="7"/>
             <Button DefaultButtonFace="AdeptPhaseShiftManual@Teleport" Requirements="AdeptPhaseShiftManual@Casting"/>
         </InfoArray>
         <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@ETUCancelCaster">
@@ -267,15 +275,13 @@
         <DataRecord Entry="Behavior,AdeptPhaseShiftManual@Timer"/>
         <DataRecord Entry="Behavior,AdeptPhaseShiftManual"/>
         <DataRecord Entry="Behavior,AdeptPhaseShiftManual@Caster"/>
-        <DataRecord Entry="Button,AdeptPhaseShiftManual"/>
         <DataRecord Entry="Button,AdeptPhaseShiftManual@Teleport"/>
         <DataRecord Entry="Button,AdeptPhaseShiftManual@Cancel"/>
+        <DataRecord Entry="Button,AdeptPhaseShiftManual"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBTimer"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@SwitchFinal"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetTeleport"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetFinal"/>
-        <DataRecord Entry="Effect,AdeptPhaseShiftManual@RTU"/>
-        <DataRecord Entry="Effect,AdeptPhaseShiftManual@IOCancel"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@SetCasterFinal"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBCaster"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@ETUCancelCaster"/>
@@ -300,6 +306,7 @@
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@RBGravitonBeam"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@ABTarget"/>
         <DataRecord Entry="Effect,AdeptPhaseShiftManual@Teleport"/>
+        <DataRecord Entry="Effect,AdeptPhaseShiftManual@MUTeleportCooldown"/>
         <DataRecord Entry="Requirement,AdeptPhaseShiftManual@Casting"/>
         <DataRecord Entry="Validator,AdeptPhaseShiftManual@TargetPhaseShifting"/>
         <DataRecord Entry="Validator,AdeptPhaseShiftManual@CasterPhaseShifting"/>

@@ -218,8 +218,8 @@ Button/Name/WarpInObelisk=Warp In Obelisk
 Button/Name/XelNagaHealingShrine2=Xel Naga Healing Shrine Copy
 Button/Tooltip/AbsorptionShield=Decreases incoming damage that is less than 15 to 1 damage to the Oracle.<n/> <n/><c val="f078ff">Drains <d ref="-Behavior,AbsorptionShield,Modification.VitalRegenMultiplier[Energy] * Unit,Oracle,EnergyRegenRate" precision="1"/> energy per second.</c>
 Button/Tooltip/AdeptHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
-Button/Tooltip/AdeptPhaseShift=Projects an invulnerable Shade that can move but cannot attack. After <d time="10"/>, seconds or until manually teleported the Adept's Shade disappear. Shades detecting cloaked and burrowed units.
-Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable Shade that can move but cannot attack. Shades detecting cloaked and burrowed units. Can be reactivated to teleport the Adept to the Shade's location. Expires after <d ref="Behavior,AdeptPhaseShiftManual@Timer,Duration"/> seconds.
+Button/Tooltip/AdeptPhaseShift=Projects an invulnerable <d stringref="Unit,AdeptPhaseShift,Name"/> that can move but cannot attack. After <d ref="Behavior,AdeptPhaseShiftManual@Timer,Duration"/> <lang rule="plural">second,seconds</lang> or when cancelled, the <d stringref="Unit,Adept,Name"/>'s <d stringref="Unit,AdeptPhaseShift,Name"/> will disappear. The caster can teleport to the <d stringref="Unit,AdeptPhaseShift,Name"/> after <d ref="Abil,AdeptPhaseShiftManual@End,InfoArray[Specialize1].Cooldown.TimeUse"/> <lang rule="plural">second,seconds</lang>, removing it early. <d stringref="Unit,AdeptPhaseShift,Name"/>s can detect cloaked and burrowed units.
+Button/Tooltip/AdeptPhaseShiftManual=Projects an invulnerable <d stringref="Unit,AdeptPhaseShift,Name"/> that can move but cannot attack. After <d ref="Behavior,AdeptPhaseShiftManual@Timer,Duration"/> <lang rule="plural">second,seconds</lang> or when cancelled, the <d stringref="Unit,Adept,Name"/>'s <d stringref="Unit,AdeptPhaseShift,Name"/> will disappear. The caster can teleport to the <d stringref="Unit,AdeptPhaseShift,Name"/> after <d ref="Abil,AdeptPhaseShiftManual@End,InfoArray[Specialize1].Cooldown.TimeUse"/> <lang rule="plural">second,seconds</lang>, removing it early. <d stringref="Unit,AdeptPhaseShift,Name"/>s can detect cloaked and burrowed units.
 Button/Tooltip/AdeptPhaseShiftManual@Teleport=Teleports the Adept to the Shade, destroying the Shade in the process.
 Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 75%.
 Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 75%.
@@ -498,6 +498,7 @@ Effect/Name/AdeptPhaseShiftManual@IOMove=Issue Order
 Effect/Name/AdeptPhaseShiftManual@Kill=Kill
 Effect/Name/AdeptPhaseShiftManual@MUCopyOrderQueue=Modify Unit
 Effect/Name/AdeptPhaseShiftManual@MUCopySelection=Modify Unit
+Effect/Name/AdeptPhaseShiftManual@MUTeleportCooldown=Modify Unit
 Effect/Name/AdeptPhaseShiftManual@RBCaster=Remove Behavior
 Effect/Name/AdeptPhaseShiftManual@RBFungalGrowth=Remove Behavior
 Effect/Name/AdeptPhaseShiftManual@RBFungalGrowthMovement=Remove Behavior
