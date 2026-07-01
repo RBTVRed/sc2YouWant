@@ -26,6 +26,7 @@
         <EditorCategories value="Race:Zerg"/>
         <SelectionRadius value="0.312500"/>
         <ShadowRadius value="0.312500"/>
+        <AnimSpeed value="0.400000"/>
     </CModel>
     <CModel id="BlindingSpores@FriendlyAttachment" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\MicrobialShroudImpact\MicrobialShroudImpact.m3"/>

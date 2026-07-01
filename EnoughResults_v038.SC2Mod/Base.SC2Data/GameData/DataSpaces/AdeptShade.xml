@@ -174,7 +174,7 @@
     <CAbilSpecialize id="AdeptPhaseShiftManual@EndTarget">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <InfoArray index="Specialize1" Effect="AdeptPhaseShiftManual@RBTimer">
-            <Cooldown Location="Unit" TimeStart="7" TimeUse="7"/>
+            <Cooldown Location="Unit" TimeStart="3" TimeUse="3"/>
             <Button DefaultButtonFace="AdeptPhaseShiftManual@Teleport"/>
         </InfoArray>
         <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@RBPhaseShift">
@@ -186,7 +186,7 @@
     <CAbilSpecialize id="AdeptPhaseShiftManual@End">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <InfoArray index="Specialize1" Effect="AdeptPhaseShiftManual@SetCasterFinal">
-            <Cooldown Location="Unit" TimeStart="7" TimeUse="7"/>
+            <Cooldown Location="Unit" TimeStart="3" TimeUse="3"/>
             <Button DefaultButtonFace="AdeptPhaseShiftManual@Teleport" Requirements="AdeptPhaseShiftManual@Casting"/>
         </InfoArray>
         <InfoArray index="Specialize2" Effect="AdeptPhaseShiftManual@ETUCancelCaster">
