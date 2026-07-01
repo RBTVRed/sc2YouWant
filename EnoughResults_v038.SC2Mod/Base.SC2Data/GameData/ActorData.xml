@@ -18,6 +18,12 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorModel id="CarryHighYieldMineralFieldMinerals">
+        <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 128,128,128 0.000000 OneShot HarvestEfficiencyLoss"/>
+    </CActorModel>
+    <CActorModel id="CarryMineralFieldMinerals">
+        <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 128,128,128 0.000000 OneShot HarvestEfficiencyLoss"/>
+    </CActorModel>
     <CActorModel id="GhostRemoteViewing@ModelAttachment" parent="ModelAddition">
         <Inherits index="BaseModelScale" value="0"/>
         <Inherits index="Scale" value="0"/>

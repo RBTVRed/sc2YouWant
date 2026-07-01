@@ -83,7 +83,7 @@
         <MaxStackCount value="2"/>
         <Duration value="6"/>
         <Modification>
-            <ResourceHarvestAmountMultiplier index="Minerals" value="-0.25"/>
+            <ResourceHarvestAmountMultiplier index="Minerals" value="-0.375"/>
         </Modification>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>

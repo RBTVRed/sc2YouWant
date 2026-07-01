@@ -424,7 +424,7 @@ Behavior/Tooltip/ArbiterMPCloakField=Friendly units close enough to the Arbiter 
 Behavior/Tooltip/BlindingSpores@Aura=This unit is emitting spores that blind nearby enemy air units.
 Behavior/Tooltip/Fireproof=This unit does not take attribute bonus damage from fire attacks.
 Behavior/Tooltip/FungalGrowthSlowMovement=Target is affected by Fungal Growth. Target is detected, have reduced armor and spawn 2 Broodlings if the affected unit dies.
-Behavior/Tooltip/HarvestEfficiencyLoss=Harvested resources are reduced by <d ref="-100 * Behavior,HarvestEfficiencyLoss,Modification.ResourceHarvestAmountMultiplier[Minerals]) * $BehaviorStackCount:HarvestEfficiencyLoss$"/>%.
+Behavior/Tooltip/HarvestEfficiencyLoss=Harvested resources are reduced by <d ref="-100 * Behavior,HarvestEfficiencyLoss,Modification.ResourceHarvestAmountMultiplier[Minerals]) * $BehaviorStackCount:HarvestEfficiencyLoss$" precision="1"/>%.
 Behavior/Tooltip/ObeliskHardenedShield=Reduces a maximum of 70 incoming damage to 1 while the Obelisk still has shields.
 Behavior/Tooltip/SpawnLarva2=This structure is spawning additional Larvae.
 Button/EditorPrefix/AbsorptionShield=Oracle -
@@ -1002,6 +1002,7 @@ Validator/Name/GeneratesPowerWarpPrism=Generates Power
 Validator/Name/GeneratesPowerWarpPrismFast=Generates Power
 Validator/Name/GhostMaxRange=Ghost Max Range
 Validator/Name/GlialConstitution=Glial Constitution
+Validator/Name/HarvestEfficiencyLoss@HasEfficiencyLoss=HarvestEfficiencyLoss@Has Efficiency Loss
 Validator/Name/HasCompactedShield=Has Compacted Shield
 Validator/Name/HasDetector16=Has Detector16
 Validator/Name/HasRegenerationupgrade=Has Regeneration upgrade

@@ -118,7 +118,7 @@ Behavior/Tooltip/EMPDetectorDisable=Target was recently hit by an EMP Round, mak
 Behavior/Tooltip/FungalGrowth=Reduce target units armor by 2 and spawn 2 Broodlings if the affected unit dies.
 Behavior/Tooltip/GhostRemoteViewing=This unit has increased weapon and sight range and deals bonus damage vs Armored.
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 3.
-Behavior/Tooltip/HarvestEfficiencyLoss@ResourceNode=Workers that being to harvest will have <d ref="-100 * Behavior,HarvestEfficiencyLoss,Modification.ResourceHarvestAmountMultiplier[Minerals]) * $BehaviorStackCount:HarvestEfficiencyLoss@ResourceNode$"/>% reduced yield.
+Behavior/Tooltip/HarvestEfficiencyLoss@ResourceNode=Workers that being to harvest will have <d ref="-100 * Behavior,HarvestEfficiencyLoss,Modification.ResourceHarvestAmountMultiplier[Minerals]) * $BehaviorStackCount:HarvestEfficiencyLoss@ResourceNode$" precision="1"/>% reduced yield.
 Behavior/Tooltip/Incubated=This structure functions 75% slower.
 Behavior/Tooltip/MedicDefensiveMatrix=Incoming damage is reduced by <d ref="-Behavior,MedicDefensiveMatrix,DamageResponse.ModifyAmount"/>.
 Behavior/Tooltip/NapalmGrenade@DoT=Target is under the effects of a Napalm Grenade and will take massive damage while in this area of effect.

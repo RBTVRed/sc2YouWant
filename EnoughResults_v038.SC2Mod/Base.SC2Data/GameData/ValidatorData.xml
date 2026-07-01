@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitCompareBehaviorCount id="HarvestEfficiencyLoss@HasEfficiencyLoss">
+        <Compare value="GT"/>
+        <Behavior value="HarvestEfficiencyLoss"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="IsProtossAndNotProtossBuildingFire">
         <Type value="And"/>
         <CombineArray value="IsProtoss"/>
