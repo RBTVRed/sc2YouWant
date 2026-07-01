@@ -136,11 +136,12 @@
     </CDataCollectionAbil>
     <CDataCollectionAbil id="HarvestEfficiencyLoss">
         <EditorCategories value="DataGroup:Buff,Race:Neutral"/>
-        <DataRecord Entry="Behavior,HarvestEfficiencyLoss"/>
+        <DataRecord Entry="Actor,HarvestEfficiencyLoss@Tinter"/>
         <DataRecord Entry="Behavior,HarvestEfficiencyLoss@ResourceNode"/>
+        <DataRecord Entry="Behavior,HarvestEfficiencyLoss"/>
+        <DataRecord Entry="Effect,HarvestEfficiencyLoss@CP"/>
         <DataRecord Entry="Effect,HarvestEfficiencyLoss@ABResourceNode"/>
         <DataRecord Entry="Effect,HarvestEfficiencyLoss@ABGatherer"/>
-        <DataRecord Entry="Effect,HarvestEfficiencyLoss@CP"/>
         <DataRecord Entry="Effect,HarvestEfficiencyLoss@SetFinal"/>
         <DataRecord Entry="Effect,HarvestEfficiencyLoss@RBGatherer"/>
         <DataRecord Entry="Accumulator,HarvestEfficiencyLoss@ResourceNodeStackCount"/>

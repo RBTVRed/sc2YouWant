@@ -245,6 +245,13 @@
         <On Terms="ActorCreation" Send="SetTintColor 255,0,255"/>
         <Model value="QueenBroodPheromones@Impact"/>
     </CActorModel>
+    <CActorSimple id="HarvestEfficiencyLoss@Tinter">
+        <Aliases value="_AngryTinter"/>
+        <On Terms="Behavior.HarvestEfficiencyLoss@ResourceNode.On" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 128,128,128 0.250000 OneShot HarvestEfficiencyLoss"/>
+        <On Terms="Behavior.HarvestEfficiencyLoss@ResourceNode.Off" Target="_Unit" Send="ClearTintColor 0.250000 HarvestEfficiencyLoss"/>
+        <On Terms="Behavior.HarvestEfficiencyLoss@ResourceNode.Off" Send="Destroy"/>
+    </CActorSimple>
     <CActorUnit id="Stalker">
         <DeathCustomData index="0" SyncPassChance="80"/>
         <DeathCustomData index="1" SyncPassChance="80"/>

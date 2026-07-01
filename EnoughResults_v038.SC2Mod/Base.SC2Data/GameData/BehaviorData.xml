@@ -7,9 +7,10 @@
         <BehaviorCategories index="User6" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HarvestEfficiencyLoss@ResourceNode">
-        <InfoFlags index="Hidden" value="1"/>
         <MaxStackCount value="2"/>
         <Duration value="3"/>
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-tips-richminerals.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="BlindingSpores@Friendly">
         <Alignment value="Positive"/>
@@ -84,6 +85,7 @@
         <Modification>
             <ResourceHarvestAmountMultiplier index="Minerals" value="-0.25"/>
         </Modification>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="LarvalQueenTrain@TimeScale">
         <InfoFlags index="Hidden" value="1"/>
