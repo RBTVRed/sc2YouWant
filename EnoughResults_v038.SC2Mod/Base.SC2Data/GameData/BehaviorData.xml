@@ -1146,7 +1146,9 @@
             <DamageDealtAttributeScaled index="Armored" value="0"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorPowerSource id="WarpPrismPowerSource"/>
+    <CBehaviorPowerSource id="WarpPrismPowerSource">
+        <Radius value="6"/>
+    </CBehaviorPowerSource>
     <CBehaviorPowerSource id="WarpPrismPowerSourceFast">
         <Radius value="6.5"/>
     </CBehaviorPowerSource>
