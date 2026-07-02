@@ -129,10 +129,12 @@
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
         <DataRecord Entry="Abil,GhostRemoteViewing"/>
         <DataRecord Entry="Actor,GhostRemoteViewing@ModelAttachment"/>
+        <DataRecord Entry="Actor,GhostRemoteViewing@SoundCast"/>
         <DataRecord Entry="Behavior,GhostRemoteViewing"/>
         <DataRecord Entry="Button,GhostRemoteViewing"/>
         <DataRecord Entry="Effect,GhostRemoteViewing@AB"/>
         <DataRecord Entry="Model,GhostRemoteViewing@Attachment"/>
+        <DataRecord Entry="Sound,GhostRemoteViewing@Activate"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="HarvestEfficiencyLoss">
         <EditorCategories value="DataGroup:Buff,Race:Neutral"/>

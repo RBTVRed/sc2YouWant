@@ -18,6 +18,10 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorSound id="GhostRemoteViewing@SoundCast" parent="SoundOneShot">
+        <On Terms="Abil.GhostRemoteViewing.SourceCastStart" Send="Create"/>
+        <Sound value="GhostRemoteViewing@Activate"/>
+    </CActorSound>
     <CActorModel id="CarryHighYieldMineralFieldMinerals">
         <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 128,128,128 0.000000 OneShot HarvestEfficiencyLoss"/>
     </CActorModel>
