@@ -94,6 +94,7 @@
         <Flags index="CargoDeath" value="1"/>
         <UnloadPeriod value="1"/>
         <SearchRadius value="4"/>
+        <InitialUnloadDelay value="1"/>
     </CAbilTransport>
     <CValidatorCombine id="HellionTransport@TargetFilters">
         <ResultFailed value="CantTargetThatUnit,Error/HellionTransport"/>
