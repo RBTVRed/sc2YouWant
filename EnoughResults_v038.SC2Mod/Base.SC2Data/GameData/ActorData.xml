@@ -23,10 +23,10 @@
         <Sound value="GhostRemoteViewing@Activate"/>
     </CActorSound>
     <CActorModel id="CarryHighYieldMineralFieldMinerals">
-        <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 128,128,128 0.000000 OneShot HarvestEfficiencyLoss"/>
+        <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 192,192,192 0.000000 OneShot HarvestEfficiencyLoss"/>
     </CActorModel>
     <CActorModel id="CarryMineralFieldMinerals">
-        <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 128,128,128 0.000000 OneShot HarvestEfficiencyLoss"/>
+        <On Terms="ActorCreation; ValidateUnit HarvestEfficiencyLoss@HasEfficiencyLoss" Send="SetTintColor 192,192,192 0.000000 OneShot HarvestEfficiencyLoss"/>
     </CActorModel>
     <CActorModel id="GhostRemoteViewing@ModelAttachment" parent="ModelAddition">
         <Inherits index="BaseModelScale" value="0"/>
@@ -258,7 +258,7 @@
     <CActorSimple id="HarvestEfficiencyLoss@Tinter">
         <Aliases value="_AngryTinter"/>
         <On Terms="Behavior.HarvestEfficiencyLoss@ResourceNode.On" Send="Create"/>
-        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 128,128,128 0.250000 OneShot HarvestEfficiencyLoss"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 192,192,192 0.250000 OneShot HarvestEfficiencyLoss"/>
         <On Terms="Behavior.HarvestEfficiencyLoss@ResourceNode.Off" Target="_Unit" Send="ClearTintColor 0.250000 HarvestEfficiencyLoss"/>
         <On Terms="Behavior.HarvestEfficiencyLoss@ResourceNode.Off" Send="Destroy"/>
     </CActorSimple>
