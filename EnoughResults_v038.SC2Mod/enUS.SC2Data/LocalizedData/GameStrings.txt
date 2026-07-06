@@ -624,6 +624,7 @@ Effect/Name/HarvestEfficiencyLoss@ABResourceNode=Apply Behavior
 Effect/Name/HarvestEfficiencyLoss@CP=Create Persistent
 Effect/Name/HarvestEfficiencyLoss@RBGatherer=Remove Behavior
 Effect/Name/HarvestEfficiencyLoss@SetFinal=Set
+Effect/Name/HellionTransport@CO=Cancel Order
 Effect/Name/HighTemplarWeaponInstant@CP=HighTemplarWeaponInstant@CP
 Effect/Name/HighTemplarWeaponInstant@Damage=High Templar Weapon Instant @ Damage
 Effect/Name/HighTemplarWeaponInstant@DamageBurst=High Templar Weapon Instant @ Damage Burst
