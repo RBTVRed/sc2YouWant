@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitOrderQueue id="TargetIsAttacking">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="attack"/>
+    </CValidatorUnitOrderQueue>
     <CValidatorUnitCompareBehaviorCount id="HarvestEfficiencyLoss@HasEfficiencyLoss">
         <Compare value="GT"/>
         <Behavior value="HarvestEfficiencyLoss"/>
@@ -230,6 +234,10 @@
         <Compare value="GE"/>
         <Range value="4"/>
     </CValidatorLocationCompareRange>
+    <CValidatorUnitOrderQueue id="TargetIsMoving">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="move"/>
+    </CValidatorUnitOrderQueue>
     <CValidatorUnitType id="TargetIsChangeling">
         <Value value="Changeling"/>
         <Type value="SelectAlias"/>

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CEffectCancelOrder id="HellionTransport@CO">
+    <CEffectCancelOrder id="HellionTransport@COMove">
         <AbilCmd value="move,Move"/>
+    </CEffectCancelOrder>
+    <CEffectSwitch id="HellionTransport@SwitchCO">
+        <CaseArray Validator="TargetIsAttacking" Effect="HellionTransport@COAttack"/>
+        <CaseArray Validator="TargetIsMoving" Effect="HellionTransport@COMove"/>
+    </CEffectSwitch>
+    <CEffectCancelOrder id="HellionTransport@COAttack">
+        <AbilCmd value="attack,Execute"/>
     </CEffectCancelOrder>
     <CEffectSwitch id="NapalmGrenade@SwitchDoTInitial">
         <ValidatorArray value="NapalmGrenade@TargetFilters"/>
@@ -96,7 +103,7 @@
         <LoadValidatorArray value="HellionTransport@TargetFilters"/>
         <Flags index="CargoDeath" value="1"/>
         <SearchRadius value="4"/>
-        <UnloadTransportEffect value="HellionTransport@CO"/>
+        <UnloadTransportEffect value="HellionTransport@SwitchCO"/>
     </CAbilTransport>
     <CValidatorCombine id="HellionTransport@TargetFilters">
         <ResultFailed value="CantTargetThatUnit,Error/HellionTransport"/>
@@ -333,9 +340,11 @@
         <EditorCategories value="DataGroup:Ability,Race:Terran,ObjectType:Spell"/>
         <DataRecord Entry="Abil,HellionTransport"/>
         <DataRecord Entry="Button,HellionTransport@Load"/>
-        <DataRecord Entry="Button,HellionTransport@UnloadAll"/>
         <DataRecord Entry="Button,HellionTransport@LoadNearby"/>
-        <DataRecord Entry="Effect,HellionTransport@CO"/>
+        <DataRecord Entry="Button,HellionTransport@UnloadAll"/>
+        <DataRecord Entry="Effect,HellionTransport@COAttack"/>
+        <DataRecord Entry="Effect,HellionTransport@COMove"/>
+        <DataRecord Entry="Effect,HellionTransport@SwitchCO"/>
         <DataRecord Entry="Validator,HellionTransport@TargetFilters"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="NapalmGrenade">
