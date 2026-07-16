@@ -404,7 +404,7 @@
         <LifeStart value="180"/>
         <LifeMax value="180"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranVehiclePlating"/>
-        <Speed value="3.8593"/>
+        <Speed value="3.75"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46"/>
         <StationaryTurningRate value="1499.9414"/>

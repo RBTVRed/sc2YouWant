@@ -103,8 +103,8 @@
         <ShieldRegenRate value="4"/>
     </CUnit>
     <CUnit id="AutoTurret">
-        <LifeStart value="400"/>
-        <LifeMax value="400"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <Sight value="8"/>
         <BehaviorArray Link="Detector7"/>
         <CardLayouts index="0">
@@ -227,8 +227,8 @@
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="ResearchNitroPacks" AbilCmd="BarracksTechLabResearch,Research4"/>
         </CardLayouts>
-        <CostResource index="Minerals" value="100"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="75"/>
     </CUnit>
     <CUnit id="Battlecruiser">
         <AbilArray Link="SpreadOut"/>
@@ -919,8 +919,8 @@
         <LifeStart value="800"/>
         <LifeMax value="800"/>
         <AbilArray Link="AssaultMode"/>
-        <CostResource index="Minerals" value="100"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="75"/>
     </CUnit>
     <CUnit id="ForceField">
         <FlagArray index="Uncommandable" value="0"/>
@@ -1655,10 +1655,10 @@
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
-        <ShieldsStart value="240"/>
-        <ShieldsMax value="240"/>
+        <ShieldsStart value="180"/>
+        <ShieldsMax value="180"/>
         <ShieldRegenRate value="1.5"/>
-        <Speed value="4"/>
+        <Speed value="3.75"/>
         <Acceleration value="1"/>
         <Sight value="9"/>
         <AbilArray index="3" Link="SpreadOut"/>
@@ -2139,8 +2139,8 @@
             <LayoutButtons index="4" Face="ResearchBallisticRange" AbilCmd="FusionCoreResearch,Research2" Column="3"/>
             <LayoutButtons Face="ResearchRavenEnergyUpgrade" Type="AbilCmd" AbilCmd="FusionCoreResearch,Research4" Row="0" Column="2"/>
         </CardLayouts>
-        <CostResource index="Minerals" value="100"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="75"/>
     </CUnit>
     <CUnit id="SupplyDepot">
         <LifeStart value="800"/>
@@ -2214,8 +2214,8 @@
     <CUnit id="TechLab">
         <LifeStart value="800"/>
         <LifeMax value="800"/>
-        <CostResource index="Minerals" value="100"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Vespene" value="75"/>
         <AbilArray Link="SalvageShared"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>

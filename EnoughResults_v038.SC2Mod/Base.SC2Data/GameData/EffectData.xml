@@ -490,17 +490,17 @@
     </CEffectApplyBehavior>
     <CEffectDamage id="IonCannonsU">
         <Amount value="4"/>
-        <AttributeBonus index="Light" value="9"/>
+        <AttributeBonus index="Light" value="8"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsULeft">
         <Amount value="4"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Light" value="9"/>
+        <AttributeBonus index="Light" value="8"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsURight">
         <Amount value="4"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Light" value="9"/>
+        <AttributeBonus index="Light" value="8"/>
     </CEffectDamage>
     <CEffectDamage id="KD8ChargeExplodeDamageDisplay">
         <EditorCategories value="Race:Terran"/>
@@ -1467,15 +1467,15 @@
     </CEffectCreatePersistent>
     <CEffectModifyPlayer id="PickupPalletMinerals2">
         <EditorCategories value=""/>
-        <Resources index="Minerals" value="5"/>
+        <Resources index="Minerals" value="6"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="PickupPalletMinerals22">
         <EditorCategories value=""/>
-        <Resources index="Minerals" value="8"/>
+        <Resources index="Minerals" value="10"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="PickupPalletMinerals23">
         <EditorCategories value=""/>
-        <Resources index="Minerals" value="8"/>
+        <Resources index="Minerals" value="10"/>
     </CEffectModifyPlayer>
     <CEffectSet id="PickupPalletMineralsSet24">
         <EditorCategories value=""/>
