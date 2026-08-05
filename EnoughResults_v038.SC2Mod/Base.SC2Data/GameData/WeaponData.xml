@@ -173,7 +173,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="IonCannons">
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Period value="1.95"/>
+        <Period value="2.4"/>
+        <MinScanRange value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoesGround">
         <Name value="Weapon/Name/LanzerTorpedoes"/>

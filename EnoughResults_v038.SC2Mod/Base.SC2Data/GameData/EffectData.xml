@@ -399,9 +399,6 @@
         <PeriodicEffectArray value="OozeSnareSearch"/>
         <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
-    <CEffectDamage id="GlaiveWurmU2">
-        <Amount value="4"/>
-    </CEffectDamage>
     <CEffectCreateUnit id="HallucinationCreateDisruptor">
         <SpawnCount value="2"/>
     </CEffectCreateUnit>
@@ -478,9 +475,6 @@
     <CEffectEnumArea id="GlaiveWurmE2">
         <AreaArray index="0" Radius="4"/>
     </CEffectEnumArea>
-    <CEffectDamage id="GlaiveWurmU3">
-        <Amount value="2"/>
-    </CEffectDamage>
     <CEffectDamage id="HighTemplarWeaponDamage">
         <AttributeBonus index="Armored" value="16"/>
         <Amount value="14"/>
@@ -490,17 +484,14 @@
     </CEffectApplyBehavior>
     <CEffectDamage id="IonCannonsU">
         <Amount value="4"/>
-        <AttributeBonus index="Light" value="9"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsULeft">
         <Amount value="4"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Light" value="9"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsURight">
         <Amount value="4"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Light" value="9"/>
     </CEffectDamage>
     <CEffectDamage id="KD8ChargeExplodeDamageDisplay">
         <EditorCategories value="Race:Terran"/>

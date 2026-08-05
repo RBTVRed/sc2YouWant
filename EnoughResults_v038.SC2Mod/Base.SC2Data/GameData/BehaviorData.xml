@@ -674,13 +674,13 @@
         <Capacity value="3000"/>
         <Contents value="3000"/>
         <HarvestTime value="5.63"/>
-        <HarvestAmount value="12"/>
+        <HarvestAmount value="15"/>
     </CBehaviorResource>
     <CBehaviorResource id="HighYieldMineralFieldMinerals750">
         <Capacity value="3000"/>
         <Contents value="3000"/>
         <HarvestTime value="5.63"/>
-        <HarvestAmount value="12"/>
+        <HarvestAmount value="15"/>
     </CBehaviorResource>
     <CBehaviorBuff id="IncubateDummy">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -851,7 +851,7 @@
         <Capacity value="2000"/>
         <Contents value="2000"/>
         <HarvestTime value="5.63"/>
-        <HarvestAmount value="8"/>
+        <HarvestAmount value="10"/>
     </CBehaviorResource>
     <CBehaviorBuff id="OracleStasisTrapTarget">
         <Duration value="42"/>
@@ -1096,7 +1096,7 @@
         <HarvestTime value="5.63"/>
         <Capacity value="2000"/>
         <Contents value="2000"/>
-        <HarvestAmount value="8"/>
+        <HarvestAmount value="10"/>
     </CBehaviorResource>
     <CBehaviorBuff id="MorphToNeosteelBunker@Morphing">
         <InfoFlags index="Hidden" value="1"/>

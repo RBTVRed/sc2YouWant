@@ -73,7 +73,7 @@
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <EnergyStart value="75"/>
-        <Speed value="1.668"/>
+        <Speed value="2"/>
     </CUnit>
     <CUnit id="Archon">
         <ShieldsStart value="900"/>
@@ -103,8 +103,8 @@
         <ShieldRegenRate value="4"/>
     </CUnit>
     <CUnit id="AutoTurret">
-        <LifeStart value="400"/>
-        <LifeMax value="400"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
         <Sight value="8"/>
         <BehaviorArray Link="Detector7"/>
         <CardLayouts index="0">
@@ -1655,8 +1655,8 @@
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
-        <ShieldsStart value="240"/>
-        <ShieldsMax value="240"/>
+        <ShieldsStart value="160"/>
+        <ShieldsMax value="160"/>
         <ShieldRegenRate value="1.5"/>
         <Speed value="4"/>
         <Acceleration value="1"/>
