@@ -2017,8 +2017,8 @@
     </CEffectDamage>
     <CEffectDamage id="VolatileBurstU">
         <ImpactLocation Value="TargetUnit"/>
-        <AttributeBonus index="Light" value="10"/>
-        <Amount value="90"/>
+        <AttributeBonus index="Light" value="60"/>
+        <Amount value="120"/>
         <AreaArray index="0" removed="1"/>
         <ExcludeArray index="0" removed="1"/>
     </CEffectDamage>
