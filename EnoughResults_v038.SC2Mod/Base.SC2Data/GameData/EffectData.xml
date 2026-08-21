@@ -80,6 +80,18 @@
         <AttributeBonus index="Armored" value="40"/>
         <Amount value="30"/>
     </CEffectDamage>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- SC 1 Unit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Corsair .......................................................................... -->
+    <!--                                                                                         -->
+    <CEffectDamage id="NeutronFlare">
+        <AttributeBonus index="Armored" value="4"/>
+        <Amount value="4"/>
+    </CEffectDamage>
     <CEffectEnumArea id="OracleStasisTrapActivate">
         <SearchFilters value="Ground;Self,Neutral,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
@@ -247,18 +259,6 @@
     <CEffectSet id="ImmortalBarrierAfterfirstdamageeffect">
         <EffectArray value="ImmortalBarrierAddBarrier"/>
     </CEffectSet>
-    <!--                                                                                         -->
-    <!--                                                                                         -->
-    <!-- SC 1 Unit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!--                                                                                         -->
-    <!--                                                                                         -->
-    <!--                                                                                         -->
-    <!-- Corsair .......................................................................... -->
-    <!--                                                                                         -->
-    <CEffectDamage id="NeutronFlare">
-        <AttributeBonus index="Armored" value="5"/>
-        <Amount value="3"/>
-    </CEffectDamage>
     <CEffectDamage id="PurificationNovaDamagePartial">
         <ValidatorArray value="DisruptorDamageFilter"/>
         <ValidatorArray value="noMarkers"/>
@@ -484,14 +484,17 @@
     </CEffectApplyBehavior>
     <CEffectDamage id="IonCannonsU">
         <Amount value="4"/>
+        <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsULeft">
         <Amount value="4"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsURight">
         <Amount value="4"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectDamage id="KD8ChargeExplodeDamageDisplay">
         <EditorCategories value="Race:Terran"/>

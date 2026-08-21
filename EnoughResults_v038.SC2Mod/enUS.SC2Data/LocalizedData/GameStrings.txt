@@ -351,7 +351,7 @@ Button/Tooltip/OrbitalCommandCalldownRepairDrone=Drops a robotic Construction Dr
 Button/Tooltip/ParasiticBomb=Creates a parasitic cloud that deals <d ref="Behavior,ParasiticBomb,Duration/Behavior,ParasiticBomb,Period*Effect,ParasiticBombDotDamage,Amount"/> (+<d ref="Behavior,ParasiticBomb,Duration/Behavior,ParasiticBomb,Period*Effect,ParasiticBombDotDamage,AttributeBonus[Armored],Amount"/> to armored) damage over <d ref="Behavior,ParasiticBomb,Duration"/> seconds to the target and enemy air units nearby. If the target dies, the cloud remains in the air where the enemy died until it expires.<n/><n/><c val="#ColorAttackInfo">Cannot target ground units or structures.</c>
 Button/Tooltip/PerimeterScan=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
 Button/Tooltip/PhasingMode=Transforms the Warp Prism to Phasing Mode and generates a power radius similar to that of a Pylon. In this mode the Warp Prism can also recharge Protoss shields. The Warp Prism cannot move in this mode.
-Button/Tooltip/Phoenix=Air-superiority fighter.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/Phoenix=Multirole Fighter.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/PhoenixHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/PhoenixRangeUpgrade=Increase the damage of the Phoenix.
 Button/Tooltip/PickupBlueMinerals=<s val="Kicker_Minerals">+<d ref="Effect,PickupPalletMinerals2,Resources[0]"/> </s>
@@ -415,6 +415,7 @@ Button/Tooltip/TechLabBarracks=Infantry-research structure. A Tech Lab can fit o
 Button/Tooltip/TechLabFactory=Vehicle-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Siege Tanks<n/>- Thor with Armory
 Button/Tooltip/TechLabStarport=Aircraft-research structure. A Tech Lab can fit onto any production structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ravens<n/>- Battlecruisers with Fusion Core
 Button/Tooltip/TelepathicSuppression=Enemies near the caster can't cast spells that cost energy.
+Button/Tooltip/Tempest=Flak Artillery Craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/TemporalField=The Arbiter warps spacetime within the target area for <d ref="Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodCount*Effect,TemporalFieldAfterBubbleCreatePersistent,PeriodicPeriodArray[0]"/> seconds. All enemy units and structures within the field will have attack and movement speeds increased by <d ref="(Behavior,TemporalField,Modification.MoveSpeedMultiplier)*100-100"/>%.
 Button/Tooltip/TownHallLoad@Load=Loads units into the structure.
 Button/Tooltip/TownHallLoad@UnloadAll=Unloads all units.
@@ -670,6 +671,7 @@ Effect/Name/NapalmGrenade@SwitchDoTPeriodic=Switch
 Effect/Name/NeosteelBunkerABRangeBonus=Apply Behavior
 Effect/Name/NeosteelBunkerRBRangeBonus=Remove Behavior
 Effect/Name/NeuralParasiteBurstLockOnRemove=Neural Parasite Burst Lock On Remove
+Effect/Name/NeutronFlare=Neutron Flare (Damage)
 Effect/Name/NexusBeam=Nexus Beam
 Effect/Name/ObeliskSlowApply=ObeliskSlowApply
 Effect/Name/ObeliskSlowSearch=ObeliskSlowSearch

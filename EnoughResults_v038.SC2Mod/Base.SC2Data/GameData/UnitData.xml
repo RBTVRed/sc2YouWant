@@ -1544,6 +1544,7 @@
         <ShieldRegenRate value="1.5"/>
         <Speed value="3.5"/>
         <Sight value="9"/>
+        <CostResource index="Minerals" value="200"/>
         <CostResource index="Vespene" value="200"/>
         <AbilArray index="5" Link="OracleStasisTrapBuild"/>
         <AbilArray index="6" Link="SpreadOut"/>
@@ -1655,8 +1656,8 @@
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
-        <ShieldsStart value="160"/>
-        <ShieldsMax value="160"/>
+        <ShieldsStart value="180"/>
+        <ShieldsMax value="180"/>
         <ShieldRegenRate value="1.5"/>
         <Speed value="4"/>
         <Acceleration value="1"/>
@@ -1666,7 +1667,7 @@
             <LayoutButtons index="6" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
-        <CostResource index="Minerals" value="225"/>
+        <CostResource index="Minerals" value="300"/>
     </CUnit>
     <CUnit id="PhotonCannon">
         <LifeStart value="200"/>
@@ -2240,6 +2241,8 @@
         </CardLayouts>
         <Attributes index="Massive" value="0"/>
         <Food value="-5"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="300"/>
     </CUnit>
     <CUnit id="TempestWeapon">
         <Mover value="TempestMissile"/>
@@ -2951,7 +2954,6 @@
         <CardLayouts index="0">
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
-        <CostResource index="Minerals" value="275"/>
     </CUnit>
     <CUnit id="WarpGate">
         <ShieldsStart value="1500"/>
