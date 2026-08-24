@@ -1040,6 +1040,7 @@
     </CEffectApplyBehavior>
     <CEffectRemoveBehavior id="TownHallLoad@RBAttackSpeed">
         <BehaviorLink value="TownHallLoad@AttackSpeed"/>
+        <Count value="1"/>
     </CEffectRemoveBehavior>
     <CEffectSwitch id="TransfusionSwitch">
         <ValidatorArray value="LifeNotFull"/>
