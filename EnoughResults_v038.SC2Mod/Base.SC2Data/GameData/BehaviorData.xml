@@ -609,7 +609,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <MaxStackCount value="50"/>
         <Modification>
-            <AdditiveAttackSpeedFactor value="0.1"/>
+            <AdditiveAttackSpeedFactor value="0.25"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="TownHallLoad@BaseAttackSpeed">
