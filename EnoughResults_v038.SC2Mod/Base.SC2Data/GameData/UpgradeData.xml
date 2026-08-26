@@ -131,11 +131,8 @@
     </CUpgrade>
     <CUpgrade id="PhoenixRangeUpgrade">
         <EffectArray index="0" Reference="Effect,IonCannonsU,Amount"/>
-        <EffectArray Reference="Effect,IonCannonsU,AttributeBonus[Light]" Value="2"/>
         <EffectArray Reference="Effect,IonCannonsULeft,Amount" Value="2"/>
-        <EffectArray Reference="Effect,IonCannonsULeft,AttributeBonus[Light]" Value="2"/>
         <EffectArray Reference="Effect,IonCannonsURight,Amount" Value="2"/>
-        <EffectArray Reference="Effect,IonCannonsURight,AttributeBonus[Light]" Value="2"/>
     </CUpgrade>
     <CUpgrade id="ProtossAirWeaponsLevel1">
         <EffectArray index="20" Value="5"/>

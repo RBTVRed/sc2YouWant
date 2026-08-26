@@ -571,9 +571,9 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <MaxCargoCount value="10"/>
+        <MaxCargoCount value="8"/>
         <MaxCargoSize value="8"/>
-        <TotalCargoSpace value="10"/>
+        <TotalCargoSpace value="8"/>
         <LoadCargoBehavior value="TransportDummy"/>
         <LoadTransportEffect value="TownHallLoad@ABAttackSpeed"/>
         <LoadTransportBehavior value="TownHallLoad@BaseAttackSpeed"/>
@@ -1508,12 +1508,15 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="RechargeShields"/>
     </CAbilEffectTarget>
     <CAbilTrain id="StargateTrain">
-        <InfoArray index="Train1" Time="55"/>
-        <InfoArray index="Train2" Time="130">
+        <InfoArray index="Train1" Time="63"/>
+        <InfoArray index="Train2" Time="126">
             <Button DefaultButtonFace="Arbiter" Requirements="HaveFleetBeacon"/>
             <Unit value="ArbiterMP"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="120"/>
+        <InfoArray index="Train3" Time="126"/>
+        <InfoArray index="Train5" Time="63"/>
+        <InfoArray index="Train9" Time="49"/>
+        <InfoArray index="Train10" Time="63"/>
         <InfoArray index="Train11" Time="1">
             <Resource index="Minerals" value="1"/>
             <Button DefaultButtonFace="Corsair"/>

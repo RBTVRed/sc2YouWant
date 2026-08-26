@@ -73,7 +73,7 @@
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <EnergyStart value="75"/>
-        <Speed value="1.668"/>
+        <Speed value="2"/>
     </CUnit>
     <CUnit id="Archon">
         <ShieldsStart value="900"/>
@@ -103,8 +103,8 @@
         <ShieldRegenRate value="4"/>
     </CUnit>
     <CUnit id="AutoTurret">
-        <LifeStart value="250"/>
-        <LifeMax value="250"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
         <Sight value="8"/>
         <BehaviorArray Link="Detector7"/>
         <CardLayouts index="0">
@@ -227,8 +227,8 @@
         <CardLayouts index="0">
             <LayoutButtons index="4" Face="ResearchNitroPacks" AbilCmd="BarracksTechLabResearch,Research4"/>
         </CardLayouts>
-        <CostResource index="Minerals" value="75"/>
-        <CostResource index="Vespene" value="75"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
     </CUnit>
     <CUnit id="Battlecruiser">
         <AbilArray Link="SpreadOut"/>
@@ -919,8 +919,8 @@
         <LifeStart value="800"/>
         <LifeMax value="800"/>
         <AbilArray Link="AssaultMode"/>
-        <CostResource index="Minerals" value="75"/>
-        <CostResource index="Vespene" value="75"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
     </CUnit>
     <CUnit id="ForceField">
         <FlagArray index="Uncommandable" value="0"/>
@@ -1544,6 +1544,7 @@
         <ShieldRegenRate value="1.5"/>
         <Speed value="3.5"/>
         <Sight value="9"/>
+        <CostResource index="Minerals" value="200"/>
         <CostResource index="Vespene" value="200"/>
         <AbilArray index="5" Link="OracleStasisTrapBuild"/>
         <AbilArray index="6" Link="SpreadOut"/>
@@ -1658,7 +1659,7 @@
         <ShieldsStart value="180"/>
         <ShieldsMax value="180"/>
         <ShieldRegenRate value="1.5"/>
-        <Speed value="3.75"/>
+        <Speed value="4"/>
         <Acceleration value="1"/>
         <Sight value="9"/>
         <AbilArray index="3" Link="SpreadOut"/>
@@ -1666,7 +1667,7 @@
             <LayoutButtons index="6" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
-        <CostResource index="Minerals" value="225"/>
+        <CostResource index="Minerals" value="300"/>
     </CUnit>
     <CUnit id="PhotonCannon">
         <LifeStart value="200"/>
@@ -2139,8 +2140,8 @@
             <LayoutButtons index="4" Face="ResearchBallisticRange" AbilCmd="FusionCoreResearch,Research2" Column="3"/>
             <LayoutButtons Face="ResearchRavenEnergyUpgrade" Type="AbilCmd" AbilCmd="FusionCoreResearch,Research4" Row="0" Column="2"/>
         </CardLayouts>
-        <CostResource index="Minerals" value="75"/>
-        <CostResource index="Vespene" value="75"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
     </CUnit>
     <CUnit id="SupplyDepot">
         <LifeStart value="800"/>
@@ -2214,8 +2215,8 @@
     <CUnit id="TechLab">
         <LifeStart value="800"/>
         <LifeMax value="800"/>
-        <CostResource index="Minerals" value="75"/>
-        <CostResource index="Vespene" value="75"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="100"/>
         <AbilArray Link="SalvageShared"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
@@ -2240,6 +2241,8 @@
         </CardLayouts>
         <Attributes index="Massive" value="0"/>
         <Food value="-5"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="300"/>
     </CUnit>
     <CUnit id="TempestWeapon">
         <Mover value="TempestMissile"/>
@@ -2951,7 +2954,6 @@
         <CardLayouts index="0">
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
-        <CostResource index="Minerals" value="275"/>
     </CUnit>
     <CUnit id="WarpGate">
         <ShieldsStart value="1500"/>
