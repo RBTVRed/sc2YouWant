@@ -1579,6 +1579,7 @@
         <AbilArray Link="OrbitalCommandCalldownRepairDrone"/>
         <Food value="12"/>
         <EnergyStart value="75"/>
+        <CostResource index="Minerals" value="550"/>
         <CostResource index="Vespene" value="150"/>
         <Sight value="13"/>
     </CUnit>
