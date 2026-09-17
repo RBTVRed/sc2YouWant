@@ -58,6 +58,7 @@ Abil/Name/TransientRepairDrone=Transient Repair Drone
 Abil/Name/UnleashNydusWorm=Unleash Nydus Worm
 Abil/Name/ViperParasiticBombRelay=ParasiticBombRelay (Unnamed)
 Abil/Name/VoidRaySwarmDamageBoostRemove=Void Ray Swarm Damage Boost Remove
+Abil/Name/que8PassiveCancelToSelection=Queue (8) Passive (Cancel to Selection)
 Behavior/Name/BlindingCloud=Plague Cloud
 Behavior/Name/BlindingCloudStructure=Plague Cloud
 Behavior/Name/BlindingSpores@Enemy=Blinding Spores

@@ -2553,7 +2553,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="0" Face="StopPlanetaryFortress" AbilCmd="stop,Stop" Row="0" Column="3"/>
             <LayoutButtons index="1" Face="AttackBuildingPFort" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons index="2" Face="Cancel" AbilCmd="que5PassiveCancelToSelection,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons index="2" Face="Cancel" AbilCmd="que8PassiveCancelToSelection,CancelLast" Row="2" Column="4"/>
             <LayoutButtons index="3" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel" Row="2"/>
             <LayoutButtons index="4" Face="SCV" AbilCmd="CommandCenterTrain,Train1" Row="0" Column="0"/>
             <LayoutButtons index="5" Face="Rally" AbilCmd="RallyCommand,Rally1" Row="1"/>
@@ -2561,13 +2561,9 @@
             <LayoutButtons index="7" Face="TownHallLoad@UnloadAll" AbilCmd="TownHallLoad,UnloadAll" Row="2" Column="3"/>
         </CardLayouts>
         <WeaponArray Link="CommandTurret"/>
-        <AbilArray index="1" Link="RallyCommand"/>
-        <AbilArray index="2" Link="CommandCenterTrain"/>
-        <AbilArray index="3" Link="que8"/>
-        <AbilArray index="4" Link="attack"/>
-        <AbilArray index="5" Link="stop"/>
-        <AbilArray index="6" Link="TownHallLoad"/>
         <Sight value="13"/>
+        <AbilArray index="5" Link="que8PassiveCancelToSelection"/>
+        <AbilArray index="6" Link="TownHallLoad"/>
     </CUnit>
     <CUnit id="Ravager">
         <CostResource index="Minerals" value="225"/>

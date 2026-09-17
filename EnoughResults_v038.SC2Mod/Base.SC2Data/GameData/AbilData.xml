@@ -1854,4 +1854,14 @@
     <CAbilQueue id="que5CancelToSelection">
         <Flags index="Passive" value="1"/>
     </CAbilQueue>
+    <CAbilQueue id="que8PassiveCancelToSelection">
+        <AbilSetId value="QueueCancelToSelection"/>
+        <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="CancelLast">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <QueueCount value="2"/>
+        <QueueSize value="8"/>
+        <Flags index="Passive" value="1"/>
+    </CAbilQueue>
 </Catalog>
