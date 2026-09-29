@@ -1215,6 +1215,11 @@
         <On index="8" removed="1"/>
         <On index="9" removed="1"/>
         <On index="10" removed="1"/>
+        <On index="11" removed="1"/>
+        <On index="12" removed="1"/>
+        <On index="13" removed="1"/>
+        <On index="14" removed="1"/>
+        <On index="15" removed="1"/>
     </CActorRange>
     <CActorAction id="ConsumeShieldHitter" parent="AoEAttackBase">
         <On Terms="Effect.ViperConsumeStructureCreatePersistent.Start" Send="Create"/>
@@ -1635,6 +1640,14 @@
         <DeathArray index="Normal" ModelLink="BunkerUpgradeDeath"/>
         <HighlightTooltip value="Unit/Name/NeosteelBunker"/>
         <DeathCustoms index="6" ModelLink="BunkerUpgradeDeathEmpty"/>
+        <GroupIcon>
+            <Image index="0" value="Assets\Textures\wireframe-terran-bunker-neosteelframe.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-bunkerfortified.dds"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-bunkerfortified.dds"/>
+        <Wireframe>
+            <Image index="0" value="Assets\Textures\wireframe-terran-bunker-neosteelframe.dds"/>
+        </Wireframe>
     </CActorUnit>
     <CActorSplat id="BunkerSplat2" parent="GenericUnitSplat" unitName="NeosteelBunker">
         <Model value="BunkerSplat"/>
