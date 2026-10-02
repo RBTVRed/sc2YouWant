@@ -87,6 +87,15 @@
     <CModel id="Raven">
         <Radius value="0.750000"/>
     </CModel>
+    <CModel id="SiegeTank">
+        <SelectionRadius value="1.400000"/>
+    </CModel>
+    <CModel id="SiegeTankSieged">
+        <SelectionRadius value="1.400000"/>
+    </CModel>
+    <CModel id="SiegeTankSiegedMorph">
+        <SelectionRadius value="1.400000"/>
+    </CModel>
     <CModel id="TelepathicSuppression@Impact" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Zerg\UnitStunImpact\UnitStunImpact.m3"/>
         <EditorCategories value="Race:Zerg"/>

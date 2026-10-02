@@ -1383,6 +1383,7 @@
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <Radius value="0.4375"/>
+        <InnerRadius value="0.4375"/>
     </CUnit>
     <CUnit id="Medivac">
         <LifeStart value="320"/>
@@ -2692,7 +2693,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
-        <Radius value="1"/>
+        <Radius value="1.25"/>
         <InnerRadius value="1"/>
         <Speed value="2"/>
         <LifeStart value="500"/>
@@ -2700,7 +2701,7 @@
     </CUnit>
     <CUnit id="SiegeTankSieged">
         <Sight value="15"/>
-        <Radius value="1"/>
+        <Radius value="1.25"/>
         <InnerRadius value="1"/>
         <LifeStart value="500"/>
         <LifeMax value="500"/>

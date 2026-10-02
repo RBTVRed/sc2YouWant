@@ -1245,6 +1245,10 @@
                 <DurationArray index="Delay" value="35"/>
             </SectionArray>
         </InfoArray>
+        <Cost>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="0"/>
+        </Cost>
     </CAbilMorph>
     <CAbilEffectTarget id="MothershipCoreMassRecall">
         <Cost index="0">

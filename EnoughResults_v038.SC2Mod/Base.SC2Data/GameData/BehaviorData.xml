@@ -73,7 +73,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-dehaka-detector.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="28"/>
-        <Modification SightBonus="5" RangedWeaponRange="7">
+        <Modification SightBonus="7" RangedWeaponRange="7">
             <DamageDealtAttributeScaled index="Armored" value="65"/>
         </Modification>
     </CBehaviorBuff>
@@ -665,17 +665,17 @@
     </CBehaviorBuff>
     <CBehaviorResource id="HarvestableVespeneGeyserGas">
         <Capacity value="2500"/>
-        <HarvestTime value="2.71"/>
+        <HarvestTime value="2.97"/>
         <HarvestAmount value="5"/>
         <IdealHarvesterCount value="2"/>
     </CBehaviorResource>
     <CBehaviorResource id="HarvestableVespeneGeyserGasProtoss">
-        <HarvestTime value="2.71"/>
+        <HarvestTime value="2.97"/>
         <HarvestAmount value="5"/>
         <IdealHarvesterCount value="2"/>
     </CBehaviorResource>
     <CBehaviorResource id="HarvestableVespeneGeyserGasZerg">
-        <HarvestTime value="2.71"/>
+        <HarvestTime value="2.97"/>
         <HarvestAmount value="5"/>
         <IdealHarvesterCount value="2"/>
     </CBehaviorResource>

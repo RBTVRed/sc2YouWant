@@ -47,7 +47,7 @@
     <CWeaponLegacy id="CrucioShockCannon">
         <Range value="14"/>
         <Period value="6"/>
-        <MinimumRange value="3"/>
+        <MinimumRange value="2.4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HighTemplarWeapon">
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
