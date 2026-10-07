@@ -851,7 +851,6 @@ RequirementNode/Tooltip/Or1515591279TechTreeCheatCountUnitLairCompleteOnly151559
 RequirementNode/Tooltip/Or2508361961TechTreeCheatCountUnitLairCompleteOnlyCountUnitHiveCompleteOnly=Have Lair or Hive
 RequirementNode/Tooltip/Or556944322TechTreeCheatCountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat=Lair or Hive
 Unit/LifeArmorName/TerranInfantryArmor=Terran Infantry Armor
-Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
 Unit/Name/CorruptorDamagingCorruption@Weapon=Weapon
 Unit/Name/CycloneBurstLockOn@Weapon=Weapon
 Unit/Name/D8ChargeBomb=D8 Charge Bomb

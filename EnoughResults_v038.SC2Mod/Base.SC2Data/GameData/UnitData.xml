@@ -2694,7 +2694,7 @@
             <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <Radius value="1.25"/>
-        <InnerRadius value="1"/>
+        <InnerRadius value="1.25"/>
         <Speed value="2"/>
         <LifeStart value="500"/>
         <LifeMax value="500"/>
@@ -2702,9 +2702,10 @@
     <CUnit id="SiegeTankSieged">
         <Sight value="15"/>
         <Radius value="1.25"/>
-        <InnerRadius value="1"/>
+        <InnerRadius value="1.25"/>
         <LifeStart value="500"/>
         <LifeMax value="500"/>
+        <SeparationRadius value="1.25"/>
     </CUnit>
     <CUnit id="SpineCrawler">
         <LifeStart value="600"/>
