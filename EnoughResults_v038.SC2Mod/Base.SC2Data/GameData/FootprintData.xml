@@ -162,26 +162,8 @@
     </CFootprint>
     <CFootprint id="FootprintSieged">
         <Shape>
-            <Radius value="1.1181"/>
-            <Offsets value="-0.5,-1;0.5,-1;-0.5,1;0.5,1;-1,-0.5;-1,0.5;1,-0.5;1,0.5"/>
-            <Borders value="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
-        </Shape>
-    </CFootprint>
-    <CFootprint id="FootprintSieged2">
-        <Layers index="Check">
-            <Sets index="0">
-                <Negative index="Creep" value="0"/>
-            </Sets>
-            <Rows value=".."/>
-            <Rows value=".."/>
-        </Layers>
-        <Layers index="Place">
-            <Rows value=".."/>
-            <Rows value=".."/>
-        </Layers>
-        <Shape>
-            <Radius value="1.1181"/>
-            <Offsets value="-0.5,-1;0.5,-1;-0.5,1;0.5,1;-1,-0.5;-1,0.5;1,-0.5;1,0.5"/>
+            <Radius value="1.2312"/>
+            <Offsets value="-0.5,-1.125;0.5,-1.125;-0.5,1.125;0.5,1.125;-1.125,-0.5;-1.125,0.5;1.125,-0.5;1.125,0.5"/>
             <Borders value="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
         </Shape>
     </CFootprint>
