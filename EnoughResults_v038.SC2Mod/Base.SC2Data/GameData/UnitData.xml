@@ -1314,13 +1314,13 @@
         </CardLayouts>
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
-        <LifeStart value="40"/>
-        <LifeMax value="40"/>
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
         <Sight value="7"/>
     </CUnit>
     <CUnit id="LocustMPFlying">
-        <LifeStart value="60"/>
-        <LifeMax value="60"/>
+        <LifeStart value="30"/>
+        <LifeMax value="30"/>
         <Speed value="0.5"/>
         <WeaponArray index="0" Link="LocustMP"/>
         <CardLayouts index="0">
@@ -1580,7 +1580,6 @@
         <AbilArray Link="OrbitalCommandCalldownRepairDrone"/>
         <Food value="12"/>
         <EnergyStart value="75"/>
-        <CostResource index="Minerals" value="550"/>
         <CostResource index="Vespene" value="150"/>
         <Sight value="13"/>
     </CUnit>
