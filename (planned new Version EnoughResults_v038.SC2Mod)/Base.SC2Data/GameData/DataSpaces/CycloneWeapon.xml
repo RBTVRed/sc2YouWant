@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectSwitch id="CycloneBurstLockOn@SwitchInitial">
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="CycloneBurstLockOn@CasterNotLockedOntoTarget" Effect="CycloneBurstLockOn@SetInitial"/>
+        <CaseDefault value="CycloneBurstLockOn@DamageDummy"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="CycloneBurstLockOn@SwitchLaunch">
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="CycloneBurstLockOn@HasMissileAlternate" Effect="CycloneBurstLockOn@SetLaunchRight"/>
+        <CaseDefault value="CycloneBurstLockOn@SetLaunchLeft"/>
+    </CEffectSwitch>
+    <CEffectDamage id="CycloneBurstLockOn@Damage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Terran"/>
+        <ArmorReduction value="0"/>
+        <Amount value="4"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="CycloneBurstLockOn@ABAlternateWeapon">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="CycloneBurstLockOn@AlternateWeapon"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="CycloneBurstLockOn@RBAlternateWeapon">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="CycloneBurstLockOn@AlternateWeapon"/>
+    </CEffectRemoveBehavior>
+    <CEffectLaunchMissile id="CycloneBurstLockOn@LMLeft">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactEffect value="CycloneBurstLockOn@Damage"/>
+        <AmmoUnit value="CycloneBurstLockOn@Weapon"/>
+        <Movers Link="CycloneMissileLeft"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="CycloneBurstLockOn@SetLaunchLeft">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="CycloneBurstLockOn@LMLeft"/>
+        <EffectArray value="CycloneBurstLockOn@ABAlternateWeapon"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="CycloneBurstLockOn@LMRight">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactEffect value="CycloneBurstLockOn@Damage"/>
+        <AmmoUnit value="CycloneBurstLockOn@Weapon"/>
+        <Movers Link="CycloneBurstLockOn@MoverRight"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="CycloneBurstLockOn@SetLaunchRight">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="CycloneBurstLockOn@LMRight"/>
+        <EffectArray value="CycloneBurstLockOn@RBAlternateWeapon"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="CycloneBurstLockOn@ABTarget">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="CycloneBurstLockOn@Target"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="CycloneBurstLockOn@CPChannel">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <FinalEffect value="CycloneBurstLockOn@SetClear"/>
+        <PeriodCount value="2"/>
+        <PeriodicValidator value="CycloneBurstLockOn@PeriodicValidator"/>
+        <PeriodicEffectArray value="CycloneBurstLockOn@CPVolley"/>
+        <PeriodicEffectArray value=""/>
+        <PeriodicPeriodArray value="4"/>
+        <PeriodicPeriodArray value="15"/>
+        <RevealRadius value="2"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="CycloneBurstLockOn@CPVolley">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="75"/>
+        <PeriodicValidator value="CycloneBurstLockOn@PeriodicValidator"/>
+        <PeriodicEffectArray value="CycloneBurstLockOn@SwitchLaunch"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <RevealRadius value="2"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="CycloneBurstLockOn@SetClear">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="CycloneBurstLockOn@RBTarget"/>
+        <EffectArray value="CycloneBurstLockOn@RBDisableAttack"/>
+        <EffectArray value="CycloneBurstLockOn@MUTurretClear"/>
+        <EffectArray value="LockOnResetCooldown"/>
+        <EffectArray value="CycloneBurstLockOn@RBRangeDummy"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="CycloneBurstLockOn@ABDisableAttack">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="CycloneBurstLockOn@Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="CycloneBurstLockOn@RBDisableAttack">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="CycloneBurstLockOn@Caster"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="CycloneBurstLockOn@ABRangeDummy">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="CycloneBurstLockOn@RangeDummy"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="CycloneBurstLockOn@RBRangeDummy">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="LockOnDummyWeapon"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="CycloneBurstLockOn@SetStart">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="CycloneBurstLockOn@ABTarget"/>
+        <EffectArray value="CycloneBurstLockOn@ABDisableAttack"/>
+        <EffectArray value="CycloneBurstLockOn@CPChannel"/>
+        <EffectArray value="LockOnResetCooldownInitial"/>
+    </CEffectSet>
+    <CEffectSet id="CycloneBurstLockOn@SetInitial">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="CycloneBurstLockOn@RBDisableAttack"/>
+        <EffectArray value="CycloneBurstLockOn@MUTurretStart"/>
+        <EffectArray value="LockOnResetCooldownInitial"/>
+        <EffectArray value="CycloneBurstLockOn@ABRangeDummy"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="CycloneBurstLockOn@RBTarget">
+        <EditorCategories value="Race:Terran"/>
+        <BehaviorLink value="CycloneBurstLockOn@Target"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectModifyUnit id="CycloneBurstLockOn@MUTurretClear">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactUnit Value="Caster"/>
+        <ModifyTurret Action="ClearTarget" Turret="Cyclone"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="CycloneBurstLockOn@MUTurretStart">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <ValidatorArray value="NotLockingOn"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactUnit Value="Caster"/>
+        <ModifyTurret Turret="Cyclone" AimCompleteEffect="CycloneBurstLockOn@SetStart">
+            <Target Value="TargetUnit"/>
+            <Flags index="Tracking" value="1"/>
+        </ModifyTurret>
+    </CEffectModifyUnit>
+    <CAbilEffectInstant id="CycloneBurstLockOn@Cancel">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="CycloneBurstLockOn@RBDisableAttack"/>
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LockOnCancel" Requirements="CycloneBurstLockOn@LockedOn"/>
+    </CAbilEffectInstant>
+    <CValidatorUnitCompareBehaviorCount id="CycloneBurstLockOn@CasterNotLockedOntoTarget">
+        <Behavior value="CycloneBurstLockOn@Target"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CycloneBurstLockOn@CasterLockingOn">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="CycloneBurstLockOn@Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CycloneBurstLockOn@PeriodicValidator">
+        <Type value="And"/>
+        <CombineArray value="CycloneBurstLockOn@TargetInRange"/>
+        <CombineArray value="CycloneBurstLockOn@TargetFilters"/>
+        <CombineArray value="CycloneBurstLockOn@CasterFilters"/>
+        <CombineArray value="CycloneBurstLockOn@CasterLockingOn"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="CycloneBurstLockOn@HasMissileAlternate">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="CycloneBurstLockOn@AlternateWeapon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="CycloneBurstLockOn@LockOnTargetNotDead">
+        <WhichUnit Effect="CycloneBurstLockOn@SetStart"/>
+        <Filters value="-;Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="CycloneBurstLockOn@TargetFilters">
+        <Filters value="Visible;Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="CycloneBurstLockOn@CasterFilters">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Stasis,Dead,Hidden,Stunned"/>
+    </CValidatorUnitFilters>
+    <CValidatorLocationCompareRange id="CycloneBurstLockOn@TargetInRange">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LT"/>
+        <Range value="16"/>
+    </CValidatorLocationCompareRange>
+    <CRequirement id="CycloneBurstLockOn@LockedOn">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorCycloneBurstLockOn@CasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirementCountBehavior id="CountBehaviorCycloneBurstLockOn@CasterCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="CycloneBurstLockOn@Caster" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CActorAction id="CycloneBurstLockOn@AttackLeft" parent="GenericAttack" effectImpact="CycloneBurstLockOn@Damage" effectLaunch="CycloneBurstLockOn@LMLeft">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Sound="Cyclone_Missile_Launch"/>
+        <Missile value="CycloneBurstLockOn@Missile"/>
+        <ImpactMap index="None" Model="CycloneMissileImpactLarge" Sound="Cyclone_Missile_Impact"/>
+        <ImpactPhysics Name="90mmCannonImpact" MatchKeys="Basic" Physics="SiegeTankAttackForce"/>
+    </CActorAction>
+    <CActorAction id="CycloneBurstLockOn@AttackRight" parent="GenericAttack" effectImpact="CycloneBurstLockOn@Damage" effectLaunch="CycloneBurstLockOn@LMRight">
+        <LaunchAttachQuery Methods="Weapon 2"/>
+        <LaunchAssets Sound="Cyclone_Missile_Launch"/>
+        <Missile value="CycloneBurstLockOn@Missile"/>
+        <ImpactMap index="None" Model="CycloneMissileImpactLarge" Sound="Cyclone_Missile_Impact"/>
+        <ImpactPhysics Name="90mmCannonImpact" MatchKeys="Basic" Physics="SiegeTankAttackForce"/>
+    </CActorAction>
+    <CActorBeamSimple id="CycloneBurstLockOn@BeamTracking" parent="BeamSimpleAnimationStyleContinuous">
+        <On Terms="Effect.CycloneBurstLockOn@MUTurretClear.Start; At Caster" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="Create CycloneBurstLockOn@RangeTracking"/>
+        <Model value="CycloneTargetingBeam"/>
+        <HostLaunch Subject="_Unit" Scope="Caster"/>
+        <HostLaunchSiteOps Ops="SOpAttachWeapon"/>
+        <HostImpact Subject="_Unit" Scope="Target"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorRange id="CycloneBurstLockOn@RangeTracking">
+        <Filter index="Neutral" value="1"/>
+        <Filter index="Enemy" value="1"/>
+        <On Terms="Effect.CycloneBurstLockOn@MUTurretClear.Start" Send="Destroy"/>
+        <Range value="16.000000"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+    </CActorRange>
+    <CActorMissile id="CycloneBurstLockOn@Missile" parent="GenericAttackMissile" unitName="CycloneBurstLockOn@Weapon">
+        <Model value="CycloneMissileLarge"/>
+    </CActorMissile>
+    <CActorSound id="CycloneBurstLockOn@SoundStart" parent="SoundOneShot">
+        <On Terms="Effect.CycloneBurstLockOn@CPChannel.Start; At Caster" Send="Create"/>
+        <Sound value="Cyclone_TargetLock_On"/>
+    </CActorSound>
+    <CWeaponLegacy id="CycloneBurstLockOn">
+        <EditorCategories value="Race:Terran"/>
+        <DisplayEffect value="CycloneBurstLockOn@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="12"/>
+        <Range value="13"/>
+        <Arc value="360"/>
+        <Period value="0.2"/>
+        <Effect value="CycloneBurstLockOn@SwitchInitial"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayAttackCount value="75"/>
+        <Name value="Weapon/Name/TyphoonMissilePod"/>
+        <DisplayName value="Weapon/Name/TyphoonMissilePod"/>
+    </CWeaponLegacy>
+    <CMoverMissile id="CycloneBurstLockOn@MoverLeft">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="5"/>
+            <Speed value="20"/>
+            <MaxSpeed value="35"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+            <Overlays Scale="0.2,0.2"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX">
+            <Overlays Scale="0"/>
+        </MotionPhases>
+        <MotionOverlays>
+            <Type value="Revolver"/>
+            <RevolverSpeed value="179.2968"/>
+            <RevolverSpeedRange value="179.2968"/>
+            <RevolverMaxSpeed value="719.2968"/>
+            <RevolverMaxSpeedRange value="0"/>
+            <RevolverAccel value="337.5"/>
+            <RevolverAccelRange value="337.5"/>
+        </MotionOverlays>
+    </CMoverMissile>
+    <CMoverMissile id="CycloneBurstLockOn@MoverRight">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="5"/>
+            <Speed value="20"/>
+            <MaxSpeed value="35"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+            <Overlays Scale="0.2,0.2"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX">
+            <Overlays Scale="0"/>
+        </MotionPhases>
+        <MotionOverlays>
+            <Type value="Revolver"/>
+            <RevolverSpeed value="179.2968"/>
+            <RevolverSpeedRange value="179.2968"/>
+            <RevolverMaxSpeed value="719.2968"/>
+            <RevolverMaxSpeedRange value="0"/>
+            <RevolverAccel value="337.5"/>
+            <RevolverAccelRange value="337.5"/>
+        </MotionOverlays>
+    </CMoverMissile>
+    <CDataCollectionAbil id="CycloneBurstLockOn">
+        <EditorCategories value="DataGroup:Weapon,Race:Terran,ObjectType:Projectile"/>
+        <DataRecord Entry="Abil,CycloneBurstLockOn@Cancel"/>
+        <DataRecord Entry="Actor,CycloneBurstLockOn@AttackLeft"/>
+        <DataRecord Entry="Actor,CycloneBurstLockOn@AttackRight"/>
+        <DataRecord Entry="Actor,CycloneBurstLockOn@BeamTracking"/>
+        <DataRecord Entry="Actor,CycloneBurstLockOn@RangeTracking"/>
+        <DataRecord Entry="Actor,CycloneBurstLockOn@Missile"/>
+        <DataRecord Entry="Actor,CycloneBurstLockOn@SoundStart"/>
+        <DataRecord Entry="Behavior,CycloneBurstLockOn@Caster"/>
+        <DataRecord Entry="Behavior,CycloneBurstLockOn@AlternateWeapon"/>
+        <DataRecord Entry="Behavior,CycloneBurstLockOn@Target"/>
+        <DataRecord Entry="Behavior,CycloneBurstLockOn@RangeDummy"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@Damage"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@ABAlternateWeapon"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@RBAlternateWeapon"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@LMLeft"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SetLaunchLeft"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@LMRight"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SetLaunchRight"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SwitchLaunch"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@ABTarget"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@CPChannel"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SetClear"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@CPVolley"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@RBTarget"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@RBDisableAttack"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@MUTurretClear"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@RBRangeDummy"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@ABDisableAttack"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@ABRangeDummy"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SetStart"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SetInitial"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@MUTurretStart"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@SwitchInitial"/>
+        <DataRecord Entry="Effect,CycloneBurstLockOn@DamageDummy"/>
+        <DataRecord Entry="Mover,CycloneBurstLockOn@MoverRight"/>
+        <DataRecord Entry="Mover,CycloneBurstLockOn@MoverLeft"/>
+        <DataRecord Entry="Requirement,CycloneBurstLockOn@LockedOn"/>
+        <DataRecord Entry="Unit,CycloneBurstLockOn@Weapon"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@HasMissileAlternate"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@PeriodicValidator"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@CasterLockingOn"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@TargetFilters"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@CasterFilters"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@LockOnTargetNotDead"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@TargetInRange"/>
+        <DataRecord Entry="Validator,CycloneBurstLockOn@CasterNotLockedOntoTarget"/>
+        <DataRecord Entry="Weapon,CycloneBurstLockOn"/>
+    </CDataCollectionAbil>
+    <CUnit id="CycloneBurstLockOn@Weapon" parent="MISSILE_INVULNERABLE">
+        <Race value="Terr"/>
+        <Mover value="CycloneBurstLockOn@MoverLeft"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
+    </CUnit>
+    <CBehaviorBuff id="CycloneBurstLockOn@AlternateWeapon">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CycloneBurstLockOn@Target">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-snipe.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <MaxStackCountPerCaster value="1"/>
+        <DamageResponse Fatal="1" Handled="CycloneBurstLockOn@MUTurretClear">
+            <Chance value="1"/>
+        </DamageResponse>
+        <Name value="Behavior/Name/LockOn"/>
+        <Modification>
+            <ModifyFlags index="Reveal" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CycloneBurstLockOn@Caster">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-snipe.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CycloneBurstLockOn@LockOnTargetNotDead"/>
+        <FinalEffect value="CycloneBurstLockOn@SetClear"/>
+        <Modification>
+            <StateFlags index="IsKiting" value="1"/>
+        </Modification>
+        <Name value="Behavior/Name/LockOnDisableAttack"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CycloneBurstLockOn@RangeDummy">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CycloneBurstLockOn@LockOnTargetNotDead"/>
+        <Modification WeaponRange="4" WeaponScanBonus="4"/>
+    </CBehaviorBuff>
+</Catalog>

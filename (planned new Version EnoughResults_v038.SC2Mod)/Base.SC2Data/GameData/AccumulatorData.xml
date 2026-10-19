@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorConstant id="CorruptorDamagingCorruption@Damage">
+        <Amount value="3"/>
+    </CAccumulatorConstant>
+    <CAccumulatorArithmetic id="CorruptorDamagingCorruption@Min">
+        <Parameters value="-1">
+            <AccumulatorArray value="TargetCurrentLife"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="CorruptorDamagingCorruption@Damage"/>
+        </Parameters>
+        <Operation value="Minimum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="CorruptorDamagingCorruption@DamageAccumulator">
+        <Parameters value="0">
+            <AccumulatorArray value="CorruptorDamagingCorruption@Min"/>
+        </Parameters>
+        <Parameters value="0"/>
+        <Operation value="Maximum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorBehavior id="HarvestEfficiencyLoss@ResourceNodeStackCount">
+        <Behavior value="HarvestEfficiencyLoss@ResourceNode"/>
+        <UnitSource Value="Target"/>
+    </CAccumulatorBehavior>
+    <CAccumulatorVitals id="TargetCurrentEnergy">
+        <Ratio value="1"/>
+        <VitalType value="Energy"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="TargetCurrentLife">
+        <Ratio value="1"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="TargetCurrentShields">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorArithmetic id="TargetCurrentVitals">
+        <Parameters value="0">
+            <AccumulatorArray value="TargetCurrentLife"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="TargetCurrentShields"/>
+        </Parameters>
+    </CAccumulatorArithmetic>
+    <CAccumulatorConstant id="ViperConsumeStructure@EnergyAmount">
+        <Amount value="12"/>
+    </CAccumulatorConstant>
+    <CAccumulatorConstant id="ViperConsumeStructure@EnergyRestoreRatio">
+        <Amount value="1"/>
+    </CAccumulatorConstant>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyRestored">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyToDrain"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyRestoreRatio"/>
+        </Parameters>
+        <Operation value="Multiply"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyDamage">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyToDrain"/>
+        </Parameters>
+        <Parameters value="-1"/>
+        <Operation value="Multiply"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorArithmetic id="ViperConsumeStructure@EnergyToDrain">
+        <Parameters value="0">
+            <AccumulatorArray value="ViperConsumeStructure@EnergyAmount"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="TargetCurrentEnergy"/>
+        </Parameters>
+        <Operation value="Minimum"/>
+    </CAccumulatorArithmetic>
+</Catalog>

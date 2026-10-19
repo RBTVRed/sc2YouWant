@@ -1314,13 +1314,13 @@
         </CardLayouts>
         <LifeRegenRateCreep value="2"/>
         <SpeedMultiplierCreep value="1"/>
-        <LifeStart value="30"/>
-        <LifeMax value="30"/>
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
         <Sight value="7"/>
     </CUnit>
     <CUnit id="LocustMPFlying">
-        <LifeStart value="30"/>
-        <LifeMax value="30"/>
+        <LifeStart value="40"/>
+        <LifeMax value="40"/>
         <Speed value="0.5"/>
         <WeaponArray index="0" Link="LocustMP"/>
         <CardLayouts index="0">
@@ -1654,14 +1654,11 @@
         <BehaviorArray Link="TelepathicSuppression@Aura"/>
     </CUnit>
     <CUnit id="Phoenix">
-        <EnergyStart value="0"/>
-        <EnergyMax value="0"/>
-        <EnergyRegenRate value="0"/>
+        <EnergyStart value="75"/>
         <ShieldsStart value="180"/>
         <ShieldsMax value="180"/>
         <ShieldRegenRate value="1.5"/>
-        <Speed value="4"/>
-        <Acceleration value="1"/>
+        <Speed value="7"/>
         <Sight value="9"/>
         <AbilArray index="3" Link="SpreadOut"/>
         <CardLayouts index="0">
@@ -1669,6 +1666,7 @@
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
         <CostResource index="Minerals" value="300"/>
+        <Acceleration value="8"/>
     </CUnit>
     <CUnit id="PhotonCannon">
         <LifeStart value="200"/>

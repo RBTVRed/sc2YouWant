@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Includes>
+    <Catalog path="GameData/DataSpaces/RepairDrone.xml"/>
+    <Catalog path="GameData/DataSpaces/CycloneWeapon.xml"/>
+    <Catalog path="GameData/DataSpaces/MedicWeapon.xml"/>
+    <Catalog path="GameData/DataSpaces/NapalmHellion.xml"/>
+    <Catalog path="GameData/DataSpaces/ReaperWeapon.xml"/>
+    <Catalog path="GameData/DataSpaces/AdeptShade.xml"/>
+</Includes>

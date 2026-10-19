@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CGame id="Dflt">
+        <CreepDecayTime value="1.5"/>
+        <MixedFormationDiameter value="20"/>
+        <TriggerLibs Id="57DC60C9"/>
+    </CGame>
+</Catalog>

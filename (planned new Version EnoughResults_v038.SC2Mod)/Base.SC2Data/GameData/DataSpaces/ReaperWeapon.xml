@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectSet id="D8ChargeBombExplode@Set">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="D8ChargeBombExplode@Damage"/>
+        <EffectArray value="Suicide"/>
+    </CEffectSet>
+    <CEffectDamage id="D8ChargeBombExplode@Damage" parent="DU_WEAP_SPLASH">
+        <ValidatorArray value="NotHallucination"/>
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactUnitValidator value="D8ChargeUnitLink"/>
+        <AttributeBonus index="Structure" value="100"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Spell"/>
+        <Amount value="30"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1.125" Fraction="1" Validator="D8ChargeUnitLink"/>
+        <AreaArray Radius="1.666" Fraction="0.5" Validator="D8ChargeUnitLink"/>
+        <AreaArray Radius="2.5" Fraction="0.25" Validator="D8ChargeUnitLink"/>
+        <ExcludeArray Value="Outer"/>
+        <SearchFilters value="Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="D8ChargeBombClusterbomb@CP">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="SourcePoint"/>
+        <OffsetVectorStartLocation Value="SourcePoint"/>
+        <PeriodCount value="7"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicEffectArray value="D8ChargeBombClusterbomb@CU"/>
+        <PeriodicOffsetArray value="-0.4,-0.75,0"/>
+        <PeriodicOffsetArray value="0,0.9,0"/>
+        <PeriodicOffsetArray value="0.4,-0.75,0"/>
+        <PeriodicOffsetArray value="-0.6,0.5,0"/>
+        <PeriodicOffsetArray value="0.8,-0.2,0"/>
+        <PeriodicOffsetArray value="-0.8,-0.2,0"/>
+        <PeriodicOffsetArray value="0.6,0.5,0"/>
+        <PeriodicPeriodArray value="1.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="D8ChargeBombClusterbomb@CU">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="D8ChargeBombClusterbomb@SetLaunch"/>
+        <SpawnUnit value="D8ChargeClusterbomb"/>
+        <SpawnRange value="1.5"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="D8ChargeClusterbombExplode@Set">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="D8ChargeClusterbombExplode@Damage"/>
+        <EffectArray value="Suicide"/>
+    </CEffectSet>
+    <CEffectDamage id="D8ChargeClusterbombExplode@Damage" parent="DU_WEAP_SPLASH">
+        <ValidatorArray value="NotHallucination"/>
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactUnitValidator value="D8ChargeUnitLink"/>
+        <Kind value="Spell"/>
+        <Amount value="6"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1" Fraction="1" Validator="D8ChargeUnitLink"/>
+        <ExcludeArray Value="Outer"/>
+        <SearchFilters value="Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="D8ChargeBombClusterbomb@LM">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <FinishEffect value="RemovePrecursor"/>
+        <AmmoUnit value="D8ChargeBombExplode@WeaponClusterbomb"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="D8ChargeBombClusterbomb@SetLaunch">
+        <EffectArray value="D8ChargeBombClusterbomb@LM"/>
+        <EffectArray value="MakePrecursor"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="ReaperD8Charge@CU">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="ReaperD8Charge@SetLaunch"/>
+        <SpawnUnit value="D8ChargeBomb"/>
+        <SpawnRange value="1.5"/>
+    </CEffectCreateUnit>
+    <CEffectLaunchMissile id="ReaperD8Charge@LM">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <FinishEffect value="RemovePrecursor"/>
+        <AmmoUnit value="ReaperD8Charge@Weapon"/>
+        <Movers Link="ReaperD8Charge@MoverClose" IfRangeLTE="1"/>
+        <Movers Link="ReaperD8Charge@MoverFar" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="ReaperD8Charge@SetLaunch">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="ReaperD8Charge@LM"/>
+        <EffectArray value="MakePrecursor"/>
+    </CEffectSet>
+    <CActorUnit id="D8ChargeBomb" parent="GenericUnitSelectableNoAutoSoundLinks" unitName="D8ChargeBomb">
+        <On Terms="UnitBirth.*.Normal" Send="$Birth"/>
+        <On Terms="ActorCreation" Send="AnimBaselineStop"/>
+        <On Terms="AnimDone; AnimName Birth" Send="$Stand 0 -1.000000 -1.000000 3.000000 AsDuration"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <Model value="D8Charge"/>
+        <BuildModel value="D8Charge"/>
+        <DeathArray index="Normal" AnimProps="Death" ModelLink="D8Charge" SoundLink="Reaper_D8ChargeExplode"/>
+        <DeathArray index="Eat" AnimProps="Death,Eat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death,Eviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death,Fire"/>
+        <DeathArray index="Silentkill" AnimProps="Death,Silentkill"/>
+        <DeathArray index="Squish" AnimProps="Death,Squish"/>
+        <PlacementModel value="D8Charge"/>
+        <PortraitModel value="AdjutantPortrait"/>
+        <BarOffset value="10"/>
+        <BarWidth value="36"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-D8Charge.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-ability-terran-d8charge.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <UnitIcon value="Assets\Textures\btn-ability-terran-d8charge.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-D8Charge.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit id="D8ChargeClusterbomb" parent="GenericUnitSelectableNoAutoSoundLinks" unitName="D8ChargeClusterbomb">
+        <On Terms="UnitBirth.*.Normal" Send="$Birth"/>
+        <On Terms="ActorCreation" Send="AnimBaselineStop"/>
+        <On Terms="AnimDone; AnimName Birth" Send="$Stand 0 -1.000000 -1.000000 3.000000 AsDuration"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <Model value="D8ClusterBomb"/>
+        <BuildModel value="D8ClusterBomb"/>
+        <DeathArray index="Normal" AnimProps="Death" ModelLink="D8Charge" SoundLink="Reaper_D8ChargeExplode"/>
+        <DeathArray index="Eat" AnimProps="Death,Eat"/>
+        <DeathArray index="Eviscerate" AnimProps="Death,Eviscerate"/>
+        <DeathArray index="Fire" AnimProps="Death,Fire"/>
+        <DeathArray index="Silentkill" AnimProps="Death,Silentkill"/>
+        <DeathArray index="Squish" AnimProps="Death,Squish"/>
+        <PlacementModel value="D8ClusterBomb"/>
+        <PortraitModel value="AdjutantPortrait"/>
+        <BarOffset value="10"/>
+        <BarWidth value="36"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-D8Charge.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-ability-terran-d8charge.dds"/>
+        <UnitIcon value="Assets\Textures\btn-ability-terran-d8charge.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-D8Charge.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorAction id="D8ChargeClusterbombExplode@Attack" parent="GenericAttack" effectLaunch="D8ChargeClusterbombExplode@Damage">
+        <LaunchAssets Model="D8ClusterBombAttackLaunch" Sound="Reaper_D8ChargeExplode"/>
+    </CActorAction>
+    <CActorAction id="D8ChargeBombClusterbomb@Attack" parent="GenericAttack" effectImpact="RemovePrecursor" effectLaunch="D8ChargeBombClusterbomb@LM">
+        <LaunchAssets Sound="Reaper_D8ChargeAttackLaunch"/>
+        <Missile value="D8ChargeBombClusterbomb@Missile"/>
+        <ImpactSiteOps Ops="SOpAttachCenter SOpAttachVolumeStandard"/>
+        <ImpactMap index="None" Model="D8ClusterBombReleaseImpact" Sound="Reaper_D8ChargeAttackImpact"/>
+    </CActorAction>
+    <CActorMissile id="D8ChargeBombClusterbomb@Missile" parent="GenericAttackMissile" unitName="D8ChargeBombExplode@WeaponClusterbomb">
+        <Model value="D8ClusterBombWeapon"/>
+    </CActorMissile>
+    <CActorAction id="ReaperD8Charge@Attack" parent="GenericAttack" effectImpact="D8ChargeDamage" effectLaunch="D8ChargeLaunchMissile">
+        <On Terms="Effect.ReaperD8Charge@CU.Start; At Caster" Send="Create"/>
+        <LaunchAttachQuery Methods="AMFilterWeaponRight"/>
+        <LaunchAssets Sound="Reaper_D8ChargeAttackLaunch"/>
+        <Missile value="ReaperD8Charge@Missile"/>
+        <ImpactMap index="None" Model="ReaperD8AttackImpact" Sound="Reaper_D8ChargeExplode"/>
+    </CActorAction>
+    <CActorMissile id="ReaperD8Charge@Missile" parent="GenericAttackMissile" unitName="ReaperD8Charge@Weapon">
+        <Model value="D8ChargeWeapon"/>
+    </CActorMissile>
+    <CWeaponLegacy id="ReaperD8Charge">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="D8ChargeBombExplode@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="2.4"/>
+        <Effect value="ReaperD8Charge@CU"/>
+        <RandomDelayMin value="0.1"/>
+        <RandomDelayMax value="0.5"/>
+    </CWeaponLegacy>
+    <CMoverMissile id="ReaperD8Charge@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Speed value="20"/>
+            <MaxSpeed value="20"/>
+            <YawPitchRoll value="MAX"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="D8ChargeBombClusterbomb@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <Speed value="12"/>
+            <MaxSpeed value="12"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ReaperD8Charge@MoverFar">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <Speed value="12"/>
+            <MaxSpeed value="12"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ReaperD8Charge@MoverClose">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <Speed value="6"/>
+            <MaxSpeed value="6"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CDataCollectionAbil id="D8ChargeBombClusterbomb">
+        <EditorCategories value="DataGroup:Buff,Race:Terran"/>
+        <DataRecord Entry="Actor,D8ChargeBombClusterbomb@Attack"/>
+        <DataRecord Entry="Actor,D8ChargeBombClusterbomb@Missile"/>
+        <DataRecord Entry="Effect,D8ChargeBombClusterbomb@SetLaunch"/>
+        <DataRecord Entry="Effect,D8ChargeBombClusterbomb@LM"/>
+        <DataRecord Entry="Effect,D8ChargeBombClusterbomb@CU"/>
+        <DataRecord Entry="Effect,D8ChargeBombClusterbomb@CP"/>
+        <DataRecord Entry="Mover,D8ChargeBombClusterbomb@Mover"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="D8ChargeBombExplode">
+        <EditorCategories value="DataGroup:Buff,Race:Terran"/>
+        <DataRecord Entry="Behavior,D8ChargeBombExplode"/>
+        <DataRecord Entry="Effect,D8ChargeBombExplode@Damage"/>
+        <DataRecord Entry="Effect,D8ChargeBombExplode@Set"/>
+        <DataRecord Entry="Unit,D8ChargeBombExplode@WeaponClusterbomb"/>
+    </CDataCollectionAbil>
+    <CDataCollectionUnit id="D8ChargeClusterbomb">
+        <EditorCategories value="DataGroup:Unit,Race:Terran"/>
+        <DataRecord Entry="Actor,D8ChargeClusterbomb"/>
+        <DataRecord Entry="Unit,D8ChargeClusterbomb"/>
+    </CDataCollectionUnit>
+    <CDataCollectionAbil id="D8ChargeClusterbombExplode">
+        <EditorCategories value="DataGroup:Buff,Race:Terran"/>
+        <DataRecord Entry="Actor,D8ChargeClusterbombExplode@Attack"/>
+        <DataRecord Entry="Behavior,D8ChargeClusterbombExplode"/>
+        <DataRecord Entry="Effect,D8ChargeClusterbombExplode@Set"/>
+        <DataRecord Entry="Effect,D8ChargeClusterbombExplode@Damage"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="ReaperD8Charge">
+        <EditorCategories value="DataGroup:Weapon,Race:Terran,ObjectType:Projectile"/>
+        <DataRecord Entry="Actor,ReaperD8Charge@Missile"/>
+        <DataRecord Entry="Effect,ReaperD8Charge@SetLaunch"/>
+        <DataRecord Entry="Effect,ReaperD8Charge@CU"/>
+        <DataRecord Entry="Effect,ReaperD8Charge@LM"/>
+        <DataRecord Entry="Mover,ReaperD8Charge@Mover"/>
+        <DataRecord Entry="Mover,ReaperD8Charge@MoverClose"/>
+        <DataRecord Entry="Mover,ReaperD8Charge@MoverFar"/>
+        <DataRecord Entry="Unit,ReaperD8Charge@Weapon"/>
+        <DataRecord Entry="Upgrade,ReaperD8Charge"/>
+        <DataRecord Entry="Weapon,ReaperD8Charge"/>
+    </CDataCollectionAbil>
+    <CDataCollectionUnit id="D8ChargeBomb">
+        <EditorCategories value="DataGroup:Unit,Race:Terran"/>
+        <DataRecord Entry="Actor,D8ChargeBomb"/>
+        <DataRecord Entry="Unit,D8ChargeBomb"/>
+    </CDataCollectionUnit>
+    <CUnit id="D8ChargeBomb">
+        <DeathRevealRadius value="3"/>
+        <Race value="Terr"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoScore" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow3" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="45"/>
+        <LifeMax value="45"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Acceleration value="1000"/>
+        <StationaryTurningRate value="2292.8906"/>
+        <Sight value="4"/>
+        <AttackTargetPriority value="20"/>
+        <BehaviorArray Link="D8ChargeBombExplode"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.25"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkD8Charge"/>
+        <LeaderAlias value=""/>
+    </CUnit>
+    <CUnit id="D8ChargeClusterbomb">
+        <DeathRevealRadius value="3"/>
+        <Race value="Terr"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoScore" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow3" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="45"/>
+        <LifeMax value="45"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Acceleration value="1000"/>
+        <StationaryTurningRate value="2292.8906"/>
+        <Sight value="4"/>
+        <AttackTargetPriority value="20"/>
+        <BehaviorArray Link="D8ChargeClusterbombExplode"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAI value="D8ChargeClusterBomb"/>
+        <TacticalAIThink value="AIThinkD8Charge"/>
+        <LeaderAlias value=""/>
+    </CUnit>
+    <CUnit id="D8ChargeBombExplode@WeaponClusterbomb" parent="MISSILE_INVULNERABLE">
+        <Race value="Terr"/>
+        <Mover value="D8ChargeBombClusterbomb@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ReaperD8Charge@Weapon" parent="MISSILE">
+        <Race value="Terr"/>
+        <Mover value="ReaperD8Charge@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>
+    </CUnit>
+    <CBehaviorBuff id="D8ChargeBombExplode">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="3.5"/>
+        <InitialEffect value="D8ChargeBombClusterbomb@CP"/>
+        <ExpireEffect value="D8ChargeBombExplode@Set"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+        <AINotifyEffect value="D8ChargeExplodeDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="D8ChargeClusterbombExplode">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="2.5"/>
+        <ExpireEffect value="D8ChargeClusterbombExplode@Set"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+        <AINotifyEffect value="D8ChargeExplodeDamage"/>
+    </CBehaviorBuff>
+</Catalog>

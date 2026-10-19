@@ -1,0 +1,11 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Enough
+//--------------------------------------------------------------------------------------------------
+// Trigger Declarations
+trigger lib57DC60C9_gt_Spread2;
+trigger lib57DC60C9_gt_Player2control;
+trigger lib57DC60C9_gt_Money;
+trigger lib57DC60C9_gt_TestMap;
+

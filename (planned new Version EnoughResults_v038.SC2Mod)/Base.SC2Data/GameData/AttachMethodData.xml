@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAttachMethodFilter id="AMFilterVikingAssaultAA">
+        <Keys Keyword="Weapon" Index="2"/>
+        <Keys Keyword="Weapon" Index="6"/>
+        <Logic value="OR"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="AMPatternVikingAssaultAA">
+        <Keyword value="Weapon"/>
+        <Driver value="LanzerTorpedoesLMGround"/>
+    </CAttachMethodPattern>
+</Catalog>

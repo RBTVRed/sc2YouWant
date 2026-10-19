@@ -1,0 +1,151 @@
+include "TriggerLibs/NativeLib"
+
+include "Lib57DC60C9_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Enough
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void lib57DC60C9_InitLibraries () {
+    libNtve_InitVariables();
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: Spread 2
+//--------------------------------------------------------------------------------------------------
+bool lib57DC60C9_gt_Spread2_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_i;
+    int lv_ticker;
+    unitgroup lv_selectedunits;
+
+    // Automatic Variable Declarations
+    unitgroup autoFBF3E45E_g;
+    int autoFBF3E45E_u;
+    unit autoFBF3E45E_var;
+
+    // Variable Initialization
+    lv_selectedunits = UnitGroupSelected(EventPlayer());
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    autoFBF3E45E_g = lv_selectedunits;
+    autoFBF3E45E_u = UnitGroupCount(autoFBF3E45E_g, c_unitCountAll);
+    for (;; autoFBF3E45E_u -= 1) {
+        autoFBF3E45E_var = UnitGroupUnitFromEnd(autoFBF3E45E_g, autoFBF3E45E_u);
+        if (autoFBF3E45E_var == null) { break; }
+        if (((lv_ticker <= 10) == true)) {
+            UnitIssueOrder(autoFBF3E45E_var, OrderTargetingPoint(AbilityCommand("move", 0), libNtve_gf_PointOffsetTowardsPoint(UnitGetPosition(autoFBF3E45E_var), -1.0, UnitGroupCenterOfGroup(lv_selectedunits))), c_orderQueueReplace);
+            lv_ticker = (lv_ticker + 1);
+        }
+        else {
+            lv_ticker = 0;
+            Wait(0.001, c_timeGame);
+        }
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib57DC60C9_gt_Spread2_Init () {
+    lib57DC60C9_gt_Spread2 = TriggerCreate("lib57DC60C9_gt_Spread2_Func");
+    TriggerAddEventUnitAbility(lib57DC60C9_gt_Spread2, null, AbilityCommand("SpreadOut", 0), c_unitAbilStageExecute, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Player 2 control
+//--------------------------------------------------------------------------------------------------
+bool lib57DC60C9_gt_Player2control_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameIsTestMap(false) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerSetAlliance(2, c_allianceIdControl, 1, true);
+    PlayerSetAlliance(2, c_allianceIdVision, 1, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib57DC60C9_gt_Player2control_Init () {
+    lib57DC60C9_gt_Player2control = TriggerCreate("lib57DC60C9_gt_Player2control_Func");
+    TriggerAddEventChatMessage(lib57DC60C9_gt_Player2control, c_playerAny, "ch", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Money
+//--------------------------------------------------------------------------------------------------
+bool lib57DC60C9_gt_Money_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameIsTestMap(false) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerModifyPropertyFixed(1, c_playerPropMinerals, c_playerPropOperSetTo, 100000.0);
+    PlayerModifyPropertyFixed(1, c_playerPropVespene, c_playerPropOperSetTo, 100000.0);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib57DC60C9_gt_Money_Init () {
+    lib57DC60C9_gt_Money = TriggerCreate("lib57DC60C9_gt_Money_Func");
+    TriggerAddEventChatMessage(lib57DC60C9_gt_Money, c_playerAny, "m", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Test Map
+//--------------------------------------------------------------------------------------------------
+bool lib57DC60C9_gt_TestMap_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib57DC60C9_gt_TestMap_Init () {
+    lib57DC60C9_gt_TestMap = TriggerCreate("lib57DC60C9_gt_TestMap_Func");
+    TriggerAddEventMapInit(lib57DC60C9_gt_TestMap);
+}
+
+void lib57DC60C9_InitTriggers () {
+    lib57DC60C9_gt_Spread2_Init();
+    lib57DC60C9_gt_Player2control_Init();
+    lib57DC60C9_gt_Money_Init();
+    lib57DC60C9_gt_TestMap_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool lib57DC60C9_InitLib_completed = false;
+
+void lib57DC60C9_InitLib () {
+    if (lib57DC60C9_InitLib_completed) {
+        return;
+    }
+
+    lib57DC60C9_InitLib_completed = true;
+
+    lib57DC60C9_InitLibraries();
+    lib57DC60C9_InitTriggers();
+}
+
