@@ -1666,7 +1666,6 @@
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
         <CostResource index="Minerals" value="300"/>
-        <Acceleration value="8"/>
     </CUnit>
     <CUnit id="PhotonCannon">
         <LifeStart value="200"/>
