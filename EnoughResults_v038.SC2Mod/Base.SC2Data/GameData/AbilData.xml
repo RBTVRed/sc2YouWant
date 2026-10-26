@@ -253,6 +253,10 @@
             <Button DefaultButtonFace="Medic"/>
             <Unit value="Medic"/>
         </InfoArray>
+        <InfoArray index="Train6" Time="0.35">
+            <Button DefaultButtonFace="Marauder" Requirements="CrossSpectrumDampenersResearched"/>
+            <Unit value="Marauder"/>
+        </InfoArray>
     </CAbilTrain>
     <CAbilArmMagazine id="BroodLordHangar">
         <InfoArray index="Ammo1" Time="3.5">

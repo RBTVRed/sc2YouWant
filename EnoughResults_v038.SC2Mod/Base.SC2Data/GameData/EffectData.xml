@@ -145,6 +145,11 @@
     <CEffectEnumArea id="PsiStormSearch">
         <AreaArray index="0" Radius="3.2"/>
     </CEffectEnumArea>
+    <CEffectDamage id="PunisherGrenadesU">
+        <AttributeBonus index="Light" value="22"/>
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="12"/>
+    </CEffectDamage>
     <CEffectDamage id="PurificationNovaDamage">
         <Amount value="185"/>
     </CEffectDamage>

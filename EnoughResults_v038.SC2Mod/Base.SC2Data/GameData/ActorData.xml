@@ -158,6 +158,9 @@
         <On Terms="UnitDeath.LarvalQueen; PassChance 25.000000" Send="Create"/>
         <Sound value="Larva_Death"/>
     </CActorSound>
+    <CActorUnit id="Marauder">
+        <Scale value="0.810000,0.810000,1.400000"/>
+    </CActorUnit>
     <CActorSound id="MedivacTransportLoadSound2" parent="SoundOneShot">
         <On Terms="AbilTransport.MedivacTransport.TransportLoad" Send="Create"/>
         <On Terms="AbilTransport.HellionTransport.TransportLoad" Send="Create"/>

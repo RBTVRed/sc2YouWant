@@ -2500,18 +2500,19 @@
         <AbilArray Link="AssaultMode"/>
     </CUnit>
     <CUnit id="Marauder">
-        <LifeStart value="250"/>
-        <LifeMax value="250"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
         <Sight value="9"/>
         <AbilArray Link="SpreadOut"/>
         <CardLayouts index="0">
-            <LayoutButtons index="5" AbilCmd="255,255"/>
-            <LayoutButtons Face="SpreadOut" Type="AbilCmd" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons index="5" Face="StimMarauder" Type="AbilCmd" AbilCmd="StimpackMarauder,Execute" Requirements="" Column="0"/>
+            <LayoutButtons index="6" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
         </CardLayouts>
         <Radius value="0.625"/>
         <MinimapRadius value="0.625"/>
         <Speed value="2"/>
         <SubgroupPriority value="4"/>
+        <CostResource index="Minerals" value="150"/>
     </CUnit>
     <CUnit id="NydusCanal">
         <LifeArmor value="2"/>
