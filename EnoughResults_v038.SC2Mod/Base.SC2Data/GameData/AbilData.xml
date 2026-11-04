@@ -1063,6 +1063,7 @@
             <Cooldown Location="Unit" TimeUse="2.52"/>
         </Cost>
         <DataCollection value="WeaponKD8Charge"/>
+        <Effect index="0" value="KD8ChargeTargetPoint"/>
     </CAbilEffectTarget>
     <CAbilMorph id="MorphToHellionTank">
         <CmdButtonArray index="Execute" Requirements="UseTransformationServos"/>

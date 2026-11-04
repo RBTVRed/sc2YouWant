@@ -656,6 +656,7 @@ Effect/Name/IterateTransportUnloadAllUnits2=Iterate Transport Test
 Effect/Name/KD8ChargeExplodeDamageDisplay=KD8 Charge Explode Damage (Display)
 Effect/Name/KD8ChargeExplodeDamageStructure=KD8 Charge Explode Damage (Structure)
 Effect/Name/KD8ChargeExplodeSwitch=KD8 Charge Explode Switch
+Effect/Name/KD8ChargeTargetPoint=KD8 Charge Target Point
 Effect/Name/LanzerTorpedoesGround=Halo Rockets (Persistent)
 Effect/Name/LanzerTorpedoesLMGround=Halo Rockets (Launch Missile)
 Effect/Name/LocustMPDamage=Locust MP Damage Copy
