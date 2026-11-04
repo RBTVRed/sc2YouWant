@@ -6,6 +6,18 @@
     <CBehaviorBuff id="CarryMineralFieldMineralsNoRemove">
         <BehaviorCategories index="User6" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PhoenixSpeedBoost">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <InitialEffect value="PhoenixAttackBoost@RBCaster"/>
+        <Modification MoveSpeedMultiplier="1.1428">
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <VitalRegenArray index="Energy" value="-5"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HarvestEfficiencyLoss@ResourceNode">
         <MaxStackCount value="2"/>
         <Duration value="3"/>
@@ -480,6 +492,17 @@
         <PeriodicEffect value="ObeliskSlowSearch"/>
         <DisableValidatorArray value="HasAtLeastNormalPower"/>
         <DisableValidatorArray value="IsNotConstructing"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PhoenixAttackBoost">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <InitialEffect value="PhoenixSpeedBoost@RBCaster"/>
+        <Modification AttackSpeedMultiplier="2">
+            <VitalRegenArray index="Energy" value="-5"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PointDefenseDroneArmorReduction">
         <EditorCategories value="AbilityorEffectType:Units"/>

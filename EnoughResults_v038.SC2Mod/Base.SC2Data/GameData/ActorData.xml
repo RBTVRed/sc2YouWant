@@ -179,6 +179,10 @@
         <HostSiteOps Ops="SOpAttachOriginStationary"/>
         <Sound value="Medivac_Unload"/>
     </CActorSound>
+    <CActorUnit id="Phoenix">
+        <On Terms="Behavior.PhoenixSpeedBoost.On" Send="$Spell PlayForever"/>
+        <On Terms="Behavior.PhoenixSpeedBoost.Off" Send="AnimClear Spell"/>
+    </CActorUnit>
     <CActorSplat id="PurificationNovaCursorSplat">
         <Scale value="2.130000"/>
     </CActorSplat>

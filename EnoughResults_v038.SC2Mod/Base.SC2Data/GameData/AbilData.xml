@@ -141,6 +141,21 @@
         <CastIntroTime value="0.5"/>
         <Effect index="0" value="EMPChannelInitialSet"/>
     </CAbilEffectTarget>
+    <CAbilBehavior id="PhoenixSpeedBoost">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="PhoenixSpeedBoost">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <BehaviorArray value="PhoenixSpeedBoost"/>
+    </CAbilBehavior>
     <CAbilEffectInstant id="GhostRemoteViewing">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="GhostRemoteViewing@AB"/>
@@ -461,6 +476,21 @@
             <Cooldown TimeUse="0"/>
         </Cost>
     </CAbilEffectTarget>
+    <CAbilBehavior id="PhoenixAttackBoost">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="PhoenixAttackBoost">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <BehaviorArray value="PhoenixAttackBoost"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="PlacePointDefenseDrone">
         <Cost index="0">
             <Vital index="Energy" value="50"/>
@@ -687,6 +717,7 @@
         <InfoArray index="Research3" Time="170">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="AnionPulseCrystals"/>
         </InfoArray>
         <InfoArray index="Research5" Time="170"/>
         <InfoArray index="Research7" Time="170" Upgrade="KhaydarinCore">

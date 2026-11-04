@@ -34,6 +34,8 @@ Abil/Name/OozeSnare=Ooze Snare
 Abil/Name/OrbitalCommandCalldownRepairDrone=Calldown Repair Drone
 Abil/Name/OrbitalCommandCalldownRepairDrone@Morph=Morph
 Abil/Name/PerimeterScan=Perimeter Scan
+Abil/Name/PhoenixAttackBoost=Attack Boost
+Abil/Name/PhoenixSpeedBoost=Speed Boost
 Abil/Name/PickupPalletMinerals2=Pickup Pallet Minerals Copy
 Abil/Name/PickupPalletMinerals22=Pickup Pallet Minerals Copy Copy
 Abil/Name/PickupPalletMinerals23=Pickup Pallet Minerals Copy Copy 2
@@ -83,6 +85,8 @@ Behavior/Name/OozeSnare=Ooze Snare
 Behavior/Name/OozeSnareStructure=Ooze Snare
 Behavior/Name/ParasiticBombDamage=Parasitic Bomb Damage
 Behavior/Name/PerimeterScan@Detector=Perimeter Scan
+Behavior/Name/PhoenixAttackBoost=Attack Boost
+Behavior/Name/PhoenixSpeedBoost=Speed Boost
 Behavior/Name/PointDefenseDroneArmorReduction=PointDefenseDroneArmorReduction
 Behavior/Name/PulsarLocked=Pulsar Locked
 Behavior/Name/PulsarLockedPhoton=Pulsar Locked
@@ -127,6 +131,8 @@ Behavior/Tooltip/ObeliskSlow=This unit has reduced movement and attack speed.
 Behavior/Tooltip/ParasiticBomb=This unit is taking damage over time.
 Behavior/Tooltip/ParasiticBombDamage=This unit is taking damage over time.
 Behavior/Tooltip/PerimeterScan@Detector=This unit is revealing the area around it and detecting cloaked units.
+Behavior/Tooltip/PhoenixAttackBoost=This unit is moving faster but can't attack.
+Behavior/Tooltip/PhoenixSpeedBoost=This unit is moving faster but can't attack.
 Behavior/Tooltip/PulsarLocked=This structure's weapon is disabled.
 Behavior/Tooltip/PulsarLockedPhoton=This structure's weapon is disabled.
 Behavior/Tooltip/QueenBroodPheromones=This unit has increased life and attack speed.
@@ -193,6 +199,8 @@ Button/Name/ObeliskSlowSearcher=Slow Aura
 Button/Name/OozeSnare=Ooze Snare
 Button/Name/OrbitalCommandCalldownRepairDrone=Calldown: Construction Drone
 Button/Name/PerimeterScan=Perimeter Scan
+Button/Name/PhoenixAttackBoost=Attack Boost
+Button/Name/PhoenixSpeedBoost=Speed Boost
 Button/Name/PointDefenseDrone=Build Targeting Drone
 Button/Name/QueenBroodPheromones=Brood Pheromones
 Button/Name/RapidConstruction=Rapid Construction
@@ -227,7 +235,6 @@ Button/Tooltip/AdeptPhaseShiftManual@Teleport=Teleports the Adept to the Shade, 
 Button/Tooltip/AdeptPiercingUpgrade=Increases the attack speed of Adepts by 75%.
 Button/Tooltip/AdeptResearchPiercingUpgrade=Increases the attack speed of <c val="ffff8a">Adepts</c> by 75%.
 Button/Tooltip/AmorphousArmorcloud=Creates a shroud at a target point that blinds enemy air units, reducing its sight to 1. Lasts <d ref="Effect,AmorphousArmorcloudCP,PeriodCount*Effect,AmorphousArmorcloudCP,PeriodicPeriodArray[0]"/> seconds.
-Button/Tooltip/AnionPulseCrystals=Doubles the damage of the Phoenix.
 Button/Tooltip/Arbiter=Flying caster. Can use Time Warp, Cloaking Field and Phase Shift.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/ArchonHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
 Button/Tooltip/ArmorpiercingMode=Activates the Thor's 250mm Punisher Cannons. Punisher cannons deal heavy splash damage to air units and heavy bonus damage against armored targets. The Thor moves slower with activated Punisher cannons.
@@ -355,8 +362,9 @@ Button/Tooltip/ParasiticBomb=Creates a parasitic cloud that deals <d ref="Behavi
 Button/Tooltip/PerimeterScan=Reveals the area around the medic, detecting cloaked and burrowed units. Lasts <d time="15"/>.
 Button/Tooltip/PhasingMode=Transforms the Warp Prism to Phasing Mode and generates a power radius similar to that of a Pylon. In this mode the Warp Prism can also recharge Protoss shields. The Warp Prism cannot move in this mode.
 Button/Tooltip/Phoenix=Multirole Fighter.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/PhoenixAttackBoost=Grants the caster <d ref="100 * (Behavior,PhoenixAttackBoost,Modification.AttackSpeedMultiplier - 1)"/>% attack speed.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,PhoenixAttackBoost,Modification.VitalRegenArray[Energy] + Unit,Phoenix,EnergyRegenRate)" precision="1"/> energy per second.</c>
 Button/Tooltip/PhoenixHallucination=This hallucinated copy functions like the original unit, but it cannot use active abilities, deals less damage, and dies more easily. Hallucinations last <d time="60"/> before they disappear.
-Button/Tooltip/PhoenixRangeUpgrade=Increase the damage of the Phoenix.
+Button/Tooltip/PhoenixSpeedBoost=Disable's the caster's ability to attack and grants it <d ref="100 * (Behavior,PhoenixSpeedBoost,Modification.MoveSpeedMultiplier - 1)"/>% movement speed.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,PhoenixSpeedBoost,Modification.VitalRegenArray[Energy] + Unit,Phoenix,EnergyRegenRate)" precision="1"/> energy per second.</c>
 Button/Tooltip/PickupBlueMinerals=<s val="Kicker_Minerals">+<d ref="Effect,PickupPalletMinerals2,Resources[0]"/> </s>
 Button/Tooltip/PlanetaryFortress=Upgrades Command Center to a Planetary Fortress, greatly increasing its armor, arming it with a powerful defensive turret and allows 2 <c val="ffff8a">SCVs</c> to be created simultaneously. Cannot lift off.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PointDefenseDrone=Reducing armor and shield armor on all opponent units in the range of the Targeting Drone.<n/>Times out after <d ref="Behavior,PointDefenseDroneTimedLife,Duration"/> seconds.<n/><n/>
@@ -473,6 +481,8 @@ DataCollection/Name/NapalmGrenade=Napalm Grenade
 DataCollection/Name/NapalmHellion=Napalm Hellion
 DataCollection/Name/NeosteelBunkerTransport=Transport
 DataCollection/Name/OrbitalCommandCalldownRepairDrone=Calldown Repair Drone
+DataCollection/Name/PhoenixAttackBoost=Attack Boost
+DataCollection/Name/PhoenixSpeedBoost=Speed Boost
 DataCollection/Name/QueenBroodPheromones=Brood Pheromones
 DataCollection/Name/ReaperD8Charge=D8 Charge
 DataCollection/Name/ReaperD8ChargeClusterbomb=D8 Charge Clusterbomb
@@ -704,6 +714,8 @@ Effect/Name/OrbitalCommandCalldownRepairDroneOrbitalCommandCalldownRepairDrone@S
 Effect/Name/ParasiticBombSearchAP=Parasitic Bomb Search AP
 Effect/Name/ParticleBeam2=Particle Beam
 Effect/Name/PerimeterScan@AB=PerimeterScan AB
+Effect/Name/PhoenixAttackBoost@RBCaster=Remove Behavior
+Effect/Name/PhoenixSpeedBoost@RBCaster=Remove Behavior
 Effect/Name/PickupKill2=Pickup Kill Copy
 Effect/Name/PickupKill22=Pickup Kill Copy Copy
 Effect/Name/PickupKill23=Pickup Kill Copy Copy 2

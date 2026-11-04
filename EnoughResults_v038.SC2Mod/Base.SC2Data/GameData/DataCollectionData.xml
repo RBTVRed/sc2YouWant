@@ -188,6 +188,20 @@
         <DataRecord Entry="Effect,MedicDefensiveMatrix@AB"/>
         <DataRecord Entry="Effect,MedicDefensiveMatrix@Set"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="PhoenixSpeedBoost">
+        <EditorCategories value="DataGroup:Ability,Race:Protoss"/>
+        <DataRecord Entry="Abil,PhoenixSpeedBoost"/>
+        <DataRecord Entry="Behavior,PhoenixSpeedBoost"/>
+        <DataRecord Entry="Button,PhoenixSpeedBoost"/>
+        <DataRecord Entry="Effect,PhoenixSpeedBoost@RBCaster"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="PhoenixAttackBoost">
+        <EditorCategories value="DataGroup:Ability,Race:Protoss"/>
+        <DataRecord Entry="Abil,PhoenixAttackBoost"/>
+        <DataRecord Entry="Behavior,PhoenixAttackBoost"/>
+        <DataRecord Entry="Button,PhoenixAttackBoost"/>
+        <DataRecord Entry="Effect,PhoenixAttackBoost@RBCaster"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="QueenBroodPheromones">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
         <DataRecord Entry="Abil,QueenBroodPheromones"/>

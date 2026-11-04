@@ -649,7 +649,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="2" Face="ResearchVoidRaySpeedUpgrade" AbilCmd="FleetBeaconResearch,Research5" Column="1"/>
             <LayoutButtons index="3" Face="ResearchKhaydarinCore" AbilCmd="FleetBeaconResearch,Research7" Column="2"/>
-            <LayoutButtons index="4" Face="PhoenixRangeUpgrade" AbilCmd="FleetBeaconResearch,Research3" Column="0"/>
+            <LayoutButtons index="4" Face="AnionPulseCrystals" AbilCmd="FleetBeaconResearch,Research3" Column="0"/>
         </CardLayouts>
         <CostResource index="Minerals" value="400"/>
         <CostResource index="Vespene" value="450"/>
@@ -1661,8 +1661,14 @@
         <Speed value="7"/>
         <Sight value="9"/>
         <AbilArray index="3" Link="SpreadOut"/>
+        <AbilArray Link="PhoenixAttackBoost"/>
+        <AbilArray Link="PhoenixSpeedBoost"/>
         <CardLayouts index="0">
+            <LayoutButtons index="5" AbilCmd="PhoenixAttackBoost,Off"/>
             <LayoutButtons index="6" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="PhoenixSpeedBoost,Off" Row="2" Column="4"/>
+            <LayoutButtons Face="PhoenixAttackBoost" Type="AbilCmd" AbilCmd="PhoenixAttackBoost,On" Row="2" Column="0"/>
+            <LayoutButtons Face="PhoenixSpeedBoost" Type="AbilCmd" AbilCmd="PhoenixSpeedBoost,On" Row="2" Column="1"/>
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
         <CostResource index="Minerals" value="300"/>

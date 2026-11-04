@@ -99,6 +99,14 @@
     <CEffectEnumArea id="OracleStasisTrapActivate">
         <SearchFilters value="Ground;Self,Neutral,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
+    <CEffectRemoveBehavior id="PhoenixAttackBoost@RBCaster">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="PhoenixAttackBoost"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="PhoenixSpeedBoost@RBCaster">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="PhoenixSpeedBoost"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="PlagueCloudDamageStructure">
         <ValidatorArray value="IsStructure"/>
         <EditorCategories value="Race:Zerg"/>

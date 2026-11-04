@@ -129,11 +129,6 @@
     <CUpgrade id="ObserverGraviticBooster">
         <EffectArray index="0" Value="1.000000"/>
     </CUpgrade>
-    <CUpgrade id="PhoenixRangeUpgrade">
-        <EffectArray index="0" Reference="Effect,IonCannonsU,Amount"/>
-        <EffectArray Reference="Effect,IonCannonsULeft,Amount" Value="2"/>
-        <EffectArray Reference="Effect,IonCannonsURight,Amount" Value="2"/>
-    </CUpgrade>
     <CUpgrade id="ProtossAirWeaponsLevel1">
         <EffectArray index="20" Value="5"/>
         <EffectArray index="29" Value="0"/>
