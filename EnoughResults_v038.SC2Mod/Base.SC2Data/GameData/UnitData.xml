@@ -936,6 +936,8 @@
         <AbilArray index="0" removed="1"/>
         <CardLayouts index="0" removed="1"/>
         <ShieldRegenRate value="30"/>
+        <BehaviorArray index="0" removed="1"/>
+        <BehaviorArray index="1" removed="1"/>
     </CUnit>
     <CUnit id="FusionCore">
         <LifeStart value="1500"/>
