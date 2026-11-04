@@ -1174,9 +1174,8 @@
         <AcceptedTransfers index="Rotation" value="0"/>
         <EditorCategories value=""/>
         <On Terms="Behavior.AbsorptionShield.On" Send="Create"/>
-        <On Terms="Behavior.AbsorptionShield.Off" Send="TimerSet 2.000000 DelayDestroy"/>
-        <On Terms="TimerExpired; TimerName DelayDestroy" Send="Destroy"/>
-        <On Terms="Behavior.AbsorptionShield.Off" Send="$Death PlayForever"/>
+        <On Terms="Behavior.AbsorptionShield.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.AbsorptionShield.Off" Send="SetOpacity 0.000000 0.575000"/>
         <On Terms="ActorCreation" Send="SetTintColor 50,220,250"/>
         <Host Subject="_Unit"/>
         <HostSiteOps Ops="SOpAttachCenter CompactedShield@SOpExplicitRotation CompactedShield@SOpRotator SOpRollClockwise180"/>
