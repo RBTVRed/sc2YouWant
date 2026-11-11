@@ -132,6 +132,10 @@
     <CRequirement id="ObeliskSlowSearcher">
         <NodeArray index="Use" Link="CountBehaviorObeliskSlowSearcherCompleteOnlyAtUnit4152956742"/>
     </CRequirement>
+    <CRequirement id="PhoenixAttackBoost@OffDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <NodeArray index="Use" Link="Not1801977912CountBehaviorPhoenixAttackBoostCompleteOnlyAtUnit"/>
+    </CRequirement>
     <CRequirement id="QueenOnCreep">
         <NodeArray index="Use" Link=""/>
     </CRequirement>
@@ -143,6 +147,10 @@
     </CRequirement>
     <CRequirement id="ShowAfterburners">
         <NodeArray index="Show" Link="NotCountBehaviorMedivacSpeedBoostCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="PhoenixSpeedBoost@OffDummy">
+        <EditorCategories value="Race:Protoss"/>
+        <NodeArray index="Use" Link="Not386372269CountBehaviorPhoenixSpeedBoostCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="SwarmHostisBurrowed">
         <NodeArray index="Use" Link="CountBehaviorSwarmHostisBurrowedCompleteOnlyAtUnit80327250"/>

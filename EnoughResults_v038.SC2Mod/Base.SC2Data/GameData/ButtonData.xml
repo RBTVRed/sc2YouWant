@@ -21,8 +21,8 @@
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
     </CButton>
     <CButton id="PhoenixSpeedBoost">
-        <Icon value="Assets\Textures\btn-upgrade-protoss-graviticdrive.dds"/>
-        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-graviticdrive.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-blackhole-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-blackhole-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="Contaminate">
@@ -38,8 +38,8 @@
         <Icon value="Assets\Textures\btn-upgrade-vorazun-darkpylonrecall.dds"/>
     </CButton>
     <CButton id="PhoenixAttackBoost">
-        <Icon value="Assets\Textures\btn-upgrade-protoss-gravitoncatapult.dds"/>
-        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-gravitoncatapult.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="QueenBroodPheromones">

@@ -151,9 +151,7 @@
         </CmdButtonArray>
         <Flags index="Toggle" value="1"/>
         <Flags index="Transient" value="1"/>
-        <Cost>
-            <Vital index="Energy" value="25"/>
-        </Cost>
+        <Cost/>
         <BehaviorArray value="PhoenixSpeedBoost"/>
     </CAbilBehavior>
     <CAbilEffectInstant id="GhostRemoteViewing">
@@ -486,9 +484,7 @@
         </CmdButtonArray>
         <Flags index="Toggle" value="1"/>
         <Flags index="Transient" value="1"/>
-        <Cost>
-            <Vital index="Energy" value="25"/>
-        </Cost>
+        <Cost/>
         <BehaviorArray value="PhoenixAttackBoost"/>
     </CAbilBehavior>
     <CAbilEffectTarget id="PlacePointDefenseDrone">

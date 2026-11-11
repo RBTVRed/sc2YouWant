@@ -194,6 +194,7 @@
         <DataRecord Entry="Behavior,PhoenixSpeedBoost"/>
         <DataRecord Entry="Button,PhoenixSpeedBoost"/>
         <DataRecord Entry="Effect,PhoenixSpeedBoost@RBCaster"/>
+        <DataRecord Entry="Requirement,PhoenixSpeedBoost@OffDummy"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="PhoenixAttackBoost">
         <EditorCategories value="DataGroup:Ability,Race:Protoss"/>
@@ -201,6 +202,7 @@
         <DataRecord Entry="Behavior,PhoenixAttackBoost"/>
         <DataRecord Entry="Button,PhoenixAttackBoost"/>
         <DataRecord Entry="Effect,PhoenixAttackBoost@RBCaster"/>
+        <DataRecord Entry="Requirement,PhoenixAttackBoost@OffDummy"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="QueenBroodPheromones">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>

@@ -8,12 +8,12 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="PhoenixSpeedBoost">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-blackhole.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CanSpendEnergy"/>
         <RemoveValidatorArray value="hasEnergy"/>
         <InitialEffect value="PhoenixAttackBoost@RBCaster"/>
-        <Modification MoveSpeedMultiplier="1.1428">
+        <Modification MoveSpeedMultiplier="1.8823">
             <ModifyFlags index="DisableWeapons" value="1"/>
             <VitalRegenArray index="Energy" value="-5"/>
         </Modification>
@@ -495,7 +495,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="PhoenixAttackBoost">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CanSpendEnergy"/>
         <RemoveValidatorArray value="hasEnergy"/>

@@ -8,6 +8,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ObeliskSlowSearcher" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPhoenixAttackBoostCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PhoenixAttackBoost" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPhoenixSpeedBoostCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PhoenixSpeedBoost" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
     <CRequirementCountUpgrade id="CountUpgradeBansheeCloakCompleteOnly758801471TechTreeCheat">
         <Tooltip value="RequirementNode/Tooltip/CountUpgradeBansheeCloakCompleteOnly758801471TechTreeCheat"/>
     </CRequirementCountUpgrade>
@@ -148,6 +158,12 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="VikingFighterMode" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementNot id="Not1801977912CountBehaviorPhoenixAttackBoostCompleteOnlyAtUnit">
+        <OperandArray index="0" value="CountBehaviorPhoenixAttackBoostCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not386372269CountBehaviorPhoenixSpeedBoostCompleteOnlyAtUnit">
+        <OperandArray index="0" value="CountBehaviorPhoenixSpeedBoostCompleteOnlyAtUnit"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorAbsorptionShieldCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountBehaviorAbsorptionShieldCompleteOnlyAtUnit"/>
     </CRequirementNot>

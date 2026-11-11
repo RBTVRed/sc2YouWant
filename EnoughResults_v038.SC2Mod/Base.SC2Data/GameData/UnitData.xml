@@ -1660,7 +1660,6 @@
         <ShieldsStart value="180"/>
         <ShieldsMax value="180"/>
         <ShieldRegenRate value="1.5"/>
-        <Speed value="7"/>
         <Sight value="9"/>
         <AbilArray index="3" Link="SpreadOut"/>
         <AbilArray Link="PhoenixAttackBoost"/>
@@ -1670,7 +1669,23 @@
             <LayoutButtons index="6" Face="SpreadOut" AbilCmd="SpreadOut,Execute" Row="1" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="PhoenixSpeedBoost,Off" Row="2" Column="4"/>
             <LayoutButtons Face="PhoenixAttackBoost" Type="AbilCmd" AbilCmd="PhoenixAttackBoost,On" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="PhoenixAttackBoost"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="PhoenixAttackBoost,Off"/>
+                <Requirements value="PhoenixAttackBoost@OffDummy"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
             <LayoutButtons Face="PhoenixSpeedBoost" Type="AbilCmd" AbilCmd="PhoenixSpeedBoost,On" Row="2" Column="1"/>
+            <LayoutButtons>
+                <Face value="PhoenixSpeedBoost"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="PhoenixSpeedBoost,Off"/>
+                <Requirements value="PhoenixSpeedBoost@OffDummy"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
         <CostResource index="Minerals" value="300"/>

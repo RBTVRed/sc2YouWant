@@ -180,8 +180,8 @@
         <Sound value="Medivac_Unload"/>
     </CActorSound>
     <CActorUnit id="Phoenix">
-        <On Terms="Behavior.PhoenixSpeedBoost.On" Send="$Spell PlayForever"/>
-        <On Terms="Behavior.PhoenixSpeedBoost.Off" Send="AnimClear Spell"/>
+        <On Terms="Behavior.PhoenixSpeedBoost.On" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="Behavior.PhoenixSpeedBoost.Off" Send="AnimClear Work"/>
     </CActorUnit>
     <CActorSplat id="PurificationNovaCursorSplat">
         <Scale value="2.130000"/>
