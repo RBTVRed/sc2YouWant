@@ -1656,9 +1656,9 @@
         <BehaviorArray Link="TelepathicSuppression@Aura"/>
     </CUnit>
     <CUnit id="Phoenix">
-        <EnergyStart value="75"/>
-        <ShieldsStart value="180"/>
-        <ShieldsMax value="180"/>
+        <EnergyStart value="0"/>
+        <ShieldsStart value="200"/>
+        <ShieldsMax value="200"/>
         <ShieldRegenRate value="1.5"/>
         <Sight value="9"/>
         <AbilArray index="3" Link="SpreadOut"/>
@@ -1689,6 +1689,8 @@
         </CardLayouts>
         <WeaponArray Link="IonCannonsGround" Turret="Phoenix"/>
         <CostResource index="Minerals" value="300"/>
+        <Speed value="3.6015"/>
+        <EnergyMax value="0"/>
     </CUnit>
     <CUnit id="PhotonCannon">
         <LifeStart value="200"/>

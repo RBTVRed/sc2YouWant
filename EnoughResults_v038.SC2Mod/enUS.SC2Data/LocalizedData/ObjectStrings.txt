@@ -624,7 +624,6 @@ Effect/EditorSuffix/CycloneBurstLockOn@SetLaunchRight=(Launch) (Right)
 Effect/EditorSuffix/CycloneBurstLockOn@SetStart=(Start)
 Effect/EditorSuffix/CycloneBurstLockOn@SwitchInitial=(Initial)
 Effect/EditorSuffix/CycloneBurstLockOn@SwitchLaunch=(Launch)
-Effect/EditorSuffix/DisruptionBeamDamage=(Damage)
 Effect/EditorSuffix/EMPApplyDetectorDisableBehavior=(Apply Detector Disable Behavior)
 Effect/EditorSuffix/EMPChannelCombat=AB
 Effect/EditorSuffix/EMPChannelCombatBeamDummy=AB

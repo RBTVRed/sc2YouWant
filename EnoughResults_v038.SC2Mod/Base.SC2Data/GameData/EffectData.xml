@@ -130,7 +130,7 @@
         <Behavior value="BurrowedAmbusher@Applicator"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="DisruptionBeamDamage">
-        <AttributeBonus index="Light" value="8"/>
+        <AttributeBonus index="Light" value="4"/>
         <AttributeBonus index="Structure" value="12"/>
         <ShieldBonus value="8"/>
         <Amount value="8"/>
@@ -508,15 +508,15 @@
         <WhichUnit Value="Source"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="IonCannonsU">
-        <AttributeBonus index="Light" value="4"/>
+        <AttributeBonus index="Light" value="3"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsULeft">
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Light" value="4"/>
+        <AttributeBonus index="Light" value="3"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsURight">
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Light" value="4"/>
+        <AttributeBonus index="Light" value="3"/>
     </CEffectDamage>
     <CEffectDamage id="KD8ChargeExplodeDamageDisplay">
         <EditorCategories value="Race:Terran"/>
