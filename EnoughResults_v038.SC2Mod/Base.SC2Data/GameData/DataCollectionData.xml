@@ -196,14 +196,24 @@
         <DataRecord Entry="Effect,PhoenixSpeedBoost@RBCaster"/>
         <DataRecord Entry="Requirement,PhoenixSpeedBoost@OffDummy"/>
     </CDataCollectionAbil>
-    <CDataCollectionAbil id="PhoenixAttackBoost">
+    <CDataCollectionAbil id="PhoenixIonOverload">
         <EditorCategories value="DataGroup:Ability,Race:Protoss"/>
-        <DataRecord Entry="Abil,PhoenixAttackBoost"/>
-        <DataRecord Entry="Behavior,PhoenixAttackBoost"/>
-        <DataRecord Entry="Button,PhoenixAttackBoost"/>
-        <DataRecord Entry="Effect,PhoenixAttackBoost@RBCaster"/>
-        <DataRecord Entry="Requirement,PhoenixAttackBoost@OffDummy"/>
+        <DataRecord Entry="Abil,PhoenixIonOverload"/>
+        <DataRecord Entry="Behavior,PhoenixIonOverload"/>
+        <DataRecord Entry="Button,PhoenixIonOverload"/>
+        <DataRecord Entry="Button,PhoenixIonOverload@Off"/>
+        <DataRecord Entry="Effect,PhoenixIonOverload@MUShieldCost"/>
+        <DataRecord Entry="Effect,PhoenixIonOverload@MUCooldown"/>
+        <DataRecord Entry="Requirement,PhoenixIonOverload@OffDummy"/>
+        <DataRecord Entry="Validator,PhoenixIonOverload@CasterHasBehavior"/>
     </CDataCollectionAbil>
+    <CDataCollectionUpgrade id="PlasmaStreamUpgrade">
+        <EditorCategories value="DataGroup:Research,Race:Protoss"/>
+        <DataRecord Entry="Button,PlasmaStreamUpgrade"/>
+        <DataRecord Entry="Requirement,PlasmaStreamUpgrade@Learn"/>
+        <DataRecord Entry="Requirement,PlasmaStreamUpgrade@Use"/>
+        <DataRecord Entry="Upgrade,PlasmaStreamUpgrade"/>
+    </CDataCollectionUpgrade>
     <CDataCollectionAbil id="QueenBroodPheromones">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>
         <DataRecord Entry="Abil,QueenBroodPheromones"/>
@@ -233,6 +243,17 @@
         <DataRecord Entry="Button,RuptureTumor"/>
         <DataRecord Entry="Effect,RuptureTumor@CU"/>
         <DataRecord Entry="Effect,RuptureTumor@Set"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="PhoenixPlasmaStream">
+        <EditorCategories value="DataGroup:Ability,Race:Protoss"/>
+        <DataRecord Entry="Abil,PhoenixPlasmaStream"/>
+        <DataRecord Entry="Actor,PhoenixPlasmaStream@Beam"/>
+        <DataRecord Entry="Actor,PhoenixPlasmaStream@Model"/>
+        <DataRecord Entry="Actor,PhoenixPlasmaStream@Sound"/>
+        <DataRecord Entry="Actor,PhoenixPlasmaStream@SoundStop"/>
+        <DataRecord Entry="Actor,PhoenixPlasmaStream@SoundStart"/>
+        <DataRecord Entry="Button,PhoenixPlasmaStream"/>
+        <DataRecord Entry="Effect,PhoenixPlasmaStream@CH"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="SpawnLarvaSolo">
         <EditorCategories value="DataGroup:Ability,Race:Zerg,ObjectType:Spell"/>

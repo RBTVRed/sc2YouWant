@@ -7,6 +7,16 @@
         <EffectArray index="0" Operation="Add" Reference="Unit,Ultralisk,Speed" Value="0.800700"/>
         <EffectArray index="1" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="PlasmaStreamUpgrade">
+        <InfoTooltipPriority value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-researchbosoniccore.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Prot"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="Phoenix"/>
+    </CUpgrade>
     <CUpgrade id="BarrierDurationResearch">
         <EffectArray Reference="Behavior,TakenDamage,Duration" Value="28.000000"/>
         <AffectedUnitArray value="Immortal"/>

@@ -474,18 +474,20 @@
             <Cooldown TimeUse="0"/>
         </Cost>
     </CAbilEffectTarget>
-    <CAbilBehavior id="PhoenixAttackBoost">
+    <CAbilBehavior id="PhoenixIonOverload">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <CmdButtonArray index="On" DefaultButtonFace="PhoenixAttackBoost">
+        <CmdButtonArray index="On" DefaultButtonFace="PhoenixIonOverload">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <CmdButtonArray index="Off" DefaultButtonFace="Cancel">
+        <CmdButtonArray index="Off" DefaultButtonFace="PhoenixIonOverload@Off">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
         <Flags index="Toggle" value="1"/>
         <Flags index="Transient" value="1"/>
-        <Cost/>
-        <BehaviorArray value="PhoenixAttackBoost"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <BehaviorArray value="PhoenixIonOverload"/>
     </CAbilBehavior>
     <CAbilEffectTarget id="PlacePointDefenseDrone">
         <Cost index="0">
@@ -710,10 +712,10 @@
         <InfoArray Unit="RepairDrone"/>
     </CAbilMorph>
     <CAbilResearch id="FleetBeaconResearch">
-        <InfoArray index="Research3" Time="170">
+        <InfoArray index="Research3" Time="170" Upgrade="PlasmaStreamUpgrade">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="AnionPulseCrystals"/>
+            <Button DefaultButtonFace="PlasmaStreamUpgrade" Requirements="PlasmaStreamUpgrade@Learn"/>
         </InfoArray>
         <InfoArray index="Research5" Time="170"/>
         <InfoArray index="Research7" Time="170" Upgrade="KhaydarinCore">
@@ -1886,6 +1888,20 @@
     </CAbilResearch>
     <CAbilEffectTarget id="heal">
         <Range index="0" value="5"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PhoenixPlasmaStream">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PhoenixPlasmaStream@CH"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="PassengerAcquirePassengers" value="1"/>
+        <TargetFilters value="Visible;Self,Enemy,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <Range value="5"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <AINotifyEffect value="PhoenixPlasmaStream@CH"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhoenixPlasmaStream" Requirements="PlasmaStreamUpgrade@Use"/>
     </CAbilEffectTarget>
     <CAbilQueue id="que5CancelToSelection">
         <Flags index="Passive" value="1"/>

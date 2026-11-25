@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CRequirement id="PlasmaStreamUpgrade@Use">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradePlasmaStreamUpgradeCompleteOnly1087031602TechTreeCheat"/>
+    </CRequirement>
     <CRequirement id="LearnBarrierDurationResearch">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeBarrierDurationResearchQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="PlasmaStreamUpgrade@Learn">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradePlasmaStreamUpgradeQueuedOrBetterTechTreeCheat"/>
     </CRequirement>
     <CRequirement id="LiftOffResearch">
         <NodeArray index="Use" Link="CountUpgradeLiftOffResearchCompleteOnly46636824"/>
@@ -132,9 +140,9 @@
     <CRequirement id="ObeliskSlowSearcher">
         <NodeArray index="Use" Link="CountBehaviorObeliskSlowSearcherCompleteOnlyAtUnit4152956742"/>
     </CRequirement>
-    <CRequirement id="PhoenixAttackBoost@OffDummy">
+    <CRequirement id="PhoenixIonOverload@OffDummy">
         <EditorCategories value="Race:Protoss"/>
-        <NodeArray index="Use" Link="Not1801977912CountBehaviorPhoenixAttackBoostCompleteOnlyAtUnit"/>
+        <NodeArray index="Use" Link="Not1801977912CountBehaviorPhoenixIonOverloadCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="QueenOnCreep">
         <NodeArray index="Use" Link=""/>

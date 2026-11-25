@@ -12,7 +12,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CanSpendEnergy"/>
         <RemoveValidatorArray value="hasEnergy"/>
-        <InitialEffect value="PhoenixAttackBoost@RBCaster"/>
+        <InitialEffect value="PhoenixIonOverload@RBCaster"/>
         <Modification MoveSpeedMultiplier="1.8823">
             <ModifyFlags index="DisableWeapons" value="1"/>
             <VitalRegenArray index="Energy" value="-5"/>
@@ -493,15 +493,18 @@
         <DisableValidatorArray value="HasAtLeastNormalPower"/>
         <DisableValidatorArray value="IsNotConstructing"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PhoenixAttackBoost">
+    <CBehaviorBuff id="PhoenixIonOverload">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="CanSpendEnergy"/>
-        <RemoveValidatorArray value="hasEnergy"/>
-        <InitialEffect value="PhoenixSpeedBoost@RBCaster"/>
+        <RemoveValidatorArray value="CanHaveShields"/>
+        <RemoveValidatorArray value="hasShields"/>
+        <RemoveValidatorArray value="PhoenixPlasmaStream@SourceNotChanneling"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="PhoenixIonOverload@MUShieldCost"/>
+        <FinalEffect value="PhoenixIonOverload@MUCooldown"/>
         <Modification AttackSpeedMultiplier="2">
-            <VitalRegenArray index="Energy" value="-5"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PointDefenseDroneArmorReduction">

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitBehaviorState id="CanSpendShields">
+        <BehaviorState value="SuppressShields"/>
+    </CValidatorUnitBehaviorState>
+    <CValidatorUnitCompareBehaviorCount id="PhoenixIonOverload@CasterHasBehavior">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="PhoenixIonOverload"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitOrderQueue id="PhoenixPlasmaStream@SourceNotChanneling">
+        <WhichUnit Value="Source"/>
+        <AbilLink value="PhoenixPlasmaStream"/>
+        <Find value="0"/>
+    </CValidatorUnitOrderQueue>
     <CValidatorUnitOrderQueue id="TargetIsAttacking">
         <WhichUnit Value="Target"/>
         <AbilLink value="attack"/>
@@ -514,4 +527,10 @@
     <CValidatorUnitFilters id="empUTargetFilters">
         <Filters value="-;Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitCompareVital id="healCasterMinEnergy2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
 </Catalog>

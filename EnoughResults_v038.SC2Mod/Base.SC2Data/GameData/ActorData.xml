@@ -18,6 +18,25 @@
         <AutoScaleFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
+    <CActorAction id="PhoenixAirAttackLeftEnhanced" parent="PhoenixAirAttackLeft" effectLaunch="IonCannonsLMLeftEnhanced">
+        <On index="5" Terms="Effect.IonCannonsLMLeftEnhanced.Start; At Caster"/>
+        <Missile value="PhoenixAirAttackMissileEnhanced"/>
+        <ImpactModel value="PhoenixAttackImpactModelEnhanced"/>
+    </CActorAction>
+    <CActorMissile id="PhoenixAirAttackMissileEnhanced" parent="PhoenixAirAttackMissile" unitName="IonCannonsWeaponEnhanced">
+        <On index="0" Terms="UnitBirth.IonCannonsWeaponEnhanced"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,0,0 5.000000}"/>
+    </CActorMissile>
+    <CActorAction id="PhoenixAirAttackRightEnhanced" parent="PhoenixAirAttackRight" effectLaunch="IonCannonsLMRightEnhanced">
+        <On index="5" Terms="Effect.IonCannonsLMRightEnhanced.Start; At Caster"/>
+        <Beam value="PhoenixAirAttackRightEnhancedBeam"/>
+        <Missile value="PhoenixAirAttackMissileEnhanced"/>
+        <ImpactModel value="PhoenixAttackImpactModelEnhanced"/>
+    </CActorAction>
+    <CActorModel id="PhoenixAttackImpactModelEnhanced" parent="GenericAttackModel">
+        <On Terms="ActorCreation; ValidateCreationEffect PhoenixRangeUpgraded" Send="ModelSwap PhoenixAirAttackImpact_Upgrade"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,0,0 5.000000}"/>
+    </CActorModel>
     <CActorSound id="GhostRemoteViewing@SoundCast" parent="SoundOneShot">
         <On Terms="Abil.GhostRemoteViewing.SourceCastStart" Send="Create"/>
         <Sound value="GhostRemoteViewing@Activate"/>
@@ -161,6 +180,42 @@
     <CActorUnit id="Marauder">
         <Scale value="0.810000,0.810000,1.400000"/>
     </CActorUnit>
+    <CActorSound id="PhoenixPlasmaStream@SoundStart" parent="SoundOneShot">
+        <Sound value="ShieldBattery_RechargeStart"/>
+    </CActorSound>
+    <CActorSound id="PhoenixPlasmaStream@SoundStop" parent="SoundOneShot">
+        <Sound value="ShieldBattery_RechargeEnd"/>
+    </CActorSound>
+    <CActorBeamSimple id="PhoenixPlasmaStream@Beam" parent="BeamSimpleAnimationStyleContinuous">
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Effect.PhoenixPlasmaStream@CH.TargetStart" Send="Create"/>
+        <On Terms="Effect.PhoenixPlasmaStream@CH.TargetStop" Send="Destroy"/>
+        <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <Model value="GravitonBeam"/>
+        <HostLaunch Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <HostLaunchSiteOps Ops="SOpAttachWeapon09"/>
+        <HostImpact Subject="_Unit" Scope="Target" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorModel id="PhoenixPlasmaStream@Model" parent="ModelAnimationStyleContinuous">
+        <On Terms="ActorCreation" Send="$Birth PlayForever"/>
+        <On Terms="Effect.PhoenixPlasmaStream@CH.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.PhoenixPlasmaStream@CH.TargetStop; At Target" Send="Destroy"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="ShieldBatteryRechargeChanneledModel"/>
+    </CActorModel>
+    <CActorSound id="PhoenixPlasmaStream@Sound" parent="SoundContinuous">
+        <On Terms="Abil.PhoenixPlasmaStream.TargetChannelStart" Send="Create"/>
+        <On Terms="Abil.PhoenixPlasmaStream.TargetChannelStop" Send="Destroy"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="Create PhoenixPlasmaStream@SoundStart"/>
+        <On Terms="ActorDestruction" Send="Create PhoenixPlasmaStream@SoundStop"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Sound value="ShieldBattery_Recharge_Loop"/>
+    </CActorSound>
     <CActorSound id="MedivacTransportLoadSound2" parent="SoundOneShot">
         <On Terms="AbilTransport.MedivacTransport.TransportLoad" Send="Create"/>
         <On Terms="AbilTransport.HellionTransport.TransportLoad" Send="Create"/>
@@ -180,8 +235,8 @@
         <Sound value="Medivac_Unload"/>
     </CActorSound>
     <CActorUnit id="Phoenix">
-        <On Terms="Behavior.PhoenixSpeedBoost.On" Send="AnimPlay Work Work PlayForever"/>
-        <On Terms="Behavior.PhoenixSpeedBoost.Off" Send="AnimClear Work"/>
+        <On Terms="Abil.PhoenixPlasmaStream.SourceChannelStart" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="Abil.PhoenixPlasmaStream.SourceChannelStop" Send="AnimClear Work"/>
     </CActorUnit>
     <CActorSplat id="PurificationNovaCursorSplat">
         <Scale value="2.130000"/>

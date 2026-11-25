@@ -79,6 +79,28 @@
         <AttributeBonus index="Armored" value="15"/>
         <Amount value="15"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="IonCannons">
+        <PeriodicEffectArray index="0" value="IonCannonsSwitchLaunchLeft"/>
+        <PeriodicEffectArray index="1" value="IonCannonsSwitchLaunchRight"/>
+    </CEffectCreatePersistent>
+    <CEffectSwitch id="IonCannonsSwitchLaunchLeft">
+        <Name value="Effect/Name/IonCannonsLM"/>
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="PhoenixIonOverload@CasterHasBehavior" Effect="IonCannonsLMLeftEnhanced"/>
+        <CaseDefault value="IonCannonsLMLeft"/>
+    </CEffectSwitch>
+    <CEffectLaunchMissile id="IonCannonsLMLeftEnhanced" parent="IonCannonsLMLeft">
+        <AmmoUnit value="IonCannonsWeaponEnhanced"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="IonCannonsLMRightEnhanced" parent="IonCannonsLMRight">
+        <AmmoUnit value="IonCannonsWeaponEnhanced"/>
+    </CEffectLaunchMissile>
+    <CEffectSwitch id="IonCannonsSwitchLaunchRight">
+        <Name value="Effect/Name/IonCannonsLM"/>
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="PhoenixIonOverload@CasterHasBehavior" Effect="IonCannonsLMRightEnhanced"/>
+        <CaseDefault value="IonCannonsLMRight"/>
+    </CEffectSwitch>
     <CEffectCreateUnit id="KD8Charge">
         <WhichLocation Value="TargetUnitOrPoint"/>
     </CEffectCreateUnit>
@@ -111,10 +133,21 @@
         <AttributeBonus index="Armored" value="7"/>
         <Amount value="11"/>
     </CEffectDamage>
-    <CEffectRemoveBehavior id="PhoenixAttackBoost@RBCaster">
+    <CEffectModifyUnit id="PhoenixIonOverload@MUCooldown">
         <EditorCategories value="Race:Protoss"/>
-        <BehaviorLink value="PhoenixAttackBoost"/>
-    </CEffectRemoveBehavior>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="PhoenixIonOverload,On" CooldownOperation="Set">
+            <Fraction Cooldown="1"/>
+        </Cost>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="PhoenixIonOverload@MUShieldCost">
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchUnit Value="Caster"/>
+        <ImpactUnit Value="Source"/>
+        <VitalArray index="Shields">
+            <Change value="-0.625"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectRemoveBehavior id="PhoenixSpeedBoost@RBCaster">
         <EditorCategories value="Race:Protoss"/>
         <BehaviorLink value="PhoenixSpeedBoost"/>
@@ -2133,5 +2166,19 @@
         <ValidatorArray value="NotFullLife"/>
         <PeriodicValidator value="NotFullLife"/>
         <RechargeVitalRate value="12"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="PhoenixPlasmaStream@CH">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="HiddenCompareAB"/>
+        <ValidatorArray value="HiddenCompareBA"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="ShieldsNotFull"/>
+        <EditorCategories value="Race:Protoss"/>
+        <PeriodicValidator value="ShieldsNotFull"/>
+        <DrainVital value="Shields"/>
+        <DrainVitalCostFactor value="1"/>
+        <RechargeVital value="Shields"/>
+        <RechargeVitalRate value="50"/>
     </CEffectCreateHealer>
 </Catalog>
