@@ -107,6 +107,10 @@
     <CEffectEnumArea id="OracleStasisTrapActivate">
         <SearchFilters value="Ground;Self,Neutral,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
+    <CEffectDamage id="ParticleDisruptorsU">
+        <AttributeBonus index="Armored" value="7"/>
+        <Amount value="11"/>
+    </CEffectDamage>
     <CEffectRemoveBehavior id="PhoenixAttackBoost@RBCaster">
         <EditorCategories value="Race:Protoss"/>
         <BehaviorLink value="PhoenixAttackBoost"/>
